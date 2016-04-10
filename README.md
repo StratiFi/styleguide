@@ -12,7 +12,7 @@ To get completed guide for all the elments, just check the BS [documention](http
 
 
 ## Demo
-proposal.stratifio.com.s3-website-us-east-1.amazonaws.com  
+http://stratifi.github.io/styleguide/dist/  
 
 
 
