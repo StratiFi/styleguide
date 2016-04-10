@@ -1,0 +1,13 @@
+// run "gulp sass" to compile
+// (bootstrap supposed to be installed in ../vendor/bower_components/boostrap first)
+
+
+// load variables
+@import "_variables.scss";
+
+// load boostrap and fixing styles
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "_bootstrap.scss"; // botststrap "overriding" fix
+
+// load app styles
+@import "_app.scss";

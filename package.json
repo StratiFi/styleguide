@@ -1,0 +1,30 @@
+{
+  "name": "stratifi.styleguide",
+  "version": "0.0.1",
+  "description": "Stratifi Style Guide",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "postinstall": "bower install && gulp install",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StratiFi/styleguide.git"
+  },
+  "author": "StratiFi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StratiFi/styleguide/issues"
+  },
+  "homepage": "https://github.com/StratiFi/styleguide#readme",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
+}

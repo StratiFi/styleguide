@@ -1,0 +1,49 @@
+{
+  "name": "StratiFi Style Guide",
+  "version": "0.1.0",
+  "authors": [
+    "Savvaoff <savvaoff@gmail.com>"
+  ],
+  "description": "Stratifi Style Guide",
+  "homepage": "stratifi.com",
+  "ignore": [
+    ".*",
+    "*.md",
+    "**/.*",
+    "**/*.json",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "src",
+    "source",
+    "example",
+    "doc",
+    "grunt",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "jquery": "~2.2.3",
+    "tether": "~1.2.0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js",
+        "dist/jquery.min.map"
+      ]
+    },
+    "tether": {
+      "main": [
+        "dist/css/tether.min.css",
+        "dist/js/tether.min.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js"
+      ]
+    }
+  }
+}

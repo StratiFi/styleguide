@@ -1,0 +1,48 @@
+// custom BS and APP variables
+// run "gulp sass" to compile
+// (bootstrap supposed to be installed in ../vendor/bower_components/boostrap first)
+
+
+// Questions:
+// - h1/h2/.../base color: graphite or darkgrey? where to use graphite?
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             #3d99Fc !default; // rgb(61, 153, 252)
+$brand-success:             #00e50e !default; // rgb(0, 229, 14) // ?rgb(52, 225, 75)
+$brand-info:                #5bc0de !default; // non-changed
+$brand-warning:             #f0ad4e !default; // non-changed
+$brand-danger:              #ff002d !default; // rgb(255, 0, 45)
+
+$link-hover-decoration:     none;
+$font-family-sans-serif:    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$headings-font-weight:      300;
+$headings-line-height:      1.5;
+//$headings-color:            $graphite-dark;
+
+// Custom
+$graphite-dark:             #394346 !default; // rgb(57, 67, 70) // graphite
+$graphite:                  #505e62 !default; // hex(194, 10, 35)
+$graphite-light:            #7b8e93 !default; // hex(194, 10, 53)
+$graphite-lighter:          #ebeeef !default; // hex(194, 10, 93)
+$graphite-lightest:         #f6f8f9 !default; // rgb(246, 248, 249)
+
+// OBSOLETED
+//$graphite-dark:             #455960 !default; // rgb(69, 89, 96) // hex(196, 16, ~??) // graphite
+//$graphite:                  #4f656d !default; // hex(196, 16, 37)
+//$graphite-light:            #77929c !default; // hex(196, 16, 54)
+//$graphite-lighter:          #eaeef0 !default; // hex(196, 16, 93)
+//$graphite-lightest:         #f6f8f9 !default; // rgb(246, 248, 249)
+
+$brand-success-muted:       #8fddc6; // rgb(143, 221, 198)
+$brand-danger-muted:        #d99696; // rgb(217, 150, 150)
+
+$title-letter-spacing:      0.15rem; // TODO: apply later
+
+$btn-padding-x-xxxlg:       3rem !default; // for btn-title
+$btn-padding-y-xxxlg:       1rem !default; // for btn-title
