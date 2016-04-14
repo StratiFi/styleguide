@@ -542,3 +542,12 @@ ul, ol {
   margin-top: $input-height-lg / -2;
   margin-left: $input-height-lg / -2;
 }
+
+.bwfilter {
+  -webkit-filter: grayscale(100%) contrast(170%) brightness(100%);
+  filter: grayscale(100%) contrast(170%) brightness(100%);
+  opacity: 0.8; }
+
+.bwfilter:hover {
+  -webkit-filter: grayscale(10%) contrast(140%);
+  filter: grayscale(10%) contrast(140%); }
