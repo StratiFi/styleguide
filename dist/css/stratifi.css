@@ -4768,6 +4768,20 @@ body, p, td {
 .nav-tabs-center {
   text-align: center; }
 
+ul, ol {
+  padding-left: 1.2em;
+  /* a-la zero left padding */ }
+
+.table thead td,
+.table thead th {
+  border-top: none; }
+
+.table thead th {
+  color: #7b8e93;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
 .table-borderless-top thead tr th,
 .table-borderless-top thead tr td {
   border-top: none; }
@@ -4854,8 +4868,7 @@ body, p, td {
 
 .modal.left .modal-body,
 .modal.right .modal-body {
-  padding: 1rem 2rem;
-  /* SASS */ }
+  padding: 0.9375rem 1.875rem; }
 
 .modal.left.fade .modal-dialog {
   left: -80%;
@@ -4888,14 +4901,12 @@ body, p, td {
 
 .modal.left .modal-footer,
 .modal.right .modal-footer {
-  border-top-color: transparent;
-  padding: 1rem 2rem;
-  /* SASS */
-  /* everything below is experimental */
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: left; }
+  text-align: left;
+  border-top-color: transparent;
+  padding: 0.9375rem 1.875rem; }
 
 .col-xs-bordered,
 .col-sm-bordered,

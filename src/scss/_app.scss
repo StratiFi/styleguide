@@ -182,6 +182,21 @@ body, p, td {
   text-align: center;
 }
 
+ul, ol {
+  padding-left: 1.2em; /* a-la zero left padding */
+}
+
+.table thead td,
+.table thead th {
+  border-top: none;
+}
+.table thead th {
+  color: $graphite-light;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .table-borderless-top thead tr th,
 .table-borderless-top thead tr td {
   border-top: none;
@@ -269,7 +284,7 @@ body, p, td {
 }
 .modal.left .modal-body,
 .modal.right .modal-body {
-  padding: 1rem 2rem; /* SASS */
+  padding: $grid-gutter-width / 2 $grid-gutter-width;
 }
 .modal.left.fade .modal-dialog {
   left: -80%;
@@ -302,13 +317,12 @@ body, p, td {
 }
 .modal.left .modal-footer,
 .modal.right .modal-footer {
-  border-top-color: transparent;
-  padding: 1rem 2rem; /* SASS */
-  /* everything below is experimental */
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: left;
+  border-top-color: transparent;
+  padding: $grid-gutter-width / 2 $grid-gutter-width;
 }
 
 .col-xs-bordered,
