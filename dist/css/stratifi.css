@@ -5118,12 +5118,3 @@ ul, ol {
   height: 3.16667rem;
   margin-top: -1.58333rem;
   margin-left: -1.58333rem; }
-
-.bwfilter {
-  -webkit-filter: grayscale(100%) contrast(170%) brightness(100%);
-  filter: grayscale(100%) contrast(170%) brightness(100%);
-  opacity: 0.8; }
-
-.bwfilter:hover {
-  -webkit-filter: grayscale(10%) contrast(140%);
-  filter: grayscale(10%) contrast(140%); }
