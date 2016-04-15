@@ -56,7 +56,6 @@ body, p, td {
   color: inherit !important;
 }
 
-
 .b-dashed {
   border-style: dashed;
 }
@@ -126,6 +125,14 @@ body, p, td {
   border-radius: 100em;
 }
 
+.bg-inverse .btn-secondary,
+.bg-primary .btn-secondary,
+.bg-success .btn-secondary,
+.bg-info .btn-secondary,
+.bg-warning .btn-secondary,
+.bg-danger .btn-secondary {
+  border: none;
+}
 .btn-icon {
   padding: 0.45em 0.7em;
   border-radius: 100em;
@@ -229,6 +236,18 @@ ul, ol {
 }
 .tr-non-clickable, .td-non-clickable {
   cursor: inherit;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  line-height: 1.77;
+  font-size: $font-size-sm;
+}
+.navbar.navbar-fixed-top .navbar-brand img {
+  width: 7rem;
+  margin-top: 0.33em;
 }
 
 .nav-tabs-bordered .nav-link {
