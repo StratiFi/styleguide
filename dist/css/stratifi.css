@@ -4940,7 +4940,7 @@ ul, ol {
   border-top-color: transparent;
   padding: 0.9375rem 1.875rem; }
 
-.carousel-indicators li.active {
+.carousel-indicators li {
   border-color: #505e62; }
 
 .carousel-indicators li.active {
