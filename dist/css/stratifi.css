@@ -4940,6 +4940,28 @@ ul, ol {
   border-top-color: transparent;
   padding: 0.9375rem 1.875rem; }
 
+.carousel-indicators li.active {
+  border-color: #505e62; }
+
+.carousel-indicators li.active {
+  background-color: #505e62; }
+
+.bg-inverse .carousel-indicators li,
+.bg-primary .carousel-indicators li,
+.bg-success .carousel-indicators li,
+.bg-info .carousel-indicators li,
+.bg-warning .carousel-indicators li,
+.bg-danger .carousel-indicators li {
+  border-color: #fff; }
+
+.bg-inverse .carousel-indicators li.active,
+.bg-primary .carousel-indicators li.active,
+.bg-success .carousel-indicators li.active,
+.bg-info .carousel-indicators li.active,
+.bg-warning .carousel-indicators li.active,
+.bg-danger .carousel-indicators li.active {
+  background-color: #fff; }
+
 .col-xs-bordered,
 .col-sm-bordered,
 .col-md-bordered,
