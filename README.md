@@ -7,8 +7,8 @@ Re-imagine Alternative Investments
 The style set is an extended and slightly customize Bootstrap4 style framework.
 All the bootstrap style class names and conventions are preserved.
 
-The guide mosly contain examples of customize ans extended classes and components.
-To get completed guide for all the elments, just check the BS [documention](http://getbootstrap.com/).
+This guide mostly contains examples for customized classes and components.
+To get completed guidelines for all the elments, just check the BS [documention](http://getbootstrap.com/).
 
 
 ## Demo
