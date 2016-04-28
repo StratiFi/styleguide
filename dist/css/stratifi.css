@@ -4598,6 +4598,13 @@ body {
   padding-top: 3.3rem;
   padding-bottom: 3.3rem; }
 
+.navbar.navbar-fixed-top {
+  min-height: 3.3em; }
+
+.navbar.navbar-fixed-top .navbar-brand img {
+  padding-top: 0.25em;
+  width: 7rem; }
+
 /* override fonts */
 body, p, td {
   font-weight: 300; }
@@ -4972,7 +4979,6 @@ ul, ol {
 .col-xs-bordered + .col-xs-bordered {
   border-left: none; }
 
-/* TODO: insert variables $container-max-widths-* */
 @media (max-width: 543px) {
   .col-xs-bordered,
   .col-sm-bordered,
