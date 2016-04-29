@@ -1,0 +1,58 @@
+.table thead td,
+.table thead th {
+  border-top: none; }
+.table thead th {
+  color: $graphite-light;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+.table-borderless-top {
+  border-top: none;
+}
+.table-borderless-top tr:first-child th,
+.table-borderless-top tr:first-child td {
+  border-top: none;
+}
+.table-borderless-bottom {
+  border-bottom: none;
+}
+.table-borderless-bottom tbody tr:last-child td {
+  border-bottom: none;
+}
+.table-borderless-side {
+  border-left: none;
+  border-right: none;
+}
+.table-borderless-side tr td:first-child,
+.table-borderless-side tr th:first-child {
+  border-left: none;
+}
+.table-borderless-side tr td:last-child,
+.table-borderless-side tr th:last-child {
+  border-right: none;
+}
+.table-borderless {
+  border: none !important;
+}
+.table-borderless tr:first-child th,
+.table-borderless tr:first-child td {
+  border-top: none;
+}
+.table-borderless tr td:first-child,
+.table-borderless tr th:first-child {
+  border-left: none;
+}
+.table-borderless tr td:last-child,
+.table-borderless tr th:last-child {
+  border-right: none;
+}
+.table-borderless tbody tr:last-child td {
+  border-bottom: none;
+}
+.table .tr-middle > th,
+.table .tr-middle > td {
+  vertical-align: middle; }
+.tr-clickable, .td-clickable {
+  cursor: pointer; }
+.tr-non-clickable, .td-non-clickable {
+  cursor: inherit; }

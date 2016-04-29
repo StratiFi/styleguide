@@ -10,4 +10,9 @@
 @import "_bootstrap.scss"; // botststrap "overriding" fix
 
 // load app styles
+@import "_app-grid.scss";
+@import "_app-tables.scss";
+@import "_app-nav.scss";
+@import "_app-navbar.scss";
+@import "_app-modal.scss";
 @import "_app.scss";
