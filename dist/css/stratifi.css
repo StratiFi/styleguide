@@ -5020,6 +5020,9 @@ body, p, td {
   border-color: #505e62;
   /* or $graphite-dark? */ }
 
+.hr-primary-muted {
+  border-color: #c3e9fe; }
+
 .hr-success-muted {
   border-color: #8fddc6; }
 
