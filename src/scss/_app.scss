@@ -1,14 +1,6 @@
-/* TODO: split to many scss files accroding as Bootstap does */
-body {
-  padding-top: 3.3rem;
-  padding-bottom: 3.3rem; }
-
-/* override fonts */
-body, p, td {
-  font-weight: 300; }
 .form-group label {
   font-size: $font-size-sm;
-  font-weight: normal; }
+  font-weight: 500; }
 
 .text-title {
   text-transform: uppercase;
@@ -24,7 +16,7 @@ body, p, td {
   font-weight: 400, }
 .text-bold,
 .font-weight-bold {
-  font-weight: 700, }
+  font-weight: 500, }
 
 .text-graphite {
   color: $graphite !important; }
@@ -149,129 +141,3 @@ body, p, td {
 
 ul, ol {
   padding-left: 1.2em; /* a-la zero left padding */ }
-
-.carousel-indicators li {
-  border-color: $graphite; }
-.carousel-indicators li.active {
-  background-color: $graphite; }
-.bg-inverse .carousel-indicators li,
-.bg-primary .carousel-indicators li,
-.bg-success .carousel-indicators li,
-.bg-info .carousel-indicators li,
-.bg-warning .carousel-indicators li,
-.bg-danger .carousel-indicators li {
-  border-color: $carousel-indicator-border-color; }
-.bg-inverse .carousel-indicators li.active,
-.bg-primary .carousel-indicators li.active,
-.bg-success .carousel-indicators li.active,
-.bg-info .carousel-indicators li.active,
-.bg-warning .carousel-indicators li.active,
-.bg-danger .carousel-indicators li.active {
-  background-color: $carousel-indicator-active-bg; }
-
-.react-autosuggest__container {
-  position: relative; }
-.react-autosuggest__input { }
-.react-autosuggest__input:focus { }
-.react-autosuggest__container--open .react-autosuggest__input { }
-.react-autosuggest__suggestions-container {
-  position: absolute;
-  top: 100%;
-  border-radius: 0; }
-.react-autosuggest__suggestion {
-  cursor: pointer; }
-.react-autosuggest__suggestion--focused {
-  /* TODO: make it scss. derived from: .dropdown-item:focus, .dropdown-item:hover */
-  color: #2b2d2f;
-  text-decoration: none;
-  background-color: $gray-lightest; }
-.no-suggestions { }
-
-.slider {
-  height: 0.2em;
-  background-color: $gray-lighter; /* temp temp temp */
-  margin-top: 0.5em; /* 1/2 handle height - 1/2 slider height */
-  margin-bottom: 0.5em; /* 1/2 handle height - 1/2 slider height */ }
-.handle {
-  width: 0.5em;
-  height: 1.2em;
-  margin-top: -0.5em; /* 1/2 handle height - 1/2 slider height */
-  /* margin-left: -0.75em; */
-  background-color: $brand-primary;
-  border-radius: 0.2em;
-  box-sizing: border-box; }
-.slider-labels {
-  margin-top: 0.5em; }
-.slider-label-min {
-  float: left;
-  font-size: $font-size-xs, }
-.slider-label-max {
-  float: right;
-  font-size: $font-size-xs, }
-.slider-label {
-  text-align: center;
-  font-size: $font-size-xs, }
-
-.ui-switch {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  width: $input-height * 1.3;
-  height: $input-height / 2;
-  border-radius: 100em;
-  background-color: white;
-  margin: 0;
-  border: 1px solid $input-border-color; }
-.ui-switch input {
-  position: absolute;
-  opacity: 0;  }
-.ui-switch input:checked + i:before { }
-.ui-switch input:checked + i:after {
-  margin-left: $input-height * 1.3 - $input-height / 2; }
-.ui-switch i:before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  background-color: $gray-lighter;
-  border: 1px solid $input-border-color;
-  border-radius: 100em;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
-.ui-switch i:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  bottom: 1px;
-  background-color: #fff;
-  width: $input-height;
-  height: $input-height;
-  margin-top: $input-height / -2;
-  margin-left: $input-height / -2;
-  border-radius: 100em;
-  border: 1px solid $gray-lighter;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-transition: margin-left 0.3s;
-  transition: margin-left 0.3s;  }
-.ui-switch-sm {
-  width: $input-height-sm * 1.3;
-  height: $input-height-sm / 2; }
-.ui-switch-sm input:checked + i:after {
-  margin-left: $input-height-sm * 1.5 - $input-height-sm / 2; }
-.ui-switch-sm i:after {
-  width: $input-height-sm;
-  height: $input-height-sm;
-  margin-top: $input-height-sm / -2;
-  margin-left: $input-height-sm / -2; }
-.ui-switch-lg {
-  width: $input-height-lg * 1.3;
-  height: $input-height-lg / 2; }
-.ui-switch-lg input:checked + i:after {
-  margin-left: $input-height-lg * 1.5 - $input-height-lg / 2; }
-.ui-switch-lg i:after {
-  width: $input-height-lg;
-  height: $input-height-lg;
-  margin-top: $input-height-lg / -2;
-  margin-left: $input-height-lg / -2; }

@@ -1,0 +1,18 @@
+.carousel-indicators li {
+  border-color: $graphite; }
+.carousel-indicators li.active {
+  background-color: $graphite; }
+.bg-inverse .carousel-indicators li,
+.bg-primary .carousel-indicators li,
+.bg-success .carousel-indicators li,
+.bg-info .carousel-indicators li,
+.bg-warning .carousel-indicators li,
+.bg-danger .carousel-indicators li {
+  border-color: $carousel-indicator-border-color; }
+.bg-inverse .carousel-indicators li.active,
+.bg-primary .carousel-indicators li.active,
+.bg-success .carousel-indicators li.active,
+.bg-info .carousel-indicators li.active,
+.bg-warning .carousel-indicators li.active,
+.bg-danger .carousel-indicators li.active {
+  background-color: $carousel-indicator-active-bg; }
