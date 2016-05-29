@@ -107,7 +107,7 @@
   border-radius: 100em; }
 .btn-title {
   text-transform: uppercase;
-  letter-spacing: $title-letter-spacing;
+  letter-spacing: $title-letter-spacing * 1.5;
   font-weight: 300;
   padding: $btn-padding-y-xxxlg $btn-padding-x-xxxlg; }
 
