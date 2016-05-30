@@ -4840,6 +4840,9 @@ a.bg-danger:focus, a.bg-danger:hover {
   border-top-color: transparent;
   padding: 0.9375rem 1.875rem; }
 
+body, p, td {
+  font-weight: 300; }
+
 .form-group label {
   font-size: 0.875rem;
   font-weight: 500; }
