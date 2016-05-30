@@ -1,25 +1,36 @@
 body, p, td {
   font-weight: 300; }
 
+h5 {
+  font-weight: bold;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  letter-spacing: $title-letter-spacing; }
+h6 {
+  font-weight: bold;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  letter-spacing: $title-letter-spacing; }
+
 .form-group label {
   font-size: $font-size-sm;
   font-weight: 500; }
 
+.text-thin,
+.font-weight-thin {
+  font-weight: 100; }
+.text-light,
+.font-weight-light {
+  font-weight: 300; }
+.text-normal,
+.font-weight-normal {
+  font-weight: 400; }
+.text-bold,
+.font-weight-bold {
+  font-weight: 500; }
 .text-title {
   text-transform: uppercase;
   letter-spacing: $title-letter-spacing; }
-.text-thin,
-.font-weight-thin {
-  font-weight: 100, }
-.text-light,
-.font-weight-light {
-  font-weight: 300, }
-.text-normal,
-.font-weight-normal {
-  font-weight: 400, }
-.text-bold,
-.font-weight-bold {
-  font-weight: 500, }
 
 .text-graphite {
   color: $graphite !important; }

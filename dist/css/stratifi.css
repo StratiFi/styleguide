@@ -4843,13 +4843,21 @@ a.bg-danger:focus, a.bg-danger:hover {
 body, p, td {
   font-weight: 300; }
 
+h5 {
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
+
+h6 {
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
+
 .form-group label {
   font-size: 0.875rem;
   font-weight: 500; }
-
-.text-title {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem; }
 
 .text-thin,
 .font-weight-thin {
@@ -4866,6 +4874,10 @@ body, p, td {
 .text-bold,
 .font-weight-bold {
   font-weight: 500; }
+
+.text-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
 
 .text-graphite {
   color: #505e62 !important; }
