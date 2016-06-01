@@ -4840,6 +4840,160 @@ a.bg-danger:focus, a.bg-danger:hover {
   border-top-color: transparent;
   padding: 0.9375rem 1.875rem; }
 
+/* custom modal popover */
+/* https://github.com/savvaoff/bootstrap-popover-modal */
+.modal-backdrop-popover-modal {
+  background-color: transparent; }
+
+.carousel-indicators li {
+  border-color: #505e62; }
+
+.carousel-indicators li.active {
+  background-color: #505e62; }
+
+.bg-inverse .carousel-indicators li,
+.bg-primary .carousel-indicators li,
+.bg-success .carousel-indicators li,
+.bg-info .carousel-indicators li,
+.bg-warning .carousel-indicators li,
+.bg-danger .carousel-indicators li {
+  border-color: #fff; }
+
+.bg-inverse .carousel-indicators li.active,
+.bg-primary .carousel-indicators li.active,
+.bg-success .carousel-indicators li.active,
+.bg-info .carousel-indicators li.active,
+.bg-warning .carousel-indicators li.active,
+.bg-danger .carousel-indicators li.active {
+  background-color: #fff; }
+
+/* custom autosiggest control (React component) */
+.react-autosuggest__container {
+  position: relative; }
+
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  top: 100%;
+  border-radius: 0; }
+
+.react-autosuggest__suggestion {
+  cursor: pointer; }
+
+.react-autosuggest__suggestion--focused {
+  /* TODO: make it scss. derived from: .dropdown-item:focus, .dropdown-item:hover */
+  color: #2b2d2f;
+  text-decoration: none;
+  background-color: #f7f7f9; }
+
+/* custom slider control (React component) */
+.slider {
+  height: 0.2em;
+  background-color: #eceeef;
+  /* temp temp temp */
+  margin-top: 0.5em;
+  /* 1/2 handle height - 1/2 slider height */
+  margin-bottom: 0.5em;
+  /* 1/2 handle height - 1/2 slider height */ }
+
+.handle {
+  width: 0.5em;
+  height: 1.2em;
+  margin-top: -0.5em;
+  /* 1/2 handle height - 1/2 slider height */
+  /* margin-left: -0.75em; */
+  background-color: #09acf8;
+  border-radius: 0.2em;
+  box-sizing: border-box; }
+
+.slider-labels {
+  margin-top: 0.5em; }
+
+.slider-label-min {
+  float: left;
+  font-size: 0.75rem; }
+
+.slider-label-max {
+  float: right;
+  font-size: 0.75rem; }
+
+.slider-label {
+  text-align: center;
+  font-size: 0.75rem; }
+
+/* custom switch control (React component) */
+.ui-switch {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 2.925rem;
+  height: 1.125rem;
+  border-radius: 100em;
+  background-color: white;
+  margin: 0;
+  border: 1px solid #ccc; }
+
+.ui-switch input {
+  position: absolute;
+  opacity: 0; }
+
+.ui-switch input:checked + i:after {
+  margin-left: 1.8rem; }
+
+.ui-switch i:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background-color: #eceeef;
+  border: 1px solid #ccc;
+  border-radius: 100em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.ui-switch i:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 1px;
+  background-color: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-top: -1.125rem;
+  margin-left: -1.125rem;
+  border-radius: 100em;
+  border: 1px solid #eceeef;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s; }
+
+.ui-switch-sm {
+  width: 2.42125rem;
+  height: 0.93125rem; }
+
+.ui-switch-sm input:checked + i:after {
+  margin-left: 1.8625rem; }
+
+.ui-switch-sm i:after {
+  width: 1.8625rem;
+  height: 1.8625rem;
+  margin-top: -0.93125rem;
+  margin-left: -0.93125rem; }
+
+.ui-switch-lg {
+  width: 4.11667rem;
+  height: 1.58333rem; }
+
+.ui-switch-lg input:checked + i:after {
+  margin-left: 3.16667rem; }
+
+.ui-switch-lg i:after {
+  width: 3.16667rem;
+  height: 3.16667rem;
+  margin-top: -1.58333rem;
+  margin-left: -1.58333rem; }
+
 body, p, td {
   font-weight: 300; }
 
