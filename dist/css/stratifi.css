@@ -4730,13 +4730,16 @@ h6.text-title {
   font-size: 0.75rem;
   /* plus text-title styling */ }
 
+.table th,
+.table thead th {
+  font-weight: normal; }
+
 .table thead td,
 .table thead th {
   border-top: none; }
 
 .table thead th {
-  font-size: 0.875rem;
-  letter-spacing: 0.1em; }
+  font-size: 0.875rem; }
 
 .thead-graphite th {
   color: #fff;

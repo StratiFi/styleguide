@@ -1,9 +1,11 @@
+.table th,
+.table thead th {
+  font-weight: normal; }
 .table thead td,
 .table thead th {
   border-top: none; }
 .table thead th {
-  font-size: $font-size-sm;
-  letter-spacing: 0.1em; }
+  font-size: $font-size-sm; }
 
 .thead-graphite th {
   color: #fff;
