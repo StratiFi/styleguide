@@ -4735,9 +4735,7 @@ h6.text-title {
   border-top: none; }
 
 .table thead th {
-  color: #7c8c94;
-  font-size: 0.75rem;
-  text-transform: uppercase;
+  font-size: 0.875rem;
   letter-spacing: 0.1em; }
 
 .thead-graphite th {
@@ -4799,7 +4797,7 @@ h6.text-title {
 
 .form-group label {
   font-size: 0.875rem;
-  font-weight: 500; }
+  /* font-weight: 500; */ }
 
 .nav-tabs-center > .nav-item, .nav-pills-center > .nav-item {
   float: none;
