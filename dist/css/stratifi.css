@@ -257,7 +257,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
@@ -3740,7 +3740,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3819,7 +3819,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4659,6 +4659,77 @@ a.bg-danger:focus, a.bg-danger:hover {
   .col-xl-bordered + .col-xl-bordered {
     border-left: none; } }
 
+.text-graphite {
+  color: #505e62 !important; }
+
+.text-primary-link:hover {
+  color: inherit !important; }
+
+.text-success-link:hover {
+  color: inherit !important; }
+
+.text-info-link:hover {
+  color: inherit !important; }
+
+.text-warning-link:hover {
+  color: inherit !important; }
+
+.text-danger-link:hover {
+  color: inherit !important; }
+
+.text-graphite-link:hover {
+  color: inherit !important; }
+
+.text-thin,
+.font-weight-thin {
+  font-weight: 100; }
+
+.text-light,
+.font-weight-light {
+  font-weight: 300; }
+
+.text-normal,
+.font-weight-normal {
+  font-weight: 400; }
+
+.text-bold,
+.font-weight-bold {
+  font-weight: 500; }
+
+.text-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
+
+h1.text-title {
+  font-weight: bold;
+  font-size: 1.75rem;
+  /* plus text-title styling */ }
+
+h3.text-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* plus text-title styling */ }
+
+h3.text-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  /* plus text-title styling */ }
+
+h4.text-title {
+  font-weight: bold;
+  font-size: 1rem;
+  /* plus text-title styling */ }
+
+h5.text-title {
+  font-weight: bold;
+  font-size: 0.875rem;
+  /* plus text-title styling */ }
+
+h6.text-title {
+  font-weight: bold;
+  font-size: 0.75rem;
+  /* plus text-title styling */ }
+
 .table thead td,
 .table thead th {
   border-top: none; }
@@ -4721,6 +4792,10 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .tr-non-clickable, .td-non-clickable {
   cursor: inherit; }
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500; }
 
 .nav-tabs-center > .nav-item, .nav-pills-center > .nav-item {
   float: none;
@@ -4996,63 +5071,6 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 body, p, td {
   font-weight: 300; }
-
-h5 {
-  font-weight: bold;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem; }
-
-h6 {
-  font-weight: bold;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem; }
-
-.form-group label {
-  font-size: 0.875rem;
-  font-weight: 500; }
-
-.text-thin,
-.font-weight-thin {
-  font-weight: 100; }
-
-.text-light,
-.font-weight-light {
-  font-weight: 300; }
-
-.text-normal,
-.font-weight-normal {
-  font-weight: 400; }
-
-.text-bold,
-.font-weight-bold {
-  font-weight: 500; }
-
-.text-title {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem; }
-
-.text-graphite {
-  color: #505e62 !important; }
-
-.text-primary-link:hover {
-  color: inherit !important; }
-
-.text-success-link:hover {
-  color: inherit !important; }
-
-.text-info-link:hover {
-  color: inherit !important; }
-
-.text-warning-link:hover {
-  color: inherit !important; }
-
-.text-danger-link:hover {
-  color: inherit !important; }
-
-.text-graphite-link:hover {
-  color: inherit !important; }
 
 .b-dashed {
   border-style: dashed !important; }
