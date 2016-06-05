@@ -4735,10 +4735,14 @@ h6.text-title {
   border-top: none; }
 
 .table thead th {
-  color: #7b8e93;
+  color: #7c8c94;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
+
+.thead-graphite th {
+  color: #fff;
+  background-color: #7c8c94; }
 
 .table-borderless-top {
   border-top: none; }

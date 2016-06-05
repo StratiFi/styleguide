@@ -6,6 +6,11 @@
   font-size: $font-size-xs;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
+
+.thead-graphite th {
+  color: #fff;
+  background-color: $graphite-light; }
+
 .table-borderless-top {
   border-top: none;
 }
