@@ -1,0 +1,50 @@
+.nav {
+  &-tabs,
+  &-pills {
+    &-center {
+      > .nav-item {
+        float: none;
+        display: inline-block;
+      }
+    }
+  }
+
+  &-tabs {
+    &-center {
+      text-align: center;
+    }
+
+    &-bordered {
+      .nav-link {
+        color: inherit;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        border-radius: 0;
+        border-bottom: 4px solid transparent !important;
+
+        &:focus,
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+
+      .nav-item {
+        + .nav-item {
+          margin-left: $grid-gutter-width;
+        }
+      }
+    }
+  }
+}
+
+// TODO Refactor this part
+.nav-tabs-bordered .nav-link.active,
+.nav-tabs-bordered .nav-link.active:focus,
+.nav-tabs-bordered .nav-link.active:hover,
+.nav-tabs-bordered .nav-item.open .nav-link,
+.nav-tabs-bordered .nav-item.open .nav-link:focus,
+.nav-tabs-bordered .nav-item.open .nav-link:hover {
+  font-weight: 400; /* normal */
+  border-bottom-color: $brand-primary !important;
+}

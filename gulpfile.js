@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    cssnano = require('gulp-cssnano');
-    rename = require('gulp-rename');
+    cssnano = require('gulp-cssnano'),
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer');
 
 var config = {
   'src': 'src',
@@ -9,24 +10,44 @@ var config = {
 
   'html': {
     'src': 'src/*.html',
-    'dest': 'dist/',
+    'dest': 'dist/'
   },
 
   'sass': {
-    'src' : 'src/scss/stratifi.scss',
     'dest': 'dist/css',
-  },
-}
+    'path': 'src/scss',
+    'stratifi': {
+      'path': 'src/scss/stratifi',
+      'src' : 'src/scss/stratifi/stratifi.scss'
+    },
+    'docs': {
+      'path': 'src/scss/docs',
+      'src': 'src/scss/docs/docs.scss'
+    }
+  }
+};
 
 gulp.task('sassMax', function () {
-  return gulp.src(config.sass.src)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(config.sass.dest));
+  return gulp.src([
+        config.sass.stratifi.src,
+        config.sass.docs.src
+      ])
+      .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer({
+        browsers: '> 5%'
+      }))
+      .pipe(gulp.dest(config.sass.dest));
 });
 
 gulp.task('sassMin', function () {
-  return gulp.src(config.sass.src)
+  return gulp.src([
+      config.sass.stratifi.src,
+      config.sass.docs.src
+    ])
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: '> 5%'
+    }))
     .pipe(cssnano())
     .pipe(rename(function (path) {
       path.basename += '.min';
@@ -47,8 +68,15 @@ gulp.task('install', ['inject'], function () {
   // Gerald, do something
 });
 
-gulp.task('build', ['sassMax', 'sassMin', 'html'], function () {
+gulp.task('build', ['sassMax', 'html'], function () {
   // voila
+});
+
+gulp.task('watch', function () {
+  gulp.watch([
+    config.sass.path + '/**/*.scss',
+    config.html.src
+  ], ['build']);
 });
 
 gulp.task('default', ['build'], function () {

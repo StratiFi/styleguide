@@ -1,0 +1,28 @@
+.carousel-indicators {
+  li {
+    border-color: $graphite;
+
+    &.active {
+      background-color: $graphite;
+    }
+  }
+}
+
+.bg {
+  &-inverse,
+  &-primary,
+  &-success,
+  &-info,
+  &-warning,
+  &-danger {
+    .carousel-indicators {
+      li {
+        border-color: $carousel-indicator-border-color;
+
+        &.active {
+          background-color: $carousel-indicator-active-bg;
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,29 @@ To get completed guidelines for all the elments, just check the BS [documention]
 ## Demo
 http://stratifi.github.io/styleguide/dist  
 
+## Components status
+- [ ] COLORS - *In Progress*
+- [ ] HEADINGS - *In Progress*
+- [ ] ICONS
+- [ ] BUTTONS - *In Progress*
+- [ ] BUTTONS GROUP
+- [x] NAVBAR
+- [ ] TABLES
+- [ ] CARDS
+- [ ] FORMS
+- [ ] MODALS
+- [x] DROPDOWNS
+- [ ] ALERTS
 
+##### Additional components status
+
+- [ ] FLEXBOX MODEL - *In Progress*
+- [ ] FILTERED TABLES
+- [ ] EDITABLE TABLES
+- [ ] CONFIRMATION MODALS
+- [ ] ACTIONABLE MODALS
+- [ ] ACTIONABLE DROPDOWNS
+- [ ] CARDS LIST
 
 ## Installation
 Just one command to prepare the environment and install all the dependencies, 

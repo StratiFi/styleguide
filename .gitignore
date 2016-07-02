@@ -6,3 +6,5 @@
 npm-debug.log
 webpack-stats.json
 webpack-assets.json
+
+.idea

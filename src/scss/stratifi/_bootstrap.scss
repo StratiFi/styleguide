@@ -1,0 +1,52 @@
+// override BS classes that cannot be tweaked by variables
+
+.c-select {
+  padding-top: 0.275rem;
+  padding-bottom: 0.275rem;
+}
+
+.btn-group {
+  .nowrap {
+    display: flex;
+  }
+}
+
+.carousel-control {
+  color: inherit;
+  text-shadow: none;
+  opacity: initial;
+  width: 2em;
+
+  &:focus,
+  &:hover {
+    color: $brand-primary;
+    opacity: initial;
+  }
+
+  &.right,
+  &.left {
+    background: none;
+  }
+
+  &.left {
+    text-align: left !important;
+  }
+
+  &.right {
+    text-align: right !important;
+  }
+}
+
+// Inverse
+// TODO: remove later (BS comment: TODO: redo this as a proper class)
+.bg {
+  &-inverse,
+  &-faded {
+    color: $graphite-lighter;
+    background-color: $graphite-dark;
+  }
+
+  &-inverse {
+    color: $graphite-lighter;
+  }
+}

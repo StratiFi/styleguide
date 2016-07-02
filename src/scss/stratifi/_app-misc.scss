@@ -1,0 +1,168 @@
+.react {
+  &-autosuggest {
+    &__container {
+      position: relative;
+    }
+
+    &__suggestions {
+      cursor: pointer;
+
+      &-container {
+        position: absolute;
+        top: 100%;
+        border-radius: 0;
+      }
+
+      &--focused {
+        /* TODO: make it scss. derived from: .dropdown-item:focus, .dropdown-item:hover */
+        color: #2b2d2f;
+        text-decoration: none;
+        background-color: $gray-lightest;
+      }
+    }
+  }
+}
+
+/* custom slider control (React component) */
+.slider {
+  height: 0.2em;
+  background-color: $gray-lighter; /* temp temp temp */
+  margin-top: 0.5em; /* 1/2 handle height - 1/2 slider height */
+  margin-bottom: 0.5em; /* 1/2 handle height - 1/2 slider height */
+
+  &-labels {
+    margin-top: 0.5em;
+
+    &-min {
+      float: left;
+      font-size: $font-size-xs,
+    }
+
+    &-max {
+      float: right;
+      font-size: $font-size-xs,
+    }
+  }
+
+  &-label {
+    text-align: center;
+    font-size: $font-size-xs,
+  }
+}
+
+.handle {
+  width: 0.5em;
+  height: 1.2em;
+  margin-top: -0.5em; /* 1/2 handle height - 1/2 slider height */
+  /* margin-left: -0.75em; */
+  background-color: $brand-primary;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+}
+
+/* custom switch control (React component) */
+.ui-switch {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: $input-height * 1.3;
+  height: $input-height / 2;
+  border-radius: 100em;
+  background-color: white;
+  margin: 0;
+  border: 1px solid $input-border-color;
+
+  i {
+    &:before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background-color: $gray-lighter;
+      border: 1px solid $input-border-color;
+      border-radius: 100em;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      bottom: 1px;
+      background-color: #fff;
+      width: $input-height;
+      height: $input-height;
+      margin-top: $input-height / -2;
+      margin-left: $input-height / -2;
+      border-radius: 100em;
+      border: 1px solid $gray-lighter;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+      -webkit-transition: margin-left 0.3s;
+      transition: margin-left 0.3s;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+
+    &:checked {
+      + i {
+        &:after {
+          margin-left: $input-height * 1.3 - $input-height / 2;
+        }
+      }
+    }
+  }
+
+  &-sm {
+    width: $input-height-sm * 1.3;
+    height: $input-height-sm / 2;
+
+    i {
+      &:after {
+        width: $input-height-sm;
+        height: $input-height-sm;
+        margin-top: $input-height-sm / -2;
+        margin-left: $input-height-sm / -2;
+      }
+    }
+
+    input {
+      &:checked {
+        + i {
+          &:after {
+            margin-left: $input-height-sm * 1.5 - $input-height-sm / 2;
+          }
+        }
+      }
+    }
+  }
+
+  &-lg {
+    width: $input-height-lg * 1.3;
+    height: $input-height-lg / 2;
+
+    i {
+      &:after {
+        width: $input-height-lg;
+        height: $input-height-lg;
+        margin-top: $input-height-lg / -2;
+        margin-left: $input-height-lg / -2;
+      }
+    }
+
+    input {
+      &:checked {
+        + i {
+          &:after {
+            margin-left: $input-height-lg * 1.5 - $input-height-lg / 2;
+          }
+        }
+      }
+    }
+  }
+}
