@@ -1,0 +1,117 @@
+.col {
+  &-xs,
+  &-sm,
+  &-md,
+  &-lg,
+  &-xl {
+    &-bordered {
+      border: 1px solid $card-border-color;
+    }
+  }
+
+  &-xs {
+    &-bordered {
+      & + & {
+        border-left: none;
+      }
+    }
+  }
+
+  &-sm,
+  &-md,
+  &-lg,
+  &-xl {
+    &-bordered {
+      @media (max-width: breakpoint-max(xs)) {
+        border-left-width: 0 !important;
+        border-right-width: 0 !important;
+      }
+    }
+  }
+
+  &-sm {
+    &-bordered {
+      & + & {
+        @media (max-width: breakpoint-max(xs)) {
+          border-top: none;
+        }
+
+        @media (min-width: breakpoint-min(sm)) {
+          border-left: none;
+        }
+      }
+    }
+  }
+
+  &-md {
+    &-bordered {
+      @media (max-width: breakpoint-max(sm)) {
+        border-left-width: 0;
+        border-right-width: 0;
+
+        .container & {
+          border-left-width: 1px;
+          border-right-width: 1px;
+        }
+      }
+
+      & + & {
+        @media (max-width: breakpoint-max(sm)) {
+          border-top: none;
+        }
+
+        @media (min-width: breakpoint-min(md)) {
+          border-left: none;
+        }
+      }
+    }
+  }
+
+  &-lg {
+    &-bordered {
+      @media (max-width: breakpoint-max(md)) {
+        border-left-width: 0;
+        border-right-width: 0;
+
+        .container & {
+          border-left-width: 1px;
+          border-right-width: 1px;
+        }
+      }
+
+      & + & {
+        @media (max-width: breakpoint-max(md)) {
+          border-top: none;
+        }
+
+        @media (min-width: breakpoint-min(lg)) {
+          border-left: none;
+        }
+      }
+    }
+  }
+
+  &-xl {
+    &-bordered {
+      @media (max-width: breakpoint-max(lg)) {
+        border-left-width: 0;
+        border-right-width: 0;
+
+        .container & {
+          border-left-width: 1px;
+          border-right-width: 1px;
+        }
+      }
+
+      & + & {
+        @media (max-width: breakpoint-max(lg)) {
+          border-top: none;
+        }
+
+        @media (min-width: breakpoint-min(xl)) {
+          border-left: none;
+        }
+      }
+    }
+  }
+}

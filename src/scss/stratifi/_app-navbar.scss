@@ -1,0 +1,54 @@
+.navbar {
+  padding: 0 26px;
+  min-height: 74px;
+
+  &:after {
+    content: none;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      + .nav-item {
+        margin-left: 0;
+
+        &:not(.dropdown) {
+          margin-left: 52.2px;
+        }
+      }
+    }
+
+    .nav-link {
+      text-transform: uppercase;
+      font-weight: 100;
+      letter-spacing: 1.3px;
+      line-height: 1.77;
+      font-size: $font-size-sm;
+      color: $navbar-dark-color;
+      opacity: 0.6;
+
+      &.active,
+      &.dropdown-toggle {
+        opacity: 1;
+      }
+
+      &.dropdown-toggle {
+
+        text-transform: none;
+      }
+    }
+  }
+
+  .navbar-brand {
+    img {
+      display: inline-block;
+      width: 7rem;
+      margin-right: .5rem;
+    }
+  }
+
+  &-static-top {
+    &.bg-inverse {
+      border-radius: 0;
+    }
+  }
+}

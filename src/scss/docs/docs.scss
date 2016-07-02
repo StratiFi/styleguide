@@ -1,0 +1,72 @@
+@import 'variables';
+@import 'code';
+
+.docs {
+  &-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -1rem;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+
+    @media (min-width: 544px) {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      padding: 1.5rem;
+      border-width: .2rem;
+    }
+
+    > {
+      .bg {
+        &-inverse {
+          + .bg-inverse {
+            margin-left: $bg-utils-margin;
+          }
+
+          &:not(.navbar) {
+            padding: $bg-utils-padding;
+          }
+        }
+      }
+    }
+
+    &[class*='align'] {
+      height: 240px;
+    }
+
+    &[class*='column'] {
+      height: 320px;
+    }
+
+    &.direction {
+      &-row-reverse {
+        .bg-inverse {
+          margin-left: $bg-utils-margin;
+        }
+      }
+
+      &-column {
+        .bg-inverse {
+          margin-left: 0;
+
+          &:not(:last-child) {
+            margin-bottom: $bg-utils-margin;
+            margin-left: 0;
+          }
+        }
+      }
+
+      &-column-reverse {
+        .bg-inverse {
+          margin-left: 0;
+
+          &:not(:last-child) {
+            margin-top: $bg-utils-margin;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

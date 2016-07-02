@@ -1,0 +1,127 @@
+.table {
+  th {
+    font-weight: normal;
+  }
+
+  thead {
+    td,
+    th {
+      border-top: none;
+    }
+
+    th {
+      font-size: $font-size-sm;
+      font-weight: normal;
+    }
+  }
+
+  &-borderless {
+    border: none !important;
+
+    &-top {
+      border-top: none;
+
+      tr {
+        &:first-child {
+          th,
+          td {
+            border-top: none;
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      border-bottom: none;
+
+      tbody {
+        tr {
+          &:last-child {
+            td {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    &-side {
+      border-left: none;
+      border-right: none;
+
+      tr {
+        td,
+        th {
+          &:first-child {
+            border-left: none;
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    tr {
+      &:first-child {
+        th,
+        td {
+          border-top: none;
+        }
+      }
+
+      td,
+      th {
+        &:first-child {
+          border-left: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .tr {
+    &-middle {
+      > {
+        th,
+        td {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .tr,
+  .td {
+    &-clickable {
+      cursor: pointer;
+    }
+
+    &-non-clickable {
+      cursor: inherit;
+    }
+  }
+}
+
+.thead {
+  &-graphite {
+    th {
+      color: #fff;
+      background-color: $graphite-light;
+    }
+  }
+}
