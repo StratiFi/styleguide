@@ -1,4 +1,54 @@
 .text {
+  &-gray-dark {
+    color: $gray-dark !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-gray {
+    color: $gray !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-gray-light {
+    color: $gray-light !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-gray-lighter {
+    color: $gray-lighter !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-gray-lightest {
+    color: $gray-lightest !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
   &-graphite {
     color: $graphite !important;
 
@@ -9,33 +59,133 @@
     }
   }
 
-  &-primary-link {
-    &:hover {
-      color: inherit !important;
+  &-graphite-dark {
+    color: $graphite-dark !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
     }
   }
 
-  &-success-link {
-    &:hover {
-      color: inherit !important;
+  &-graphite-light {
+    color: $graphite-light !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
     }
   }
 
-  &-info-link {
-    &:hover {
-      color: inherit !important;
+  &-graphite-lighter {
+    color: $graphite-lighter !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
     }
   }
 
-  &-warning-link {
-    &:hover {
-      color: inherit !important;
+  &-graphite-lightest {
+    color: $graphite-lightest !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
     }
   }
 
-  &-danger-link {
-    &:hover {
-      color: inherit !important;
+  &-primary {
+    color: $brand-primary !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+
+    &-muted {
+      color: $brand-primary-muted !important;
+
+      &-link {
+        &:hover {
+          color: inherit !important;
+        }
+      }
+    }
+  }
+
+  &-success {
+    color: $brand-success !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+
+    &-muted {
+      color: $brand-success-muted !important;
+
+      &-link {
+        &:hover {
+          color: inherit !important;
+        }
+      }
+    }
+  }
+
+  &-info {
+    color: $brand-info !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+
+    &-muted {
+      color: $brand-info-muted !important;
+
+      &-link {
+        &:hover {
+          color: inherit !important;
+        }
+      }
+    }
+  }
+
+  &-warning {
+    color: $brand-warning !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-danger {
+    color: $brand-danger !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+
+    &-muted {
+      color: $brand-danger-muted !important;
+
+      &-link {
+        &:hover {
+          color: inherit !important;
+        }
+      }
     }
   }
 
@@ -63,37 +213,4 @@
 .text-bold,
 .font-weight-bold {
   font-weight: 500;
-}
-
-h1.text-title,
-h2.text-title,
-h3.text-title,
-h4.text-title,
-h5.text-title,
-h6.text-title {
-  font-weight: bold;
-}
-
-h1.text-title {
-  font-size: $font-size-h3;
-}
-
-h2.text-title {
-  font-size: $font-size-h4;
-}
-
-h3.text-title {
-  font-size: $font-size-h5;
-}
-
-h4.text-title {
-  font-size: $font-size-h6;
-}
-
-h5.text-title {
-  font-size: $font-size-sm;
-}
-
-h6.text-title {
-  font-size: $font-size-xs;
 }

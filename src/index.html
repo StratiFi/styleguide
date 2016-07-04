@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="css/stratifi.css">
     <link rel="stylesheet" href="css/docs.css">
 
-    <script src="../node_modules/highlight.js/lib/highlight.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
@@ -42,6 +40,97 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 docs-content">
+                <h1>Colors</h1>
+                <!--TODO Add code examples-->
+                <div class="docs-example demo-colors flex direction-column">
+                    <h4>Gray colors</h4>
+                    <span class="gray-dark">
+                        <span class="text-gray-dark">Gray dark</span> - <code>#373a3c</code>
+                    </span>
+                    <span class="gray">
+                        <span class="text-gray">Gray</span> - <code>#55595c</code>
+                    </span>
+                    <span class="gray-light">
+                        <span class="text-gray-light">Gray light</span> - <code>#818a91</code>
+                    </span>
+                    <span class="gray-lighter">
+                        <span class="text-gray-lighter">Gray lighter</span> - <code>#eceeef</code>
+                    </span>
+                    <span class="gray-lightest">
+                        <span class="text-gray-lightest">Gray lightest</span> - <code>#f7f7f9</code>
+                    </span>
+
+                    <h4>Custom graphite colors</h4>
+                    <span class="graphite-dark">
+                        <span class="text-graphite-dark">Graphite dark</span> - <code>#394346</code>
+                    </span>
+                    <span class="graphite">
+                        <span class="text-graphite">Graphite</span> - <code>#505e62</code>
+                    </span>
+                    <span class="graphite-light">
+                        <span class="text-graphite-light">Graphite light</span> - <code>#7c8c94</code>
+                    </span>
+                    <span class="graphite-lighter">
+                        <span class="text-graphite-lighter">Graphite lighter</span> - <code>#ebeeef</code>
+                    </span>
+                    <span class="graphite-lightest">
+                        <span class="text-graphite-lightest">Graphite lightest</span> - <code>#f6f8f9</code>
+                    </span>
+
+                    <h4>Brand colors</h4>
+                    <span class="brand-primary">
+                        <span class="text-primary">Brand primary</span> - <code>#09acf8</code>
+                    </span>
+                    <span class="brand-success">
+                        <span class="text-success">Brand success</span> - <code>#48C248</code>
+                    </span>
+                    <span class="brand-info">
+                        <span class="text-info">Brand info</span> - <code>#31e3ff</code>
+                    </span>
+                    <span class="brand-warning">
+                        <span class="text-warning">Brand warning</span> - <code>#f0ad4e</code>
+                    </span>
+                    <span class="brand-danger">
+                        <span class="text-danger">Brand danger</span> - <code>#ff002d</code>
+                    </span>
+
+                    <h4>Custom brand muted colors</h4>
+                    <span class="brand-primary-muted">
+                        <span class="text-primary-muted">Brand primary muted</span> - <code>#c3e9fe</code>
+                    </span>
+                    <span class="brand-success-muted">
+                        <span class="text-success-muted">Brand success muted</span> - <code>#8fddc6</code>
+                    </span>
+                    <span class="brand-info-muted">
+                        <span class="text-info-muted">Brand info muted</span> - <code>#c3ebfd</code>
+                    </span>
+                    <span class="brand-danger-muted">
+                        <span class="text-danger-muted">Brand danger muted</span> - <code>#d69a98</code>
+                    </span>
+                </div>
+
+                <h1>Headings</h1>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="docs-example">
+                            <h1>h1 Heading title 60px</h1>
+                            <h2>h2 Heading title 50px</h2>
+                            <h3>h3 Heading title 42px</h3>
+                            <h4>h4 Heading title 32px</h4>
+                            <h5>h5 Heading title 24px</h5>
+                            <h6>h6 Heading title 18px</h6>
+                        </div>
+                        <div class="highlight">
+                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading title 60px<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Heading title 50px<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Heading title 42px<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Heading title 32px<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 Heading title 24px<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 Heading title 18px<span class="nt">&lt;/h6&gt;</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+
                 <h1>FlexBox</h1>
                 <h3>Justify</h3>
                 <div class="row">
@@ -232,8 +321,105 @@
                     </div>
                 </div>
 
+                <h1>Buttons</h1>
+                <!--TODO Add code examples-->
+                <div class="docs-example">
+                    <p>
+                        <button type="button" class="btn btn-secondary">Secondary button</button>
+                        <button type="button" class="btn btn-primary">Primary button</button>
+                        <button type="button" class="btn btn-success">Success button</button>
+                        <button type="button" class="btn btn-primary btn-black">Black button</button>
+                        <button type="button" class="btn btn-link">Link button</button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn btn-secondary" disabled>Secondary button</button>
+                        <button type="button" class="btn btn-primary" disabled>Primary button</button>
+                        <button type="button" class="btn btn-success" disabled>Success button</button>
+                        <button type="button" class="btn btn-primary btn-black" disabled>Black button</button>
+                        <button type="button" class="btn btn-link" disabled>Link button</button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn btn-secondary btn-lg">Secondary button</button>
+                        <button type="button" class="btn btn-primary btn-lg">Primary button</button>
+                        <button type="button" class="btn btn-success btn-lg">Success button</button>
+                        <button type="button" class="btn btn-primary btn-black btn-lg">Black button</button>
+                        <button type="button" class="btn btn-link btn-lg">Link button</button>
+                    </p>
+                </div>
+
+                <h3>Buttons group</h3>
+                <!--TODO Add code examples-->
+                <div class="docs-example">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Secondary button (preselected)
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Primary button
+                        </label>
+                        <label class="btn btn-success">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Success button
+                        </label>
+                        <label class="btn btn-primary btn-black">
+                            <input type="radio" name="options" id="option4" autocomplete="off"> Black button
+                        </label>
+                        <label class="btn btn-primary btn-link">
+                            <input type="radio" name="options" id="option5" autocomplete="off"> Link button
+                        </label>
+                    </div>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option6" autocomplete="off" checked> Secondary button (preselected)
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option7" autocomplete="off"> Secondary button
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option8" autocomplete="off"> Secondary button
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option9" autocomplete="off"> Secondary button
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option10" autocomplete="off"> Secondary button
+                        </label>
+                    </div>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-secondary btn-lg active">
+                            <input type="radio" name="options" id="option11" autocomplete="off" checked> Secondary button (preselected)
+                        </label>
+                        <label class="btn btn-primary btn-lg">
+                            <input type="radio" name="options" id="option12" autocomplete="off"> Primary button
+                        </label>
+                        <label class="btn btn-success btn-lg">
+                            <input type="radio" name="options" id="option13" autocomplete="off"> Success button
+                        </label>
+                        <label class="btn btn-primary btn-black btn-lg">
+                            <input type="radio" name="options" id="option14" autocomplete="off"> Black button
+                        </label>
+                        <label class="btn btn-primary btn-link btn-lg">
+                            <input type="radio" name="options" id="option15" autocomplete="off"> Link button
+                        </label>
+                    </div>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-secondary btn-lg active">
+                            <input type="radio" name="options" id="option16" autocomplete="off" checked> Secondary button (preselected)
+                        </label>
+                        <label class="btn btn-secondary btn-lg">
+                            <input type="radio" name="options" id="option17" autocomplete="off"> Secondary button
+                        </label>
+                        <label class="btn btn-secondary btn-lg">
+                            <input type="radio" name="options" id="option18" autocomplete="off"> Secondary button
+                        </label>
+                        <label class="btn btn-secondary btn-lg">
+                            <input type="radio" name="options" id="option19" autocomplete="off"> Secondary button
+                        </label>
+                    </div>
+                </div>
+
                 <h1>Dropdowns</h1>
                 <h3>Default Dropdown</h3>
+                <!--TODO Add code examples-->
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="docs-example">
@@ -253,8 +439,8 @@
                     </div>
                 </div>
 
-
                 <h3>Title dropdown</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="dropdown dropdown-title">
                         <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -271,7 +457,9 @@
                         </div>
                     </div>
                 </div>
+
                 <h3>Dropdown in Navbar</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <nav class="navbar navbar-dark flex align-stretch justify-end bg-inverse">
                         <ul class="nav navbar-nav flex align-stretch">
@@ -293,7 +481,9 @@
                         </ul>
                     </nav>
                 </div>
+
                 <h1>Navbar component</h1>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <nav class="navbar navbar-dark flex align-stretch justify-between bg-inverse">
                         <div class="navbar-brand flex align-center">LOGO</div>
@@ -321,7 +511,9 @@
                         </ul>
                     </nav>
                 </div>
+
                 <h3>Signin navbar</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <nav class="navbar navbar-dark flex align-stretch justify-between bg-inverse">
                         <div class="navbar-brand flex align-center">LOGO</div>
@@ -346,6 +538,12 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/tether/dist/js/tether.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="../node_modules/highlight.js/lib/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="https://use.typekit.net/nec3igy.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </body>
 </html>

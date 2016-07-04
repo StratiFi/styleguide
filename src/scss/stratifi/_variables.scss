@@ -2,40 +2,50 @@
 // run "gulp sass" to compile
 // (bootstrap supposed to be installed in ../vendor/bower_components/boostrap first)
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #09acf8 !default; // design v2
-$brand-success:             #48C248 !default; // ...
-$brand-info:                #31e3ff !default; // design v2
-$brand-warning:             #f0ad4e !default; // non-changed
-$brand-danger:              #ff002d !default; // rgb(255, 0, 45)
+// !!!IMPORTANT NOTE!!!
+// ********************
+// Please don't forget to add color variables into colors demo section at the docs page
+// in case if you add new or change existing color variable here.
+// ********************
+// !!!IMPORTANT NOTE!!!
 
-$link-hover-decoration:     none;
-$font-family-sans-serif:    Roboto, sans-serif;
+$enable-transitions:        true;
 
-$headings-font-weight:      400;
-$headings-line-height:      1.5;
+$brand-primary:               #09acf8; // design v2
+$brand-success:               #00cc0c; // ...
+$brand-info:                  #31e3ff; // design v2
+$brand-danger:                #ff002d; // rgb(255, 0, 45)
+
+$link-hover-decoration:       none;
+$font-family-sans-serif:      acumin-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$headings-font-weight:        400;
+$headings-line-height:        1.5;
 //$headings-color:            $graphite-dark;
 
 // Custom
-$graphite-dark:             #394346 !default; // rgb(57, 67, 70) // graphite
-$graphite:                  #505e62 !default; // hex(194, 10, 35) // 45595f
-$graphite-light:            #7c8c94 !default; // design v2
-$graphite-lighter:          #ebeeef !default; // hex(194, 10, 93)
-$graphite-lightest:         #f6f8f9 !default; // rgb(246, 248, 249)
+$graphite-dark:               #394346 !default; // rgb(57, 67, 70) // graphite
+$graphite:                    #505e62 !default; // hex(194, 10, 35) // 45595f
+$graphite-light:              #7c8c94 !default; // design v2
+$graphite-lighter:            #ebeeef !default; // hex(194, 10, 93)
+$graphite-lightest:           #f6f8f9 !default; // rgb(246, 248, 249)
 
-$brand-primary-muted:       #c3e9fe; // rgb(195, 233, 254)
-$brand-success-muted:       #8fddc6; // rgb(143, 221, 198)
-$brand-info-muted:          #c3ebfd; // design v2
-$brand-danger-muted:        #d69a98; // rgb(217, 150, 150)
+$brand-primary-muted:         #c3e9fe; // rgb(195, 233, 254)
+$brand-success-muted:         #8fddc6; // rgb(143, 221, 198)
+$brand-info-muted:            #c3ebfd; // design v2
+$brand-danger-muted:          #d69a98; // rgb(217, 150, 150)
 
-$title-letter-spacing:      0.10rem;
+$title-letter-spacing:        0.10rem;
 
-$btn-padding-x-xxxlg:       3rem !default; // for btn-title
-$btn-padding-y-xxxlg:       1rem !default; // for btn-title
+$btn-padding-x-xxxlg:         3rem !default; // for btn-title
+$btn-padding-y-xxxlg:         1rem !default; // for btn-title
 
-$navbar-dark-color:         white
+$navbar-dark-color:           #fff;
+
+$font-size-h1:                60px;
+$font-size-h2:                50px;
+$font-size-h3:                42px;
+$font-size-h4:                32px;
+$font-size-h5:                24px;
+$font-size-h6:                18px;
