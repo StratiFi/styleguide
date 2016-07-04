@@ -15,15 +15,15 @@ To get completed guidelines for all the elments, just check the BS [documention]
 http://stratifi.github.io/styleguide/dist  
 
 ## Components status
-- [ ] COLORS - *In Progress*
-- [ ] HEADINGS - *In Progress*
-- [ ] ICONS
-- [ ] BUTTONS - *In Progress*
-- [ ] BUTTONS GROUP
+- [x] COLORS
+- [x] HEADINGS
+- [ ] ICONS - *In Progress*
+- [x] BUTTONS
+- [x] BUTTONS GROUP - *In Progress*
 - [x] NAVBAR
-- [ ] TABLES
+- [ ] TABLES - *In Progress*
 - [ ] CARDS
-- [ ] FORMS
+- [ ] FORMS - *In Progress*
 - [ ] MODALS
 - [x] DROPDOWNS
 - [ ] ALERTS
@@ -33,6 +33,7 @@ http://stratifi.github.io/styleguide/dist
 - [ ] FLEXBOX MODEL - *In Progress*
 - [ ] FILTERED TABLES
 - [ ] EDITABLE TABLES
+- [ ] COLLAPSED TABLES
 - [ ] CONFIRMATION MODALS
 - [ ] ACTIONABLE MODALS
 - [ ] ACTIONABLE DROPDOWNS

@@ -1,4 +1,10 @@
+@import "../stratifi/variables";
+
+@import "../../../bower_components/bootstrap/scss/variables";
+@import "../../../bower_components/bootstrap/scss/mixins";
+
 @import 'variables';
+@import 'colors';
 @import 'code';
 
 .docs {
@@ -36,7 +42,9 @@
     }
 
     &[class*='column'] {
-      height: 320px;
+      &:not(.demo-colors) {
+        height: 320px;
+      }
     }
 
     &.direction {

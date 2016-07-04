@@ -1,21 +1,22 @@
 // load variables
-@import "_variables.scss";
+@import "variables";
 
 // load bootstrap and fixing styles
 @import "../../../bower_components/bootstrap/scss/bootstrap";
-@import "_bootstrap.scss"; // bootstrap "overriding" fix
+@import "bootstrap"; // bootstrap "overriding" fix
 
 // load app styles
-@import "_app-grid.scss";
-@import "_app-utilities.scss";
-@import "_app-tables.scss";
-@import "_app-forms.scss";
-@import "_app-nav.scss";
-@import "_app-navbar.scss";
-@import "_app-modal.scss";
-@import "_app-popover.scss";
-@import "_app-carousel.scss";
-@import "_app-misc.scss";
-@import "_app-dropdown.scss";
-@import "_app-flexbox.scss";
-@import "_app.scss";
+@import "app-grid";
+@import "app-utilities";
+@import "app-tables";
+@import "app-forms";
+@import "app-nav";
+@import "app-navbar";
+@import "app-modal";
+@import "app-popover";
+@import "app-carousel";
+@import "app-misc";
+@import "app-btn";
+@import "app-dropdown";
+@import "app-flexbox";
+@import "app";
