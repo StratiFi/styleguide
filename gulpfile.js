@@ -8,52 +8,55 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var config = {
-  'src': './src',
-  'dest': './dist',
-
-  'html': {
-    'src': './src/*.html',
-    'dest': './dist/'
-  },
-
-  'sass': {
-    'dest': './dist/css',
-    'path': './src/scss',
-    'stratifi': {
-      'path': './src/scss/stratifi',
-      'src' : './src/scss/stratifi/stratifi.scss'
+    'src': './src',
+    'dest': './dist',
+    'html': {
+        'src': './src/*.html',
+        'dest': './dist/'
     },
-    'docs': {
-      'path': './src/scss/docs',
-      'src': './src/scss/docs/docs.scss'
-    }
-  },
-  
-  'js': {
-    'sources': [
-        './bower_components/jquery/dist/jquery.min.js',
-        './bower_components/tether/dist/js/tether.min.js',
-        './bower_components/bootstrap/dist/js/bootstrap.min.js',
-        './node_modules/highlight.js/lib/highlight.js'
-    ]
-  },
-  
-  'css': {
-    'sources': {
-        'reqular': [
-            './bower_components/font-awesome/css/font-awesome.min.css',
-            './node_modules/highlight.js/styles/default.css',
-            './dist/css/stratifi.css',
-            './dist/css/docs.css'
-        ],
-        'min': [
-            './bower_components/font-awesome/css/font-awesome.min.css',
-            './node_modules/highlight.js/styles/default.css',
-            './dist/css/stratifi.min.css',
-            './dist/css/docs.min.css'
+    'sass': {
+        'dest': './dist/css',
+        'path': './src/scss',
+        'stratifi': {
+            'path': './src/scss/stratifi',
+            'src': './src/scss/stratifi/stratifi.scss'
+        },
+        'docs': {
+            'path': './src/scss/docs',
+            'src': './src/scss/docs/docs.scss'
+        }
+    },
+    'js': {
+        'src': [
+            './bower_components/jquery/dist/jquery.min.js',
+            './bower_components/tether/dist/js/tether.min.js',
+            './bower_components/bootstrap/dist/js/bootstrap.min.js',
+            './node_modules/highlight.js/lib/highlight.js'
+        ]
+    },
+    'css': {
+        'src': {
+            'reqular': [
+                './bower_components/font-awesome/css/font-awesome.min.css',
+                './node_modules/highlight.js/styles/default.css',
+                './dist/css/stratifi.css',
+                './dist/css/docs.css'
+            ],
+            'min': [
+                './bower_components/font-awesome/css/font-awesome.min.css',
+                './node_modules/highlight.js/styles/default.css',
+                './dist/css/stratifi.min.css',
+                './dist/css/docs.min.css'
+            ]
+        }
+    },
+    'fonts': {
+        'format': '{ttf,woff,woff2,eot,svg,otf}',
+        'dest': './dist/',
+        'src': [
+            './bower_components/font-awesome/**/*.'
         ]
     }
-  }
 };
 
 gulp.task('sass', function () {
@@ -85,8 +88,13 @@ gulp.task('sassMin', function () {
 });
 
 gulp.task('html', function () {
-  return gulp.src([config.html.src])
-    .pipe(gulp.dest(config.html.dest));
+    return gulp.src([config.html.src])
+        .pipe(gulp.dest(config.html.dest));
+});
+
+gulp.task('copy:fonts', function () {
+  return gulp.src(config.fonts.src + config.fonts.format)
+    .pipe(gulp.dest(config.fonts.dest));
 });
 
 gulp.task('inject:dev', function () {
@@ -94,7 +102,7 @@ gulp.task('inject:dev', function () {
 });
 
 gulp.task('js:min', function () {
-    return gulp.src(config.js.sources)
+    return gulp.src(config.js.src)
         .pipe(concat('app.min.js'))
         .pipe(uglify().on('error', function(e){
             console.log(e);
@@ -103,12 +111,12 @@ gulp.task('js:min', function () {
 });
 
 gulp.task('css:min', ['sassMin'], function () {
-    return gulp.src(config.css.sources.min)
+    return gulp.src(config.css.src.min)
         .pipe(concat('app.min.css'))
         .pipe(gulp.dest(config.dest + '/css'));
 });
 
-gulp.task('inject:prod', ['css:min', 'js:min', 'html'], function () {
+gulp.task('inject:prod', ['css:min', 'js:min', 'html', 'copy:fonts'], function () {
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
