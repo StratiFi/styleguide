@@ -60,31 +60,31 @@ var config = {
 };
 
 gulp.task('sass', function () {
-  return gulp.src([
-        config.sass.stratifi.src,
-        config.sass.docs.src
-      ])
-      .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer({
-        browsers: '> 5%'
-      }))
-      .pipe(gulp.dest(config.sass.dest));
+    return gulp.src([
+            config.sass.stratifi.src,
+            config.sass.docs.src
+        ])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: '> 5%'
+        }))
+        .pipe(gulp.dest(config.sass.dest));
 });
 
-gulp.task('sassMin', function () {
-  return gulp.src([
-      config.sass.stratifi.src,
-      config.sass.docs.src
-    ])
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: '> 5%'
-    }))
-    .pipe(cssnano())
-    .pipe(rename(function (path) {
-      path.basename += '.min';
-    }))
-    .pipe(gulp.dest(config.sass.dest));
+gulp.task('sass:min', function () {
+    return gulp.src([
+            config.sass.stratifi.src,
+            config.sass.docs.src
+        ])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: '> 5%'
+        }))
+        .pipe(cssnano())
+        .pipe(rename(function (path) {
+            path.basename += '.min';
+        }))
+        .pipe(gulp.dest(config.sass.dest));
 });
 
 gulp.task('html', function () {
@@ -93,24 +93,20 @@ gulp.task('html', function () {
 });
 
 gulp.task('copy:fonts', function () {
-  return gulp.src(config.fonts.src + config.fonts.format)
-    .pipe(gulp.dest(config.fonts.dest));
-});
-
-gulp.task('inject:dev', function () {
-  // Gerald, do something
+    return gulp.src(config.fonts.src + config.fonts.format)
+        .pipe(gulp.dest(config.fonts.dest));
 });
 
 gulp.task('js:min', function () {
     return gulp.src(config.js.src)
         .pipe(concat('app.min.js'))
-        .pipe(uglify().on('error', function(e){
+        .pipe(uglify().on('error', function (e) {
             console.log(e);
         }))
         .pipe(gulp.dest(config.dest + '/js'));
 });
 
-gulp.task('css:min', ['sassMin'], function () {
+gulp.task('css:min', ['sass:min'], function () {
     return gulp.src(config.css.src.min)
         .pipe(concat('app.min.css'))
         .pipe(gulp.dest(config.dest + '/css'));
@@ -122,32 +118,41 @@ gulp.task('inject:prod', ['css:min', 'js:min', 'html', 'copy:fonts'], function (
             gulp.src([
                 './dist/js/app.min.js',
                 './dist/css/app.min.css'
-            ], { read:false })
-            , { relative: true }
+            ], {read: false})
+            , {relative: true}
         ))
-        .pipe(gulp.dest(config.html.dest))
-    ;
+        .pipe(gulp.dest(config.html.dest));
 });
 
-gulp.task('install', function () {
-  // Gerald, do something
+gulp.task('inject:dev', ['sass', 'html'], function () {
+    return gulp.src(config.html.src)
+        .pipe(inject(
+            gulp.src([
+                './bower_components/font-awesome/css/font-awesome.min.css',
+                './node_modules/highlight.js/styles/default.css',
+                './dist/css/stratifi.css',
+                './dist/css/docs.css',
+
+                './bower_components/jquery/dist/jquery.min.js',
+                './bower_components/tether/dist/js/tether.min.js',
+                './bower_components/bootstrap/dist/js/bootstrap.min.js',
+                './node_modules/highlight.js/lib/highlight.js'
+
+            ], {read: false})
+            , {relative: true}
+        ))
+        .pipe(gulp.dest(config.html.dest));
 });
 
-gulp.task('build:dev', ['sass', 'html'], function () {
-  // voila
+gulp.task('install', function () {});
+
+gulp.task('build:dev', ['inject:dev'], function () {});
+
+gulp.task('dev:watch', function () {
+    gulp.watch([
+        config.sass.path + '/**/*.scss',
+        config.html.src
+    ], ['build:dev']);
 });
 
-gulp.task('watch', function () {
-  gulp.watch([
-    config.sass.path + '/**/*.scss',
-    config.html.src
-  ], ['build:dev']);
-});
-
-gulp.task('default', ['build'], function () {
-  // voila
-});
-
-gulp.task('build:prod', ['inject:prod'], function () {
-
-});
+gulp.task('build:prod', ['inject:prod'], function () {});

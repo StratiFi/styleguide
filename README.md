@@ -49,7 +49,15 @@ npm install
 
 
 ## Building
-As simple as that:
+For production:
 ```
 npm run build
+```
+For development:
+```
+npm run build:dev
+```
+For watching changes:
+```
+npm run dev:watch
 ```
