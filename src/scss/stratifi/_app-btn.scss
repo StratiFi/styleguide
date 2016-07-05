@@ -1,7 +1,6 @@
 .btn {
   font-weight: 300;
   letter-spacing: 1.6px;
-  @include border-radius(3px);
   @include transition(all .2s);
 
 
@@ -12,6 +11,10 @@
 
   .btn-group & {
     font-size: 14px;
+
+    &-secondary {
+      border-color: $graphite-light;
+    }
   }
 
   &.btn-lg {
@@ -20,8 +23,8 @@
   }
 
   &-secondary {
-    color: $graphite-dark;
     border-color: $graphite-dark;
+    color: $graphite-dark;
 
     &:active,
     &.active,

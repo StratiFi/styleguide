@@ -19,7 +19,7 @@ http://stratifi.github.io/styleguide/dist
 - [x] HEADINGS
 - [ ] ICONS - *In Progress*
 - [x] BUTTONS
-- [x] BUTTONS GROUP - *In Progress*
+- [x] BUTTONS GROUP
 - [x] NAVBAR
 - [ ] TABLES - *In Progress*
 - [ ] CARDS

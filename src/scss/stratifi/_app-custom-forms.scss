@@ -1,0 +1,46 @@
+.c {
+  &-select {
+    min-width: 250px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $gray-darkest;
+    @include border-radius($border-radius);
+
+    &:focus {
+      border-color: $brand-primary;
+    }
+
+    .table & {
+      min-width: 180px;
+    }
+  }
+
+  &-indicator {
+    background-color: white;
+    border: solid 1px $graphite-grayish-blue;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &-input {
+    > input {
+      &:checked {
+        ~ .c-indicator {
+          background-color: $brand-primary;
+          border: none;
+          box-shadow: none;
+        }
+      }
+      &:focus {
+        ~ .c-indicator {
+          box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary;
+        }
+      }
+    }
+  }
+
+  &-checkbox {
+    .c-indicator {
+      @include border-radius(1px);
+    }
+  }
+}

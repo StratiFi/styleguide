@@ -79,6 +79,16 @@
     }
   }
 
+  &-graphite-grayish-blue {
+    color: $graphite-grayish-blue !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
   &-graphite-lighter {
     color: $graphite-lighter !important;
 

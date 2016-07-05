@@ -19,8 +19,17 @@
     }
 
     &.btn {
-      min-width: 180px;
+      min-width: 250px;
       line-height: 1.15;
+
+      .form-group &,
+      .table & {
+        min-width: 180px;
+      }
+
+      &.btn-secondary {
+        border-color: $graphite-grayish-blue;
+      }
     }
   }
 

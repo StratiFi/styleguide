@@ -43,23 +43,6 @@
                 <h1>Colors</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example demo-colors flex direction-column">
-                    <h4>Gray colors</h4>
-                    <span class="gray-dark">
-                        <span class="text-gray-dark">Gray dark</span> - <code>#373a3c</code>
-                    </span>
-                    <span class="gray">
-                        <span class="text-gray">Gray</span> - <code>#55595c</code>
-                    </span>
-                    <span class="gray-light">
-                        <span class="text-gray-light">Gray light</span> - <code>#818a91</code>
-                    </span>
-                    <span class="gray-lighter">
-                        <span class="text-gray-lighter">Gray lighter</span> - <code>#eceeef</code>
-                    </span>
-                    <span class="gray-lightest">
-                        <span class="text-gray-lightest">Gray lightest</span> - <code>#f7f7f9</code>
-                    </span>
-
                     <h4>Custom graphite colors</h4>
                     <span class="graphite-dark">
                         <span class="text-graphite-dark">Graphite dark</span> - <code>#394346</code>
@@ -69,6 +52,9 @@
                     </span>
                     <span class="graphite-light">
                         <span class="text-graphite-light">Graphite light</span> - <code>#7c8c94</code>
+                    </span>
+                    <span class="graphite-grayish-blue">
+                        <span class="text-graphite-grayish-blue">Graphite grayish blue</span> - <code>#d3d6db</code>
                     </span>
                     <span class="graphite-lighter">
                         <span class="text-graphite-lighter">Graphite lighter</span> - <code>#ebeeef</code>
@@ -530,6 +516,91 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
+
+                <h1>Forms</h1>
+                <div class="docs-example">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput1">Label</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Placeholder">
+                    </div>
+
+                    <div class="form-group search-flat">
+                        <label for="search">Flat field example</label>
+                        <div>
+                            <input type="search" class="form-control" id="search" placeholder="Search example">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <!--TODO Change arrow-->
+                            <select class="c-select">
+                                <option value="1">First option</option>
+                                <option value="2">Second option</option>
+                                <option value="3">Third option</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect2">Select</label>
+                        <select name="" id="exampleSelect2" class="form-control">
+                            <option value="" selected disabled>Choose option</option>
+                            <option value="1">First option</option>
+                            <option value="2">Second option</option>
+                            <option value="3">Third option</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <p>Inline</p>
+                        <p>
+                            <label class="c-input c-checkbox">
+                                <input type="checkbox">
+                                <span class="c-indicator"></span>
+                                Check this custom checkbox
+                            </label>
+                            <label class="c-input c-checkbox">
+                                <input type="checkbox" checked>
+                                <span class="c-indicator"></span>
+                                Check this custom checkbox
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="c-inputs-stacked">
+                        <p>Stacked</p>
+                        <label class="c-input c-checkbox">
+                            <input type="checkbox">
+                            <span class="c-indicator"></span>
+                            Check this custom checkbox
+                        </label>
+                        <label class="c-input c-checkbox">
+                            <input type="checkbox" checked>
+                            <span class="c-indicator"></span>
+                            Check this custom checkbox
+                        </label>
+                    </div>
+
+                    <div class="c-inputs-stacked">
+                        <label class="c-input c-radio">
+                            <input id="radioStacked1" name="radio-stacked" type="radio">
+                            <span class="c-indicator"></span>
+                            Toggle this custom radio
+                        </label>
+                        <label class="c-input c-radio">
+                            <input id="radioStacked2" name="radio-stacked" type="radio">
+                            <span class="c-indicator"></span>
+                            Or toggle this other custom radio
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Example placeholder"></textarea>
+                    </div>
                 </div>
             </div>
         </div>

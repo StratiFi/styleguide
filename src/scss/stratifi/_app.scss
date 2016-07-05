@@ -106,7 +106,7 @@ td {
 
   &-icon {
     padding: 0.6em 0.7em;
-    border-radius: 100em;
+    @include border-radius(100em);
   }
 
   &-inverse,
@@ -124,7 +124,7 @@ td {
 .btn {
   &-icon {
     padding: 0.45em 0.7em;
-    border-radius: 100em;
+    @include border-radius(100em);
   }
 
   &-title {

@@ -24,10 +24,13 @@ $headings-font-weight:        400;
 $headings-line-height:        1.5;
 //$headings-color:            $graphite-dark;
 
-// Custom
+// Custom colors
+$gray-darkest:              #4a4a4a;
+
 $graphite-dark:               #394346 !default; // rgb(57, 67, 70) // graphite
 $graphite:                    #505e62 !default; // hex(194, 10, 35) // 45595f
 $graphite-light:              #7c8c94 !default; // design v2
+$graphite-grayish-blue:       #d3d6db;
 $graphite-lighter:            #ebeeef !default; // hex(194, 10, 93)
 $graphite-lightest:           #f6f8f9 !default; // rgb(246, 248, 249)
 
@@ -49,3 +52,10 @@ $font-size-h3:                42px;
 $font-size-h4:                32px;
 $font-size-h5:                24px;
 $font-size-h6:                18px;
+
+$border-radius:               3px;
+$border-radius-lg:            $border-radius;
+$border-radius-sm:            $border-radius;
+
+$input-border-color:          $graphite-grayish-blue;
+$input-box-shadow:            inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);

@@ -1,5 +1,45 @@
-.form-group {
-  label {
-    font-size: $font-size-sm;
+.form {
+  &-control {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.15;
+    border-color: $graphite-grayish-blue;
+    box-shadow: $input-box-shadow;
+
+    &:focus {
+      border-color: $brand-primary;
+    }
+
+    &::placeholder {
+      color: $gray-darkest;
+      opacity: .6;
+    }
+  }
+
+  &-group {
+    label {
+      letter-spacing: 1.4px;
+      font-size: $font-size-sm;
+      color: $gray-darkest;
+    }
+
+    &.search-flat {
+      .form-control {
+        padding-left: 35px;
+        border: none;
+        box-shadow: none;
+      }
+
+      > div {
+        position: relative;
+      }
+
+      .fa {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        color: rgba(0, 0, 0, .3);
+      }
+    }
   }
 }
