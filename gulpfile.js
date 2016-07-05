@@ -112,10 +112,10 @@ gulp.task('inject:prod', ['css:min', 'js:min', 'html'], function () {
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
-                './dist/js/app.min.js',
-                './dist/css/app.min.css'
+                'dist/js/app.min.js',
+                'dist/css/app.min.css'
             ])
-            , { addRootSlash: false }
+            // , { addRootSlash: false }
         ))
         .pipe(gulp.dest(config.html.dest))
     ;
