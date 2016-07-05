@@ -53,9 +53,7 @@ var config = {
     'fonts': {
         'format': '{ttf,woff,woff2,eot,svg,otf}',
         'dest': './dist/',
-        'src': [
-            './bower_components/font-awesome/**/*.'
-        ]
+        'src': [ './bower_components/font-awesome/**/*.' ]
     }
 };
 
@@ -116,6 +114,7 @@ gulp.task('inject:prod', ['css:min', 'js:min', 'html', 'copy:fonts'], function (
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
+                // TODO Refactor this
                 './dist/js/app.min.js',
                 './dist/css/app.min.css'
             ], {read: false})
@@ -128,6 +127,7 @@ gulp.task('inject:dev', ['sass', 'html'], function () {
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
+                // TODO Refactor this
                 './bower_components/font-awesome/css/font-awesome.min.css',
                 './node_modules/highlight.js/styles/default.css',
                 './dist/css/stratifi.css',
@@ -137,7 +137,6 @@ gulp.task('inject:dev', ['sass', 'html'], function () {
                 './bower_components/tether/dist/js/tether.min.js',
                 './bower_components/bootstrap/dist/js/bootstrap.min.js',
                 './node_modules/highlight.js/lib/highlight.js'
-
             ], {read: false})
             , {relative: true}
         ))
