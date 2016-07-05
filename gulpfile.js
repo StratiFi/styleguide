@@ -8,24 +8,24 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var config = {
-  'src': 'src',
-  'dest': 'dist',
+  'src': './src',
+  'dest': './dist',
 
   'html': {
-    'src': 'src/*.html',
-    'dest': 'dist/'
+    'src': './src/*.html',
+    'dest': './dist/'
   },
 
   'sass': {
-    'dest': 'dist/css',
-    'path': 'src/scss',
+    'dest': './dist/css',
+    'path': './src/scss',
     'stratifi': {
-      'path': 'src/scss/stratifi',
-      'src' : 'src/scss/stratifi/stratifi.scss'
+      'path': './src/scss/stratifi',
+      'src' : './src/scss/stratifi/stratifi.scss'
     },
     'docs': {
-      'path': 'src/scss/docs',
-      'src': 'src/scss/docs/docs.scss'
+      'path': './src/scss/docs',
+      'src': './src/scss/docs/docs.scss'
     }
   },
   
@@ -112,10 +112,10 @@ gulp.task('inject:prod', ['css:min', 'js:min', 'html'], function () {
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
-                'dist/js/app.min.js',
-                'dist/css/app.min.css'
-            ])
-            // , { addRootSlash: false }
+                './dist/js/app.min.js',
+                './dist/css/app.min.css'
+            ], { read:false })
+            , { relative: true }
         ))
         .pipe(gulp.dest(config.html.dest))
     ;
