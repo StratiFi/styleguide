@@ -10,7 +10,7 @@
 // ********************
 // !!!IMPORTANT NOTE!!!
 
-$enable-transitions:        true;
+$enable-transitions:          true;
 
 $brand-primary:               #09acf8; // design v2
 $brand-success:               #00cc0c; // ...
@@ -19,15 +19,15 @@ $brand-danger:                #ff002d; // rgb(255, 0, 45)
 
 $link-hover-decoration:       none;
 $font-family-sans-serif:      acumin-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 $headings-font-weight:        400;
 $headings-line-height:        1.5;
 //$headings-color:            $graphite-dark;
 
 // Custom colors
-$gray-darkest:              #4a4a4a;
+$gray-darkest:                #4a4a4a;
 
 $graphite-dark:               #394346 !default; // rgb(57, 67, 70) // graphite
+$graphite-grayish-dark:       #45595f;
 $graphite:                    #505e62 !default; // hex(194, 10, 35) // 45595f
 $graphite-light:              #7c8c94 !default; // design v2
 $graphite-grayish-blue:       #d3d6db;
@@ -39,23 +39,32 @@ $brand-success-muted:         #8fddc6; // rgb(143, 221, 198)
 $brand-info-muted:            #c3ebfd; // design v2
 $brand-danger-muted:          #d69a98; // rgb(217, 150, 150)
 
-$title-letter-spacing:        0.10rem;
+// Titles
+$title-letter-spacing:        0.1rem;
+
+$text-title-size-h1:                3.125rem;
+$text-title-size-h2:                2.625rem;
+$text-title-size-h3:                2rem;
+$text-title-size-h5:                1.125rem;
+
+// Buttons
+$btn-font-weight:             300;
 
 $btn-padding-x-xxxlg:         3rem !default; // for btn-title
 $btn-padding-y-xxxlg:         1rem !default; // for btn-title
 
-$navbar-dark-color:           #fff;
-
-$font-size-h1:                60px;
-$font-size-h2:                50px;
-$font-size-h3:                42px;
-$font-size-h4:                32px;
-$font-size-h5:                24px;
-$font-size-h6:                18px;
-
+// Base border radius
 $border-radius:               3px;
 $border-radius-lg:            $border-radius;
 $border-radius-sm:            $border-radius;
 
+// Inputs
 $input-border-color:          $graphite-grayish-blue;
 $input-box-shadow:            inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+
+// Navbar
+$navbar-dark-color:           #fff;
+
+// Tables
+$table-cell-padding:          1.5rem;
+$table-brand-success:         #6fd760;

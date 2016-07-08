@@ -345,8 +345,8 @@ table {
   background-color: transparent; }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   color: #818a91;
   text-align: left;
   caption-side: bottom; }
@@ -406,40 +406,40 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1 {
-  font-size: 60px; }
+  font-size: 2.5rem; }
 
 h2 {
-  font-size: 50px; }
+  font-size: 2rem; }
 
 h3 {
-  font-size: 42px; }
+  font-size: 1.75rem; }
 
 h4 {
-  font-size: 32px; }
+  font-size: 1.5rem; }
 
 h5 {
-  font-size: 24px; }
+  font-size: 1.25rem; }
 
 h6 {
-  font-size: 18px; }
+  font-size: 1rem; }
 
 .h1 {
-  font-size: 60px; }
+  font-size: 2.5rem; }
 
 .h2 {
-  font-size: 50px; }
+  font-size: 2rem; }
 
 .h3 {
-  font-size: 42px; }
+  font-size: 1.75rem; }
 
 .h4 {
-  font-size: 32px; }
+  font-size: 1.5rem; }
 
 .h5 {
-  font-size: 24px; }
+  font-size: 1.25rem; }
 
 .h6 {
-  font-size: 18px; }
+  font-size: 1rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -1238,7 +1238,7 @@ pre {
   margin-bottom: 1rem; }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 1.5rem;
     line-height: 1.5;
     vertical-align: top;
     border-top: 1px solid #eceeef; }
@@ -1665,7 +1665,7 @@ input[type="checkbox"].disabled {
 
 .btn {
   display: inline-block;
-  font-weight: normal;
+  font-weight: 300;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -4609,14 +4609,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   .hidden-print {
     display: none !important; } }
 
-.c-select {
-  padding-top: 0.275rem;
-  padding-bottom: 0.275rem; }
-
-.btn-group .nowrap {
-  display: -webkit-box;
-  display: flex; }
-
 .carousel-control {
   color: inherit;
   text-shadow: none;
@@ -4803,7 +4795,6 @@ a.bg-danger:focus, a.bg-danger:hover {
       color: inherit !important; }
 
 .text-title {
-  text-transform: uppercase;
   letter-spacing: 0.1rem; }
 
 .text-thin,
@@ -4822,6 +4813,59 @@ a.bg-danger:focus, a.bg-danger:hover {
 .font-weight-bold {
   font-weight: 500; }
 
+h1.text-title,
+h2.text-title,
+h3.text-title,
+h4.text-title,
+h5.text-title,
+h6.text-title {
+  font-weight: bold; }
+
+h1.text-title {
+  font-size: 3.125rem; }
+
+h2.text-title {
+  font-size: 2.625rem; }
+
+h3.text-title {
+  font-size: 2rem; }
+
+h4.text-title {
+  font-size: 1.5rem; }
+
+h5.text-title {
+  font-size: 1.125rem; }
+
+h6.text-title {
+  font-size: 1rem; }
+
+.table th,
+.table td {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem; }
+
+.table td {
+  color: #4a4a4a; }
+  .table td.image {
+    padding: .65rem; }
+    .table td.image img {
+      margin-right: .6rem; }
+  .table td.select {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .table td.actionable {
+    position: relative; }
+    .table td.actionable a {
+      position: absolute;
+      top: 50%;
+      right: 1.2rem;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+
+.table.two-cells th,
+.table.two-cells td {
+  width: 50%; }
+
 .table th {
   font-weight: normal; }
 
@@ -4831,7 +4875,11 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .table thead th {
   font-size: 0.875rem;
-  font-weight: normal; }
+  font-weight: 600;
+  letter-spacing: 1.6px; }
+
+.table .text-success {
+  color: #6fd760 !important; }
 
 .table-borderless {
   border: none !important; }
@@ -4877,13 +4925,14 @@ a.bg-danger:focus, a.bg-danger:hover {
 .table .td-non-clickable {
   cursor: inherit; }
 
+.table label {
+  margin-bottom: 0; }
+
 .thead-graphite th {
   color: #fff;
   background-color: #7c8c94; }
 
 .form-control {
-  font-size: 16px;
-  font-weight: 300;
   line-height: 1.15;
   border-color: #d3d6db;
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15); }
@@ -4904,23 +4953,31 @@ a.bg-danger:focus, a.bg-danger:hover {
   font-size: 0.875rem;
   color: #4a4a4a; }
 
+.form-group.search .form-control {
+  padding-left: 2.1875rem; }
+
+.form-group.search > div {
+  position: relative; }
+
+.form-group.search .fa {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  color: rgba(0, 0, 0, 0.3); }
+
 .form-group.search-flat .form-control {
-  padding-left: 35px;
   border: none;
   box-shadow: none; }
 
-.form-group.search-flat > div {
-  position: relative; }
-
 .form-group.search-flat .fa {
-  position: absolute;
   top: 5px;
-  left: 0;
-  color: rgba(0, 0, 0, 0.3); }
+  left: 0; }
 
 .c-select {
   min-width: 250px;
-  font-size: 16px;
+  padding-top: 0.275rem;
+  padding-bottom: 0.275rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: #4a4a4a;
   border-radius: 3px; }
@@ -4931,7 +4988,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .c-indicator {
   background-color: white;
-  border: solid 1px #d3d6db;
+  border: 1px solid #d3d6db;
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15); }
 
 .c-input > input:checked ~ .c-indicator {
@@ -5181,18 +5238,28 @@ a.bg-danger:focus, a.bg-danger:hover {
       margin-left: 3.16667rem; }
 
 .btn {
+  letter-spacing: .1rem;
   font-weight: 300;
-  letter-spacing: 1.6px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
+  .btn-icon {
+    padding: 0.45em 0.7em;
+    border-radius: 100em; }
+  .btn-title {
+    padding: 1rem 3rem; }
   .btn.disabled, .btn:disabled {
     opacity: .6; }
+  .btn-group .nowrap {
+    display: -webkit-box;
+    display: flex; }
   .btn-group .btn {
-    font-size: 14px; }
+    font-size: 0.875rem; }
     .btn-group .btn-secondary {
       border-color: #7c8c94; }
+  .btn-fixed-width {
+    min-width: 204px; }
   .btn.btn-lg, .btn-group-lg > .btn {
-    font-size: 18px;
+    font-size: 1.25rem;
     line-height: 1.7; }
   .btn-secondary {
     border-color: #394346;
@@ -5251,8 +5318,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   opacity: .6;
   color: #394346;
   letter-spacing: 1.3px;
-  text-transform: uppercase;
-  font-weight: 400; }
+  text-transform: uppercase; }
   .dropdown.dropdown-two-line .dropdown-item:hover, .dropdown.dropdown-two-line .dropdown-item:focus, .dropdown.dropdown-two-line .dropdown-item:active, .dropdown.dropdown-two-line .dropdown-item.active {
     opacity: 1;
     background-color: transparent;
@@ -5430,16 +5496,6 @@ td {
 
 .bg-inverse .btn-secondary, .bg-primary .btn-secondary, .bg-success .btn-secondary, .bg-info .btn-secondary, .bg-warning .btn-secondary, .bg-danger .btn-secondary {
   border: none; }
-
-.btn-icon {
-  padding: 0.45em 0.7em;
-  border-radius: 100em; }
-
-.btn-title {
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  font-weight: 300;
-  padding: 1rem 3rem; }
 
 .hr-dash {
   display: inline-block;

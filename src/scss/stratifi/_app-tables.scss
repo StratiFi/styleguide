@@ -1,4 +1,45 @@
 .table {
+  th,
+  td {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  td {
+    color: $gray-darkest;
+
+    &.image {
+      padding: .65rem;
+
+      img {
+        margin-right: .6rem;
+      }
+    }
+
+    &.select {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &.actionable {
+      position: relative;
+
+      a {
+        position: absolute;
+        top: 50%;
+        right: 1.2rem;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &.two-cells {
+    th,
+    td {
+      width: 50%;
+    }
+  }
+
   th {
     font-weight: normal;
   }
@@ -11,8 +52,13 @@
 
     th {
       font-size: $font-size-sm;
-      font-weight: normal;
+      font-weight: 600;
+      letter-spacing: 1.6px;
     }
+  }
+
+  .text-success {
+    color: $table-brand-success !important;
   }
 
   &-borderless {
@@ -114,6 +160,10 @@
     &-non-clickable {
       cursor: inherit;
     }
+  }
+
+  label {
+    margin-bottom: 0;
   }
 }
 
