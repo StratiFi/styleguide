@@ -10,7 +10,7 @@
       &-container {
         position: absolute;
         top: 100%;
-        border-radius: 0;
+        @include border-radius(0);
       }
 
       &--focused {
@@ -56,7 +56,7 @@
   margin-top: -0.5em; /* 1/2 handle height - 1/2 slider height */
   /* margin-left: -0.75em; */
   background-color: $brand-primary;
-  border-radius: 0.2em;
+  @include border-radius(0.2em);
   box-sizing: border-box;
 }
 
@@ -67,7 +67,7 @@
   display: inline-block;
   width: $input-height * 1.3;
   height: $input-height / 2;
-  border-radius: 100em;
+  @include border-radius(100em);
   background-color: white;
   margin: 0;
   border: 1px solid $input-border-color;
@@ -82,7 +82,7 @@
       right: -1px;
       background-color: $gray-lighter;
       border: 1px solid $input-border-color;
-      border-radius: 100em;
+      @include border-radius(100em);
       -webkit-transition: all 0.2s;
       transition: all 0.2s;
     }
@@ -97,7 +97,7 @@
       height: $input-height;
       margin-top: $input-height / -2;
       margin-left: $input-height / -2;
-      border-radius: 100em;
+      @include border-radius(100em);
       border: 1px solid $gray-lighter;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
       -webkit-transition: margin-left 0.3s;

@@ -19,8 +19,17 @@
     }
 
     &.btn {
-      min-width: 180px;
+      min-width: 250px;
       line-height: 1.15;
+
+      .form-group &,
+      .table & {
+        min-width: 180px;
+      }
+
+      &.btn-secondary {
+        border-color: $graphite-grayish-blue;
+      }
     }
   }
 
@@ -65,7 +74,6 @@
         color: $graphite-dark;
         letter-spacing: 1.3px;
         text-transform: uppercase;
-        font-weight: 400;
 
         &:hover,
         &:focus,
@@ -135,7 +143,7 @@
   }
 
   &-item {
-    color: #45595f;
+    color: $graphite-grayish-dark;
     font-weight: 300;
     line-height: 2.8em;
 

@@ -106,7 +106,7 @@ td {
 
   &-icon {
     padding: 0.6em 0.7em;
-    border-radius: 100em;
+    @include border-radius(100em);
   }
 
   &-inverse,
@@ -118,20 +118,6 @@ td {
     .btn-secondary {
       border: none;
     }
-  }
-}
-
-.btn {
-  &-icon {
-    padding: 0.45em 0.7em;
-    border-radius: 100em;
-  }
-
-  &-title {
-    text-transform: uppercase;
-    letter-spacing: $title-letter-spacing * 1.5;
-    font-weight: 300;
-    padding: $btn-padding-y-xxxlg $btn-padding-x-xxxlg;
   }
 }
 

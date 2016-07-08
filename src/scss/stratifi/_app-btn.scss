@@ -1,27 +1,48 @@
 .btn {
-  font-weight: 300;
-  letter-spacing: 1.6px;
-  @include border-radius(3px);
+  letter-spacing: .1rem;
+  font-weight: $btn-font-weight;
   @include transition(all .2s);
 
+  &-icon {
+    padding: 0.45em 0.7em;
+    @include border-radius(100em);
+  }
+
+  &-title {
+    padding: $btn-padding-y-xxxlg $btn-padding-x-xxxlg;
+  }
 
   &.disabled,
   &:disabled {
     opacity: .6;
   }
 
+  &-group {
+    .nowrap {
+      display: flex;
+    }
+  }
+
   .btn-group & {
-    font-size: 14px;
+    font-size: $font-size-sm;
+
+    &-secondary {
+      border-color: $graphite-light;
+    }
+  }
+
+  &-fixed-width {
+    min-width: 204px;
   }
 
   &.btn-lg {
-    font-size: 18px;
+    font-size: $font-size-h5;
     line-height: 1.7;
   }
 
   &-secondary {
-    color: $graphite-dark;
     border-color: $graphite-dark;
+    color: $graphite-dark;
 
     &:active,
     &.active,
