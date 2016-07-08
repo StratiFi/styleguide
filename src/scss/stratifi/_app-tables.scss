@@ -1,4 +1,12 @@
 .table {
+  &-bordered {
+    border: none;
+  }
+
+  tr {
+    position: relative;
+  }
+
   th,
   td {
     padding-top: 1.2rem;
@@ -21,6 +29,15 @@
       padding-bottom: 1rem;
     }
 
+    &.checkbox-cell {
+      padding-right: 0;
+      padding-left: 1.3rem;
+
+      .c-input {
+        padding-left: 1rem;
+      }
+    }
+
     &.actionable {
       position: relative;
 
@@ -31,20 +48,53 @@
         transform: translateY(-50%);
       }
     }
-  }
 
-  &.two-cells {
-    th,
-    td {
-      width: 50%;
+    &.download {
+      position: absolute;
+      border-color: transparent !important;
+
+      a {
+        opacity: .2;
+        color: #000;
+      }
+
+
+      &:hover,
+      &:active,
+      &:focus {
+        a {
+          opacity: .6;
+        }
+      }
     }
   }
 
   th {
     font-weight: normal;
+    border-color: $graphite-light;
+    border-bottom: none;
+
+    &.checkbox-cell {
+      width: 55px;
+      padding-right: 0;
+      padding-left: 1.2rem;
+
+      &:not(.select-all) {
+        padding-left: .5rem;
+      }
+    }
   }
 
   thead {
+    tr {
+      &:first-child {
+        th,
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+
     td,
     th {
       border-top: none;
@@ -54,6 +104,39 @@
       font-size: $font-size-sm;
       font-weight: 600;
       letter-spacing: 1.6px;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        &:first-child {
+          border-left-color: $table-outer-border-color;
+        }
+
+        &:last-child {
+          border-right-color: $table-outer-border-color;
+        }
+      }
+
+      &:first-child {
+        td {
+          border-top: none;
+        }
+      }
+
+      &:last-child {
+        td {
+          border-bottom-color: $table-outer-border-color;
+        }
+      }
+    }
+  }
+
+  &.two-cells {
+    th,
+    td {
+      width: 50%;
     }
   }
 

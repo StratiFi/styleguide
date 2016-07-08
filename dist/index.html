@@ -410,14 +410,14 @@
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="dropdown dropdown-title">
-                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <h2>
                                 Dropdown
                                 <span class="text-center fa fa-chevron-down"></span>
                                 <span class="text-center fa fa-chevron-up"></span>
                             </h2>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
@@ -517,7 +517,7 @@
                     <div class="form-group search">
                         <label for="search">Flat field example</label>
                         <div>
-                            <input type="search" class="form-control" id="search" placeholder="Search example">
+                            <input type="search" class="form-control" id="search2" placeholder="Search example">
                             <span class="fa fa-search"></span>
                         </div>
                     </div>
@@ -650,13 +650,12 @@
                     </table>
                 </div>
 
-                <h3></h3>
+                <h3 class="m-t-1">Checkbox & search</h3>
                 <div class="docs-example">
-
                     <table class="table table-bordered table-borderless-top">
                         <thead class="thead-graphite">
                             <tr>
-                                <th>Link?</th>
+                                <th class="checkbox-cell">Link?</th>
                                 <th>Suggestion</th>
                                 <th>Account Name</th>
                                 <th>Date of Inception</th>
@@ -667,7 +666,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
+                                <td class="checkbox-cell">
                                     <label class="c-input c-checkbox">
                                         <input type="checkbox" checked>
                                         <span class="c-indicator"></span>
@@ -676,9 +675,242 @@
                                 <td>
                                     <span class="flex justify-between">
                                         <span class="text-muted">client name</span>
-                                        <a href="#"><span class="fa fa-search"></span></a>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
                                     </span>
                                 </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="m-t-1">Radio & action</h3>
+                <div class="docs-example">
+                    <table class="table table-bordered">
+                        <thead class="thead-graphite">
+                            <tr>
+                                <th>Custodian</th>
+                                <th># of Accounts</th>
+                                <th>Total Assets</th>
+                                <th>Date of Inception</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ameritrade</td>
+                                <td>200</td>
+                                <td>$20.000,000.00</td>
+                                <td>06/01/06</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">In Progress</span>
+                                        <label class="c-input c-radio">
+                                            <input id="tableradio1" name="tableradio" type="radio" checked>
+                                            <span class="c-indicator"></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td class="download">
+                                    <a href="#"><span class="fa fa-download"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ameritrade</td>
+                                <td>200</td>
+                                <td>$20.000,000.00</td>
+                                <td>06/01/06</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">In Progress</span>
+                                        <label class="c-input c-radio">
+                                            <input id="tableradio2" name="tableradio" type="radio">
+                                            <span class="c-indicator"></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td class="download">
+                                    <a href="#"><span class="fa fa-download"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ameritrade</td>
+                                <td>200</td>
+                                <td>$20.000,000.00</td>
+                                <td>06/01/06</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">In Progress</span>
+                                        <label class="c-input c-radio">
+                                            <input id="tableradio3" name="tableradio" type="radio">
+                                            <span class="c-indicator"></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td class="download">
+                                    <a href="#"><span class="fa fa-download"></span></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="m-t-1">Checkbox & select all</h3>
+                <div class="docs-example">
+                    <table class="table table-bordered table-borderless-top">
+                        <thead class="thead-graphite">
+                        <tr>
+                            <th class="checkbox-cell select-all">
+                                <label class="c-input c-checkbox">
+                                    <input type="checkbox">
+                                    <span class="c-indicator"></span>
+                                </label>
+                            </th>
+                            <th>Suggestion</th>
+                            <th>Account Name</th>
+                            <th>Date of Inception</th>
+                            <th>Account #</th>
+                            <th>Type</th>
+                            <th>Value</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="fa fa-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
                             </tr>
                         </tbody>
                     </table>

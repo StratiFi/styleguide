@@ -1241,12 +1241,12 @@ pre {
     padding: 1.5rem;
     line-height: 1.5;
     vertical-align: top;
-    border-top: 1px solid #eceeef; }
+    border-top: 1px solid #e0e6e8; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #eceeef; }
+    border-bottom: 2px solid #e0e6e8; }
   .table tbody + tbody {
-    border-top: 2px solid #eceeef; }
+    border-top: 2px solid #e0e6e8; }
   .table .table {
     background-color: #fff; }
 
@@ -1255,10 +1255,10 @@ pre {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid #eceeef; }
+  border: 1px solid #e0e6e8; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #eceeef; }
+    border: 1px solid #e0e6e8; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -1357,11 +1357,11 @@ pre {
 
 .table-reflow th,
 .table-reflow td {
-  border-top: 1px solid #eceeef;
-  border-left: 1px solid #eceeef; }
+  border-top: 1px solid #e0e6e8;
+  border-left: 1px solid #e0e6e8; }
   .table-reflow th:last-child,
   .table-reflow td:last-child {
-    border-right: 1px solid #eceeef; }
+    border-right: 1px solid #e0e6e8; }
 
 .table-reflow thead:last-child tr:last-child th,
 .table-reflow thead:last-child tr:last-child td,
@@ -1369,14 +1369,14 @@ pre {
 .table-reflow tbody:last-child tr:last-child td,
 .table-reflow tfoot:last-child tr:last-child th,
 .table-reflow tfoot:last-child tr:last-child td {
-  border-bottom: 1px solid #eceeef; }
+  border-bottom: 1px solid #e0e6e8; }
 
 .table-reflow tr {
   float: left; }
   .table-reflow tr th,
   .table-reflow tr td {
     display: block !important;
-    border: 1px solid #eceeef; }
+    border: 1px solid #e0e6e8; }
 
 .form-control {
   display: block;
@@ -4839,6 +4839,12 @@ h5.text-title {
 h6.text-title {
   font-size: 1rem; }
 
+.table-bordered {
+  border: none; }
+
+.table tr {
+  position: relative; }
+
 .table th,
 .table td {
   padding-top: 1.2rem;
@@ -4853,6 +4859,11 @@ h6.text-title {
   .table td.select {
     padding-top: 1rem;
     padding-bottom: 1rem; }
+  .table td.checkbox-cell {
+    padding-right: 0;
+    padding-left: 1.3rem; }
+    .table td.checkbox-cell .c-input {
+      padding-left: 1rem; }
   .table td.actionable {
     position: relative; }
     .table td.actionable a {
@@ -4861,13 +4872,29 @@ h6.text-title {
       right: 1.2rem;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-
-.table.two-cells th,
-.table.two-cells td {
-  width: 50%; }
+  .table td.download {
+    position: absolute;
+    border-color: transparent !important; }
+    .table td.download a {
+      opacity: .2;
+      color: #000; }
+    .table td.download:hover a, .table td.download:active a, .table td.download:focus a {
+      opacity: .6; }
 
 .table th {
-  font-weight: normal; }
+  font-weight: normal;
+  border-color: #7c8c94;
+  border-bottom: none; }
+  .table th.checkbox-cell {
+    width: 55px;
+    padding-right: 0;
+    padding-left: 1.2rem; }
+    .table th.checkbox-cell:not(.select-all) {
+      padding-left: .5rem; }
+
+.table thead tr:first-child th,
+.table thead tr:first-child td {
+  border-bottom: none; }
 
 .table thead td,
 .table thead th {
@@ -4877,6 +4904,22 @@ h6.text-title {
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 1.6px; }
+
+.table tbody tr td:first-child {
+  border-left-color: rgba(176, 188, 192, 0.6); }
+
+.table tbody tr td:last-child {
+  border-right-color: rgba(176, 188, 192, 0.6); }
+
+.table tbody tr:first-child td {
+  border-top: none; }
+
+.table tbody tr:last-child td {
+  border-bottom-color: rgba(176, 188, 192, 0.6); }
+
+.table.two-cells th,
+.table.two-cells td {
+  width: 50%; }
 
 .table .text-success {
   color: #6fd760 !important; }
