@@ -23,11 +23,11 @@ http://stratifi.github.io/styleguide/dist
 - [x] NAVBAR
 - [x] FORMS
 - [x] DROPDOWNS
-- [ ] TABLES - *In Progress*
-- [ ] TABS
-- [ ] CARDS
-- [ ] MODALS
-- [ ] ALERTS
+- [x] TABLES
+- [ ] TABS - *In Progress*
+- [ ] CARDS - *In Progress*
+- [ ] MODALS - *In Progress*
+- [ ] ALERTS - *In Progress*
 
 ##### Additional components status
 
