@@ -15,19 +15,15 @@
     <meta name="keywords" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../node_modules/highlight.js/styles/default.css">
-
-    <link rel="stylesheet" href="css/stratifi.css">
-    <link rel="stylesheet" href="css/docs.css">
+    <!-- inject:css -->
+    <!-- endinject -->
 
 </head>
 <body>
 
     <nav class="navbar navbar-static-top navbar-dark flex align-stretch justify-between bg-inverse">
         <a href="#" class="navbar-brand flex align-center">
-            <img src="../src/assets/img/logo.svg" alt="Stratifi docs"> Style Guide
+            <img src="img/logo.svg" alt="Stratifi docs"> Style Guide
         </a>
         <ul class="nav navbar-nav flex align-center">
             <li class="nav-item"><a class="link nav-link active" href="#">Link</a></li>
@@ -40,26 +36,9 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 docs-content">
-                <h1>Colors</h1>
+                <h1 class="m-t-3">Colors</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example demo-colors flex direction-column">
-                    <h4>Gray colors</h4>
-                    <span class="gray-dark">
-                        <span class="text-gray-dark">Gray dark</span> - <code>#373a3c</code>
-                    </span>
-                    <span class="gray">
-                        <span class="text-gray">Gray</span> - <code>#55595c</code>
-                    </span>
-                    <span class="gray-light">
-                        <span class="text-gray-light">Gray light</span> - <code>#818a91</code>
-                    </span>
-                    <span class="gray-lighter">
-                        <span class="text-gray-lighter">Gray lighter</span> - <code>#eceeef</code>
-                    </span>
-                    <span class="gray-lightest">
-                        <span class="text-gray-lightest">Gray lightest</span> - <code>#f7f7f9</code>
-                    </span>
-
                     <h4>Custom graphite colors</h4>
                     <span class="graphite-dark">
                         <span class="text-graphite-dark">Graphite dark</span> - <code>#394346</code>
@@ -69,6 +48,9 @@
                     </span>
                     <span class="graphite-light">
                         <span class="text-graphite-light">Graphite light</span> - <code>#7c8c94</code>
+                    </span>
+                    <span class="graphite-grayish-blue">
+                        <span class="text-graphite-grayish-blue">Graphite grayish blue</span> - <code>#d3d6db</code>
                     </span>
                     <span class="graphite-lighter">
                         <span class="text-graphite-lighter">Graphite lighter</span> - <code>#ebeeef</code>
@@ -109,29 +91,43 @@
                     </span>
                 </div>
 
-                <h1>Headings</h1>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="docs-example">
-                            <h1>h1 Heading title 60px</h1>
-                            <h2>h2 Heading title 50px</h2>
-                            <h3>h3 Heading title 42px</h3>
-                            <h4>h4 Heading title 32px</h4>
-                            <h5>h5 Heading title 24px</h5>
-                            <h6>h6 Heading title 18px</h6>
-                        </div>
-                        <div class="highlight">
-                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading title 60px<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>h2 Heading title 50px<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>h3 Heading title 42px<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>h4 Heading title 32px<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>h5 Heading title 24px<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>h6 Heading title 18px<span class="nt">&lt;/h6&gt;</span></code></pre>
-                        </div>
-                    </div>
+                <h1 class="m-t-3">Headings</h1>
+                <div class="docs-example">
+                    <h1>h1 Heading title</h1>
+                    <h2>h2 Heading title</h2>
+                    <h3>h3 Heading title</h3>
+                    <h4>h4 Heading title</h4>
+                    <h5>h5 Heading title</h5>
+                    <h6>h6 Heading title</h6>
+                </div>
+                <div class="highlight">
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Heading title<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Heading title<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Heading title<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 Heading title<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 Heading title<span class="nt">&lt;/h6&gt;</span></code></pre>
                 </div>
 
-                <h1>FlexBox</h1>
+                <h3>With <code>.text-title</code> class</h3>
+                <div class="docs-example">
+                    <h1 class="text-title">h1 Heading title</h1>
+                    <h2 class="text-title">h2 Heading title</h2>
+                    <h3 class="text-title">h3 Heading title</h3>
+                    <h4 class="text-title">h4 Heading title</h4>
+                    <h5 class="text-title">h5 Heading title</h5>
+                    <h6 class="text-title">h6 Heading title</h6>
+                </div>
+                <div class="highlight">
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>h1 Heading title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>h2 Heading title<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>h3 Heading title<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>h4 Heading title<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>h5 Heading title<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>h6 Heading title<span class="nt">&lt;/h6&gt;</span></code></pre>
+                </div>
+
+                <h1 class="m-t-3">FlexBox</h1>
                 <h3>Justify</h3>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
@@ -321,114 +317,77 @@
                     </div>
                 </div>
 
-                <h1>Buttons</h1>
+                <h1 class="m-t-3">Buttons</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
+                    <p>With <code>.btn-lg</code> class</p>
                     <p>
-                        <button type="button" class="btn btn-secondary">Secondary button</button>
-                        <button type="button" class="btn btn-primary">Primary button</button>
-                        <button type="button" class="btn btn-success">Success button</button>
-                        <button type="button" class="btn btn-primary btn-black">Black button</button>
-                        <button type="button" class="btn btn-link">Link button</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+                        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                        <button type="button" class="btn btn-success btn-lg">Success</button>
+                        <button type="button" class="btn btn-primary btn-black btn-lg">Black</button>
+                        <button type="button" class="btn btn-link btn-lg">Link</button>
                     </p>
-                    <p>
-                        <button type="button" class="btn btn-secondary" disabled>Secondary button</button>
-                        <button type="button" class="btn btn-primary" disabled>Primary button</button>
-                        <button type="button" class="btn btn-success" disabled>Success button</button>
-                        <button type="button" class="btn btn-primary btn-black" disabled>Black button</button>
-                        <button type="button" class="btn btn-link" disabled>Link button</button>
-                    </p>
-                    <p>
-                        <button type="button" class="btn btn-secondary btn-lg">Secondary button</button>
-                        <button type="button" class="btn btn-primary btn-lg">Primary button</button>
-                        <button type="button" class="btn btn-success btn-lg">Success button</button>
-                        <button type="button" class="btn btn-primary btn-black btn-lg">Black button</button>
-                        <button type="button" class="btn btn-link btn-lg">Link button</button>
-                    </p>
+                    <div class="p-l-2">
+                        <p>+ <code>.text-uppercase</code> class</p>
+                        <p>
+                            <button type="button" class="btn btn-secondary btn-lg text-uppercase">Secondary</button>
+                            <button type="button" class="btn btn-primary btn-lg text-uppercase">Primary</button>
+                            <button type="button" class="btn btn-success btn-lg text-uppercase">Success</button>
+                            <button type="button" class="btn btn-primary btn-black btn-lg text-uppercase">Black</button>
+                            <button type="button" class="btn btn-link btn-lg text-uppercase">Link</button>
+                        </p>
+                    </div>
+                    <div class="p-l-3">
+                        <p>+ <code>.btn-fixed-width</code> class</p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-fixed-width btn-lg text-uppercase">Save</button>
+                            <button type="button" class="btn btn-primary btn-fixed-width btn-lg text-uppercase" disabled>Next</button>
+                            <button type="button" class="btn btn-primary btn-fixed-width btn-lg text-uppercase">Accept proposal</button>
+                        </p>
+                    </div>
+                    <div class="p-l-3">
+                        <div class="p-l-1">
+                            <p>+ <code>.btn-title</code> class</p>
+                            <p>
+                                <button type="button" class="btn btn-primary btn-fixed-width btn-lg btn-title text-uppercase">Save</button>
+                                <button type="button" class="btn btn-primary btn-fixed-width btn-lg btn-title text-uppercase" disabled>Next</button>
+                                <button type="button" class="btn btn-primary btn-fixed-width btn-lg btn-title text-uppercase">Accept proposal</button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <h3>Buttons group</h3>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Secondary button (preselected)
+                        <label class="btn btn-secondary text-uppercase active">
+                            <input type="radio" name="options" id="option6" autocomplete="off" checked> Secondary (preselected)
                         </label>
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> Primary button
+                        <label class="btn btn-secondary text-uppercase">
+                            <input type="radio" name="options" id="option7" autocomplete="off"> Secondary
                         </label>
-                        <label class="btn btn-success">
-                            <input type="radio" name="options" id="option3" autocomplete="off"> Success button
+                        <label class="btn btn-secondary text-uppercase">
+                            <input type="radio" name="options" id="option8" autocomplete="off"> Secondary
                         </label>
-                        <label class="btn btn-primary btn-black">
-                            <input type="radio" name="options" id="option4" autocomplete="off"> Black button
+                        <label class="btn btn-secondary text-uppercase">
+                            <input type="radio" name="options" id="option9" autocomplete="off"> Secondary
                         </label>
-                        <label class="btn btn-primary btn-link">
-                            <input type="radio" name="options" id="option5" autocomplete="off"> Link button
-                        </label>
-                    </div>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
-                            <input type="radio" name="options" id="option6" autocomplete="off" checked> Secondary button (preselected)
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="options" id="option7" autocomplete="off"> Secondary button
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="options" id="option8" autocomplete="off"> Secondary button
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="options" id="option9" autocomplete="off"> Secondary button
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="options" id="option10" autocomplete="off"> Secondary button
-                        </label>
-                    </div>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-secondary btn-lg active">
-                            <input type="radio" name="options" id="option11" autocomplete="off" checked> Secondary button (preselected)
-                        </label>
-                        <label class="btn btn-primary btn-lg">
-                            <input type="radio" name="options" id="option12" autocomplete="off"> Primary button
-                        </label>
-                        <label class="btn btn-success btn-lg">
-                            <input type="radio" name="options" id="option13" autocomplete="off"> Success button
-                        </label>
-                        <label class="btn btn-primary btn-black btn-lg">
-                            <input type="radio" name="options" id="option14" autocomplete="off"> Black button
-                        </label>
-                        <label class="btn btn-primary btn-link btn-lg">
-                            <input type="radio" name="options" id="option15" autocomplete="off"> Link button
-                        </label>
-                    </div>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-secondary btn-lg active">
-                            <input type="radio" name="options" id="option16" autocomplete="off" checked> Secondary button (preselected)
-                        </label>
-                        <label class="btn btn-secondary btn-lg">
-                            <input type="radio" name="options" id="option17" autocomplete="off"> Secondary button
-                        </label>
-                        <label class="btn btn-secondary btn-lg">
-                            <input type="radio" name="options" id="option18" autocomplete="off"> Secondary button
-                        </label>
-                        <label class="btn btn-secondary btn-lg">
-                            <input type="radio" name="options" id="option19" autocomplete="off"> Secondary button
+                        <label class="btn btn-secondary text-uppercase">
+                            <input type="radio" name="options" id="option10" autocomplete="off"> Secondary
                         </label>
                     </div>
                 </div>
 
-                <h1>Dropdowns</h1>
+                <h1 class="m-t-3">Dropdowns</h1>
                 <h3>Default Dropdown</h3>
                 <!--TODO Add code examples-->
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="docs-example">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                    <span class="text-center fa fa-chevron-down"></span>
-                                    <span class="text-center fa fa-chevron-up"></span>
-                                </button>
+                                <button class="btn btn-secondary dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="icon-arrow"></span></button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
@@ -443,14 +402,10 @@
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="dropdown dropdown-title">
-                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <h2>
-                                Dropdown
-                                <span class="text-center fa fa-chevron-down"></span>
-                                <span class="text-center fa fa-chevron-up"></span>
-                            </h2>
+                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h2>Dropdown <span class="icon-arrow"></span></h2>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
@@ -467,8 +422,7 @@
                                 <button class="nav-link dropdown-toggle flex align-stretch btn btn-link text-xs-right" id="dropdownUser-example" data-toggle="dropdown">
                                     <span class="text-uppercase text-light">JAMES DOE</span>
                                     <span class="text-light text-muted">Advisor for Doe Investments</span>
-                                    <span class="text-center fa fa-chevron-down"></span>
-                                    <span class="text-center fa fa-chevron-up"></span>
+                                    <span class="text-xs-center icon-arrow"></span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item link" href="#">Link</a>
@@ -482,7 +436,7 @@
                     </nav>
                 </div>
 
-                <h1>Navbar component</h1>
+                <h1 class="m-t-3">Navbar component</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <nav class="navbar navbar-dark flex align-stretch justify-between bg-inverse">
@@ -495,11 +449,7 @@
                         </ul>
                         <ul class="nav navbar-nav flex align-stretch">
                             <li class="nav-item dropdown flex align-center">
-                                <button class="nav-link dropdown-toggle btn btn-link text-xs-right" id="dropdownUser-example2" data-toggle="dropdown">
-                                    Dropdown
-                                    <span class="text-center fa fa-chevron-down"></span>
-                                    <span class="text-center fa fa-chevron-up"></span>
-                                </button>
+                                <button class="nav-link dropdown-toggle btn btn-link text-xs-right" id="dropdownUser-example2" data-toggle="dropdown">Dropdown <span class="icon-arrow"></span></button>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item link" href="#">Link</a>
                                     <a class="dropdown-item link" href="#">Link</a>
@@ -525,21 +475,451 @@
                         </ul>
                         <ul class="nav navbar-nav flex align-stretch">
                             <li class="nav-item flex direction-column justify-center">
-                                <span class="text-uppercase text-light">Don't have an Account?</span>
+                                <span class="text-uppercase text-light"><small>Don't have an Account?</small></span>
                                 <a href="#" class="text-light text-primary text-xs-right">Create an Account</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
+
+                <h1 class="m-t-3">Forms</h1>
+                <div class="docs-example">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput1">Label</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Placeholder">
+                    </div>
+
+                    <div class="form-group search search-flat">
+                        <label for="search">Flat field example</label>
+                        <div>
+                            <input type="search" class="form-control" id="search" placeholder="Search example">
+                            <span class="icon-search_icn"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group search">
+                        <label for="search">Flat field example</label>
+                        <div>
+                            <input type="search" class="form-control" id="search2" placeholder="Search example">
+                            <span class="icon-search_icn"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <!--TODO Change arrow-->
+                            <select class="c-select">
+                                <option value="1">First option</option>
+                                <option value="2">Second option</option>
+                                <option value="3">Third option</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect2">Select</label>
+                        <select name="" id="exampleSelect2" class="form-control">
+                            <option value="" selected disabled>Choose option</option>
+                            <option value="1">First option</option>
+                            <option value="2">Second option</option>
+                            <option value="3">Third option</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <p>Inline</p>
+                        <p>
+                            <label class="c-input c-checkbox">
+                                <input type="checkbox">
+                                <span class="c-indicator icon-checkmark"></span>
+                                Check this custom checkbox
+                            </label>
+                            <label class="c-input c-checkbox">
+                                <input type="checkbox" checked>
+                                <span class="c-indicator icon-checkmark"></span>
+                                Check this custom checkbox
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="c-inputs-stacked">
+                        <p>Stacked</p>
+                        <label class="c-input c-checkbox">
+                            <input type="checkbox">
+                            <span class="c-indicator icon-checkmark"></span>
+                            Check this custom checkbox
+                        </label>
+                        <label class="c-input c-checkbox">
+                            <input type="checkbox" checked>
+                            <span class="c-indicator icon-checkmark"></span>
+                            Check this custom checkbox
+                        </label>
+                    </div>
+
+                    <div class="c-inputs-stacked">
+                        <label class="c-input c-radio">
+                            <input id="radioStacked1" name="radio-stacked" type="radio">
+                            <span class="c-indicator"></span>
+                            Toggle this custom radio
+                        </label>
+                        <label class="c-input c-radio">
+                            <input id="radioStacked2" name="radio-stacked" type="radio">
+                            <span class="c-indicator"></span>
+                            Or toggle this other custom radio
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Example placeholder"></textarea>
+                    </div>
+                </div>
+
+                <h1 class="m-t-3">Tables</h1>
+                <div class="docs-example">
+                    <table class="table table-bordered table-borderless-top two-cells">
+                        <thead class="thead-graphite">
+                            <tr>
+                                <th colspan="2">Business Profile Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Business Name</td>
+                                <td>Doe</td>
+                            </tr>
+                            <tr>
+                                <td>Website</td>
+                                <td class="image">
+                                    <img src="" alt="file_name.png" width="40" height="40">
+                                    <a href="#">file_name.png</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Display Name</td>
+                                <td><span class="text-muted">Enter your prefered displayed business name</span></td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td class="text-success">Accepted</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td><a href="#">resend invitation</a></td>
+                            </tr>
+                            <tr>
+                                <td>Roles</td>
+                                <td class="select">
+                                    <label>
+                                        <!--TODO Change arrow-->
+                                        <select class="c-select">
+                                            <option value="1">First option</option>
+                                            <option value="2">Second option</option>
+                                            <option value="3">Third option</option>
+                                        </select>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">Enter your prefered displayed business name</span>
+                                        <a href="#">resend invitation</a>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="m-t-1">Checkbox & search</h3>
+                <div class="docs-example">
+                    <table class="table table-bordered table-borderless-top">
+                        <thead class="thead-graphite">
+                            <tr>
+                                <th class="checkbox-cell">Link?</th>
+                                <th>Suggestion</th>
+                                <th>Account Name</th>
+                                <th>Date of Inception</th>
+                                <th>Account #</th>
+                                <th>Type</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="m-t-1">Radio & action</h3>
+                <div class="docs-example">
+                    <table class="table table-bordered">
+                        <thead class="thead-graphite">
+                            <tr>
+                                <th>Custodian</th>
+                                <th># of Accounts</th>
+                                <th>Total Assets</th>
+                                <th>Date of Inception</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ameritrade</td>
+                                <td>200</td>
+                                <td>$20.000,000.00</td>
+                                <td>06/01/06</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">In Progress</span>
+                                        <label class="c-input c-radio">
+                                            <input id="tableradio1" name="tableradio" type="radio" checked>
+                                            <span class="c-indicator"></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td class="download">
+                                    <a href="#"><span class="fa fa-download"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ameritrade</td>
+                                <td>200</td>
+                                <td>$20.000,000.00</td>
+                                <td>06/01/06</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">In Progress</span>
+                                        <label class="c-input c-radio">
+                                            <input id="tableradio2" name="tableradio" type="radio">
+                                            <span class="c-indicator"></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td class="download">
+                                    <a href="#"><span class="fa fa-download"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ameritrade</td>
+                                <td>200</td>
+                                <td>$20.000,000.00</td>
+                                <td>06/01/06</td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">In Progress</span>
+                                        <label class="c-input c-radio">
+                                            <input id="tableradio3" name="tableradio" type="radio">
+                                            <span class="c-indicator"></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td class="download">
+                                    <a href="#"><span class="fa fa-download"></span></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="m-t-1">Checkbox & select all</h3>
+                <div class="docs-example">
+                    <table class="table table-bordered table-borderless-top">
+                        <thead class="thead-graphite">
+                        <tr>
+                            <th class="checkbox-cell select-all">
+                                <label class="c-input c-checkbox">
+                                    <input type="checkbox">
+                                    <span class="c-indicator icon-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Suggestion</th>
+                            <th>Account Name</th>
+                            <th>Date of Inception</th>
+                            <th>Account #</th>
+                            <th>Type</th>
+                            <th>Value</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox">
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span>James Doe</span>
+                                        <a href="#"><span class="icon-search_icn text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h1 class="m-t-3">Steps pagination</h1>
+                <div class="docs-example">
+                    <ul class="steps-pagination flex justify-between">
+                        <li class="checked">Step 1</li>
+                        <li class="active">Step 2</li>
+                        <li>Step 3</li>
+                    </ul>
+
+                    <ul class="steps-pagination flex justify-around">
+                        <li class="checked">Step 1</li>
+                        <li class="checked">Step 2</li>
+                        <li class="active">Step 3</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/tether/dist/js/tether.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- inject:js -->
+    <!-- endinject -->
 
-    <script src="../node_modules/highlight.js/lib/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
     <script src="https://use.typekit.net/nec3igy.js"></script>

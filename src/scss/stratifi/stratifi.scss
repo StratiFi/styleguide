@@ -6,10 +6,13 @@
 @import "bootstrap"; // bootstrap "overriding" fix
 
 // load app styles
+@import "app-fonts";
+@import "app-flexbox";
 @import "app-grid";
 @import "app-utilities";
 @import "app-tables";
 @import "app-forms";
+@import "app-custom-forms";
 @import "app-nav";
 @import "app-navbar";
 @import "app-modal";
@@ -18,5 +21,5 @@
 @import "app-misc";
 @import "app-btn";
 @import "app-dropdown";
-@import "app-flexbox";
+@import "app-steps";
 @import "app";

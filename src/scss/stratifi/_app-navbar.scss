@@ -32,7 +32,6 @@
       }
 
       &.dropdown-toggle {
-
         text-transform: none;
       }
     }
@@ -48,7 +47,7 @@
 
   &-static-top {
     &.bg-inverse {
-      border-radius: 0;
+      @include border-radius(0);
     }
   }
 }

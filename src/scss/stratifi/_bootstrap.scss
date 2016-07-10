@@ -1,16 +1,4 @@
 // override BS classes that cannot be tweaked by variables
-
-.c-select {
-  padding-top: 0.275rem;
-  padding-bottom: 0.275rem;
-}
-
-.btn-group {
-  .nowrap {
-    display: flex;
-  }
-}
-
 .carousel-control {
   color: inherit;
   text-shadow: none;
