@@ -1,0 +1,68 @@
+.steps-pagination {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-bottom: 2px dotted rgba(0, 0, 0, .2);
+  }
+
+  li {
+    position: relative;
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    text-align: center;
+    list-style: none;
+
+    &:before {
+      content: '';
+      position: relative;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto 5px;
+      background: #fff;
+      border: 2px solid $graphite-dark;
+      box-shadow: 0 0 0 5px #fff;
+      @include border-radius(50%);
+    }
+
+    &.checked {
+      &:before {
+        background: $brand-success;
+        border-color: $brand-success;
+      }
+
+      &:after {
+        content: "\e906";
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        margin-left: -5px;
+        color: #fff;
+        font-size: 7px;
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+
+    &.active {
+      &:before {
+        border-color: $brand-primary;
+      }
+    }
+  }
+}

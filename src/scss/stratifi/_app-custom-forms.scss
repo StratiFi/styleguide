@@ -41,6 +41,28 @@
   }
 
   &-checkbox {
+    input {
+      ~ .c-indicator {
+        background-image: none !important;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      &:checked {
+        ~ .c-indicator {
+          &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -5px 0 0 -6px;
+          }
+        }
+      }
+    }
+
     .c-indicator {
       @include border-radius(1px);
     }

@@ -37,13 +37,11 @@ var config = {
     'css': {
         'src': {
             'reqular': [
-                './bower_components/font-awesome/css/font-awesome.min.css',
                 './node_modules/highlight.js/styles/default.css',
                 './dist/css/stratifi.css',
                 './dist/css/docs.css'
             ],
             'min': [
-                './bower_components/font-awesome/css/font-awesome.min.css',
                 './node_modules/highlight.js/styles/default.css',
                 './dist/css/stratifi.min.css',
                 './dist/css/docs.min.css'
@@ -53,7 +51,7 @@ var config = {
     'fonts': {
         'format': '{ttf,woff,woff2,eot,svg,otf}',
         'dest': './dist/',
-        'src': [ './bower_components/font-awesome/**/*.' ]
+        'src': [ './src/assets/**/*.' ]
     }
 };
 
@@ -128,7 +126,6 @@ gulp.task('inject:dev', ['sass', 'html'], function () {
         .pipe(inject(
             gulp.src([
                 // TODO Refactor this
-                './bower_components/font-awesome/css/font-awesome.min.css',
                 './node_modules/highlight.js/styles/default.css',
                 './dist/css/stratifi.css',
                 './dist/css/docs.css',
