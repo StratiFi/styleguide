@@ -22,18 +22,18 @@
   "homepage": "https://github.com/StratiFi/styleguide#readme",
   "devDependencies": {
     "gulp": "latest",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
     "gulp-cssnano": "latest",
+    "gulp-inject": "^4.1.0",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-autoprefixer": "^3.1.0"
+    "gulp-uglify": "^1.5.4"
   },
   "engines": {
     "node": "4.1.1"
   },
   "dependencies": {
-    "gulp-concat": "^2.6.0",
-    "gulp-inject": "^4.1.0",
-    "gulp-uglify": "^1.5.4",
     "highlight.js": "^9.5.0"
   }
 }

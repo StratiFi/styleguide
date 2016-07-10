@@ -15,18 +15,19 @@ To get completed guidelines for all the elments, just check the BS [documention]
 http://stratifi.github.io/styleguide/dist  
 
 ## Components status
+- [ ] ICONS - *In Progress*
 - [x] COLORS
 - [x] HEADINGS
-- [ ] ICONS - *In Progress*
 - [x] BUTTONS
 - [x] BUTTONS GROUP
 - [x] NAVBAR
-- [ ] TABLES - *In Progress*
-- [ ] CARDS
-- [ ] FORMS - *In Progress*
-- [ ] MODALS
+- [x] FORMS
 - [x] DROPDOWNS
-- [ ] ALERTS
+- [x] TABLES
+- [ ] TABS - *In Progress*
+- [ ] CARDS - *In Progress*
+- [ ] MODALS - *In Progress*
+- [ ] ALERTS - *In Progress*
 
 ##### Additional components status
 
