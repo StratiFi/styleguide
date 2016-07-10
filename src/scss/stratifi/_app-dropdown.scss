@@ -4,18 +4,11 @@
       content: none;
     }
 
-    .fa {
+    .icon-arrow {
+      display: inline-block;
+      font-size: .45rem;
+      line-height: 1.1rem;
       color: $brand-primary;
-
-      &-chevron {
-        &-down {
-          display: inline-block;
-        }
-
-        &-up {
-          display: none;
-        }
-      }
     }
 
     &.btn {
@@ -40,8 +33,9 @@
         padding-bottom: 0;
 
         span {
-          &:not(.fa) {
-            display: block;
+          display: block;
+
+          &:not(.icon-arrow) {
             line-height: 1em;
           }
 
@@ -57,15 +51,8 @@
           }
         }
 
-
-        .fa {
-          text-align: center;
-
-          &-chevron {
-            &-down {
-              display: block;
-            }
-          }
+        .icon-arrow {
+          font-size: .45rem;
         }
       }
 
@@ -91,6 +78,10 @@
     .dropdown {
       &-toggle {
         color: $graphite-dark;
+
+        .icon-arrow {
+          font-size: .8rem;
+        }
       }
 
       &-menu {
@@ -103,28 +94,13 @@
     &.dropdown-two-line {
       .dropdown-toggle {
         background: $graphite;
-
-        .fa-chevron {
-          &-down {
-            display: none;
-          }
-
-          &-up {
-            display: block;
-          }
-        }
+        //  icon
       }
     }
 
     .dropdown-toggle {
-      .fa-chevron {
-        &-down {
-          display: none;
-        }
-
-        &-up {
-          display: inline-block;
-        }
+      .icon-arrow {
+        transform: rotate(180deg);
       }
     }
   }
