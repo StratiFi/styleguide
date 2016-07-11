@@ -1,6 +1,13 @@
 .navbar {
-  padding: 0 26px;
-  min-height: 74px;
+  padding: 0 $navbar-padding-horizontal;
+  min-height: $navbar-min-height;
+
+  &.user-pic {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-right: $navbar-min-height;
+  }
 
   &:after {
     content: none;
@@ -12,7 +19,7 @@
         margin-left: 0;
 
         &:not(.dropdown) {
-          margin-left: 52.2px;
+          margin-left: $navbar-padding-horizontal * 2;
         }
       }
     }
