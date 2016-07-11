@@ -20,6 +20,10 @@
         min-width: 180px;
       }
 
+      .input-group & {
+        min-width: initial;
+      }
+
       &.btn-secondary {
         border-color: $graphite-grayish-blue;
       }

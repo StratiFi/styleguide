@@ -4663,13 +4663,13 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-accounts:before {
   content: "\e900"; }
 
-.icon-add_item:before {
+.icon-add:before {
   content: "\e901"; }
 
 .icon-arrow:before {
   content: "\e902"; }
 
-.icon-bar_graph:before {
+.icon-bar-graph:before {
   content: "\e903"; }
 
 .icon-bear:before {
@@ -4681,7 +4681,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-checkmark:before {
   content: "\e906"; }
 
-.icon-default_portfolio:before {
+.icon-portfolio:before {
   content: "\e907"; }
 
 .icon-edit:before {
@@ -4705,19 +4705,19 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-person:before {
   content: "\e90e"; }
 
-.icon-profile_icn:before {
+.icon-profile:before {
   content: "\e90f"; }
 
 .icon-remove:before {
   content: "\e910"; }
 
-.icon-risk_management:before {
+.icon-risk:before {
   content: "\e911"; }
 
-.icon-search_icn:before {
+.icon-search:before {
   content: "\e912"; }
 
-.icon-summary_icn:before {
+.icon-summary:before {
   content: "\e913"; }
 
 .icon-world:before {
@@ -5149,7 +5149,7 @@ h6 {
 .form-group.search > div {
   position: relative; }
 
-.form-group.search .icon-search_icn {
+.form-group.search .icon-search {
   position: absolute;
   top: 8px;
   left: 13px;
@@ -5159,7 +5159,7 @@ h6 {
   border: none;
   box-shadow: none; }
 
-.form-group.search-flat .icon-search_icn {
+.form-group.search-flat .icon-search {
   top: 5px;
   left: 0; }
 
@@ -5513,6 +5513,8 @@ h6 {
   .form-group .dropdown-toggle.btn,
   .table .dropdown-toggle.btn {
     min-width: 180px; }
+  .input-group .dropdown-toggle.btn {
+    min-width: initial; }
   .dropdown-toggle.btn.btn-secondary {
     border-color: #d3d6db; }
 
