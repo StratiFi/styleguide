@@ -5264,7 +5264,7 @@ h6 {
   .navbar-static-top.bg-inverse {
     border-radius: 0; }
 
-.modal-lg {
+#modelEditModal .modal-lg {
   width: 1140px; }
 
 .modal-content {
