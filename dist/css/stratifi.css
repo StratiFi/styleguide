@@ -5138,6 +5138,11 @@ h6 {
   font-size: 0.875rem;
   color: #4a4a4a; }
 
+.table .form-group {
+  margin-bottom: 0; }
+  .table .form-group + .form-group {
+    margin-top: 1rem; }
+
 .form-group.search .form-control {
   padding-left: 2.1875rem; }
 
