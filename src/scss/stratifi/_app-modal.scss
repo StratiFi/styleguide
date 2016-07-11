@@ -1,4 +1,28 @@
 .modal {
+  &-lg {
+    #modelEditModal & {
+      width: 1140px;
+    }
+  }
+
+  &-content {
+    #modelEditModal & {
+      padding: 40px 90px;
+    }
+
+    #modelViewModal & {
+      padding: 40px 35px;
+    }
+  }
+
+  &-body {
+    padding-bottom: 0;
+  }
+
+  &-footer {
+    padding: 0;
+  }
+
   &.left,
   &.right {
     .navbar-nav {

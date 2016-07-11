@@ -1,0 +1,20 @@
+.card {
+  border-color: $table-outer-border-color;
+  border-radius: 0;
+
+  .positions {
+    h6 {
+      font-size: $font-size-xs;
+    }
+  }
+
+  .btn-secondary {
+    opacity: .3;
+  }
+
+  &:hover {
+    .btn-secondary {
+      opacity: 1;
+    }
+  }
+}

@@ -21,6 +21,14 @@
       color: $gray-darkest;
     }
 
+    .table & {
+      margin-bottom: 0;
+
+      + .form-group {
+        margin-top: 1rem;
+      }
+    }
+
     &.search {
       .form-control {
         padding-left: 2.1875rem;
@@ -30,7 +38,7 @@
         position: relative;
       }
 
-      .icon-search_icn {
+      .icon-search {
         position: absolute;
         top: 8px;
         left: 13px;
@@ -43,7 +51,7 @@
           box-shadow: none;
         }
 
-        .icon-search_icn {
+        .icon-search {
           top: 5px;
           left: 0;
         }

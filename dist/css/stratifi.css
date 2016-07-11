@@ -4663,13 +4663,13 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-accounts:before {
   content: "\e900"; }
 
-.icon-add_item:before {
+.icon-add:before {
   content: "\e901"; }
 
 .icon-arrow:before {
   content: "\e902"; }
 
-.icon-bar_graph:before {
+.icon-bar-graph:before {
   content: "\e903"; }
 
 .icon-bear:before {
@@ -4681,7 +4681,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-checkmark:before {
   content: "\e906"; }
 
-.icon-default_portfolio:before {
+.icon-portfolio:before {
   content: "\e907"; }
 
 .icon-edit:before {
@@ -4705,19 +4705,19 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-person:before {
   content: "\e90e"; }
 
-.icon-profile_icn:before {
+.icon-profile:before {
   content: "\e90f"; }
 
 .icon-remove:before {
   content: "\e910"; }
 
-.icon-risk_management:before {
+.icon-risk:before {
   content: "\e911"; }
 
-.icon-search_icn:before {
+.icon-search:before {
   content: "\e912"; }
 
-.icon-summary_icn:before {
+.icon-summary:before {
   content: "\e913"; }
 
 .icon-world:before {
@@ -4963,22 +4963,22 @@ h5.text-title,
 h6.text-title {
   font-weight: bold; }
 
-h1.text-title {
+h1 {
   font-size: 3.125rem; }
 
-h2.text-title {
+h2 {
   font-size: 2.625rem; }
 
-h3.text-title {
+h3 {
   font-size: 2rem; }
 
-h4.text-title {
+h4 {
   font-size: 1.5rem; }
 
-h5.text-title {
+h5 {
   font-size: 1.125rem; }
 
-h6.text-title {
+h6 {
   font-size: 1rem; }
 
 .table-bordered {
@@ -5014,13 +5014,13 @@ h6.text-title {
       right: 1.2rem;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-  .table td.download {
+  .table td.action {
     position: absolute;
     border-color: transparent !important; }
-    .table td.download a {
+    .table td.action a {
       opacity: .2;
       color: #000; }
-    .table td.download:hover a, .table td.download:active a, .table td.download:focus a {
+    .table td.action:hover a, .table td.action:active a, .table td.action:focus a {
       opacity: .6; }
 
 .table th {
@@ -5138,13 +5138,18 @@ h6.text-title {
   font-size: 0.875rem;
   color: #4a4a4a; }
 
+.table .form-group {
+  margin-bottom: 0; }
+  .table .form-group + .form-group {
+    margin-top: 1rem; }
+
 .form-group.search .form-control {
   padding-left: 2.1875rem; }
 
 .form-group.search > div {
   position: relative; }
 
-.form-group.search .icon-search_icn {
+.form-group.search .icon-search {
   position: absolute;
   top: 8px;
   left: 13px;
@@ -5154,7 +5159,7 @@ h6.text-title {
   border: none;
   box-shadow: none; }
 
-.form-group.search-flat .icon-search_icn {
+.form-group.search-flat .icon-search {
   top: 5px;
   left: 0; }
 
@@ -5170,6 +5175,8 @@ h6.text-title {
     border-color: #09acf8; }
   .table .c-select {
     min-width: 180px; }
+  .modal .c-select {
+    width: 100%; }
 
 .c-indicator {
   background-color: white;
@@ -5256,6 +5263,21 @@ h6.text-title {
     margin-right: .5rem; }
   .navbar-static-top.bg-inverse {
     border-radius: 0; }
+
+#modelEditModal .modal-lg {
+  width: 1140px; }
+
+#modelEditModal .modal-content {
+  padding: 40px 90px; }
+
+#modelViewModal .modal-content {
+  padding: 40px 35px; }
+
+.modal-body {
+  padding-bottom: 0; }
+
+.modal-footer {
+  padding: 0; }
 
 .modal.left .navbar-nav .nav-item, .modal.right .navbar-nav .nav-item {
   float: none; }
@@ -5473,6 +5495,8 @@ h6.text-title {
     .btn-black:active, .btn-black.active, .btn-black:focus, .btn-black.focus, .btn-black:hover, .btn-black.hover {
       border-color: #373a3c;
       background: #373a3c; }
+  .btn-block + .btn-block {
+    margin-top: .5em; }
 
 .dropdown-toggle:after {
   content: none; }
@@ -5489,6 +5513,8 @@ h6.text-title {
   .form-group .dropdown-toggle.btn,
   .table .dropdown-toggle.btn {
     min-width: 180px; }
+  .input-group .dropdown-toggle.btn {
+    min-width: initial; }
   .dropdown-toggle.btn.btn-secondary {
     border-color: #d3d6db; }
 
@@ -5609,6 +5635,16 @@ h6.text-title {
     .steps-pagination li.active:before {
       border-color: #09acf8; }
 
+.card {
+  border-color: rgba(176, 188, 192, 0.6);
+  border-radius: 0; }
+  .card .positions h6 {
+    font-size: 0.75rem; }
+  .card .btn-secondary {
+    opacity: .3; }
+  .card:hover .btn-secondary {
+    opacity: 1; }
+
 body,
 p,
 td {
@@ -5635,6 +5671,12 @@ td {
   border-right-width: 1px !important;
   border-right-color: #e5e5e5;
   border-right-style: solid; }
+
+.b-l-0 {
+  border-left-width: 0 !important; }
+
+.b-r-0 {
+  border-right-width: 0 !important; }
 
 .b-t-1 {
   border-width: 0;

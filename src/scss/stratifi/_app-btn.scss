@@ -79,4 +79,9 @@
     }
   }
 
+  &-block {
+    + .btn-block {
+      margin-top: .5em;
+    }
+  }
 }

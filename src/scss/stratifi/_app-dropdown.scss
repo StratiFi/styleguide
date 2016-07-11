@@ -9,6 +9,10 @@
       font-size: .45rem;
       line-height: 1.1rem;
       color: $brand-primary;
+
+      .input-group & {
+        line-height: .9rem;
+      }
     }
 
     &.btn {
@@ -18,6 +22,10 @@
       .form-group &,
       .table & {
         min-width: 180px;
+      }
+
+      .input-group & {
+        min-width: initial;
       }
 
       &.btn-secondary {
