@@ -1,4 +1,20 @@
 .modal {
+  &-lg {
+    width: 1140px;
+  }
+
+  &.content {
+    padding: 40px 90px;
+  }
+
+  &-body {
+    padding-bottom: 0;
+  }
+
+  &-footer {
+    padding: 0;
+  }
+
   &.left,
   &.right {
     .navbar-nav {
