@@ -5667,6 +5667,12 @@ td {
   border-right-color: #e5e5e5;
   border-right-style: solid; }
 
+.b-l-0 {
+  border-left-width: 0 !important; }
+
+.b-r-0 {
+  border-right-width: 0 !important; }
+
 .b-t-1 {
   border-width: 0;
   border-top-width: 1px !important;
