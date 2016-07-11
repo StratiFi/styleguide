@@ -1,6 +1,8 @@
 .modal {
   &-lg {
-    width: 1140px;
+    #modelEditModal & {
+      width: 1140px;
+    }
   }
 
   &-content {
