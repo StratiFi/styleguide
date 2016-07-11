@@ -279,3 +279,6 @@
     .docs-example.direction-column-reverse .bg-inverse:not(:last-child) {
       margin-top: 1rem;
       margin-left: 0; }
+
+.amcharts-chart-div a[title='JavaScript charts'] {
+  display: none !important; }

@@ -5609,6 +5609,12 @@ h6 {
     .steps-pagination li.active:before {
       border-color: #09acf8; }
 
+.card {
+  border-color: rgba(176, 188, 192, 0.6);
+  border-radius: 0; }
+  .card .positions h6 {
+    font-size: 0.75rem; }
+
 body,
 p,
 td {
