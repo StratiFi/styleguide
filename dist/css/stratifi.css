@@ -5267,8 +5267,11 @@ h6 {
 #modelEditModal .modal-lg {
   width: 1140px; }
 
-.modal-content {
+#modelEditModal .modal-content {
   padding: 40px 90px; }
+
+#modelViewModal .modal-content {
+  padding: 40px 35px; }
 
 .modal-body {
   padding-bottom: 0; }

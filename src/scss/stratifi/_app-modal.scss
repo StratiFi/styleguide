@@ -6,7 +6,13 @@
   }
 
   &-content {
-    padding: 40px 90px;
+    #modelEditModal & {
+      padding: 40px 90px;
+    }
+
+    #modelViewModal & {
+      padding: 40px 35px;
+    }
   }
 
   &-body {
