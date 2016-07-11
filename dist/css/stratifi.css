@@ -2678,7 +2678,7 @@ input[type="button"].btn-block {
 
 .navbar {
   position: relative;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1.7rem; }
   .navbar::after {
     content: "";
     display: table;
@@ -2736,8 +2736,8 @@ input[type="button"].btn-block {
   width: 1px;
   padding-top: .425rem;
   padding-bottom: .425rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 1.7rem;
+  margin-left: 1.7rem;
   overflow: hidden; }
   .navbar-divider::before {
     content: "\00a0"; }
@@ -5237,14 +5237,19 @@ h6 {
   border-bottom-color: #09acf8 !important; }
 
 .navbar {
-  padding: 0 26px;
-  min-height: 74px; }
+  padding: 0 1.7rem;
+  min-height: 4.6rem; }
+  .navbar.user-pic {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-right: 4.6rem; }
   .navbar:after {
     content: none; }
   .navbar .navbar-nav .nav-item + .nav-item {
     margin-left: 0; }
     .navbar .navbar-nav .nav-item + .nav-item:not(.dropdown) {
-      margin-left: 52.2px; }
+      margin-left: 3.4rem; }
   .navbar .navbar-nav .nav-link {
     text-transform: uppercase;
     font-weight: 100;
@@ -5465,7 +5470,8 @@ h6 {
     padding: 0.45em 0.7em;
     border-radius: 100em; }
   .btn-title {
-    padding: 1rem 3rem; }
+    padding: 1rem 3rem;
+    text-transform: uppercase; }
   .btn.disabled, .btn:disabled {
     opacity: .6; }
   .btn-group .nowrap {
@@ -5506,6 +5512,8 @@ h6 {
   font-size: .45rem;
   line-height: 1.1rem;
   color: #09acf8; }
+  .input-group .dropdown-toggle .icon-arrow {
+    line-height: .9rem; }
 
 .dropdown-toggle.btn {
   min-width: 250px;
