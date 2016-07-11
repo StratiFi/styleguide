@@ -5557,7 +5557,9 @@ h6.text-title {
     text-decoration: none; }
 
 .steps-pagination {
-  position: relative; }
+  position: relative;
+  margin: 0;
+  padding: 0; }
   .steps-pagination:before {
     content: '';
     position: absolute;
