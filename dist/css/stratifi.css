@@ -5014,13 +5014,13 @@ h6 {
       right: 1.2rem;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-  .table td.download {
+  .table td.action {
     position: absolute;
     border-color: transparent !important; }
-    .table td.download a {
+    .table td.action a {
       opacity: .2;
       color: #000; }
-    .table td.download:hover a, .table td.download:active a, .table td.download:focus a {
+    .table td.action:hover a, .table td.action:active a, .table td.action:focus a {
       opacity: .6; }
 
 .table th {
@@ -5170,6 +5170,8 @@ h6 {
     border-color: #09acf8; }
   .table .c-select {
     min-width: 180px; }
+  .modal .c-select {
+    width: 100%; }
 
 .c-indicator {
   background-color: white;
