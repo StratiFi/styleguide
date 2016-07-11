@@ -5473,6 +5473,8 @@ h6 {
     .btn-black:active, .btn-black.active, .btn-black:focus, .btn-black.focus, .btn-black:hover, .btn-black.hover {
       border-color: #373a3c;
       background: #373a3c; }
+  .btn-block + .btn-block {
+    margin-top: .5em; }
 
 .dropdown-toggle:after {
   content: none; }
