@@ -5513,6 +5513,8 @@ h6 {
   .form-group .dropdown-toggle.btn,
   .table .dropdown-toggle.btn {
     min-width: 180px; }
+  .input-group .dropdown-toggle.btn {
+    min-width: initial; }
   .dropdown-toggle.btn.btn-secondary {
     border-color: #d3d6db; }
 
