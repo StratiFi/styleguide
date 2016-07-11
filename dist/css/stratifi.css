@@ -5257,6 +5257,18 @@ h6 {
   .navbar-static-top.bg-inverse {
     border-radius: 0; }
 
+.modal-lg {
+  width: 1140px; }
+
+.modal.content {
+  padding: 40px 90px; }
+
+.modal-body {
+  padding-bottom: 0; }
+
+.modal-footer {
+  padding: 0; }
+
 .modal.left .navbar-nav .nav-item, .modal.right .navbar-nav .nav-item {
   float: none; }
   .modal.left .navbar-nav .nav-item + .nav-item, .modal.right .navbar-nav .nav-item + .nav-item {
@@ -5616,6 +5628,10 @@ h6 {
   border-radius: 0; }
   .card .positions h6 {
     font-size: 0.75rem; }
+  .card .btn-secondary {
+    opacity: .3; }
+  .card:hover .btn-secondary {
+    opacity: 1; }
 
 body,
 p,
