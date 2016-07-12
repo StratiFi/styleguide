@@ -321,61 +321,41 @@
                 <h1 class="m-t-3">Buttons</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
-                    <p>With <code>.btn-lg</code> class</p>
                     <p>
                         <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+                        <button type="button" class="btn btn-muted btn-lg">Muted</button>
                         <button type="button" class="btn btn-primary btn-lg">Primary</button>
                         <button type="button" class="btn btn-success btn-lg">Success</button>
                         <button type="button" class="btn btn-primary btn-black btn-lg">Black</button>
                         <button type="button" class="btn btn-link btn-lg">Link</button>
                     </p>
-                    <div class="p-l-2">
-                        <p>+ <code>.text-uppercase</code> class</p>
-                        <p>
-                            <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-                            <button type="button" class="btn btn-primary btn-lg">Primary</button>
-                            <button type="button" class="btn btn-success btn-lg">Success</button>
-                            <button type="button" class="btn btn-primary btn-black btn-lg">Black</button>
-                            <button type="button" class="btn btn-link btn-lg">Link</button>
-                        </p>
-                    </div>
-                    <div class="p-l-3">
-                        <p>+ <code>.btn-fixed-width</code> class</p>
-                        <p>
-                            <button type="button" class="btn btn-primary btn-fixed-width btn-lg">Save</button>
-                            <button type="button" class="btn btn-primary btn-fixed-width btn-lg" disabled>Next</button>
-                            <button type="button" class="btn btn-success btn-fixed-width btn-lg">Accept proposal</button>
-                        </p>
-                    </div>
-                    <div class="p-l-3">
-                        <div class="p-l-1">
-                            <p>+ <code>.btn-title</code> class</p>
-                            <p>
-                                <button type="button" class="btn btn-primary btn-fixed-width btn-lg btn-title">Save</button>
-                                <button type="button" class="btn btn-primary btn-fixed-width btn-lg btn-title" disabled>Next</button>
-                                <button type="button" class="btn btn-success btn-fixed-width btn-lg btn-title">Accept proposal</button>
-                            </p>
-                        </div>
-                    </div>
+                    <p>
+                        <button type="button" class="btn btn-secondary btn-lg btn-title">Secondary</button>
+                        <button type="button" class="btn btn-muted btn-lg btn-title">Muted</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-title">Primary</button>
+                        <button type="button" class="btn btn-success btn-lg btn-title">Success</button>
+                        <button type="button" class="btn btn-primary btn-black btn-lg btn-title">Black</button>
+                        <button type="button" class="btn btn-link btn-lg btn-title">Link</button>
+                    </p>
                 </div>
 
                 <h3>Buttons group</h3>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-secondary text-uppercase active">
+                        <label class="btn btn-muted text-uppercase active">
                             <input type="radio" name="options" id="option6" autocomplete="off" checked> Secondary (preselected)
                         </label>
-                        <label class="btn btn-secondary text-uppercase">
+                        <label class="btn btn-muted text-uppercase">
                             <input type="radio" name="options" id="option7" autocomplete="off"> Secondary
                         </label>
-                        <label class="btn btn-secondary text-uppercase">
+                        <label class="btn btn-muted text-uppercase">
                             <input type="radio" name="options" id="option8" autocomplete="off"> Secondary
                         </label>
-                        <label class="btn btn-secondary text-uppercase">
+                        <label class="btn btn-muted text-uppercase">
                             <input type="radio" name="options" id="option9" autocomplete="off"> Secondary
                         </label>
-                        <label class="btn btn-secondary text-uppercase">
+                        <label class="btn btn-muted text-uppercase">
                             <input type="radio" name="options" id="option10" autocomplete="off"> Secondary
                         </label>
                     </div>
@@ -388,7 +368,7 @@
                     <div class="col-xs-12">
                         <div class="docs-example">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="icon-arrow"></span></button>
+                                <button class="btn btn-muted dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="icon-arrow"></span></button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
@@ -903,15 +883,15 @@
                 <h1 class="m-t-3">Steps pagination</h1>
                 <div class="docs-example">
                     <ul class="steps-pagination flex justify-between m-b-3">
-                        <li class="checked">Step 1</li>
-                        <li class="active">Step 2</li>
-                        <li>Step 3</li>
+                        <li class="text-size-xs checked">Step 1</li>
+                        <li class="text-size-xs active">Step 2</li>
+                        <li class="text-size-xs">Step 3</li>
                     </ul>
 
                     <ul class="steps-pagination flex justify-around">
-                        <li class="checked">Step 1</li>
-                        <li class="checked">Step 2</li>
-                        <li class="active">Step 3</li>
+                        <li class="text-size-xs checked">Step 1</li>
+                        <li class="text-size-xs checked">Step 2</li>
+                        <li class="text-size-xs active">Step 3</li>
                     </ul>
                 </div>
 
@@ -933,11 +913,11 @@
                                     </td>
                                     <td class="text-xs-center b-r-1 positions" width="20%">
                                         <h1 class="text-thin">5</h1>
-                                        <h6 class="text-title text-uppercase">Securities</h6>
+                                        <h6 class="text-title text-uppercase text-size-xs">Securities</h6>
                                     </td>
                                     <td class="text-xs-center" width="20%">
-                                        <a data-toggle="modal" data-target="#modelEditModal" class="btn btn-secondary btn-block text-uppercase"><i class="icon-edit"></i> Edit model</a>
-                                        <a class="btn btn-secondary btn-block text-uppercase" style="margin-top: 0.5em;"><i class="icon-accounts"></i> Archive</a>
+                                        <a data-toggle="modal" data-target="#modelEditModal" class="btn btn-muted btn-block text-uppercase"><i class="icon-edit"></i> Edit model</a>
+                                        <a class="btn btn-muted btn-block text-uppercase m-t-half"><i class="icon-accounts"></i> Archive</a>
                                     </td>
                                 </tr>
                             </tbody>

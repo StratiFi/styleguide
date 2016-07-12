@@ -41,7 +41,8 @@
     line-height: 1.7;
   }
 
-  &-secondary {
+  &-muted {
+    @extend .btn-secondary;
     border-color: $graphite-dark;
     color: $graphite-dark;
 
@@ -77,12 +78,6 @@
     &.hover {
       border-color: $gray-dark;
       background: $gray-dark;
-    }
-  }
-
-  &-block {
-    + .btn-block {
-      margin-top: .5em;
     }
   }
 }
