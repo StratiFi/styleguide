@@ -85,6 +85,7 @@
   &-title {
     .dropdown {
       &-toggle {
+        min-width: initial;
         color: $graphite-dark;
 
         .icon-arrow {
