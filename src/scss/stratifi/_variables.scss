@@ -72,3 +72,10 @@ $table-outer-border-color:    rgba(176, 188, 192, 0.6) !default;
 $table-border-color:          #e0e6e8;
 $table-cell-padding:          1.5rem;
 $table-brand-success:         #6fd760;
+
+// Tooltips
+$tooltip-bg:                  $graphite-grayish-dark;
+$tooltip-opacity:             1;
+$tooltip-padding:             1.25rem;
+$tooltip-max-width:           256px;
+$tooltip-arrow-width:         10px;

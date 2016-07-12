@@ -35,7 +35,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 docs-content">
+            <div class="col-xs-12 docs-content m-b-3">
                 <h1 class="m-t-3">Colors</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example demo-colors flex direction-column">
@@ -923,12 +923,28 @@
                         </table>
                     </div>
                 </div>
+
+                <h1 class="m-t-3">Tooltip</h1>
+                <div class="docs-example m-b-3">
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.">
+                        Tooltip on top
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.">
+                        Tooltip on bottom
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- inject:js -->
     <!-- endinject -->
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
 
     <script>hljs.initHighlightingOnLoad();</script>
 
