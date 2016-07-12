@@ -1,0 +1,7 @@
+.tooltip {
+  &-inner {
+    padding: $tooltip-padding;
+    font-size: $font-size-h6;
+    text-align: left;
+  }
+}
