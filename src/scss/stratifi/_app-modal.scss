@@ -1,4 +1,12 @@
 .modal {
+  &-lg {
+    width: 70rem;
+  }
+
+  &-content {
+    padding: 2.5rem 5.625rem;
+  }
+
   &-body {
     padding-bottom: 0;
   }
