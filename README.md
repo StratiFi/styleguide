@@ -25,8 +25,8 @@ http://stratifi.github.io/styleguide/dist
 - [x] DROPDOWNS
 - [x] TABLES
 - [ ] TABS - *In Progress*
-- [x] CARDS - *In Progress*
-- [x] MODALS - *In Progress*
+- [x] CARDS
+- [x] MODALS
 - [ ] ALERTS - *In Progress*
 
 ##### Additional components status
@@ -34,7 +34,7 @@ http://stratifi.github.io/styleguide/dist
 - [ ] FLEXBOX MODEL - *In Progress*
 - [ ] FILTERED TABLES
 - [x] EDITABLE TABLES
-- [ ] COLLAPSED TABLES
+- [x] COLLAPSIBLE TABLES
 - [ ] CONFIRMATION MODALS
 - [ ] ACTIONABLE MODALS
 - [ ] ACTIONABLE DROPDOWNS
