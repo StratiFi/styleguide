@@ -5192,6 +5192,8 @@ h6 {
   border-radius: 3px; }
   .c-select-wrap {
     position: relative; }
+    .editable-fields .c-select-wrap {
+      display: block; }
     .c-select-wrap:after {
       content: '\e902';
       position: absolute;
