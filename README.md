@@ -25,15 +25,15 @@ http://stratifi.github.io/styleguide/dist
 - [x] DROPDOWNS
 - [x] TABLES
 - [ ] TABS - *In Progress*
-- [ ] CARDS - *In Progress*
-- [ ] MODALS - *In Progress*
+- [x] CARDS - *In Progress*
+- [x] MODALS - *In Progress*
 - [ ] ALERTS - *In Progress*
 
 ##### Additional components status
 
 - [ ] FLEXBOX MODEL - *In Progress*
 - [ ] FILTERED TABLES
-- [ ] EDITABLE TABLES
+- [x] EDITABLE TABLES
 - [ ] COLLAPSED TABLES
 - [ ] CONFIRMATION MODALS
 - [ ] ACTIONABLE MODALS
@@ -47,18 +47,11 @@ including bower-managed libs:
 npm install
 ```
 
-
-
 ## Building
-For production:
 ```
 npm run build
 ```
-For development:
-```
-npm run build:dev
-```
 For watching changes:
 ```
-npm run dev:watch
+npm run watch
 ```
