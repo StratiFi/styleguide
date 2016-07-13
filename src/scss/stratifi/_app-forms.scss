@@ -12,6 +12,12 @@
       color: $gray-darkest;
       opacity: .6;
     }
+
+    .editable-fields & {
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+    }
   }
 
   &-group {

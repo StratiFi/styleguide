@@ -140,6 +140,14 @@
     }
   }
 
+  &.editable-fields {
+    td + td {
+      &:not(.action) {
+        box-shadow: $input-box-shadow;
+      }
+    }
+  }
+
   .text-success {
     color: $table-brand-success !important;
   }
