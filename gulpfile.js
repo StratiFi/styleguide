@@ -35,18 +35,11 @@ var config = {
         ]
     },
     'css': {
-        'src': {
-            'reqular': [
-                './node_modules/highlight.js/styles/default.css',
-                './dist/css/stratifi.css',
-                './dist/css/docs.css'
-            ],
-            'min': [
-                './node_modules/highlight.js/styles/default.css',
-                './dist/css/stratifi.min.css',
-                './dist/css/docs.min.css'
-            ]
-        }
+        'src': [
+            './node_modules/highlight.js/styles/default.css',
+            './dist/css/stratifi.min.css',
+            './dist/css/docs.min.css'
+        ]
     },
     'fonts': {
         'format': '{ttf,woff,woff2,eot,svg,otf}',
@@ -55,19 +48,17 @@ var config = {
     }
 };
 
-gulp.task('sass', function () {
-    return gulp.src([
-            config.sass.stratifi.src,
-            config.sass.docs.src
-        ])
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: '> 5%'
-        }))
-        .pipe(gulp.dest(config.sass.dest));
+gulp.task('copy:html', function () {
+    return gulp.src([config.html.src])
+        .pipe(gulp.dest(config.html.dest));
 });
 
-gulp.task('sass:min', function () {
+gulp.task('copy:fonts', function () {
+    return gulp.src(config.fonts.src + config.fonts.format)
+        .pipe(gulp.dest(config.fonts.dest));
+});
+
+gulp.task('sass', function () {
     return gulp.src([
             config.sass.stratifi.src,
             config.sass.docs.src
@@ -83,17 +74,7 @@ gulp.task('sass:min', function () {
         .pipe(gulp.dest(config.sass.dest));
 });
 
-gulp.task('html', function () {
-    return gulp.src([config.html.src])
-        .pipe(gulp.dest(config.html.dest));
-});
-
-gulp.task('copy:fonts', function () {
-    return gulp.src(config.fonts.src + config.fonts.format)
-        .pipe(gulp.dest(config.fonts.dest));
-});
-
-gulp.task('js:min', function () {
+gulp.task('js', function () {
     return gulp.src(config.js.src)
         .pipe(concat('app.min.js'))
         .pipe(uglify().on('error', function (e) {
@@ -102,17 +83,16 @@ gulp.task('js:min', function () {
         .pipe(gulp.dest(config.dest + '/js'));
 });
 
-gulp.task('css:min', ['sass:min'], function () {
-    return gulp.src(config.css.src.min)
+gulp.task('css', ['sass'], function () {
+    return gulp.src(config.css.src)
         .pipe(concat('app.min.css'))
         .pipe(gulp.dest(config.dest + '/css'));
 });
 
-gulp.task('inject:prod', ['css:min', 'js:min', 'html', 'copy:fonts'], function () {
+gulp.task('inject', ['css', 'js', 'copy:html', 'copy:fonts'], function () {
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
-                // TODO Refactor this
                 './dist/js/app.min.js',
                 './dist/css/app.min.css'
             ], {read: false})
@@ -121,34 +101,11 @@ gulp.task('inject:prod', ['css:min', 'js:min', 'html', 'copy:fonts'], function (
         .pipe(gulp.dest(config.html.dest));
 });
 
-gulp.task('inject:dev', ['sass', 'html'], function () {
-    return gulp.src(config.html.src)
-        .pipe(inject(
-            gulp.src([
-                // TODO Refactor this
-                './node_modules/highlight.js/styles/default.css',
-                './dist/css/stratifi.css',
-                './dist/css/docs.css',
+gulp.task('build', ['inject'], function () {});
 
-                './bower_components/jquery/dist/jquery.min.js',
-                './bower_components/tether/dist/js/tether.min.js',
-                './bower_components/bootstrap/dist/js/bootstrap.min.js',
-                './node_modules/highlight.js/lib/highlight.js'
-            ], {read: false})
-            , {relative: true}
-        ))
-        .pipe(gulp.dest(config.html.dest));
-});
-
-gulp.task('install', function () {});
-
-gulp.task('build:dev', ['inject:dev'], function () {});
-
-gulp.task('dev:watch', function () {
+gulp.task('watch', function () {
     gulp.watch([
         config.sass.path + '/**/*.scss',
         config.html.src
-    ], ['build:dev']);
+    ], ['build']);
 });
-
-gulp.task('build:prod', ['inject:prod'], function () {});

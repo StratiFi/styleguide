@@ -485,6 +485,14 @@
                         <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Placeholder">
                     </div>
 
+                    <div class="form-group search">
+                        <label for="search">With icon</label>
+                        <div>
+                            <input type="search" class="form-control" id="search2" placeholder="Search example">
+                            <span class="icon-search"></span>
+                        </div>
+                    </div>
+
                     <div class="form-group search search-flat">
                         <label for="search">Flat field example</label>
                         <div>
@@ -493,15 +501,8 @@
                         </div>
                     </div>
 
-                    <div class="form-group search">
-                        <label for="search">Flat field example</label>
-                        <div>
-                            <input type="search" class="form-control" id="search2" placeholder="Search example">
-                            <span class="icon-search"></span>
-                        </div>
-                    </div>
-
                     <div class="form-group">
+                        <label>Custom select</label>
                         <label class="c-select-wrap">
                             <select class="c-select">
                                 <option value="1">First option</option>
@@ -571,14 +572,20 @@
                 </div>
 
                 <h1 class="m-t-3">Tables</h1>
+
+                <h3 class="m-t-1">Collapsible table</h3>
                 <div class="docs-example">
                     <table class="table table-bordered table-borderless-top two-cells">
                         <thead class="thead-graphite">
                             <tr>
-                                <th colspan="2">Business Profile Information</th>
+                                <th colspan="2">
+                                    <a class="collapsible" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample"><span class="icon-arrow"></span></a>
+
+                                    Business Profile Information
+                                </th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="collapse in" id="collapseExample">
                             <tr>
                                 <td>Business Name</td>
                                 <td>Doe</td>
@@ -617,10 +624,10 @@
                             <tr>
                                 <td>Status</td>
                                 <td>
-                                    <span class="flex justify-between">
-                                        <span class="text-muted">Enter your prefered displayed business name</span>
-                                        <a href="#">resend invitation</a>
-                                    </span>
+                                        <span class="flex justify-between">
+                                            <span class="text-muted">Enter your prefered displayed business name</span>
+                                            <a href="#">resend invitation</a>
+                                        </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -750,7 +757,7 @@
                                     </span>
                                 </td>
                                 <td class="action">
-                                    <a href="#"><span class="fa fa-download"></span></a>
+                                    <a href="#"><span class="icon-checkmark"></span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -768,7 +775,7 @@
                                     </span>
                                 </td>
                                 <td class="action">
-                                    <a href="#"><span class="fa fa-download"></span></a>
+                                    <a href="#"><span class="icon-checkmark"></span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -786,7 +793,7 @@
                                     </span>
                                 </td>
                                 <td class="action">
-                                    <a href="#"><span class="fa fa-download"></span></a>
+                                    <a href="#"><span class="icon-checkmark"></span></a>
                                 </td>
                             </tr>
                         </tbody>
