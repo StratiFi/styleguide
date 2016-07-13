@@ -3,10 +3,36 @@
     min-width: 250px;
     padding-top: 0.275rem;
     padding-bottom: 0.275rem;
+    background: none;
     font-size: $font-size-base;
     line-height: 1.25;
     color: $gray-darkest;
+    box-shadow: none;
     @include border-radius($border-radius);
+
+    &-wrap {
+      position: relative;
+
+      &:after {
+        content: '\e902';
+
+        position: absolute;
+        top: 13px;
+        right: 9px;
+        color: $brand-primary;
+        font-size: .5rem;
+
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
 
     &:focus {
       border-color: $brand-primary;
