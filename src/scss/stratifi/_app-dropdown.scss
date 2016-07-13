@@ -85,10 +85,12 @@
   &-title {
     .dropdown {
       &-toggle {
+        padding: 0;
         min-width: initial;
         color: $graphite-dark;
 
         .icon-arrow {
+          margin-left: 1rem;
           font-size: .8rem;
         }
       }
@@ -103,7 +105,6 @@
     &.dropdown-two-line {
       .dropdown-toggle {
         background: $graphite;
-        //  icon
       }
     }
 
