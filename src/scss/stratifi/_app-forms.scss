@@ -14,9 +14,11 @@
     }
 
     .editable-fields & {
-      padding: 0;
-      border: 0;
-      box-shadow: none;
+      &:not(.c-select) {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
     }
   }
 

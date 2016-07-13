@@ -5147,7 +5147,7 @@ h6 {
   .form-control::placeholder {
     color: #4a4a4a;
     opacity: .6; }
-  .editable-fields .form-control {
+  .editable-fields .form-control:not(.c-select) {
     padding: 0;
     border: 0;
     box-shadow: none; }
