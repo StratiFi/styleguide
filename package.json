@@ -4,9 +4,8 @@
   "description": "Stratifi Style Guide",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build:prod",
-    "build:dev": "gulp build:dev",
-    "dev:watch": "gulp dev:watch && gulp copy:fonts",
+    "build": "gulp build",
+    "watch": "gulp watch",
     "postinstall": "bower install && gulp install",
     "test": "test"
   },
