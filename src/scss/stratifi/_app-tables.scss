@@ -70,6 +70,7 @@
   }
 
   th {
+    position: relative;
     font-weight: normal;
     border-color: $graphite-light;
     border-bottom: none;
@@ -259,7 +260,7 @@
 
   .collapsible {
     position: absolute;
-    left: -1rem;
+    left: -50px;
     transform: rotate(180deg);
 
     &.collapsed {
