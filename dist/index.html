@@ -36,10 +36,15 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 docs-content">
+            <div class="col-xs-12 docs-content m-b-3">
                 <h1 class="m-t-3">Colors</h1>
                 <!--TODO Add code examples-->
                 <div class="docs-example demo-colors flex direction-column">
+                    <h4>Custom gray colors</h4>
+                    <span class="graphite-dark">
+                        <span class="text-gray-darkest">Graphite dark</span> - <code>#4a4a4a</code>
+                    </span>
+
                     <h4>Custom graphite colors</h4>
                     <span class="graphite-dark">
                         <span class="text-graphite-dark">Graphite dark</span> - <code>#394346</code>
@@ -110,7 +115,7 @@
 <span class="nt">&lt;h6&gt;</span>h6 Heading title<span class="nt">&lt;/h6&gt;</span></code></pre>
                 </div>
 
-                <h3>With <code>.text-title</code> class</h3>
+                <h3 class="m-t-1">With <code>.text-title</code> class</h3>
                 <div class="docs-example">
                     <h1 class="text-title">h1 Heading title</h1>
                     <h2 class="text-title">h2 Heading title</h2>
@@ -129,7 +134,7 @@
                 </div>
 
                 <h1 class="m-t-3">FlexBox</h1>
-                <h3>Justify</h3>
+                <h3 class="m-t-1">Justify</h3>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <h5>Justify to start <small class="text-muted">(default)</small></h5>
@@ -202,7 +207,7 @@
                     </div>
                 </div>
 
-                <h3>Alignment</h3>
+                <h3 class="m-t-1">Alignment</h3>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <h5>Align to stretch <small class="text-muted">(default)</small></h5>
@@ -260,7 +265,7 @@
                     </div>
                 </div>
 
-                <h3>Directions</h3>
+                <h3 class="m-t-1">Directions</h3>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <h5>Row direction <small class="text-muted">(default)</small></h5>
@@ -339,7 +344,7 @@
                     </p>
                 </div>
 
-                <h3>Buttons group</h3>
+                <h3 class="m-t-1">Buttons group</h3>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="btn-group" data-toggle="buttons">
@@ -362,7 +367,7 @@
                 </div>
 
                 <h1 class="m-t-3">Dropdowns</h1>
-                <h3>Default Dropdown</h3>
+                <h3 class="m-t-1">Default Dropdown</h3>
                 <!--TODO Add code examples-->
                 <div class="row">
                     <div class="col-xs-12">
@@ -379,12 +384,22 @@
                     </div>
                 </div>
 
-                <h3>Title dropdown</h3>
+                <h3 class="m-t-1">Title dropdown</h3>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="dropdown dropdown-title">
-                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <h2>Dropdown <span class="icon-arrow"></span></h2>
+                        <button class="btn btn-link dropdown-toggle text-xs-left" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h2 class="flex justify-between align-center">Dropdown <span class="icon-arrow"></span></h2>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-title">
+                        <button class="btn btn-link dropdown-toggle text-xs-left" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h2 class="text-title flex justify-between align-center">Dropdown <span class="icon-arrow"></span></h2>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
                             <a class="dropdown-item" href="#">Action</a>
@@ -394,7 +409,7 @@
                     </div>
                 </div>
 
-                <h3>Dropdown in Navbar</h3>
+                <h3 class="m-t-1">Dropdown in Navbar</h3>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <nav class="navbar navbar-dark flex align-stretch justify-end bg-inverse">
@@ -443,7 +458,7 @@
                     </nav>
                 </div>
 
-                <h3>Signin navbar</h3>
+                <h3 class="m-t-1">Signin navbar</h3>
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <nav class="navbar navbar-dark flex align-stretch justify-between bg-inverse">
@@ -487,8 +502,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label>
-                            <!--TODO Change arrow-->
+                        <label class="c-select-wrap">
                             <select class="c-select">
                                 <option value="1">First option</option>
                                 <option value="2">Second option</option>
@@ -591,8 +605,7 @@
                             <tr>
                                 <td>Roles</td>
                                 <td class="select">
-                                    <label>
-                                        <!--TODO Change arrow-->
+                                    <label class="c-select-wrap">
                                         <select class="c-select">
                                             <option value="1">First option</option>
                                             <option value="2">Second option</option>
@@ -924,6 +937,16 @@
                         </table>
                     </div>
                 </div>
+
+                <h1 class="m-t-3">Tooltip</h1>
+                <div class="docs-example m-b-3">
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.">
+                        Tooltip on top
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.">
+                        Tooltip on bottom
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -931,6 +954,12 @@
     <!-- inject:js -->
     <script src="../dist/js/app.min.js"></script>
     <!-- endinject -->
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
 
     <script>hljs.initHighlightingOnLoad();</script>
 

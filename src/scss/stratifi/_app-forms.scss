@@ -12,6 +12,14 @@
       color: $gray-darkest;
       opacity: .6;
     }
+
+    .editable-fields & {
+      &:not(.c-select) {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+    }
   }
 
   &-group {
