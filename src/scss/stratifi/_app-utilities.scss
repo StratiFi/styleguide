@@ -1,4 +1,14 @@
 .text {
+  &-gray-darkest {
+    color: $gray-darkest !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
   &-gray-dark {
     color: $gray-dark !important;
 

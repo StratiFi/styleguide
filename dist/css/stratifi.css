@@ -4844,6 +4844,11 @@ a.bg-danger:focus, a.bg-danger:hover {
   .col-xl-bordered + .col-xl-bordered {
     border-left: none; } }
 
+.text-gray-darkest {
+  color: #4a4a4a !important; }
+  .text-gray-darkest-link:hover {
+    color: inherit !important; }
+
 .text-gray-dark {
   color: #373a3c !important; }
   .text-gray-dark-link:hover {
@@ -5554,9 +5559,11 @@ h6 {
     text-decoration: none; }
 
 .dropdown-title .dropdown-toggle {
+  padding: 0;
   min-width: initial;
   color: #394346; }
   .dropdown-title .dropdown-toggle .icon-arrow {
+    margin-left: 1rem;
     font-size: .8rem; }
 
 .dropdown-title .dropdown-menu {
