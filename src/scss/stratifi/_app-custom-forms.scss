@@ -13,10 +13,6 @@
     &-wrap {
       position: relative;
 
-      .editable-fields & {
-        display: block;
-      }
-
       &:after {
         content: '\e902';
 
