@@ -10,8 +10,17 @@
     box-shadow: none;
     @include border-radius($border-radius);
 
+    &:focus {
+      border-color: $brand-primary;
+    }
+
     &-wrap {
       position: relative;
+      display: inline-block;
+
+      .editable-fields & {
+        display: block;
+      }
 
       &:after {
         content: '\e902';
@@ -34,14 +43,28 @@
       }
     }
 
-    &:focus {
-      border-color: $brand-primary;
+    .table th & {
+      padding-left: 0;
+      border: none;
+      min-width: initial;
+      color: #fff;
+
+      option {
+        color: #000;
+      }
+
+      &-wrap {
+        &:after {
+          color: #fff;
+        }
+      }
     }
 
-    .table & {
+    .table td & {
       min-width: 180px;
     }
 
+    .table &,
     .modal & {
       width: 100%;
     }
