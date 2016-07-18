@@ -219,6 +219,11 @@
   font-weight: 100;
 }
 
+.text-lighter,
+.font-weight-lighter {
+  font-weight: 200;
+}
+
 .text-light,
 .font-weight-light {
   font-weight: 300;
@@ -269,4 +274,12 @@ h6 {
 
 .text-size-xs {
   font-size: $font-size-xs;
+}
+
+.block {
+  display: block !important;
+}
+
+.inline-block {
+  display: inline-block !important;
 }

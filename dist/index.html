@@ -42,7 +42,7 @@
                 <div class="docs-example demo-colors flex direction-column">
                     <h4>Custom gray colors</h4>
                     <span class="graphite-dark">
-                        <span class="text-gray-darkest">Graphite dark</span> - <code>#4a4a4a</code>
+                        <span class="text-gray-darkest">Graphite dark</span> - <code>#4a4a4a</code> - <code>.text-gray-darkest</code>
                     </span>
 
                     <h4>Custom graphite colors</h4>
@@ -369,17 +369,13 @@
                 <h1 class="m-t-3">Dropdowns</h1>
                 <h3 class="m-t-1">Default Dropdown</h3>
                 <!--TODO Add code examples-->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="docs-example">
-                            <div class="dropdown">
-                                <button class="btn btn-muted dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="icon-arrow"></span></button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
+                <div class="docs-example">
+                    <div class="dropdown">
+                        <button class="btn btn-muted dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="icon-arrow"></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
                 </div>
@@ -405,6 +401,47 @@
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="m-t-1">Custom dropdown</h3>
+                <!--TODO Add code examples-->
+                <div class="docs-example">
+                    <div class="dropdown">
+                        <button class="btn btn-muted btn-title flex justify-between" type="button" id="customDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
+                        <div class="dropdown-menu p-y-1" aria-labelledby="customDropdownMenu" style="width: 300px;">
+                            <div class="form-group p-x-2">
+                                <label for="date-from">Date Range</label>
+                                <div class="flex align-center justify-between">
+                                    <input type="text" class="form-control" id="date-from" placeholder="From">
+                                    <label class="p-x-1" for="date-to">To</label>
+                                    <input type="text" class="form-control" id="date-to" placeholder="To">
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="form-group p-x-2">
+                                <label for="custodian" class="block">Custodian Type</label>
+                                <div class="c-select-wrap">
+                                    <select class="c-select" id="custodian">
+                                        <option value="1">First option</option>
+                                        <option value="2">Second option</option>
+                                        <option value="3">Third option</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-link btn-block" type="button">Add Custodian Type</button>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="form-group p-x-2">
+                                <label for="date-from">Value Range</label>
+                                <div class="flex align-center justify-between">
+                                    <input type="text" class="form-control" id="value-from" placeholder="From">
+                                    <label class="p-x-1" for="date-to">To</label>
+                                    <input type="text" class="form-control" id="value-to" placeholder="To">
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <button class="btn btn-link btn-block" type="button">Update</button>
                         </div>
                     </div>
                 </div>
@@ -479,6 +516,7 @@
                 </div>
 
                 <h1 class="m-t-3">Forms</h1>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="form-group">
                         <label for="formGroupExampleInput1">Label</label>
@@ -574,8 +612,9 @@
                 <h1 class="m-t-3">Tables</h1>
 
                 <h3 class="m-t-1">Collapsible table</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
-                    <table class="table table-bordered table-borderless-top table-two-cells">
+                    <table class="table table-bordered table-borderless-top table-two-cells editable-fields">
                         <thead class="thead-graphite">
                             <tr>
                                 <th colspan="2">
@@ -635,6 +674,7 @@
                 </div>
 
                 <h3 class="m-t-1">Checkbox & search</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <table class="table table-bordered table-borderless-top">
                         <thead class="thead-graphite">
@@ -730,6 +770,7 @@
                 </div>
 
                 <h3 class="m-t-1">Radio & action</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <table class="table table-bordered">
                         <thead class="thead-graphite">
@@ -801,6 +842,7 @@
                 </div>
 
                 <h3 class="m-t-1">Checkbox & select all</h3>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <table class="table table-bordered table-borderless-top">
                         <thead class="thead-graphite">
@@ -900,7 +942,58 @@
                     </table>
                 </div>
 
+                <h3 class="m-t-1">Select in table head</h3>
+                <!--TODO Add code examples-->
+                <div class="docs-example">
+                    <table class="table table-bordered table-borderless-top">
+                        <thead class="thead-graphite">
+                            <tr>
+                                <th class="checkbox-cell">Link?</th>
+                                <th>Suggestion</th>
+                                <th>Account Name</th>
+                                <th>Date of Inception</th>
+                                <th>Account #</th>
+                                <th>Type</th>
+                                <th>
+                                    <div class="flex align-center justify-between">
+                                        <div class="c-select-wrap">
+                                            <select class="c-select">
+                                                <option value="1">First option</option>
+                                                <option value="2">Second option</option>
+                                                <option value="3">Third option</option>
+                                            </select>
+                                        </div>
+                                        <a href="#"><span class="icon-remove"></span></a>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-cell">
+                                    <label class="c-input c-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="c-indicator icon-checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="flex justify-between">
+                                        <span class="text-muted">client name</span>
+                                        <a href="#"><span class="icon-search text-graphite-light"></span></a>
+                                    </span>
+                                </td>
+                                <td>My Savings</td>
+                                <td>06/01/06</td>
+                                <td>000-0000-1234</td>
+                                <td>Equity</td>
+                                <td>$000,000,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <h1 class="m-t-3">Steps pagination</h1>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <ul class="steps-pagination flex justify-between m-b-3">
                         <li class="text-size-xs checked">Step 1</li>
@@ -916,6 +1009,7 @@
                 </div>
 
                 <h1 class="m-t-3">Model card</h1>
+                <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="card p-y-1">
                         <table class="table table-bordred table-borderless m-y-0">
@@ -932,7 +1026,7 @@
                                         <h5>Conservative</h5>
                                     </td>
                                     <td class="text-xs-center b-r-1 positions" width="20%">
-                                        <h1 class="text-thin">5</h1>
+                                        <h1 class="text-thin" style="font-size: 3.75rem">5</h1>
                                         <h6 class="text-title text-uppercase text-size-xs">Securities</h6>
                                     </td>
                                     <td class="text-xs-center" width="20%">
@@ -946,6 +1040,7 @@
                 </div>
 
                 <h1 class="m-t-3">Tooltip</h1>
+                <!--TODO Add code examples-->
                 <div class="docs-example m-b-3">
                     <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.">
                         Tooltip on top
