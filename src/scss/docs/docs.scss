@@ -10,6 +10,7 @@
 .docs {
   &-example {
     position: relative;
+    overflow: auto;
     padding: 1rem;
     margin: 1rem -1rem;
     border: solid #f7f7f9;

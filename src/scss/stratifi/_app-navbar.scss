@@ -44,6 +44,21 @@
     }
   }
 
+  @include media-breakpoint-down(sm) {
+    .collapse {
+      &.in {
+        display: flex;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &-toggler {
+      display: none;
+    }
+  }
+
+
   .navbar-brand {
     img {
       display: inline-block;
