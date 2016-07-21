@@ -28,12 +28,29 @@
             <a href="#" class="navbar-brand flex align-center"><img src="img/logo.svg" alt="Stratifi docs"> Style Guide</a>
         </div>
 
-        <ul class="nav navbar-nav navbar-main flex align-center collapse" id="topNavbar" aria-expanded="false">
-            <li class="nav-item"><a class="link nav-link active" href="#">Link</a></li>
-            <li class="nav-item"><a class="link nav-link" href="#">Link</a></li>
-            <li class="nav-item"><a class="link nav-link" href="#">Link</a></li>
-            <li class="nav-item"><a class="link nav-link" href="#">Link</a></li>
-        </ul>
+        <nav class="nav navbar-nav navbar-main flex align-center collapse" id="topNavbar" aria-expanded="false">
+            <a class="nav-item nav-link active" href="#">Link</a>
+            <a class="nav-item nav-link" href="#">Link</a>
+            <a class="nav-item nav-link" href="#">Link</a>
+            <a class="nav-item nav-link" href="#">Link</a>
+        </nav>
+
+        <nav class="nav navbar-nav flex align-stretch">
+            <div class="nav-item dropdown dropdown-two-line flex">
+                <button class="nav-link dropdown-toggle flex align-stretch btn btn-link text-xs-right" id="dropdownUser" data-toggle="dropdown">
+                    <span class="text-uppercase text-light">JAMES DOE</span>
+                    <span class="text-light text-muted">Advisor for Doe Investments</span>
+                    <span class="text-xs-center icon-arrow"></span>
+                </button>
+                <nav class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item link" href="#">Link</a>
+                    <a class="dropdown-item link" href="#">Link</a>
+                    <a class="dropdown-item link" href="#">Link</a>
+                    <a class="dropdown-item link" href="#">Link</a>
+                    <a class="dropdown-item link" href="#">Link</a>
+                </nav>
+            </div>
+        </nav>
     </nav>
 
     <div class="container">

@@ -22,8 +22,10 @@
   .navbar-nav {
     .nav-item {
       @media (max-width: 768px) {
-        float: none;
-        display: block;
+        &:not(.dropdown) {
+          float: none;
+          display: block;
+        }
       }
 
       + .nav-item {
@@ -60,10 +62,6 @@
   }
 
   .navbar-brand {
-    @media (max-width: 768px) {
-
-    }
-    
     img {
       display: inline-block;
       width: 7rem;
@@ -97,11 +95,6 @@
   }
 
   &-static-top {
-    @media (max-width: 768px) {
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
     &.bg-inverse {
       @include border-radius(0);
     }

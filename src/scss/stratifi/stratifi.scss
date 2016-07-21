@@ -1,17 +1,13 @@
 // load variables
 @import "variables";
 
-@import "../../../bower_components/bootstrap/scss/variables";
-@import "../../../bower_components/bootstrap/scss/mixins";
-
-@import "app-flexbox";
-
 // load bootstrap and fixing styles
 @import "../../../bower_components/bootstrap/scss/bootstrap";
 @import "bootstrap"; // bootstrap "overriding" fix
 
 // load app styles
 @import "app-fonts";
+@import "app-flexbox";
 @import "app-grid";
 @import "app-utilities";
 @import "app-tables";
