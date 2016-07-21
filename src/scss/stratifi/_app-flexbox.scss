@@ -3,12 +3,6 @@
 
 .flex {
   display: flex;
-
-  @include media-breakpoint-up(md) {
-    &-md {
-      display: flex;
-    }
-  }
 }
 
 .direction {
