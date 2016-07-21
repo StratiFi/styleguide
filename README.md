@@ -15,7 +15,7 @@ To get completed guidelines for all the elments, just check the BS [documention]
 http://stratifi.github.io/styleguide/dist  
 
 ## Components status
-- [ ] ICONS - *In Progress*
+- [x] ICONS
 - [x] COLORS
 - [x] HEADINGS
 - [x] BUTTONS
@@ -32,11 +32,11 @@ http://stratifi.github.io/styleguide/dist
 ##### Additional components status
 
 - [ ] FLEXBOX MODEL - *In Progress*
-- [ ] FILTERED TABLES
+- [x] FILTERED TABLES
 - [x] EDITABLE TABLES
 - [x] COLLAPSIBLE TABLES
-- [ ] CONFIRMATION MODALS
-- [ ] ACTIONABLE MODALS
+- [x] CONFIRMATION MODALS
+- [x] ACTIONABLE MODALS
 - [ ] ACTIONABLE DROPDOWNS
 - [ ] CARDS LIST
 
