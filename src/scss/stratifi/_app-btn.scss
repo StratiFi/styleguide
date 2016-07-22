@@ -1,7 +1,10 @@
 .btn {
-  letter-spacing: .1rem;
   font-weight: $btn-font-weight;
   @include transition(all .2s);
+
+  &:not(.text-title) {
+    letter-spacing: .1rem;
+  }
 
   &-icon {
     padding: 0.45em 0.7em;
