@@ -22,6 +22,10 @@
 }
 
 .icon {
+  &-advisor-placeholder:before {
+    content: "\e918";
+  }
+
   &-minus:before {
     content: "\e915";
   }

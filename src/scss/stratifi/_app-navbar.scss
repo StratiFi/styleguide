@@ -1,12 +1,27 @@
 .navbar {
-  padding: 0 $navbar-padding-horizontal;
+  padding: 0 $navbar-min-height 0 $navbar-padding-horizontal;
   min-height: $navbar-min-height;
+
+  &.no-user-pic {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+    }
+
+    &:before {
+      top: 0;
+      right: 0;
+      width: $navbar-min-height;
+      height: $navbar-min-height;
+      background: $graphite-light;
+    }
+  }
 
   &.user-pic {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top right;
-    padding-right: $navbar-min-height;
   }
 
   &:after {
