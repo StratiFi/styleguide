@@ -1,9 +1,11 @@
 .navbar {
-  padding: 0 $navbar-min-height 0 $navbar-padding-horizontal;
+  padding: 0 $navbar-padding-horizontal;
   min-height: $navbar-min-height;
 
-  &.no-user-pic {
-    &.loggedin {
+  &.loggedin {
+    padding-right: $navbar-min-height;
+
+    &.no-user-pic {
       &:before,
       &:after {
         position: absolute;
