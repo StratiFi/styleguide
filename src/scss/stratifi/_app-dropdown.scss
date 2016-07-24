@@ -45,11 +45,11 @@
 
           &:not(.icon-arrow) {
             line-height: 1em;
-          }
 
-          &:first-child {
-            margin-top: 15px;
-            letter-spacing: 1.3px;
+            &:first-child {
+              margin-top: 15px;
+              letter-spacing: 1.3px;
+            }
           }
 
           &:nth-child(2) {
