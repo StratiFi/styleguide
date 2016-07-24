@@ -15,6 +15,16 @@
     padding: 0;
   }
 
+  &-dialog {
+    .modal.fade & {
+      transition: none;
+      transform: translateY(0);
+    }
+
+    .modal.in & {
+    }
+  }
+
   &.left,
   &.right {
     .navbar-nav {

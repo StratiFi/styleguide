@@ -2,11 +2,49 @@
   padding: 0 $navbar-padding-horizontal;
   min-height: $navbar-min-height;
 
+  &.loggedin {
+    padding-right: $navbar-min-height;
+
+    &.no-user-pic {
+      &:before,
+      &:after {
+        position: absolute;
+      }
+
+      &:before {
+        content: '';
+        top: 0;
+        right: 0;
+        width: $navbar-min-height;
+        height: $navbar-min-height;
+        background: $graphite-light;
+      }
+
+      &:after {
+        content: "\e918";
+
+        font-size: 40px;
+        width: 4.6rem;
+        line-height: 4.6rem;
+        text-align: center;
+
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+
   &.user-pic {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top right;
-    padding-right: $navbar-min-height;
   }
 
   &:after {
