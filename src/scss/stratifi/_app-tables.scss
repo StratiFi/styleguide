@@ -270,15 +270,9 @@
 
   .collapsible {
     position: absolute;
+    top: 15px;
     left: -50px;
-    border: 1px solid $brand-primary;
-    width: 20px;
-    height: 20px;
-    font-size: 6px;
-    line-height: 20px;
-    text-indent: 2px;
-    text-align: center;
-    border-radius: 50%;
+    font-size: 20px;
     transform: rotate(180deg);
 
     &:hover,
@@ -289,6 +283,8 @@
     }
 
     &.collapsed {
+      top: 17px;
+      left: -47px;
       transform: rotate(0deg);
     }
   }
