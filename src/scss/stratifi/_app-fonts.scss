@@ -22,6 +22,10 @@
 }
 
 .icon {
+  &-table-arrow:before {
+    content: "\e919";
+  }
+
   &-advisor-placeholder:before {
     content: "\e918";
   }
