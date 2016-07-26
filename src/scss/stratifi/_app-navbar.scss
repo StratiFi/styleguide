@@ -87,6 +87,7 @@
       font-size: $font-size-sm;
       color: $navbar-dark-color;
       opacity: 0.6;
+      @include transition(all .3s);
 
       &.active,
       &.dropdown-toggle {
