@@ -31,7 +31,7 @@ http://stratifi.github.io/styleguide/dist
 
 ##### Additional components status
 
-- [ ] FLEXBOX MODEL - *In Progress*
+- [x] FLEXBOX MODEL - *In Progress*
 - [x] FILTERED TABLES
 - [x] EDITABLE TABLES
 - [x] COLLAPSIBLE TABLES

@@ -83,8 +83,7 @@
       background-color: $gray-lighter;
       border: 1px solid $input-border-color;
       @include border-radius(100em);
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
+      @include transition(all .3s);
     }
 
     &:after {
@@ -100,8 +99,7 @@
       @include border-radius(100em);
       border: 1px solid $gray-lighter;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-      -webkit-transition: margin-left 0.3s;
-      transition: margin-left 0.3s;
+      @include transition(margin-left .3s);
     }
   }
 

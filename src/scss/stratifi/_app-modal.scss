@@ -17,8 +17,8 @@
 
   &-dialog {
     .modal.fade & {
-      transition: none;
       transform: translateY(0);
+      @include transition(none);
     }
 
     .modal.in & {
@@ -85,10 +85,7 @@
     &.fade {
       .modal-dialog {
         left: -80%;
-        -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
-        -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
-        -o-transition: opacity 0.3s linear, left 0.3s ease-out;
-        transition: opacity 0.3s linear, left 0.3s ease-out;
+        @include transition(opacity .3s linear, left .3s ease-out);
       }
 
       &.in {
@@ -103,10 +100,7 @@
     &.fade {
       .modal-dialog {
         right: -80%;
-        -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-        -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-        -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-        transition: opacity 0.3s linear, right 0.3s ease-out;
+        @include transition(opacity .3s linear, right .3s ease-out);
       }
 
       &.in {
