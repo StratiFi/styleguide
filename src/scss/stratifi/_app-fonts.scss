@@ -22,6 +22,14 @@
 }
 
 .icon {
+  &-down:before {
+    content: "\e91a";
+  }
+
+  &-up:before {
+    content: "\e91b";
+  }
+
   &-table-arrow:before {
     content: "\e919";
   }
