@@ -1,0 +1,35 @@
+.marker {
+  &-before,
+  &-after {
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: $brand-primary;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-primary;
+    }
+  }
+
+  &-before {
+    &:before {
+      margin-right: 10px;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+
+  &-after {
+    &:after {
+      margin-left: 10px;
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+}
