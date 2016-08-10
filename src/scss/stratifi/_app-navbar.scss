@@ -9,6 +9,7 @@
       &:before,
       &:after {
         position: absolute;
+        display: block;
       }
 
       &:before {
@@ -21,9 +22,10 @@
       }
 
       &:after {
+        right: 0;
         content: "\e918";
 
-        font-size: 40px;
+        font-size: 32px;
         width: 4.6rem;
         line-height: 4.6rem;
         text-align: center;
