@@ -2,51 +2,42 @@
   padding: 0 $navbar-padding-horizontal;
   min-height: $navbar-min-height;
 
-  &.loggedin {
-    padding-right: $navbar-min-height;
 
-    &.no-user-pic {
-      &:before,
-      &:after {
-        position: absolute;
-        display: block;
-      }
-
-      &:before {
-        content: '';
-        top: 0;
-        right: 0;
-        width: $navbar-min-height;
-        height: $navbar-min-height;
-        background: $graphite-light;
-      }
-
-      &:after {
-        right: 0;
-        content: "\e918";
-
-        font-size: 32px;
-        width: 4.6rem;
-        line-height: 4.6rem;
-        text-align: center;
-
-        font-family: 'icomoon' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
+  &.no-user-pic {
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
     }
-  }
 
-  &.user-pic {
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top right;
+    &:before {
+      content: '';
+      top: 0;
+      right: 0;
+      width: $navbar-min-height;
+      height: $navbar-min-height;
+      background: $graphite-light;
+    }
+
+    &:after {
+      right: 0;
+      content: "\e918";
+
+      font-size: 32px;
+      width: 4.6rem;
+      line-height: 4.6rem;
+      text-align: center;
+
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
   }
 
   &:after {
@@ -105,7 +96,8 @@
   .navbar-brand {
     img {
       display: inline-block;
-      width: 7rem;
+      height: 100%;
+      max-height: 4.1rem;
       margin-right: .5rem;
     }
   }
