@@ -40,6 +40,10 @@
     }
   }
 
+  &.user-pic {
+    padding-right: 0;
+  }
+
   &:after {
     content: none;
   }
