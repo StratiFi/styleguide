@@ -5,6 +5,8 @@
 
   &.loggedin {
     &.no-user-pic {
+      padding-right: $navbar-min-height;
+
       &:before,
       &:after {
         position: absolute;
