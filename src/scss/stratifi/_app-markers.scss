@@ -32,4 +32,25 @@
       content: none;
     }
   }
+
+  &-top {
+    &:before,
+    &:after {
+      vertical-align: top;
+    }
+  }
+
+  &-middle {
+    &:before,
+    &:after {
+      vertical-align: middle;
+    }
+  }
+
+  &-bottom {
+    &:before,
+    &:after {
+      vertical-align: bottom;
+    }
+  }
 }
