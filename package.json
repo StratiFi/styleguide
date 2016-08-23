@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
-    "postinstall": "bower install && gulp install",
+    "postinstall": "bower install",
     "test": "test"
   },
   "repository": {
