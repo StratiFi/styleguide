@@ -61,6 +61,16 @@
       color: white;
     }
 
+    &.active {
+      &:focus,
+      &:active,
+      &:hover {
+        border-color: $graphite-light;
+        background: $graphite-light;
+        color: white;
+      }
+    }
+
     &.disabled,
     &:disabled {
       &:hover,
