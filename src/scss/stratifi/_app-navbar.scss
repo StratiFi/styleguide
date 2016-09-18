@@ -139,7 +139,9 @@
 }
 
 .nav-image-wrapper{
-  display: inline-block;
+  display: flex;
+  align-items: center;
   max-height: 100%;
   overflow: hidden;
+
 }
