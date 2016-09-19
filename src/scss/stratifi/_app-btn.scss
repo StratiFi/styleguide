@@ -20,6 +20,8 @@
   &.disabled,
   &:disabled {
     opacity: .6;
+    background-color: #394346;
+    border-color: #394346;
   }
 
   &-group {
@@ -93,5 +95,6 @@
       border-color: $gray-dark;
       background: $gray-dark;
     }
+
   }
 }

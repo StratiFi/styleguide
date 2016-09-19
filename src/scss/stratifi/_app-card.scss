@@ -6,9 +6,14 @@
     opacity: .3;
   }
 
+
+  span{
+     padding: 0.5em 0;
+  }
   &:hover {
     .btn-muted {
       opacity: 1;
     }
   }
 }
+
