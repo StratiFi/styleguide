@@ -150,4 +150,11 @@
   display: inline-block;
   max-height: 100%;
   overflow: hidden;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 100%;
+    vertical-align: middle;
+  }
 }
