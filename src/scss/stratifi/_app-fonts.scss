@@ -25,6 +25,38 @@
 }
 
 .icon {
+  &-two-arrows:before {
+    content: "\e925";
+  }
+
+  &-linkedin:before {
+    content: "\e923";
+  }
+
+  &-twitter:before {
+    content: "\e924";
+  }
+
+  &-compliments:before {
+    content: "\e91f";
+  }
+
+  &-accounts2:before {
+    content: "\e91d";
+  }
+
+  &-custodian:before {
+    content: "\e920";
+  }
+
+  &-risk:before {
+    content: "\e921";
+  }
+
+  &-transparent:before {
+    content: "\e922";
+  }
+
   &-clients:before {
     content: "\e91c";
   }
@@ -129,7 +161,7 @@
     content: "\e910";
   }
 
-  &-risk:before {
+  &-risk-management:before {
     content: "\e911";
   }
 
