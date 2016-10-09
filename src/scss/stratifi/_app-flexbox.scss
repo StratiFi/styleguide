@@ -3,6 +3,18 @@
 
 .flex {
   display: flex;
+
+  &-wrap {
+    flex-wrap: wrap;
+
+    &-no {
+      flex-wrap: nowrap;
+    }
+
+    &-reverse {
+      flex-wrap: wrap-reverse;
+    }
+  }
 }
 
 .direction {
