@@ -1,10 +1,30 @@
-/node_modules
-/bower_components
+# Logs
+logs
+*.log
+npm-debug.log*
 
-.DS_Store
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-npm-debug.log
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules
+jspm_packages
+bower_components
+
 webpack-stats.json
 webpack-assets.json
 
-.idea
+# Generated distribution files
+dist
