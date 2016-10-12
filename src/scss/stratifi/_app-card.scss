@@ -17,3 +17,13 @@
     border-radius: 3px;
   }
 }
+
+a {
+  &.card-shadow {
+    @include transition(all .3s);
+
+    &:hover {
+      box-shadow: 0 2px 8px 4px rgba(black, .1);
+    }
+  }
+}
