@@ -25,6 +25,14 @@
 }
 
 .icon {
+  &-checkmark-circle:before {
+    content: "\e926";
+  }
+
+  &-document:before {
+    content: "\e927";
+  }
+
   &-two-arrows:before {
     content: "\e925";
   }
