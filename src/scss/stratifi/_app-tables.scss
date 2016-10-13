@@ -75,6 +75,40 @@
         }
       }
     }
+
+    &.bottom-line {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        bottom: 0;
+        right: -1px;
+        height: 5px;
+        background: #000;
+      }
+
+      &.line-green {
+        &:after {
+          opacity: .5;
+          background: $brand-success;
+        }
+      }
+
+      &.line-muted {
+        &:after {
+          opacity: .2;
+        }
+      }
+
+      &.total {
+        &:after {
+          opacity: .8;
+          background: $brand-success;
+        }
+      }
+    }
   }
 
   th {
