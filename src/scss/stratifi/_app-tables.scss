@@ -96,6 +96,13 @@
         }
       }
 
+      &.line-red {
+        &:after {
+          opacity: .5;
+          background: $brand-danger;
+        }
+      }
+
       &.line-muted {
         &:after {
           opacity: .2;
