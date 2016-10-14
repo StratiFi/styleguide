@@ -2,7 +2,6 @@
   padding: 0 $navbar-padding-horizontal;
   min-height: $navbar-min-height;
 
-
   &.loggedin {
     &.no-user-pic {
       padding-right: $navbar-min-height;
@@ -55,12 +54,45 @@
   @media (min-width: 769px) {
     &-toggler {
       display: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  @media (max-width: 570px) {
+    padding-left: 0;
+  }
+
+  @media (max-width: 950px) {
+    padding-right: 0 !important;
+
+    &::before {
+      display: none !important;
+    }
+    &::after {
+      display: none !important;
     }
   }
 
   .navbar-nav {
-    .nav-item {
+
+    &.navbar-main {
+      @media (max-width: 1040px) {
+        left: 420px;
+      }
       @media (max-width: 768px) {
+        left: 50%;
+        width: 100%;
+        top: 227% !important;
+      }
+    }
+
+    .nav-item {
+
+      @media (max-width: 768px) {
+
         &:not(.dropdown) {
           float: none;
           display: block;
@@ -72,6 +104,10 @@
 
         &:not(.dropdown) {
           margin-left: $navbar-padding-horizontal * 2;
+
+          @media (max-width: 1170px) {
+            margin-left: 15px !important;
+          }
 
           @media (max-width: 768px) {
             margin-left: 0;
@@ -102,6 +138,10 @@
   }
 
   .navbar-brand {
+
+    @media (max-width: 420px) {
+      display: none;
+    }
 
     img {
       display: inline-block;
