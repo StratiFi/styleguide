@@ -59,6 +59,17 @@
   }
 
   .navbar-nav {
+
+    .red-dot {
+      border-radius: 50%;
+      background: #ff8484;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 5px;
+      left: -20px;
+    }
+
     .nav-item {
       @media (max-width: 768px) {
         &:not(.dropdown) {
