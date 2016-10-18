@@ -27,3 +27,29 @@ a {
     }
   }
 }
+
+/* Will be moved */
+.card-boundary {
+  width: 300px;
+  height: 384px;
+}
+
+.table-paddingless {
+  td {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.table-padding-top-5 {
+  td {
+    padding-top: 5px;
+  }
+}
+
+.strategy-title {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #394346;
+}
