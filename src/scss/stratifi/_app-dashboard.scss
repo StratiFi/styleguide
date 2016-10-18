@@ -1,0 +1,25 @@
+.dashboard-summary {
+
+  .card {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 30px;
+  }
+
+  .card-offset {
+    display: table-cell;
+    width: 1.5em;
+  }
+
+  .card-row-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    & > div {
+      display: table-row;
+    }
+  }
+
+}
