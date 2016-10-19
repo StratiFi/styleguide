@@ -1,5 +1,9 @@
 .dashboard-summary {
 
+  .notification-icon {
+    font-size: 25px;
+  }
+
   .card {
     display: table-cell;
     vertical-align: middle;
@@ -20,6 +24,11 @@
     & > div {
       display: table-row;
     }
+  }
+
+  .btn-grey {
+    background: rgba(176, 188, 192, 0.6);
+    color: #fff;
   }
 
 }
