@@ -1,0 +1,28 @@
+.notification {
+  position: relative;
+  background: $brand-primary;
+  color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), inset 0 1px 2px 0 rgba(255, 255, 255, 0.5);
+  border: solid 1px #0c8cc8;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: $border-radius-lg;
+  font-size: 18px;
+  line-height: 22px;
+
+  .mark-as-read {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    line-height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding-left: 2px;
+
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+}
