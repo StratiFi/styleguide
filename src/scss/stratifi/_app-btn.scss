@@ -80,6 +80,23 @@
     }
   }
 
+  &-primary-transparent {
+    @extend .btn-secondary;
+    border-color: $brand-primary;
+    color: $brand-primary;
+
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+      background: $brand-primary;
+      border-color: $brand-primary;
+      color: white;
+    }
+  }
+
   &-black {
     border-color: $graphite-dark;
     background: $graphite-dark;
