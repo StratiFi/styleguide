@@ -59,6 +59,7 @@
   }
 
   .navbar-nav {
+    vertical-align: middle;
 
     .red-dot {
       border-radius: 50%;
@@ -68,6 +69,16 @@
       position: absolute;
       top: 5px;
       left: -20px;
+    }
+
+    .notification-icon {
+      position: absolute;
+      left: -27px;
+      top: 8px;
+      font-size: 19px;
+      z-index: -1;
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+      color: $graphite-dark;
     }
 
     .nav-item {
