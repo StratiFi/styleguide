@@ -251,6 +251,11 @@ h6.text-title {
 
 h1 {
   font-size: $text-title-size-h1;
+
+  @media (max-width: 768px) {
+    font-size: $text-title-size-h1-mobile;
+    line-height: 2.5rem;
+  }
 }
 
 h2 {

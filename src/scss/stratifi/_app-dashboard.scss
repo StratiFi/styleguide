@@ -45,6 +45,11 @@
     width: 50%;
     padding: 30px;
 
+    @media (max-width: 520px) {
+      display: block;
+      width: 100%;
+    }
+
     &.hidden {
       border: none;
 
@@ -79,8 +84,16 @@
     table-layout: fixed;
     width: 100%;
 
+    @media (max-width: 520px) {
+      display: block;
+    }
+
     & > div {
       display: table-row;
+
+      @media (max-width: 520px) {
+        display: block;
+      }
     }
   }
 
