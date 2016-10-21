@@ -86,7 +86,7 @@
       @media (max-width: 768px) {
         left: 50%;
         width: 100%;
-        top: 227% !important;
+        top: 200% !important;
       }
 
       .red-dot {
@@ -159,10 +159,6 @@
 
     .navbar-brand {
 
-      @media (max-width: 420px) {
-        display: none;
-      }
-
       img {
         display: inline-block;
         height: 100%;
@@ -180,7 +176,8 @@
     }
 
     @media (max-width: 768px) {
-      &-main {
+
+      &.navbar-main {
         display: block;
         position: absolute;
         top: 100%;
@@ -216,6 +213,12 @@
       width: 0px;
       height: 100%;
       vertical-align: middle;
+    }
+  }
+
+  .navbar-brand {
+    @media (max-width: 420px) {
+      display: none !important;
     }
   }
 }

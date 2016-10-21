@@ -10,6 +10,12 @@
   font-size: 18px;
   line-height: 22px;
 
+  @media (max-width: 768px) {
+    padding: 10px;
+    padding-right: 40px;
+    font-size: 15px;
+  }
+
   .mark-as-read {
     box-sizing: border-box;
     position: absolute;
@@ -24,5 +30,11 @@
     top: 16px;
     right: 16px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      top: 10px;
+      right: 10px;
+    }
+
   }
 }
