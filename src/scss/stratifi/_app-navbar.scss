@@ -1,6 +1,18 @@
+.advisor-container {
+  padding-top: 3.5rem;
+}
+
 .navbar {
   padding: 0 $navbar-padding-horizontal;
   min-height: $navbar-min-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  &-toggler {
+    font-size: 30px;
+    padding-top: 5px;
+  }
 
   &.loggedin {
     &.no-user-pic {
@@ -53,7 +65,7 @@
 
   @media (min-width: 769px) {
     &-toggler {
-      display: none;
+      //display: none;
 
       &:focus {
         outline: none;
