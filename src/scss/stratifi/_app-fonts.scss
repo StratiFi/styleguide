@@ -188,4 +188,16 @@
   &-bell:before {
     content: "\e928";
   }
+
+  &-strategies_nav:before {
+    content: "\e929";
+  }
+
+  &-clients_nav:before {
+    content: "\e92a";
+  }
+
+  &-dashboard_nav:before {
+    content: "\e92b";
+  }
 }
