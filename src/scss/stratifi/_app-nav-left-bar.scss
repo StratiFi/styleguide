@@ -1,3 +1,82 @@
+$button-size : 1.5rem;
+$transition: .3s;
+
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/7;
+  background: #fff;
+  border-radius: $button-size/14;
+  transition: $transition;
+}
+ 
+.drawer-icon {
+  display: inline-block;
+  cursor: pointer;
+  transition: $transition;
+  user-select: none;
+  border-radius: $button-size/7;
+  background: $graphite-dark;
+  padding: 0;
+  border: none;
+  margin-top: -10px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transition: none;
+  }
+
+  &.x {
+
+    .lines {
+      background: transparent;
+
+      &:before, &:after {
+        transform-origin: 50% 50%;
+        top: 0;
+        width: $button-size;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+
+  }
+
+  .lines {
+    @include line;
+    position: relative;
+
+    &:before, &:after {
+      @include line;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: $button-size/14 center;
+    }
+
+    &:before {
+      top: .5rem;
+    }
+
+    &:after {
+      top: -.5rem;
+    }
+  }
+}
+
 .navigation-left-bar {
   position: absolute;
   width: 180px;
@@ -5,13 +84,15 @@
   top: 4.6rem;
   background: #6f797c;
   z-index: 5;
-  transition: .25s ease-in-out all;
+  box-shadow: 1px 0 4px #555;
 
   &.shown {
+    transition: .3s ease-in left;
     left: 0;
   }
 
   &.hidden {
+    transition: .3s ease-out left;
     left: -180px;
   }
 

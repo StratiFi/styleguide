@@ -130,5 +130,29 @@
         background: $graphite-lightest;
       }
     }
+
+    &.primary-light {
+      &:before {
+        background: $primary-light;
+      }
+    }
+
+    &.primary-dark {
+      &:before {
+        background: $primary-dark;
+      }
+    }
+
+    &.success-light {
+      &:before {
+        background: $success-light;
+      }
+    }
+
+    &.success-dark {
+      &:before {
+        background: $success-dark;
+      }
+    }
   }
 }
