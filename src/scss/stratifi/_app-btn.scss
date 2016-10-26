@@ -93,18 +93,51 @@
     }
   }
 
-  &-black {
-    border-color: $graphite-dark;
-    background: $graphite-dark;
+  &-primary {
+    &.active, &:active, &:target {
+      background-color: $primary-dark;
+    }
 
-    &:active,
-    &.active,
-    &:focus,
-    &.focus,
-    &:hover,
-    &.hover {
+    &:hover, &:focus {
+      background-color: $primary-light;
+
+      &.active, &:active, &:target {
+        background-color: $primary-dark;
+      }
+    }
+  }
+
+  &-success {
+    &.active, &:active, &:target {
+      background-color: $success-dark;
+    }
+
+    &:hover, &:focus {
+      background-color: $success-light;
+
+      &:active, &.active, &:target {
+        border-color: $success-dark;
+      }
+    }
+  }
+
+  &-black {
+    @extend .btn-primary;
+    border-color: $graphite-dark;
+    background-color: $graphite-dark;
+
+    &:active, &.active, &:target {
+      border-color: $graphite-dark;
+      background-color: $gray-dark;
+    }
+    &:focus, &.focus, &:hover, &.hover {
       border-color: $gray-dark;
-      background: $gray-dark;
+      background-color: $gray;
+
+      &:active, &.active, &:target {
+        background-color: $gray-dark;
+        border-color: $gray-dark;
+      }
     }
   }
 }
