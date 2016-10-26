@@ -55,6 +55,16 @@
         -moz-osx-font-smoothing: grayscale;
       }
     }
+
+    &.shown {
+      transition: .3s ease-in top;
+      top: 0;
+    }
+
+    &.hidden {
+      transition: .3s ease-out top;
+      top: -80px;
+    }
   }
 
   &.user-pic {
