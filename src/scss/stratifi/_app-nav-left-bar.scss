@@ -87,13 +87,24 @@ $transition: .3s;
   box-shadow: 1px 0 4px #555;
 
   &.shown {
-    transition: .3s ease-in left;
+    transition: all .3s ease-in;
     left: 0;
+    width: 180px;
   }
 
   &.hidden {
     transition: .3s ease-out left;
     left: -180px;
+  }
+
+  &.collapsed {
+    transition: .3s ease-out width;
+    left: 0;
+    width: 70px;
+
+    a span {
+      display: none;
+    }
   }
 
   & > div {

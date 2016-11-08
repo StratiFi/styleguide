@@ -40,6 +40,32 @@
         }
       }
 
+      &.done {
+        div {
+          border-color: $brand-primary;
+
+          &:after {
+            content: "\e906";
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            color: $brand-primary;
+            font-size: 9px;
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+        }
+      }
+
       .step-title {
         text-transform: uppercase;
         font-size: 12px;
