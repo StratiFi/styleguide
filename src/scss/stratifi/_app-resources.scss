@@ -11,8 +11,12 @@
 .title-nav-item {
   padding: 28px;
   margin-right: 35px;
+  &:focus,
   &:hover {
     background-color: $brand-primary;
+    .icon-arrow {
+      color: #ffffff;
+    }
   }
   &.active {
     background-color: $brand-primary;
@@ -48,17 +52,38 @@
   color: #09adf9 !important;
   color: var(--azure);
 }
-.subtitle-nav ul:after {
-  margin: 10px;
-  width: 960px;
-  height: 2px;
+.subtitle-bar {
+}
+.subtitle-bar hr {
+  border-top: 1px solid #979797;
   opacity: 0.2;
-  border-bottom: solid 1px #979797;
+  height: 2px;
+}
+.subtitle-nav ul:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: 10px;
+  background: #f00;
 }
 .subtitle-nav {
+}
+.subtitle-nav-item {
   padding: 28px;
   margin-right: 35px;
   &.active {
     font-weight: bold;
   }
+}
+#subnav {
+  opacity: 0.0;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+#topnav:hover + #subnav {
+  opacity: 1.0;
 }
