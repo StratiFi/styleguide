@@ -9,7 +9,8 @@
   background-color: #f6f9fa;
 }
 .title-nav-item {
-  padding: 20px;
+  padding: 28px;
+  margin-right: 35px;
   &:hover {
     background-color: $brand-primary;
   }
@@ -46,4 +47,18 @@
   letter-spacing: 1.6px;
   color: #09adf9 !important;
   color: var(--azure);
+}
+.subtitle-nav ul:after {
+  margin: 10px;
+  width: 960px;
+  height: 2px;
+  opacity: 0.2;
+  border-bottom: solid 1px #979797;
+}
+.subtitle-nav {
+  padding: 28px;
+  margin-right: 35px;
+  &.active {
+    font-weight: bold;
+  }
 }
