@@ -1,0 +1,25 @@
+.positions-list {
+  margin-top: 40px !important;
+
+  .dot {
+    display: inline-block;
+    border-radius: 50%;
+    background: white;
+    width: 8px;
+    height: 8px;
+    vertical-align: 1px;
+    margin-right: 10px;
+
+    &.dot-blue {
+      background: $brand-primary;
+    }
+  }
+
+  .lp-collapsible {
+    cursor: pointer;
+
+    &:hover {
+      background: #eee;
+    }
+  }
+}
