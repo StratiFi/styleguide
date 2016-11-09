@@ -8,6 +8,24 @@
   height: 80px;
   background-color: #f6f9fa;
 }
+.title-nav-item {
+  &:hover {
+    background-color: $brand-primary;
+  }
+  &.active {
+    background-color: $brand-primary;
+  }
+  .icon-arrow {
+      display: inline-block;
+      font-size: .45rem;
+      line-height: 1.1rem;
+      color: $brand-primary;
+
+    .input-group & {
+      line-height: .9rem;
+    }
+  }
+}
 .text-white {
   color: #ffffff;
 }
