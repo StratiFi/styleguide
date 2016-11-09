@@ -9,11 +9,16 @@
   background-color: #f6f9fa;
 }
 .title-nav-item {
+  padding: 20px;
   &:hover {
     background-color: $brand-primary;
   }
   &.active {
     background-color: $brand-primary;
+    .icon-arrow {
+      transform: rotate(180deg);
+      color: #ffffff;
+    }
   }
   .icon-arrow {
       display: inline-block;
