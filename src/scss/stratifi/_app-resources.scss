@@ -182,15 +182,25 @@ a.lightbox-close:after {
   top: 0px;
 }
 
+.lightbox-target video {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .lightbox-overlay {
   background: rgba(0,0,0,0.5);
   position: absolute;
-  width: 919px;
-
+  width: 101%;
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  margin: 50px 15px 20px;
 
   h3, h6 {
     color: #ffffff;
