@@ -1,0 +1,22 @@
+.model-list {
+
+  .model-item {
+    @include transition(all .3s ease-in-out);
+    box-shadow: 0;
+    opacity: 1;
+  }
+
+  &:hover {
+    .model-item {
+      &:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        border: solid 1px #b0bcc0;
+      }
+
+      &:not(:hover) {
+        opacity: .3;
+      }
+    }
+  }
+}
