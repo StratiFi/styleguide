@@ -233,6 +233,13 @@ a.lightbox-close:after {
   margin-bottom: 10px;
 }
 
+.tag-container {
+  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+  width: 600px;
+  padding-bottom: 4px;
+  margin-bottom: 40px;
+}
+
 .tag {
   display: inline-block;
   height: 27px;
