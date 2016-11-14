@@ -232,3 +232,27 @@ a.lightbox-close:after {
   font-size: 34px;
   margin-bottom: 10px;
 }
+
+.tag {
+  display: inline-block;
+  height: 27px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid #09acf8;
+  background-color: #ffffff;
+  padding: 5px 20px 5px 20px;
+  margin: 14px 8px 8px 0px;
+  text-transform: uppercase;
+}
+
+.tag-text {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #09adf9;
+}
