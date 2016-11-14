@@ -213,4 +213,10 @@ a.lightbox-close:after {
   border-radius: 3px;
   background-color: #ffffff;
   border: solid 1px #d3d6db;
+  float: right;
+}
+
+.sideform input, button {
+  width: 250px;
+  margin-top: 10px;
 }
