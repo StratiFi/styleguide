@@ -129,8 +129,6 @@ a.lightbox img {
 
 a.lightbox-close {
   display: block;
-  width:50px;
-  height:50px;
   box-sizing: border-box;
   background: white;
   color: black;
@@ -142,26 +140,6 @@ a.lightbox-close {
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-}
-
-a.lightbox-close:before {
-  content: "\e910";
-  font-family: icomoon;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  position: absolute;
-  margin: -300px 0 0 -500px;
-}
-
-a.lightbox-close:after {
-  content: "\e910";
-  font-family: icomoon;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  position: absolute;
-  margin: -300px 0 0 -500px;
 }
 
 .lightbox-target:target {
