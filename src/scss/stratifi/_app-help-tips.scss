@@ -1,0 +1,47 @@
+.help-tips {
+  position: fixed;
+  right: 45px;
+  bottom: 41px;
+  cursor: pointer;
+  @include transition(all .3s);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  ul {
+    padding: 0;
+
+    &:first-child {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      line-height: 80px;
+      text-align: center;
+      border-radius: 40px;
+      background-color: #d8dada;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+      i {
+        color: #ffffff;
+        font-size: 40px;
+        vertical-align: middle;
+      }
+    }
+
+    &:last-child {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      color: #394346;
+    }
+  }
+
+  &.active {
+    ul:first-child {
+      background-color: #09acf8;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), inset 0 1px 2px 0 rgba(255, 255, 255, 0.5);
+      border: solid 1px #0c8cc8;
+    }
+  }
+}
