@@ -24,10 +24,10 @@ http://stratifi.github.io/styleguide/dist
 - [x] FORMS
 - [x] DROPDOWNS
 - [x] TABLES
-- [ ] TABS - *In Progress*
+- [x] TABS - *In Progress*
 - [x] CARDS
 - [x] MODALS
-- [ ] ALERTS - *In Progress*
+- [x] ALERTS - *In Progress*
 
 ##### Additional components status
 
@@ -37,8 +37,8 @@ http://stratifi.github.io/styleguide/dist
 - [x] COLLAPSIBLE TABLES
 - [x] CONFIRMATION MODALS
 - [x] ACTIONABLE MODALS
-- [ ] ACTIONABLE DROPDOWNS
-- [ ] CARDS LIST
+- [x] ACTIONABLE DROPDOWNS
+- [x] CARDS LIST
 
 ## Installation
 Just one command to prepare the environment and install all the dependencies, 
