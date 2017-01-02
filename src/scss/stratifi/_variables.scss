@@ -27,17 +27,21 @@ $headings-line-height:        1.5;
 $gray-darkest:                #4a4a4a;
 $gray-dark:                   #232a2d;
 $gray:                        #525c5f;
+$gray-normal:                 #4d5658;
 
 $primary-light:               #40c2fe;
+$primary-normal:              #09adf9;
 $primary-dark:                #0492d5;
 
 $success-light:               #2ae135;
 $success-dark:                #02950a;
 
 $graphite-dark:               #394346 !default; // rgb(57, 67, 70) // graphite
+$graphite-trout:              #485357 !default;
 $graphite-grayish-dark:       #45595f;
 $graphite:                    #505e62 !default; // hex(194, 10, 35) // 45595f
 $graphite-light:              #7c8c94 !default; // design v2
+$graphite-gray:               #8f9192;
 $graphite-grayish-blue:       #d3d6db;
 $graphite-lighter:            #ebeeef !default; // hex(194, 10, 93)
 $graphite-lightest:           #f6f8f9 !default; // rgb(246, 248, 249)

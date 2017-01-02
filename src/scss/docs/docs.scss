@@ -10,7 +10,6 @@
 .docs {
   &-example {
     position: relative;
-    overflow: auto;
     padding: 1rem;
     margin: 1rem -1rem;
     border: solid #f7f7f9;
@@ -22,6 +21,10 @@
       margin-bottom: 0;
       padding: 1.5rem;
       border-width: .2rem;
+    }
+
+    .navbar {
+      position: static !important;
     }
 
     > {
@@ -36,6 +39,10 @@
           }
         }
       }
+    }
+
+    &.table-example {
+      overflow: auto;
     }
 
     &[class*='align'] {

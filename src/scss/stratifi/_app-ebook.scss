@@ -1,0 +1,176 @@
+.ebook {
+  &-content {
+    @media (max-width: 839px) {
+      display: block;
+    }
+
+    + .footer-wrap {
+      bottom: inherit;
+    }
+
+    .ebook-info {
+      padding: 30px 20px 0;
+      margin: 0;
+
+      @media (max-width: 839px) {
+        padding-bottom: 30px;
+      }
+
+      @media (min-width: 840px) {
+        width: 40%;
+      }
+
+      .info {
+        &-title {
+          width: 420px;
+          margin: auto;
+          text-align: center;
+
+
+          @media (max-width: 1200px) {
+            width: 100%;
+          }
+        }
+
+        &-form {
+          padding: 0 15%;
+
+          label {
+            margin-bottom: 5px;
+          }
+
+          .form-group {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .subscribe-label {
+        position: relative;
+        padding-left: 25px;
+        top: -27px;
+        font-size: 17px;
+        font-weight: 400;
+      }
+
+      .finish {
+        padding-top: 36px;
+
+        p {
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 1.5;
+          color: #485357;
+        }
+
+        &-bold {
+          font-weight: 600;
+          letter-spacing: 1.6px;
+        }
+
+        &-middle {
+          letter-spacing: 1.6px;
+        }
+
+        .share-to {
+          a {
+            font-size: 21px;
+            color: #09acf8;
+          }
+
+          li:not(:last-child) a {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .footer-info {
+      padding: 0 10%;
+      opacity: 0.6;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #394346;
+    }
+  }
+
+  &-article {
+    padding-left: 0;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.4;
+
+    @media (max-width: 839px) {
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: 840px) {
+      width: 60%;
+    }
+
+    hr {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .article {
+      &-top {
+        padding: 70px 0 0;
+        text-align: center;
+        color: #fff;
+
+        div {
+          &:first-child {
+            font-size: 43px;
+            font-weight: 300;
+            line-height: 1.11;
+          }
+
+          &:last-child {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px 0;
+            font-size: 26px;
+            line-height: 1.21;
+            letter-spacing: 2.1px;
+
+            @media (max-width: 992px) {
+              width: auto;
+              margin-left: 10%;
+              margin-right: 10%;
+            }
+          }
+        }
+      }
+
+      &-content {
+        margin: 0 10% 60px;
+
+        @media (max-width: 839px) {
+          margin-bottom: 0;
+        }
+
+        @media (min-width: 840px) {
+          margin: 50px 10% 80px;
+        }
+      }
+    }
+
+    .myths,
+    .top-description,
+    .bottom-description {
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .myths {
+      ul {
+        padding-top: 15px;
+      }
+
+      li {
+        padding: 0 0 15px;
+      }
+    }
+  }
+}
