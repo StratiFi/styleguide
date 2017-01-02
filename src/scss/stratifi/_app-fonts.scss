@@ -25,6 +25,10 @@
 }
 
 .icon {
+  &-help-tips:before {
+    content: "\e933";
+  }
+
   &-checkmark-circle:before {
     content: "\e926";
   }

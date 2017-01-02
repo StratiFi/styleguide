@@ -1,0 +1,22 @@
+.proposal-create-overlays {
+
+  .form-inline {
+
+    & > div {
+      display: inline-block;
+      width: 90%;
+
+      &.icon-container {
+        width: 10%;
+      }
+    }
+
+  }
+
+  .icon-calendar {
+    font-size: 20px;
+    vertical-align: -5px;
+    color: $brand-primary;
+  }
+
+}
