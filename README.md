@@ -12,7 +12,7 @@ To get completed guidelines for all the elments, just check the BS [documention]
 
 
 ## Demo
-http://stratifi.github.io/styleguide/dist  
+http://stratifi.github.io/styleguide/dist
 
 ## Components status
 - [x] ICONS

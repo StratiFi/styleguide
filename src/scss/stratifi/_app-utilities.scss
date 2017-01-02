@@ -1,4 +1,12 @@
 .text {
+  &-white {
+    color: #fff;
+  }
+
+  &-trout {
+    color: $graphite-trout;
+  }
+
   &-gray-darkest {
     color: $gray-darkest !important;
 
