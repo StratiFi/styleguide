@@ -157,6 +157,10 @@ td {
     vertical-align: middle;
   }
 
+  &-white {
+    border-color: #fff;
+  }
+
   &-primary {
     border-color: $brand-primary;
   }

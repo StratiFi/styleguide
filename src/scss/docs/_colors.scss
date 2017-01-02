@@ -101,6 +101,12 @@
       }
     }
 
+    &.graphite-trout {
+      &:before {
+        background: $graphite-trout;
+      }
+    }
+
     &.graphite-dark {
       &:before {
         background: $graphite-dark;
