@@ -1515,6 +1515,60 @@
                 <!-- Blog specific styles here -->
                     <p>Blog specific styles coming up here...</p>
                 </div>
+
+                <h1 class="m-t-3">Portfolio Risk Analysis</h1>
+                <div class="docs-example">
+                    <div class="row flex flex-wrap">
+                        <div class="score-9 score-wrap flex flex-basis-6 direction-column">
+                            <div class="score flex bg-faded">
+                                <div class="score-value text-xs-center">
+                                    <h3 class="text-bolder m-b-0">9</h3>
+                                    <p class="m-b-0"><small>Out of 10</small></p>
+                                </div>
+                                <div class="flex justify-center direction-column">
+                                    <p class="score-title"><small><strong>Concentrated Stock Risk Score</strong></small></p>
+                                    <p class="m-b-0 font-italic score-text"><small>Ideal Range on Risk Scale</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score-7 score-wrap flex flex-basis-6 direction-column">
+                            <div class="score flex bg-faded">
+                                <div class="score-value text-xs-center">
+                                    <h3 class="text-bolder m-b-0">7</h3>
+                                    <p class="m-b-0"><small>Out of 10</small></p>
+                                </div>
+                                <div class="flex justify-center direction-column">
+                                    <p class="score-title"><small><strong>Correlation Score</strong></small></p>
+                                    <p class="m-b-0 font-italic score-text"><small>Neutral on Risk Scale</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score-5 score-wrap flex flex-basis-6 direction-column">
+                            <div class="score flex bg-faded">
+                                <div class="score-value text-xs-center">
+                                    <h3 class="text-bolder m-b-0">5</h3>
+                                    <p class="m-b-0"><small>Out of 10</small></p>
+                                </div>
+                                <div class="flex justify-center direction-column">
+                                    <p class="score-title"><small><strong>Volatility Score</strong></small></p>
+                                    <p class="m-b-0 font-italic score-text"><small>High on Risk Scale</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score-2 score-wrap flex flex-basis-6 direction-column">
+                            <div class="score flex bg-faded">
+                                <div class="score-value text-xs-center">
+                                    <h3 class="text-bolder m-b-0">2</h3>
+                                    <p class="m-b-0"><small>Out of 10</small></p>
+                                </div>
+                                <div class="flex justify-center direction-column">
+                                    <p class="score-title"><small><strong>Tail Risk Score</strong></small></p>
+                                    <p class="m-b-0 font-italic score-text"><small>Very High on Risk Scale</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1523,9 +1577,9 @@
     <!-- endinject -->
 
     <script>
-        $(function () {
+        jQuery(function ($) {
             $('[data-toggle="tooltip"]').tooltip();
-        })
+        });
     </script>
 
     <script>hljs.initHighlightingOnLoad();</script>

@@ -15,6 +15,12 @@
       flex-wrap: wrap-reverse;
     }
   }
+
+  &-basis {
+    &-6 {
+      flex-basis: 50%;
+    }
+  }
 }
 
 .direction {

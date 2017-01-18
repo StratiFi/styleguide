@@ -66,6 +66,7 @@ $btn-padding-y-xxxlg:         1rem !default; // for btn-title
 $border-radius:               3px;
 $border-radius-lg:            $border-radius;
 $border-radius-sm:            $border-radius;
+$border-radius-xs:            5px !default;
 
 // Inputs
 $input-border-color:          $graphite-grayish-blue;
@@ -88,3 +89,17 @@ $tooltip-opacity:             1;
 $tooltip-padding:             1.25rem;
 $tooltip-max-width:           256px;
 $tooltip-arrow-width:         10px;
+
+// Scores
+$risk-level-1:                #f01600 !default;
+$risk-level-2:                #f01600 !default;
+$risk-level-3:                #ff8c00 !default;
+$risk-level-4:                #ffa500 !default;
+$risk-level-5:                #ffb733 !default;
+$risk-level-6:                #ffe400 !default;
+$risk-level-7:                #ff0 !default;
+$risk-level-8:                #d5ff00 !default;
+$risk-level-9:                #09bb00 !default;
+$risk-level-10:               #0f0 !default;
+
+$risk-levels:                 $risk-level-1 $risk-level-2 $risk-level-3 $risk-level-4 $risk-level-5 $risk-level-6 $risk-level-7 $risk-level-8 $risk-level-9 $risk-level-10;
