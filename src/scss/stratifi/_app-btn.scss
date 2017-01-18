@@ -3,6 +3,10 @@
   font-weight: $btn-font-weight;
   @include transition(all .3s);
 
+  &-bold {
+    font-weight: bold;
+  }
+
   &-success {
     @media (max-width: 768px) {
       width: 100%;

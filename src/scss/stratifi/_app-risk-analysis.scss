@@ -1,0 +1,96 @@
+.risk-analysis {
+  margin-left: 70px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .risk-analysis-header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 1000px;
+    margin: 0 auto;
+
+    .btn {
+      font-size: 14px;
+      padding: .75rem 1.25rem;
+    }
+
+    .step {
+      display: inline-block;
+      width: 47.5%;
+
+      &.step-date-range {
+        vertical-align: top;
+      }
+
+      .step-num {
+        font-weight: bold;
+      }
+
+      &:first-child {
+        margin-right: 5%;
+      }
+
+      .step-line {
+        height: 5px;
+        margin-top: 10px;
+      }
+
+      &.active {
+
+        .step-num {
+          color: $brand-primary;
+        }
+
+        .step-line {
+          background: $brand-primary;
+        }
+
+      }
+
+      &.disabled {
+        color: #aaa;
+
+        .step-line {
+          background: #aaa;
+        }
+
+      }
+
+      &.passed {
+
+        .step-num {
+          color: #aed14e;
+        }
+
+        .step-line {
+          background: #aed14e;
+        }
+
+      }
+    }
+  }
+
+  .risk-analysis-body {
+    background: #f1f1f1;
+    min-height: 600px;
+    color: #999;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .placeholder-text {
+      padding-top: 140px;
+    }
+  }
+
+}
