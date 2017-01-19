@@ -82,14 +82,64 @@
   .risk-analysis-body {
     background: #f1f1f1;
     min-height: 600px;
-    color: #999;
-    padding-left: 4rem;
-    padding-right: 4rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
 
-    .placeholder-text {
-      padding-top: 140px;
+    .risk-analysis-body-container {
+      width: 1000px;
+      margin: 0 auto;
+
+      .placeholder-text {
+        padding-top: 140px;
+        color: #999;
+      }
+
+      .card {
+        border-radius: 7px;
+        box-shadow: 0 0 3px #ccc;
+        margin-right: 10px;
+        border: none;
+      }
+
+      .risk-analysis-overview {
+
+        .overall-risk-score {
+          background: #ff9100; // temp
+          padding-top: 12px;
+          padding-bottom: 12px;
+
+          .score {
+            text-align: center;
+            font-size: 100px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ccc;
+            color: #fff;
+            line-height: 110px;
+          }
+
+          .caption {
+            font-size: 17px;
+            color: #fff;
+            font-style: italic;
+            text-align: center;
+            padding-bottom: 22px;
+          }
+        }
+
+        .overall-risk-text {
+          padding: 10px 20px;
+
+          .text-score {
+            margin-bottom: 0;
+            font-style: italic;
+            font-size: 15px;
+          }
+
+          .description {
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 
