@@ -46,7 +46,7 @@
       width: 100%;
       height: 20px;
       border-radius: $border-radius-xs $border-radius-xs 0 0;
-      background-image: linear-gradient(to left, #09bb00, #ffe400 25%, #ec0000), linear-gradient(#ffffff, #ffffff);
+      background-image: linear-gradient(to left, #ec0000, #ffe400 25%, #09bb00), linear-gradient(#ffffff, #ffffff);
     }
 
     &:after {
