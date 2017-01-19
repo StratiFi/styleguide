@@ -51,6 +51,7 @@ $brand-success-muted:         #8fddc6; // rgb(143, 221, 198)
 $brand-info-muted:            #c3ebfd; // design v2
 $brand-danger-muted:          #d69a98; // rgb(217, 150, 150)
 
+$text-title-lg:               6.25rem;
 $text-title-size-h1:          3.125rem;
 $text-title-size-h1-mobile:   2.125rem;
 $text-title-size-h2:          2.625rem;
@@ -66,6 +67,7 @@ $btn-padding-y-xxxlg:         1rem !default; // for btn-title
 $border-radius:               3px;
 $border-radius-lg:            $border-radius;
 $border-radius-sm:            $border-radius;
+$border-radius-xs:            5px !default;
 
 // Inputs
 $input-border-color:          $graphite-grayish-blue;
@@ -88,3 +90,17 @@ $tooltip-opacity:             1;
 $tooltip-padding:             1.25rem;
 $tooltip-max-width:           256px;
 $tooltip-arrow-width:         10px;
+
+// Scores
+$risk-level-10:               #f01600 !default;
+$risk-level-9:                #f01600 !default;
+$risk-level-8:                #ff8c00 !default;
+$risk-level-7:                #ffa500 !default;
+$risk-level-6:                #ffb733 !default;
+$risk-level-5:                #ffe400 !default;
+$risk-level-4:                #ff0 !default;
+$risk-level-3:                #d5ff00 !default;
+$risk-level-2:                #09bb00 !default;
+$risk-level-1:                #0f0 !default;
+
+$risk-levels:                 $risk-level-1 $risk-level-2 $risk-level-3 $risk-level-4 $risk-level-5 $risk-level-6 $risk-level-7 $risk-level-8 $risk-level-9 $risk-level-10;

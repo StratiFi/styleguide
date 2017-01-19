@@ -1,0 +1,65 @@
+.qy-date-range-picker {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  button:focus {
+    outline: none;
+  }
+
+  .btn-collapsed {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .range-selector-container {
+    position: absolute;
+    box-shadow: 0 0 5px #777;
+    background: #f1f1f1;
+    width: 100%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    .range-selector {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+
+      .date {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .to-word {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: bold;
+        color: $brand-primary;
+      }
+
+      .range-selector-arrow {
+        background: #f1f1f1;
+        border: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $brand-primary;
+
+        &:disabled {
+          color: #333;
+        }
+      }
+    }
+
+    .set-range-btn {
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}

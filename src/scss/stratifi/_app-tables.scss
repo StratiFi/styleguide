@@ -103,6 +103,13 @@
         }
       }
 
+      &.line-grey {
+        &:after {
+          opacity: .5;
+          background: #888;
+        }
+      }
+
       &.line-muted {
         &:after {
           opacity: .2;
