@@ -17,8 +17,13 @@
   }
 
   &-basis {
+    &-3 {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
     &-6 {
       flex-basis: 50%;
+      max-width: 50%;
     }
   }
 }
