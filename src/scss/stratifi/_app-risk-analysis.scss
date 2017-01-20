@@ -103,6 +103,10 @@
 
       .risk-analysis-overview {
 
+        .small-risk-score-cards {
+          margin-top: -5px;
+        }
+
         .overall-risk-score {
           padding-top: 12px;
           padding-bottom: 12px;
@@ -163,6 +167,23 @@
         .score-card {
           max-width: 100% !important;
           width: 240px;
+        }
+
+        .risk-score-card {
+
+          .card-chart {
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px 25px;
+            width: 525px;
+            margin-right: 0;
+            margin-left: 5px;
+
+            .card-chart-title {
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
         }
 
       }
