@@ -104,3 +104,17 @@ $risk-level-2:                #09bb00 !default;
 $risk-level-1:                #0f0 !default;
 
 $risk-levels:                 $risk-level-1 $risk-level-2 $risk-level-3 $risk-level-4 $risk-level-5 $risk-level-6 $risk-level-7 $risk-level-8 $risk-level-9 $risk-level-10;
+
+// Score Background
+$risk-level-text-10:          #fff !default;
+$risk-level-text-9:           #fff !default;
+$risk-level-text-8:           $graphite-gray !default;
+$risk-level-text-7:           $graphite-gray !default;
+$risk-level-text-6:           $graphite-gray !default;
+$risk-level-text-5:           $graphite-dark !default;
+$risk-level-text-4:           $graphite-dark !default;
+$risk-level-text-3:           $graphite-dark !default;
+$risk-level-text-2:           #fff !default;
+$risk-level-text-1:           #fff !default;
+
+$risk-level-texts:			  $risk-level-text-1 $risk-level-text-2 $risk-level-text-3 $risk-level-text-4 $risk-level-text-5 $risk-level-text-6 $risk-level-text-7 $risk-level-text-8 $risk-level-text-9 $risk-level-text-10;

@@ -113,9 +113,11 @@
 
           @for $i from 1 through length($risk-levels) {
             $risk-level: nth($risk-levels, $i);
+            $risk-level-text: nth($risk-level-texts, $i);
 
             &.risk-level-#{$i} {
               background: #{$risk-level};
+              color: #{$risk-level-text};
             }
           }
 
