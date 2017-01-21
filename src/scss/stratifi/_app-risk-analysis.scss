@@ -113,11 +113,9 @@
 
           @for $i from 1 through length($risk-levels) {
             $risk-level: nth($risk-levels, $i);
-            $risk-level-text: nth($risk-level-texts, $i);
 
             &.risk-level-#{$i} {
               background: #{$risk-level};
-              color: #{$risk-level-text};
             }
           }
 
@@ -129,6 +127,13 @@
             color: #fff;
             line-height: 110px;
             padding: 0;
+
+            @for $i from 1 through length($risk-levels) {
+            $risk-level-text: nth($risk-level-texts, $i);
+
+            &.risk-level-#{$i} {
+              color: #{$risk-level-text};
+            }
           }
 
           .caption {
