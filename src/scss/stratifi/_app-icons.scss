@@ -225,14 +225,11 @@
     content: "\e930";
   }
 
+  // Img icons goes here.
+  // IMG path should be passed via background in platform repo. Only rest styling here
   &-img {
     &.icon-risk-analysis {
       display: inline-block;
-      background: url(../img/finalizing-report-icon@2x.png) no-repeat;
-
-      &.icon-green {
-        background-image: url(../img/finalizing-report-icon-green@2x.png);
-      }
 
       &.icon {
         &-sm {
