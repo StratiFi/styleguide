@@ -224,25 +224,4 @@
   &-download:before {
     content: "\e930";
   }
-
-  // Img icons goes here.
-  // IMG path should be passed via background in platform repo. Only rest styling here
-  &-img {
-    &.icon-risk-analysis {
-      display: inline-block;
-
-      &.icon {
-        &-sm {
-          width: 34px;
-          height: 24px;
-          background-size: 34px 24px;
-        }
-        &-lg {
-          width: 69px;
-          height: 48px;
-          background-size: 69px 48px;
-        }
-      }
-    }
-  }
 }
