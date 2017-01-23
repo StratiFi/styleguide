@@ -107,7 +107,7 @@ $transition: .3s;
     }
   }
 
-  & > div {
+  > div {
     width: inherit;
     position: fixed;
     height: 101%;
@@ -129,7 +129,8 @@ $transition: .3s;
         background: $brand-primary;
       }
 
-      & > i {
+      > i,
+      > img {
         display: block;
         font-size: 27px;
         margin-bottom: 5px;
