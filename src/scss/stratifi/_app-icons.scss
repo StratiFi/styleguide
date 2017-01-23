@@ -224,4 +224,31 @@
   &-download:before {
     content: "\e930";
   }
+
+  // Img icons goes here.
+  // DON'T CHANGE THE PATH. This path doesn't work for docs but works well for the platform.
+  // Just because styleguide and platform repo's have different structure.
+  &-img {
+    &.icon-risk-analysis {
+      display: inline-block;
+      background: url(assets/img/icons/finalizing-report-icon@2x.png) no-repeat;
+
+      &.icon-green {
+        background-image: url(assets/img/icons/finalizing-report-icon-green@2x.png);
+      }
+
+      &.icon {
+        &-sm {
+          width: 34px;
+          height: 24px;
+          background-size: 34px 24px;
+        }
+        &-lg {
+          width: 69px;
+          height: 48px;
+          background-size: 69px 48px;
+        }
+      }
+    }
+  }
 }
