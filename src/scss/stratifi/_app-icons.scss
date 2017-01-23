@@ -225,16 +225,13 @@
     content: "\e930";
   }
 
-  // Img icons goes here.
-  // DON'T CHANGE THE PATH. This path doesn't work for docs but works well for the platform.
-  // Just because styleguide and platform repo's have different structure.
   &-img {
     &.icon-risk-analysis {
       display: inline-block;
-      background: url(assets/img/icons/finalizing-report-icon@2x.png) no-repeat;
+      background: url(../img/finalizing-report-icon@2x.png) no-repeat;
 
       &.icon-green {
-        background-image: url(assets/img/icons/finalizing-report-icon-green@2x.png);
+        background-image: url(../img/finalizing-report-icon-green@2x.png);
       }
 
       &.icon {
