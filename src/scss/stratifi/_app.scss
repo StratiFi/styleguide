@@ -4,6 +4,10 @@ td {
   font-weight: 300;
 }
 
+body {
+  background-color: #f0f3f4;
+}
+
 .b {
   &-dashed {
     border-style: dashed !important;

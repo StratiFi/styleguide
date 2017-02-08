@@ -1,0 +1,61 @@
+.ticker-data-slider {
+  background-color: #053046 !important;
+  color: #fff;
+  padding: 10px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .value {
+    margin-right: 5px;
+  }
+
+  .change {
+
+    &:before {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+    }
+
+    &.positive {
+      color: #aed14e;
+
+      &:before {
+        content: '▲';
+      }
+    }
+
+    &.negative {
+      color: #d1513c;
+
+      &:before {
+        content: '▼';
+      }
+    }
+  }
+
+  .options {
+    padding-top: 4px;
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #8298a3;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      cursor: pointer;
+
+      &.current {
+        background: #fff;
+      }
+    }
+  }
+}

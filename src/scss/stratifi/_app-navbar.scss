@@ -10,6 +10,7 @@
   top: 0;
   z-index: 10;
   border-radius: 0;
+  background: #fff !important;
 
   &-toggler {
     font-size: 30px;
@@ -17,6 +18,17 @@
   }
 
   &.loggedin {
+    padding-left: 0;
+
+    .drawer-switcher {
+      padding: 0 10px;
+      background: $brand-primary;
+
+      img {
+        margin-right: 60px;
+      }
+    }
+
     &.no-user-pic {
       padding-right: $navbar-min-height;
 
@@ -32,7 +44,7 @@
         right: 0;
         width: $navbar-min-height;
         height: $navbar-min-height;
-        background: $graphite-light;
+        background: #ddd;
       }
 
       &:after {
@@ -243,6 +255,48 @@
   .navbar-brand {
     @media (max-width: 420px) {
       display: none !important;
+    }
+  }
+
+  .notifications-btn {
+    position: absolute;
+    left: 235px;
+    top: 24px;
+    color: $brand-primary;
+    cursor: pointer;
+
+    &:hover {
+      span {
+        color: $graphite-dark;
+      }
+    }
+
+    span {
+      font-size: 15px;
+    }
+
+    &:before {
+      content: '';
+      border: 2px solid #394346;
+      border-radius: 2px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    &.have-unread:after {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: #09acf8;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 12px;
+      border-radius: 50%;
+      border: 2px solid #fff;
     }
   }
 }

@@ -1,0 +1,142 @@
+.sandbox-container {
+
+  .prism-promo-container {
+
+    .prism-promo {
+      width: 960px;
+      margin: 0 auto;
+      margin-top: 60px;
+      position: relative;
+
+      .prism-promo-block {
+        width: 350px;
+
+        img {
+          display: block;
+          width: 350px;
+          margin-bottom: 15px;
+        }
+
+        .btn {
+          box-shadow: 0 0 4px #ccc;
+          font-weight: bold;
+          padding: .75rem 1rem;
+        }
+      }
+    }
+  }
+
+  .onboarding-progress {
+    margin-top: 40px;
+    padding: 40px 0;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background: #fff;
+
+    .progress-lines {
+      padding: 0;
+
+      .progress-line {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        height: 6.5px;
+        background: #999;
+
+        &.passed {
+          background: $brand-primary;
+        }
+      }
+    }
+
+    .progress-steps {
+      margin-top: -23px;
+
+      .progress-step {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        .progress-step-number {
+          width: 27.5px;
+          height: 27.5px;
+          border-radius: 50%;
+          background: #999;
+          text-align: center;
+          line-height: 23px;
+          font-size: 15px;
+          font-weight: bold;
+          color: #fff;
+          margin: 0 auto;
+
+          &.passed {
+            background: $brand-primary;
+          }
+
+          &.active {
+            background: #aed14e;
+          }
+        }
+      }
+    }
+  }
+
+  .step-data-wrapper {
+    margin-top: 20px;
+
+    .step-data {
+      display: inline-block;
+      margin: 0;
+      padding: 10px 20px;
+      vertical-align: top;
+
+      .step-data-icon {
+        text-align: center;
+        margin-bottom: 16.5px;
+
+        i {
+          font-size: 40px;
+          color: #e0e0e0;
+
+          &.passed {
+            color: $brand-primary;
+          }
+        }
+      }
+
+      .step-data-name {
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+        color: $brand-primary;
+        margin-bottom: 0;
+      }
+
+      .step-data-description {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 16.5px;
+      }
+
+      .step-data-link {
+        font-size: 15px;
+        color: $brand-primary;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .disabled-sections {
+
+    .row {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
