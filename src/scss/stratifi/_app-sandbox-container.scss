@@ -44,8 +44,12 @@
         height: 6.5px;
         background: #999;
 
-        &.passed {
+        &.active {
           background: $brand-primary;
+        }
+
+        &.passed {
+          background: #aed14e;
         }
       }
     }
@@ -71,11 +75,11 @@
           margin: 0 auto;
 
           &.passed {
-            background: $brand-primary;
+            background: #aed14e;
           }
 
           &.active {
-            background: #aed14e;
+            background: $brand-primary;
           }
         }
       }
@@ -99,8 +103,12 @@
           font-size: 40px;
           color: #e0e0e0;
 
-          &.passed {
+          &.active {
             color: $brand-primary;
+          }
+
+          &.passed {
+            color: #aed14e;
           }
         }
       }

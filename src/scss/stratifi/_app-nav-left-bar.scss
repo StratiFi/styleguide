@@ -20,6 +20,9 @@ $transition: .3s;
   padding: 0;
   border: none;
   margin-top: -10px;
+  position: absolute;
+  top: 30px;
+  right: 9px;
 
   &:hover {
     opacity: 1;
@@ -68,7 +71,7 @@ $transition: .3s;
     }
 
     &:before {
-      top: .48rem;
+      top: .45rem;
     }
 
     &:after {
