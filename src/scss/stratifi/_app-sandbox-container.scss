@@ -1,6 +1,7 @@
 .sandbox-container {
 
   .prism-promo-container {
+    position: relative;
 
     .prism-promo {
       width: 960px;
@@ -137,6 +138,22 @@
     img {
       width: 100%;
     }
+  }
+
+  .prism-line {
+    position: absolute;
+    top: 24px;
+    height: 4.5px;
+    width: calc((100% - 960px) / 2 - 12.5px);
+    background: #517c91;
+  }
+
+  .prism-triangle {
+    position: absolute;
+    width: calc((100% - 960px) / 2 + 960px - 350px);
+    top: 30px;
+    left: calc((100% - 960px) / 2 + 350px);
+    transform: translate(0, -50%);
   }
 
 }
