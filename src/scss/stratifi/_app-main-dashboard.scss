@@ -1,0 +1,50 @@
+.main-dashboard-container {
+  padding-left: 216px;
+  margin-top: 18px;
+
+  .greeting {
+
+    .greeting-prismrating-img {
+      display: inline-block;
+      width: 160px;
+      height: 40px;
+      background: #fff;
+      border-radius: 5px;
+      margin-top: 5px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+      padding-top: 7px;
+      vertical-align: top;
+
+      img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .greeting-prismrating-text {
+      display: inline-block;
+      margin-left: 15px;
+      width: 130px;
+      font-size: 13px;
+      line-height: 15px;
+
+      p {
+        padding-top: 10px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      p, a {
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
