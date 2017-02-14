@@ -228,6 +228,10 @@
 
       .risk-analysis-scorecards {
 
+        .range-name {
+          color: $brand-primary;
+        }
+
         .score-card {
           max-width: 100% !important;
           width: 240px;
