@@ -3,6 +3,10 @@
   display: inline-block;
   vertical-align: top;
 
+  &.full-size {
+    width: 100%;
+  }
+
   button:focus {
     outline: none;
   }
