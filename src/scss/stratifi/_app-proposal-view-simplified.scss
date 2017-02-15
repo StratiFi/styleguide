@@ -1,0 +1,46 @@
+.proposal-view-simplified {
+
+  .separation-line-first,
+  .separation-line-second {
+    margin-left: -105px;
+    width: calc(100% + 210px);
+  }
+
+  .separation-line-first {
+    height: 10px;
+    background: $brand-primary;
+  }
+
+  .separation-line-second {
+    height: 30px;
+    background: #c3e9fe;
+  }
+
+  .proposal-cta {
+    padding-top: 30px;
+    text-align: center;
+
+    h3 {
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: $brand-primary;
+    }
+
+    button {
+      font-size: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px -1px #777;
+    }
+
+    p {
+      font-size: 16px;
+      color: $brand-primary;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
