@@ -21,6 +21,11 @@
     .btn {
       font-size: 14px;
       padding: .75rem 1.25rem;
+
+      &.passed {
+        background: #00c538;
+        border-color: #00c538;
+      }
     }
 
     .step {
@@ -68,11 +73,11 @@
       &.passed {
 
         .step-num {
-          color: #aed14e;
+          color: #00c538;
         }
 
         .step-line {
-          background: #aed14e;
+          background: #00c538;
         }
 
       }
@@ -160,9 +165,72 @@
             font-size: 14px;
           }
         }
+
+          .choose-risk-result-container {
+
+            .choose-risk-result-wrapper {
+              padding-left: .35rem;
+              padding-right: .35rem;
+
+              .choose-risk-result {
+                background: #394346;
+                color: #fff;
+                border-radius: 5px;
+                padding: 0;
+                cursor: pointer;
+
+                .test-name {
+                  text-align: center;
+                  padding: 15px 0;
+                  background: #fff;
+                  box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0px 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
+                  border-top-left-radius: 5px;
+                  border-top-right-radius: 5px;
+                  color: #171717;
+
+                  &.current {
+                    background: $brand-primary;
+                    color: #fff;
+                  }
+                }
+
+                .test-scores {
+                  padding: 15px 0;
+
+                  .choose-risk-result-score {
+                    display: inline-block;
+                    width: 50%;
+                    text-align: center;
+                    font-size: 13px;
+
+                    p {
+                      margin-bottom: 5px;
+
+                      &.score-value {
+                        font-size: 30px;
+                        font-weight: bold;
+
+                        @for $i from 1 through length($risk-levels) {
+                          $risk-level: nth($risk-levels, $i);
+
+                          &-#{$i} {
+                            color: #{$risk-level}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
       }
 
       .risk-analysis-scorecards {
+
+        .range-name {
+          color: $brand-primary;
+        }
 
         .score-card {
           max-width: 100% !important;
