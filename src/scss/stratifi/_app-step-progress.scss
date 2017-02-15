@@ -1,0 +1,58 @@
+.step-progress {
+  margin-top: 40px;
+  padding: 40px 0;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+
+  .progress-lines {
+    padding: 0;
+
+    .progress-line {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      height: 6.5px;
+      background: #999;
+
+      &.active {
+        background: $brand-primary;
+      }
+
+      &.passed {
+        background: #00c538;
+      }
+    }
+  }
+
+  .progress-steps {
+    margin-top: -23px;
+
+    .progress-step {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+
+      .progress-step-number {
+        width: 27.5px;
+        height: 27.5px;
+        border-radius: 50%;
+        background: #999;
+        text-align: center;
+        line-height: 23px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 auto;
+
+        &.passed {
+          background: #00c538;
+        }
+
+        &.active {
+          background: $brand-primary;
+        }
+      }
+    }
+  }
+}
