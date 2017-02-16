@@ -61,3 +61,40 @@
     margin-right: 0;
   }
 }
+
+.prism-questions-begin-container {
+  padding-left: 216px;
+  padding-top: 100px;
+
+  .prism-questions-begin {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    & > img {
+      width: 100%;
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+
+    .prism-text {
+      padding: 20px;
+      text-align: center;
+
+      h4 {
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        font-size: 21px;
+        margin-bottom: 60px;
+      }
+
+      .copyright {
+        font-size: 11px;
+      }
+    }
+  }
+}
