@@ -94,37 +94,6 @@ $transition: .3s;
     width: 216px;
   }
 
-  &.hidden {
-    transition: .3s ease-out left;
-    left: -216px;
-  }
-
-  &.collapsed {
-    transition: .3s ease-out width;
-    left: 0;
-    width: 50px;
-
-    > div {
-      a {
-        text-align: center;
-        width: 50px;
-        padding-left: 0;
-
-        &.active {
-          background: $brand-primary;
-        }
-
-        i {
-          margin-right: 0;
-        }
-
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-
   > div {
     width: inherit;
     position: fixed;
@@ -135,10 +104,14 @@ $transition: .3s;
     a {
       display: block;
       text-align: left;
-      padding: 20px 0;
+      padding: 10px 0;
       padding-left: 10px;
       color: #fff;
       width: 216px;
+
+      &:first-of-type {
+        margin-top: 10px;
+      }
 
       &:hover {
         background: #7f898c;

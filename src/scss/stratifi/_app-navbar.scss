@@ -303,3 +303,16 @@
     }
   }
 }
+
+.blue-top-bar {
+  height: 70px;
+  background: linear-gradient(90deg, #09adf9, #4e4376);
+  margin-top: 18px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h4, p {
+    color: #fff;
+  }
+}

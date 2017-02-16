@@ -14,11 +14,24 @@
 
   .risk-analysis-header-container {
     background: #fff;
+
+    .blue-top-bar {
+
+      h4 {
+        font-weight: bold;
+        margin-bottom: 0;
+        line-height: 26px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
   }
 
   .risk-analysis-header {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 1000px;
     margin: 0 auto;
 
@@ -204,6 +217,27 @@
 
                 .test-scores {
                   padding: 15px 0;
+
+                  .overall-score-unselected {
+                    font-size: 100px;
+                    line-height: 120px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding-bottom: 28px;
+
+                    &.score-value {
+                      font-size: 30px;
+                      font-weight: bold;
+
+                      @for $i from 1 through length($risk-levels) {
+                        $risk-level: nth($risk-levels, $i);
+
+                        &-#{$i} {
+                          color: #{$risk-level}
+                        }
+                      }
+                    }
+                  }
 
                   .choose-risk-result-score {
                     display: inline-block;
