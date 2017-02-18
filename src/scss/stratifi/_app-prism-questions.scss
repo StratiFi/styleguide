@@ -1,4 +1,15 @@
 .prism-questions-container {
+  .blue-top-bar {
+    h4 {
+      font-weight: bold;
+      margin-bottom: 0;
+      line-height: 26px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
 
   .prism-questions {
     width: 80%;
