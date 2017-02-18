@@ -44,6 +44,7 @@
         left: 0;
         padding-left: 30px;
         background-image: linear-gradient(to left, #09bb00, #ffe400 25%, #ec0000), linear-gradient(#ffffff, #ffffff);
+        text-align: left;
       }
 
       &:after {
@@ -95,6 +96,32 @@
 
   .question-radio-item:last-child {
     margin-right: 0;
+  }
+
+  &-btns {
+    .btn {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-radius: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    .risk-lvl {
+      @for $i from 1 through length($risk-levels) {
+        $risk-level: nth($risk-levels, $i);
+
+        &-#{$i} {
+          border-color: #{$risk-level};
+
+          &:hover {
+            background: #{$risk-level};
+          }
+        }
+      }
+    }
   }
 }
 
