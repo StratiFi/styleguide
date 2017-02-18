@@ -4,12 +4,14 @@
 
 .navbar {
   padding: 0 $navbar-padding-horizontal;
-  min-height: $navbar-min-height;
+  min-height: $navbar-max-height;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
   border-radius: 0;
+  background: #fff !important;
+  box-shadow: 0 -1px 5px #777;
 
   &-toggler {
     font-size: 30px;
@@ -17,8 +19,21 @@
   }
 
   &.loggedin {
+    padding-left: 0;
+
+    .drawer-switcher {
+      width: 216px;
+      padding: 0 10px;
+      background: $brand-primary;
+      position: relative;
+
+      img {
+        margin-right: 60px;
+      }
+    }
+
     &.no-user-pic {
-      padding-right: $navbar-min-height;
+      padding-right: $navbar-max-height;
 
       &:before,
       &:after {
@@ -30,9 +45,9 @@
         content: '';
         top: 0;
         right: 0;
-        width: $navbar-min-height;
-        height: $navbar-min-height;
-        background: $graphite-light;
+        width: $navbar-max-height;
+        height: $navbar-max-height;
+        background: #ddd;
       }
 
       &:after {
@@ -40,8 +55,8 @@
         content: "\e918";
 
         font-size: 32px;
-        width: 4.6rem;
-        line-height: 4.6rem;
+        width: $navbar-max-height;
+        line-height: $navbar-max-height;
         text-align: center;
 
         font-family: 'icomoon' !important;
@@ -244,5 +259,60 @@
     @media (max-width: 420px) {
       display: none !important;
     }
+  }
+
+  .notifications-btn {
+    position: absolute;
+    left: 235px;
+    top: 24px;
+    color: $brand-primary;
+    cursor: pointer;
+
+    &:hover {
+      span {
+        color: $graphite-dark;
+      }
+    }
+
+    span {
+      font-size: 15px;
+    }
+
+    &:before {
+      content: '';
+      border: 2px solid #394346;
+      border-radius: 2px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    &.have-unread:after {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: #09acf8;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 12px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+  }
+}
+
+.blue-top-bar {
+  height: 70px;
+  background: linear-gradient(90deg, #09adf9, #4e4376);
+  // margin-top: 18px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h4, p {
+    color: #fff;
   }
 }

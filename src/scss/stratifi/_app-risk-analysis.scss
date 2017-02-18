@@ -1,5 +1,5 @@
 .risk-analysis {
-  margin-left: 70px;
+  margin-left: 216px;
 
   h1 {
     font-size: 36px;
@@ -12,14 +12,39 @@
     margin-bottom: 0;
   }
 
+  .risk-analysis-header-container {
+    background: #fff;
+
+    .blue-top-bar {
+
+      h4 {
+        font-weight: bold;
+        margin-bottom: 0;
+        line-height: 26px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
   .risk-analysis-header {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 1000px;
     margin: 0 auto;
 
-    .btn {
+    h5 {
+      margin-bottom: -0.5rem;
+    }
+
+    .step-message {
       font-size: 14px;
+    }
+
+    .btn {
+      font-size: 11px;
       padding: .75rem 1.25rem;
 
       &.passed {
@@ -88,11 +113,15 @@
     background: #f1f1f1;
     min-height: 600px;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+
+    .next-steps-caption {
+      text-transform: uppercase;
+    }
 
     .risk-analysis-body-container {
       width: 1060px;
       margin: 0 auto;
+      padding-bottom: 45px;
 
       .placeholder-text {
         padding-top: 140px;
@@ -197,6 +226,27 @@
                 .test-scores {
                   padding: 15px 0;
 
+                  .overall-score-unselected {
+                    font-size: 100px;
+                    line-height: 120px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding-bottom: 28px;
+
+                    &.score-value {
+                      font-size: 30px;
+                      font-weight: bold;
+
+                      @for $i from 1 through length($risk-levels) {
+                        $risk-level: nth($risk-levels, $i);
+
+                        &-#{$i} {
+                          color: #{$risk-level}
+                        }
+                      }
+                    }
+                  }
+
                   .choose-risk-result-score {
                     display: inline-block;
                     width: 50%;
@@ -228,6 +278,10 @@
 
       .risk-analysis-scorecards {
 
+        .range-name {
+          color: $brand-primary;
+        }
+
         .score-card {
           max-width: 100% !important;
           width: 240px;
@@ -250,6 +304,48 @@
           }
         }
 
+      }
+    }
+
+    .risk-analysis-cta {
+
+      .gradient-line {
+        background: linear-gradient(to left, #09bb00, #ffe400, #ec0000);
+        height: 20px;
+      }
+
+      .cta-text {
+        text-align: center;
+        background: $brand-primary;
+        padding: 30px 0;
+        color: #fff;
+
+        h3 {
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          font-weight: normal;
+
+          i {
+            font-weight: bold;
+          }
+        }
+
+        button {
+          color: $brand-primary;
+          font-weight: bold;
+          font-size: 18px;
+          background: #fff;
+          box-shadow: 0 3px 6px -1px #777;
+        }
+
+        p {
+          font-size: 18px;
+
+          a {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

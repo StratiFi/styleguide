@@ -47,15 +47,15 @@
             line-height: 1em;
 
             &:first-child {
-              margin-top: 15px;
-              letter-spacing: 1.3px;
+              margin-top: 5px;
+              letter-spacing: 1.1px;
             }
           }
 
           &:nth-child(2) {
-            display: inline-block;
-            margin-top: 5px;
-            font-size: 16px;
+            // display: inline-block;
+            // margin-top: 5px;
+            font-size: 10px;
             letter-spacing: 0;
           }
         }
@@ -105,7 +105,7 @@
   &.open {
     &.dropdown-two-line {
       .dropdown-toggle {
-        background: $graphite;
+        background: #ddd;
       }
     }
 
