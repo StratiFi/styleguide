@@ -103,6 +103,7 @@
       padding-left: 1rem;
       padding-right: 1rem;
       border-radius: 0;
+      text-transform: none;
 
       &:not(:last-child) {
         margin-right: 20px;
@@ -110,7 +111,7 @@
     }
 
     .risk-lvl {
-      @for $i from 1 through length($risk-levels-inverse) {
+      @for $i from 1 through length($risk-levels) {
         $risk-level: nth($risk-levels, $i);
 
         &-#{$i} {
