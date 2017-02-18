@@ -110,7 +110,7 @@
     }
 
     .risk-lvl {
-      @for $i from 1 through length($risk-levels) {
+      @for $i from 1 through length($risk-levels-inverse) {
         $risk-level: nth($risk-levels, $i);
 
         &-#{$i} {
