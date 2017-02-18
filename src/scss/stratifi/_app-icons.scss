@@ -233,11 +233,11 @@
   content: "\e680";
 }
 .icon-flag2 {
+  // TODO Refactor this ASAP!
   position: absolute;
   left: 235px;
   top: 20px;
   cursor: pointer;
-
 
   &:hover {
     span {
