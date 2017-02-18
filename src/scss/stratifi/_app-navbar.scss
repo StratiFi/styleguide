@@ -4,7 +4,7 @@
 
 .navbar {
   padding: 0 $navbar-padding-horizontal;
-  min-height: $navbar-min-height;
+  min-height: $navbar-max-height;
   width: 100%;
   position: fixed;
   top: 0;
@@ -33,7 +33,7 @@
     }
 
     &.no-user-pic {
-      padding-right: $navbar-min-height;
+      padding-right: $navbar-max-height;
 
       &:before,
       &:after {
@@ -45,8 +45,8 @@
         content: '';
         top: 0;
         right: 0;
-        width: $navbar-min-height;
-        height: $navbar-min-height;
+        width: $navbar-max-height;
+        height: $navbar-max-height;
         background: #ddd;
       }
 
@@ -55,8 +55,8 @@
         content: "\e918";
 
         font-size: 32px;
-        width: 4.6rem;
-        line-height: 4.6rem;
+        width: $navbar-max-height;
+        line-height: $navbar-max-height;
         text-align: center;
 
         font-family: 'icomoon' !important;
@@ -307,7 +307,7 @@
 .blue-top-bar {
   height: 70px;
   background: linear-gradient(90deg, #09adf9, #4e4376);
-  margin-top: 18px;
+  // margin-top: 18px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
