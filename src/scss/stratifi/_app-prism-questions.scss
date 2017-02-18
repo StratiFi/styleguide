@@ -111,7 +111,11 @@
     }
 
     .risk-lvl {
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active,
+      &.focus,
+      &.active {
         color: inherit;
       }
 
@@ -128,6 +132,8 @@
         &-#{$i} {
           border-color: #{$risk-level};
 
+          &.focus,
+          &.active,
           &:hover {
             background: #{$risk-level};
           }
