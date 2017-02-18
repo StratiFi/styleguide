@@ -111,11 +111,14 @@
     }
 
     .risk-lvl {
-      &-5,
-      &-4,
-      &-3 {
+      &:hover {
+        color: inherit;
+      }
+
+      &-1,
+      &-10 {
         &:hover {
-          color: inherit;
+          color: #fff;
         }
       }
 
