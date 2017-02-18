@@ -111,6 +111,14 @@
     }
 
     .risk-lvl {
+      &-5,
+      &-4,
+      &-3 {
+        &:hover {
+          color: inherit;
+        }
+      }
+
       @for $i from 1 through length($risk-levels) {
         $risk-level: nth($risk-levels, $i);
 
