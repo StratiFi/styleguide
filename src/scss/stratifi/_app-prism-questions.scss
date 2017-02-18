@@ -24,7 +24,32 @@
     }
 
     .question-text {
+      position: relative;
+      padding-top: 80px;
       font-size: 26px;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 16px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      &:before {
+        content: 'High Risk Aversion';
+        left: 0;
+        padding-left: 30px;
+        background-image: linear-gradient(to left, #09bb00, #ffe400 25%, #ec0000), linear-gradient(#ffffff, #ffffff);
+      }
+
+      &:after {
+        content: 'Low Risk Aversion';
+        padding-right: 30px;
+      }
     }
   }
 }
