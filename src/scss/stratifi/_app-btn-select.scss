@@ -2,10 +2,10 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
+  margin-right: 5px;
 
   .btn-select {
-    font-weight: bold;
-    padding: .75rem 2.3rem !important;
+    // padding: .75rem 2.3rem !important;
 
     &:focus {
       outline: none;

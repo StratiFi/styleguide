@@ -84,7 +84,7 @@ $transition: .3s;
   position: absolute;
   width: 216px;
   height: 101vh;
-  top: 4.6rem;
+  top: $navbar-max-height;
   background: $graphite-dark;
   z-index: 5;
 

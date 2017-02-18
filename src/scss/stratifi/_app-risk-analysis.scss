@@ -35,8 +35,16 @@
     width: 1000px;
     margin: 0 auto;
 
-    .btn {
+    h5 {
+      margin-bottom: -0.5rem;
+    }
+
+    .step-message {
       font-size: 14px;
+    }
+
+    .btn {
+      font-size: 11px;
       padding: .75rem 1.25rem;
 
       &.passed {
