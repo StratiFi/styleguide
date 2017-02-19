@@ -201,11 +201,15 @@
               padding-right: .35rem;
 
               .choose-risk-result {
-                background: #394346;
                 color: #fff;
-                border-radius: 5px;
                 padding: 0;
                 cursor: pointer;
+
+                .front,
+                .back {
+                  background: #394346;
+                  border-radius: 5px;
+                }
 
                 .test-name {
                   text-align: center;
