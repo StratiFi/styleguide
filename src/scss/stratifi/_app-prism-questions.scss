@@ -23,16 +23,15 @@
       padding: 0 30px;
     }
 
-    .question-text {
+    .select-concern-question {
       position: relative;
-      padding-top: 80px;
-      font-size: 26px;
+      margin-top: 80px;
 
       &:before,
       &:after {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -70px;
+        right: -3rem;
         font-size: 16px;
         line-height: 40px;
         text-transform: uppercase;
@@ -41,7 +40,7 @@
 
       &:before {
         content: 'High Risk Aversion';
-        left: 0;
+        left: -3rem;
         padding-left: 30px;
         background-image: linear-gradient(to left, #09bb00, #ffe400 25%, #ec0000), linear-gradient(#ffffff, #ffffff);
         text-align: left;
@@ -51,6 +50,10 @@
         content: 'Low Risk Aversion';
         padding-right: 30px;
       }
+    }
+
+    .question-text {
+      font-size: 26px;
     }
   }
 }
