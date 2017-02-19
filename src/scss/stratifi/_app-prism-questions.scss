@@ -116,14 +116,7 @@
       &:active,
       &.focus,
       &.active {
-        color: inherit;
-      }
-
-      &-1,
-      &-10 {
-        &:hover {
-          color: #fff;
-        }
+        color: #fff;
       }
 
       @for $i from 1 through length($risk-levels) {
