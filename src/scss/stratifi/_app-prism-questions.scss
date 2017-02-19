@@ -105,6 +105,10 @@
       padding-right: 1rem;
       border-radius: 0;
       text-transform: none;
+
+      @media (max-width: 1280px) {
+        min-width: 48%;
+      }
     }
 
     .risk-lvl {
