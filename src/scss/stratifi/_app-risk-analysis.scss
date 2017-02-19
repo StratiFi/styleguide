@@ -16,7 +16,6 @@
     background: #fff;
 
     .blue-top-bar {
-
       h4 {
         font-weight: bold;
         margin-bottom: 0;
@@ -202,22 +201,28 @@
               padding-right: .35rem;
 
               .choose-risk-result {
-                background: #394346;
                 color: #fff;
-                border-radius: 5px;
                 padding: 0;
                 cursor: pointer;
 
+                .front,
+                .back {
+                  background: #394346;
+                  border-radius: 5px;
+                }
+
                 .test-name {
                   text-align: center;
-                  padding: 15px 0;
+                  padding: 15px;
                   background: #fff;
-                  box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0px 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
+                  box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
                   border-top-left-radius: 5px;
                   border-top-right-radius: 5px;
                   color: #171717;
+                }
 
-                  &.current {
+                &.flipped {
+                  .test-name {
                     background: $brand-primary;
                     color: #fff;
                   }
