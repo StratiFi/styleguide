@@ -100,13 +100,14 @@
 
   &-btns {
     .btn {
+      min-width: 24%;
       padding-left: 1rem;
       padding-right: 1rem;
       border-radius: 0;
       text-transform: none;
 
-      &:not(:last-child) {
-        margin-right: 20px;
+      @media (max-width: 1280px) {
+        min-width: 48%;
       }
     }
 
