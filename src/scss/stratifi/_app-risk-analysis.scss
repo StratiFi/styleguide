@@ -209,16 +209,24 @@
 
                 .test-name {
                   text-align: center;
-                  padding: 15px 0;
+                  padding: 15px;
                   background: #fff;
-                  box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0px 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
+                  box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
                   border-top-left-radius: 5px;
                   border-top-right-radius: 5px;
                   color: #171717;
 
+                  .close-icon {
+                    display: none;
+                  }
+
                   &.current {
                     background: $brand-primary;
                     color: #fff;
+
+                    .close-icon {
+                      display: block;
+                    }
                   }
                 }
 

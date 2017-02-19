@@ -1,0 +1,44 @@
+// https://davidwalsh.name/css-flip
+
+.flip {
+  &-container {
+    width: 320px;
+    height: 480px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+    &.flipped .back {
+      transform: rotateY(0deg);
+    }
+    &.flipped .front {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 480px;
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.flipper {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
