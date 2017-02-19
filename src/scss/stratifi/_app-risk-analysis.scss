@@ -219,18 +219,12 @@
                   border-top-left-radius: 5px;
                   border-top-right-radius: 5px;
                   color: #171717;
+                }
 
-                  .close-icon {
-                    display: none;
-                  }
-
-                  &.current {
+                &.flipped {
+                  .test-name {
                     background: $brand-primary;
                     color: #fff;
-
-                    .close-icon {
-                      display: block;
-                    }
                   }
                 }
 
