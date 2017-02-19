@@ -41,20 +41,37 @@
     }
   }
 
-  .options {
-    padding-top: 4px;
+  .slick-dots {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: auto;
 
-    .dot {
+    li {
+      display: block;
       width: 7px;
       height: 7px;
-      border-radius: 50%;
-      background-color: #8298a3;
-      margin: 0 auto;
-      margin-bottom: 5px;
-      cursor: pointer;
+      margin: 5px 0;
 
-      &.current {
-        background: #fff;
+      button {
+        width: 7px;
+        height: 7px;
+
+        &:before {
+          width: 7px;
+          height: 7px;
+          opacity: 1;
+          color: #8298a3;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            opacity: 1;
+            color: #fff;
+          }
+        }
       }
     }
   }
