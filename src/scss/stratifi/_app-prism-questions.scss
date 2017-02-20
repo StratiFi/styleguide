@@ -76,12 +76,38 @@
     }
   }
 
+  &.question-control-invalid {
+
+    input {
+      border-color: red;
+    }
+  }
+
   &.question-select {
 
     .c-select {
       border: none;
       border-bottom: 2px dashed $brand-primary;
       border-radius: 0;
+    }
+  }
+
+  &.question-input,
+  &.question-select {
+    
+    .text-danger {
+      color: #fff !important;
+      background: red;
+      font-size: 14px;
+      position: absolute;
+      padding: 5px;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px #999;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.2;
+      }
     }
   }
 }
