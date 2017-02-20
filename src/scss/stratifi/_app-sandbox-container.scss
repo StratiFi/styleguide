@@ -138,6 +138,7 @@
           &.disabled {
             color: #818a91;
             cursor: not-allowed;
+            pointer-events: none;
           }
         }
       }
