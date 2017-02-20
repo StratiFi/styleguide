@@ -139,8 +139,13 @@
       border-radius: 0;
       text-transform: none;
 
-      @media (max-width: 1280px) {
-        min-width: 48%;
+      @media (max-width: 1440px) {
+        min-width: initial;
+        white-space: normal;
+
+        &:not(:last-child) {
+          margin-right: .5rem;
+        }
       }
     }
 
