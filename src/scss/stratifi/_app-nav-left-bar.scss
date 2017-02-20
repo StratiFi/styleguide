@@ -82,6 +82,7 @@ $transition: .3s;
 
 .navigation-left-bar {
   position: absolute;
+  left: 0;
   width: 216px;
   height: 101vh;
   top: $navbar-max-height;
@@ -97,6 +98,7 @@ $transition: .3s;
   > div {
     width: inherit;
     position: fixed;
+    left: 0;
     height: 101%;
     background: #394346;
     overflow: hidden;
