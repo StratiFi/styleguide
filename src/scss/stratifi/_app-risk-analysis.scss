@@ -34,6 +34,12 @@
     width: 1000px;
     margin: 0 auto;
 
+    @media (max-width: 1440px) {
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
     h5 {
       margin-bottom: -0.5rem;
     }
@@ -56,12 +62,22 @@
       display: inline-block;
       width: 47.5%;
 
+      @media (max-width: 1440px) {
+        > .row {
+          margin: 0;
+        }
+      }
+
       &.step-date-range {
         vertical-align: top;
       }
 
       .step-num {
         font-weight: bold;
+
+        @media (max-width: 1440px) {
+          padding-left: 0;
+        }
       }
 
       &:first-child {
@@ -134,7 +150,29 @@
         border: none;
       }
 
+      .risk-score-card {
+        .card {
+          &:not(.card-chart) {
+            @media (max-width: 1280px) {
+              width: 245px !important;
+            }
+          }
+        }
+      }
+
       .risk-analysis-overview {
+        @media (max-width: 1280px) {
+          > .row {
+            margin: 0;
+            padding: 0 20px;
+          }
+        }
+
+        @media (max-width: 1280px) {
+          .small-risk-score-cards-wrap {
+            width: 530px;
+          }
+        }
 
         .small-risk-score-cards {
           margin-top: -5px;
@@ -143,6 +181,11 @@
         .overall-risk-score {
           padding-top: 12px;
           padding-bottom: 12px;
+
+          @media (max-width: 1280px) {
+            padding-left: 0;
+            padding-right: 0;
+          }
 
           @for $i from 1 through length($risk-levels) {
             $risk-level: nth($risk-levels, $i);
@@ -176,6 +219,12 @@
           padding: 7px 20px 0;
           width: 343px;
 
+          @media (max-width: 1280px) {
+            width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+
           h3 {
             font-weight: 600;
             font-size: 13px;
@@ -193,6 +242,14 @@
         }
 
         .choose-risk-result-container {
+          @media (max-width: 1280px) {
+            margin: 0;
+            padding: 0 20px;
+
+            > .row {
+              margin: 0;
+            }
+          }
 
           .choose-risk-result-wrapper {
             padding-left: .35rem;
@@ -219,7 +276,7 @@
                 color: #171717;
               }
 
-              &.flipped {
+              &.current {
                 .test-name {
                   background: $brand-primary;
                   color: #fff;
@@ -282,6 +339,10 @@
       }
 
       .risk-analysis-scorecards {
+        @media (max-width: 1280px) {
+          margin: 0;
+          padding: 0 20px;
+        }
 
         .range-name {
           color: $brand-primary;
@@ -290,6 +351,10 @@
         .score-card {
           max-width: 100% !important;
           width: 240px;
+
+          @media (max-width: 1280px) {
+            width: 220px;
+          }
         }
 
         .risk-score-card {
@@ -297,7 +362,7 @@
           .card-chart {
             display: inline-block;
             vertical-align: top;
-            padding: 15px 25px;
+            padding: 10px 25px 15px;
             width: 525px;
             margin-right: 0;
             margin-left: 5px;
@@ -308,7 +373,6 @@
             }
           }
         }
-
       }
     }
 

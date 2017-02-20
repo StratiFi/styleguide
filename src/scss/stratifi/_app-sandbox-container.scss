@@ -133,6 +133,14 @@
         text-decoration: underline;
         text-align: center;
         font-weight: bold;
+
+        a {
+          &.disabled {
+            color: #818a91;
+            cursor: not-allowed;
+            pointer-events: none;
+          }
+        }
       }
     }
   }

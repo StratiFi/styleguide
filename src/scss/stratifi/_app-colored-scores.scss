@@ -5,6 +5,10 @@
   &-wrap {
     padding: 5px;
 
+    @media (max-width: 1280px) {
+      padding: 5px 5px 5px 0;
+    }
+
     &:before {
       content: '';
       width: 100%;
@@ -15,7 +19,12 @@
 
   &-value {
     margin-right: 10px;
+
+    @media (max-width: 1280px) {
+      margin-right: 5px;
+    }
   }
+
 
   h3 {
     line-height: .57;
@@ -60,7 +69,29 @@
     }
 
     .score {
-      padding: 0 5px 55px;
+      height: 240px;
+      padding: 0 5px;
+
+      h3 {
+        &.score-card-text {
+          margin-top: 1rem;
+          font-size: 5.5rem;
+        }
+      }
+
+      h4 {
+        font-size: 1.35rem;
+      }
+
+      &-card-text {
+        font-size: .85rem;
+      }
+
+      p {
+        &:last-child {
+          font-size: .65rem;
+        }
+      }
     }
   }
 
