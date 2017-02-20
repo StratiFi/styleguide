@@ -118,6 +118,9 @@ $transition: .3s;
       }
 
       &.active {
+        i {
+          color: $brand-primary;
+        }
 
         span {
           font-weight: bold;
