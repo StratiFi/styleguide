@@ -34,6 +34,12 @@
     width: 1000px;
     margin: 0 auto;
 
+    @media (max-width: 1280px) {
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
     h5 {
       margin-bottom: -0.5rem;
     }
@@ -56,12 +62,22 @@
       display: inline-block;
       width: 47.5%;
 
+      @media (max-width: 1280px) {
+        > .row {
+          margin: 0;
+        }
+      }
+
       &.step-date-range {
         vertical-align: top;
       }
 
       .step-num {
         font-weight: bold;
+
+        @media (max-width: 1280px) {
+          padding-left: 0;
+        }
       }
 
       &:first-child {
