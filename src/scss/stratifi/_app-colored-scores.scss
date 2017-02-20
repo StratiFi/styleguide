@@ -61,6 +61,27 @@
 
     .score {
       padding: 0 5px 55px;
+
+      h3 {
+        &.score-card-text {
+          margin-top: 1rem;
+          font-size: 5.5rem;
+        }
+      }
+
+      h4 {
+        font-size: 1.35rem;
+      }
+
+      &-card-text {
+        font-size: .85rem;
+      }
+
+      p {
+        &:last-child {
+          font-size: .65rem;
+        }
+      }
     }
   }
 
