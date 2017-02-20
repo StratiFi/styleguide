@@ -63,7 +63,6 @@
   margin-right: 5px;
 
   &.question-input {
-
     input {
       border: none;
       border-bottom: 2px dashed $brand-primary;
@@ -77,24 +76,30 @@
   }
 
   &.question-control-invalid {
-
     input {
       border-color: red;
     }
   }
 
   &.question-select {
+    .c-select-wrap {
+      &:after {
+        top: 20px;
+      }
+    }
 
     .c-select {
+      padding-top: 0;
       border: none;
       border-bottom: 2px dashed $brand-primary;
       border-radius: 0;
+      font-size: 26px;
+      color: $gray-dark;
     }
   }
 
   &.question-input,
   &.question-select {
-    
     .text-danger {
       color: #fff !important;
       background: red;
