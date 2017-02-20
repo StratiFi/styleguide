@@ -14,8 +14,7 @@
   .prism-questions {
     width: 80%;
     padding: 30px 0;
-    margin: 0 auto;
-    margin-top: 70px;
+    margin: 30px auto 0;
     box-shadow: 0 1px 10px -1px #ccc;
     border-radius: 7px;
 
@@ -142,11 +141,22 @@
 
 .prism-questions-begin-container {
   padding-left: 216px;
-  padding-top: 100px;
+
+  .blue-top-bar {
+    h4 {
+      font-weight: bold;
+      margin-bottom: 0;
+      line-height: 26px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
 
   .prism-questions-begin {
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto 0;
     background: #fff;
     box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
