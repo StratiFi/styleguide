@@ -34,7 +34,7 @@
     width: 1000px;
     margin: 0 auto;
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1440px) {
       width: auto;
       padding-left: 20px;
       padding-right: 20px;
@@ -62,7 +62,7 @@
       display: inline-block;
       width: 47.5%;
 
-      @media (max-width: 1280px) {
+      @media (max-width: 1440px) {
         > .row {
           margin: 0;
         }
@@ -75,7 +75,7 @@
       .step-num {
         font-weight: bold;
 
-        @media (max-width: 1280px) {
+        @media (max-width: 1440px) {
           padding-left: 0;
         }
       }
