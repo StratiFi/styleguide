@@ -132,6 +132,10 @@
         box-shadow: 0 0 3px #ccc;
         margin-right: 10px;
         border: none;
+
+        @media (max-width: 1280px) {
+          width: 245px !important;
+        }
       }
 
       .risk-analysis-overview {
@@ -144,7 +148,7 @@
 
         @media (max-width: 1280px) {
           .small-risk-score-cards-wrap {
-
+            width: 530px;
           }
         }
 
@@ -216,6 +220,14 @@
         }
 
         .choose-risk-result-container {
+          @media (max-width: 1280px) {
+            margin: 0;
+            padding: 0 20px;
+
+            > .row {
+              margin: 0;
+            }
+          }
 
           .choose-risk-result-wrapper {
             padding-left: .35rem;
@@ -305,6 +317,10 @@
       }
 
       .risk-analysis-scorecards {
+        @media (max-width: 1280px) {
+          margin: 0;
+          padding: 0 20px;
+        }
 
         .range-name {
           color: $brand-primary;
@@ -313,6 +329,10 @@
         .score-card {
           max-width: 100% !important;
           width: 240px;
+
+          @media (max-width: 1280px) {
+            width: 220px;
+          }
         }
 
         .risk-score-card {
