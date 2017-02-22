@@ -1,0 +1,34 @@
+.error-container {
+  top: 150px;
+  right: 20px;
+  position: absolute;
+  width: 350px;
+  z-index: 100;
+
+  .error {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    opacity: 0.95;
+    background: rgb(241, 24, 62);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px -1px #999;
+    overflow: auto;
+
+    .error-message,
+    .error-skip i {
+      color: #fff;
+    }
+
+    .error-skip i {
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+
+  .skip-all-errors {
+    box-shadow: 0 2px 6px -1px #999;
+    background: $graphite-dark;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
