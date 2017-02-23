@@ -80,6 +80,14 @@ body {
     margin-bottom: .5em !important;
   }
 
+  &-l-half {
+    margin-left: .5em !important;
+  }
+
+  &-r-half {
+    margin-right: .5em !important;
+  }
+
   &-a-n-1 {
     margin: ($grid-gutter-width / -2);
   }
