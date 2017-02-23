@@ -232,33 +232,8 @@
 .icon-trash:before {
   content: "\e680";
 }
-.icon-flag2 {
-  // TODO Refactor this ASAP!
-  position: absolute;
-  left: 235px;
-  top: 20px;
-  cursor: pointer;
-
-  &:hover {
-    span {
-      color: $brand-primary;
-    }
-  }
-
-  span {
-    font-family: $font-family-sans-serif;
-    font-size: 14px;
-  }
-
-  &:before {
-    content: "\e691";
-    color: $brand-primary;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 3px;
-  }
+.icon-flag2:before {
+  content: "\e691";
 }
 .icon-envelope:before {
   content: "\e696";

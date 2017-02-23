@@ -84,6 +84,24 @@
   &-stretch {
     align-items: stretch;
   }
+
+  &-self {
+    &-start {
+      align-self: flex-start;
+    }
+
+    &-end {
+      align-self: flex-end;
+    }
+
+    &-center {
+      align-self: center;
+    }
+
+    &-stretch {
+      align-self: stretch;
+    }
+  }
 }
 
 .grow {
