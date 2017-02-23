@@ -77,13 +77,19 @@ $input-box-shadow:            inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 // Navbar
 $navbar-dark-color:           #fff;
 $navbar-padding-horizontal:   1.7rem;
-$navbar-max-height:			  3.6rem;
+$navbar-max-height:			      3.6rem;
 
 // Tables
 $table-outer-border-color:    rgba(176, 188, 192, 0.6) !default;
 $table-border-color:          #e0e6e8;
 $table-cell-padding:          1.5rem;
 $table-brand-success:         #6fd760;
+
+$table-primary-cell-padding:  .8rem;
+$table-primary-border-color:  #e5e9ec;
+$table-primary-hover-color:   #f0f3f4;
+$table-primary-box-shadow:    0 1px 2px 0 rgba(0, 0, 0, 0.1);
+$th-primary-box-shadow:       0 1px 2px 0 rgba(0, 0, 0, 0.25);
 
 // Tooltips
 $tooltip-bg:                  $graphite-grayish-dark;
@@ -105,3 +111,5 @@ $risk-level-2:                #09bb00 !default;
 $risk-level-1:                #09bb00 !default;
 
 $risk-levels:                 $risk-level-1 $risk-level-2 $risk-level-3 $risk-level-4 $risk-level-5 $risk-level-6 $risk-level-7 $risk-level-8 $risk-level-9 $risk-level-10;
+
+$risk-badge-size:             30px;

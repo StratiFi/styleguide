@@ -367,6 +367,88 @@
   .collapse.in {
     display: table-row-group;
   }
+
+  &-primary {
+    box-shadow: $table-primary-box-shadow;
+    border-radius: $border-radius-xs;
+
+    thead {
+      box-shadow: $th-primary-box-shadow;
+      border-radius: $border-radius-xs;
+
+      th {
+        padding-left: $table-primary-cell-padding;
+        padding-right: $table-primary-cell-padding;
+        border-color: $table-primary-border-color;
+        font-size: $font-size-base;
+        color: #fff;
+        background: $brand-primary;
+
+        &:first-child {
+          border-left: none;
+          border-radius: $border-radius-xs 0 0 $border-radius-xs;
+        }
+
+        &:last-child {
+          border-right: none;
+          border-radius: 0 $border-radius-xs $border-radius-xs 0;
+        }
+
+        a {
+          font-size: 8px;
+          line-height: 21px;
+          color: #fff;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: $table-primary-cell-padding;
+          border-color: $table-primary-border-color;
+          vertical-align: middle;
+
+          i {
+            font-size: 20px;
+
+            &:first-child {
+              margin-right: .5rem;
+            }
+          }
+
+          &:first-child {
+            border-left: none;
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+
+        &:hover {
+          td {
+            border-color: $table-primary-hover-color;
+            background: $table-primary-hover-color;
+          }
+        }
+
+        &:last-child {
+          td {
+            border-bottom: none;
+
+            &:first-child {
+              border-radius: 0 0 0 $border-radius-xs;
+            }
+
+            &:last-child {
+              border-radius: 0 0 $border-radius-xs 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .thead {

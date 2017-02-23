@@ -53,4 +53,40 @@
       vertical-align: bottom;
     }
   }
+
+  &-status {
+    &:before,
+    &:after {
+      box-shadow: 0 0 0 2px #fff;
+    }
+
+    &.marker {
+      &-before {
+        &:before {
+          margin-right: 5px;
+        }
+      }
+
+      &-primary {
+        &:before,
+        &:after {
+          background: $brand-primary;
+        }
+      }
+
+      &-success {
+        &:before,
+        &:after {
+          background: $brand-success;
+        }
+      }
+
+      &-inactive {
+        &:before,
+        &:after {
+          background: $graphite-grayish-blue;
+        }
+      }
+    }
+  }
 }
