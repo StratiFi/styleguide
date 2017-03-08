@@ -3,6 +3,7 @@
     line-height: 1.15;
     border-color: $graphite-grayish-blue;
     box-shadow: $input-box-shadow;
+    min-width: 180px;
 
     &:focus {
       border-color: $brand-primary;
