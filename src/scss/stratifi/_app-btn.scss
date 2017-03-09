@@ -3,6 +3,10 @@
   font-weight: $btn-font-weight;
   @include transition(all .3s);
 
+  &-shadow {
+    box-shadow: 0 1px 5px #aaa;
+  }
+
   &-bold {
     font-weight: bold;
   }
