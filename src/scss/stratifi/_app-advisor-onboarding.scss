@@ -10,7 +10,7 @@
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    margin-top: 170px;
+    margin-top: 120px;
 
     label {
       display: block;
@@ -34,9 +34,18 @@
     }
 
     .no-progress-heading {
-      font-size: 32px;
+      font-size: 27px;
       color: $brand-primary;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
+    }
+
+    .onboarding-welcome-step {
+
+      .step-text {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
     }
 
     .advisor-onboarding--step {
@@ -62,6 +71,12 @@
       width: 70%;
       margin: 0 auto;
 
+      .step-text {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+
       .form-section-heading {
         text-align: left;
         font-size: 14px;
@@ -69,6 +84,8 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         margin-top: 20px;
+        color: #585858;
+        background-image: linear-gradient(to right, #fff, #eee);
       }
 
       .c-select-wrap {
@@ -90,6 +107,15 @@
             margin-right: 5%;
           }
         }
+      }
+    }
+
+    .sign-document-step {
+
+      .step-text {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 30px;
       }
     }
 
@@ -135,20 +161,22 @@
           font-size: 14px;
           text-transform: uppercase;
           font-weight: bold;
+          color: #585858;
+          background-image: linear-gradient(to right, #fff, #eee);
         }
 
         p pre {
           color: #777;
+          margin-bottom: 0;
         }
       }
 
       .copy-to-clipboard-btn {
-        background: #ccc;
+        background: #F0F3F4;
         color: $graphite-dark;
         box-shadow: 0 1px 5px #aaa;
         font-size: 14px;
         min-width: 200px;
-        margin-top: 20px;
         margin-bottom: 30px;
       }
     }
