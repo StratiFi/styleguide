@@ -9,7 +9,7 @@ td {
 }
 
 body {
-  background-color: #f0f3f4;
+  background-color: $body-background;
 }
 
 .b {
@@ -68,6 +68,23 @@ body {
 
   &-b-0 {
     border-bottom-width: 0 !important;
+  }
+}
+.p {
+  &-t-half {
+    padding-top: .5em !important;
+  }
+
+  &-b-half {
+    padding-bottom: .5em !important;
+  }
+
+  &-l-half {
+    padding-left: .5em !important;
+  }
+
+  &-r-half {
+    padding-right: .5em !important;
   }
 }
 
