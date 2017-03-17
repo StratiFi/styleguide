@@ -6,6 +6,12 @@
     opacity: .3;
   }
 
+  .dropdown {
+    .btn-muted {
+      opacity: 1;
+    }
+  }
+
   &:hover {
     .btn-muted {
       opacity: 1;

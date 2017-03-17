@@ -165,9 +165,10 @@
 
       &-toggle {
         border: none;
-        background: #f5f5f5;
+        background: $dropdown-link-hover-bg;
         border-radius: 0;
         box-shadow: 0 1px 1px rgba(black, .25);
+        z-index: 2;
 
         .icon-arrow {
           margin-right: 1rem;
@@ -180,6 +181,33 @@
         background: #fafafa;
         color: $graphite-dark;
         border-radius: 0;
+      }
+
+      &-item {
+        border-color: $graphite-grayish-blue;
+      }
+    }
+
+    .open {
+      .dropdown {
+        &-toggle {
+          background: $dropdown-link-hover-bg;
+
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            background-color: $dropdown-link-hover-bg;
+            border-color: #adadad;
+            background-image: none;
+          }
+        }
+
+        &-menu {
+          border: none;
+          background: $dropdown-link-hover-bg;
+          border-radius: 0;
+        }
       }
     }
   }

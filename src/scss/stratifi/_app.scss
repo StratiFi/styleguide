@@ -48,10 +48,10 @@ body {
   }
 
   &-b-1 {
-    border-width: 0;
+    border-width: 0 !important;
     border-bottom-width: 1px !important;
-    border-bottom-color: $card-border-color;
-    border-bottom-style: solid;
+    border-bottom-color: $card-border-color !important;
+    border-bottom-style: solid !important;
   }
 
   &-l-0 {
