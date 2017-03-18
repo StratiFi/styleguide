@@ -1,0 +1,354 @@
+.advisor-onboarding-container,
+.continue-onboarding-container {
+  padding-bottom: 100px;
+
+  .please-wait-message {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 250px;
+    text-align: center;
+    font-size: 32px;
+    color: #555;
+    text-shadow: 0 0 1px #999;
+  }
+
+  .invalid-link-message {
+    width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #aaa;
+    margin-top: 180px;
+
+    .heading,
+    .message {
+      padding: 15px 20px;
+    }
+
+    .heading {
+      padding: 15px 20px;
+      color: #fff;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background: #ff4646;
+      font-size: 20px;
+    }
+
+    .message {
+      color: #444;
+    }
+  }
+
+  .btn {
+    min-width: 200px;
+    font-weight: 600;
+  }
+
+  .advisor-onboarding {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 120px;
+
+    label {
+      display: block;
+      text-align: left;
+      color: $brand-primary;
+      font-size: 18px;
+    }
+
+    .step-text {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .step-footer {
+      margin-top: 20px;
+      color: #777;
+
+      i {
+        color: $brand-primary;
+      }
+    }
+
+    .no-progress-heading {
+      font-size: 27px;
+      color: $brand-primary;
+      margin-bottom: 25px;
+    }
+
+    .onboarding-welcome-step {
+
+      .step-text {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+
+    .advisor-onboarding--step {
+      background: #fff;
+      padding: 50px 75px;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px #aaa;
+
+      img.logo {
+        margin-bottom: 40px;
+      }
+
+      .firm-name {
+        font-size: 24px;
+        color: $brand-primary;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+    }
+
+    .company-info-step {
+      width: 70%;
+      margin: 0 auto;
+
+      .step-text {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+
+      .form-section-heading {
+        text-align: left;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: #585858;
+        background-image: linear-gradient(to right, #fff, #eee);
+      }
+
+      .c-select-wrap {
+        width: 100%;
+      }
+
+      .full-size-input {
+        margin-bottom: 15px;
+      }
+
+      .inline-inputs-container {
+
+        fieldset {
+          display: inline-block;
+          width: 47.5%;
+          margin-bottom: 15px;
+
+          &:first-of-type {
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+
+    .sign-document-step {
+
+      .step-text {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+
+    .set-password-step {
+      width: 500px;
+      margin: 0 auto;
+
+      fieldset {
+        margin-bottom: 2rem;
+      }
+
+      .password-helper {
+        width: 100%;
+        background: #fff;
+        margin-bottom: 2rem;
+
+        ul {
+          text-align: left;
+          padding-left: 0;
+          margin-bottom: 0;
+
+          &:first-of-type {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .email-custodian-step {
+      width: 500px;
+      margin: 0 auto;
+
+      .what-to-say {
+
+        p,
+        h4 {
+          text-align: left;
+        }
+
+        h4 {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #585858;
+          background-image: linear-gradient(to right, #fff, #eee);
+        }
+
+        p pre {
+          color: #777;
+          margin-bottom: 0;
+        }
+      }
+
+      .copy-to-clipboard-btn {
+        background: #F0F3F4;
+        color: $graphite-dark;
+        box-shadow: 0 1px 5px #aaa;
+        font-size: 14px;
+        min-width: 200px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.continue-onboarding-container {
+  margin-left: 216px;
+
+  .advisor-onboarding {
+    max-width: 1200px;
+  }
+
+  .step-progress {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .continue-onboarding--step {
+    padding: 25px 75px 50px !important;
+  }
+
+  .shared-rep-code-step {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .heading-step {
+    margin-bottom: 3rem;
+
+    h3 {
+      color: #09acf8;
+      text-align: left;
+    }
+  }
+
+  .continue-docs--step {
+
+    h4 {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .doc-item {
+      padding: 20px 0;
+      border-bottom: 2px solid #ddd;
+
+      .submitted {
+        margin-top: 5px;
+
+        a {
+          font-weight: 400;
+          font-size: 15px;
+          text-decoration: underline;
+          color: #777;
+          cursor: pointer;
+
+          &:hover {
+            color: $brand-primary;
+          }
+        }
+      }
+
+      &:first-child {
+        border-top: 2px solid #ddd;
+      }
+
+      .doc-checked {
+        color: #fff;
+        background: #ddd;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 4px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-top: 9px;
+        vertical-align: top;
+
+        &.signed {
+          background: $brand-primary;
+        }
+      }
+
+      .doc-name {
+        color: #555;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 4px;
+        display: inline-block;
+
+        &.signed {
+          color: $brand-primary;
+        }
+      }
+
+      .btn-sign {
+        font-size: 15px;
+        background: #fff;
+        border: 2px solid $brand-primary;
+        color: $brand-primary;
+        min-width: 0;
+
+        &:hover {
+          background: $brand-primary;
+          color: #fff;
+        }
+
+        i {
+          margin-right: 7px;
+        }
+
+        &.signed {
+          border: 2px solid #aaa;
+          color: #aaa;
+
+          &:hover {
+            background: #aaa;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .reg-complete--step {
+
+    h4 {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}

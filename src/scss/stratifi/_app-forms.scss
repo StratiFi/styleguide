@@ -1,3 +1,8 @@
+.c-select-wrap.new-style-arrow:after {
+  top: 19px;
+  right: 15px;
+}
+
 .form {
   &-control {
     line-height: 1.15;
@@ -11,6 +16,12 @@
     &::placeholder {
       color: $gray-darkest;
       opacity: .6;
+    }
+
+    &.new-style {
+      box-shadow: none;
+      border-width: 2px;
+      padding: .6rem .75rem;
     }
 
     .editable-fields & {

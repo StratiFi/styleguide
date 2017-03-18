@@ -146,4 +146,69 @@
       text-decoration: none;
     }
   }
+
+  &-group {
+    box-shadow: 0 1px 1px rgba(black, .25);
+
+    .dropdown {
+      &:first-child {
+        .dropdown-label {
+          border-radius: 3px 0 0 3px;
+        }
+      }
+
+      &:last-child {
+        .dropdown-label {
+          border-radius: 0 3px 3px 0;
+        }
+      }
+
+      &-toggle {
+        border: none;
+        background: $dropdown-link-hover-bg;
+        border-radius: 0;
+        box-shadow: 0 1px 1px rgba(black, .25);
+        z-index: 2;
+
+        .icon-arrow {
+          margin-right: 1rem;
+          font-size: .5rem;
+          color: $gray-darkest;
+        }
+      }
+
+      &-label {
+        background: #fafafa;
+        color: $graphite-dark;
+        border-radius: 0;
+      }
+
+      &-item {
+        border-color: $graphite-grayish-blue;
+      }
+    }
+
+    .open {
+      .dropdown {
+        &-toggle {
+          background: $dropdown-link-hover-bg;
+
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            background-color: $dropdown-link-hover-bg;
+            border-color: #adadad;
+            background-image: none;
+          }
+        }
+
+        &-menu {
+          border: none;
+          background: $dropdown-link-hover-bg;
+          border-radius: 0;
+        }
+      }
+    }
+  }
 }

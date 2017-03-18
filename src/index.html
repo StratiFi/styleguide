@@ -502,7 +502,9 @@
                 <!--TODO Add code examples-->
                 <div class="docs-example">
                     <div class="dropdown">
-                        <button class="btn btn-muted dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="icon-arrow"></span></button>
+                        <button class="btn btn-muted dropdown-toggle flex justify-between" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown <span class="icon-arrow"></span>
+                        </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -532,6 +534,106 @@
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="m-t-1">Dropdown group</h3>
+                <!--TODO Add code examples-->
+                <div class="docs-example">
+                    <div class="flex align-center justify-between">
+                        <div class="dropdown-group flex align-center">
+                            <div class="btn-group dropdown dropdown-title flex align-center">
+                                <div class="dropdown-label text-bold p-x-1 p-t-half p-b-half">Account</div>
+                                <button type="button"
+                                        class="btn btn-muted dropdown-toggle dropdown-toggle-split flex justify-between p-t-half p-b-half"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <h6 class="flex justify-between align-center m-b-0 p-r-1 text-bold text-primary"><span class="icon-arrow"></span> Dropdown</h6>
+                                </button>
+                                <div class="dropdown-menu col-xs-12 p-x-0">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropdown dropdown-title flex align-center">
+                                <div class="dropdown-label text-bold p-x-1 p-t-half p-b-half">Strategy</div>
+                                <button type="button"
+                                        class="btn btn-muted dropdown-toggle dropdown-toggle-split flex justify-between p-t-half p-b-half"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <h6 class="flex justify-between align-center m-b-0 p-r-1 text-bold text-primary"><span class="icon-arrow"></span> Dropdown</h6>
+                                </button>
+                                <div class="dropdown-menu col-xs-12 p-x-0">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropdown dropdown-title flex align-center">
+                                <div class="dropdown-label text-bold p-x-1 p-t-half p-b-half">Benchmark</div>
+                                <button type="button"
+                                        class="btn btn-muted dropdown-toggle dropdown-toggle-split flex justify-between p-t-half p-b-half"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <h6 class="flex justify-between align-center m-b-0 p-r-1 text-bold text-primary"><span class="icon-arrow"></span> Dropdown</h6>
+                                </button>
+                                <div class="dropdown-menu col-xs-12 p-x-0">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-primary flex justify-between"
+                                    type="button"
+                                    id="customDropdownMenu1"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                <h5 class="m-b-0">Filter</h5>
+                            </button>
+                            <div class="dropdown-menu p-y-1" aria-labelledby="customDropdownMenu1" style="width: 300px;">
+                                <div class="form-group p-x-2">
+                                    <label for="date-from">Date Range</label>
+                                    <div class="flex align-center justify-between">
+                                        <input type="text" class="form-control" id="date-from" placeholder="From">
+                                        <label class="p-x-1" for="date-to">To</label>
+                                        <input type="text" class="form-control" id="date-to" placeholder="To">
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-group p-x-2">
+                                    <label for="custodian" class="block">Custodian Type</label>
+                                    <div class="c-select-wrap">
+                                        <select class="c-select" id="custodian">
+                                            <option value="1">First option</option>
+                                            <option value="2">Second option</option>
+                                            <option value="3">Third option</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-link btn-block" type="button">Add Custodian Type</button>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-group p-x-2">
+                                    <label for="date-from">Value Range</label>
+                                    <div class="flex align-center justify-between">
+                                        <input type="text" class="form-control" id="value-from" placeholder="From">
+                                        <label class="p-x-1" for="date-to">To</label>
+                                        <input type="text" class="form-control" id="value-to" placeholder="To">
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <button class="btn btn-link btn-block" type="button">Update</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -742,6 +844,113 @@
                 </div>
 
                 <h1 class="m-t-3">Tables</h1>
+
+                <div class="card card-shadow p-x-2 p-y-1">
+                    <div class="flex justify-between">
+                        <h3 class="text-primary">Performance</h3>
+
+                        <div class="dropdown">
+                            <button class="btn btn-muted active flex justify-between"
+                                    type="button"
+                                    id="customDropdownMenu3"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                <h5 class="m-b-0"><span class="icon-edit"></span> <span class="icon-arrow text-size-xs"></span></h5>
+                            </button>
+                            <div class="dropdown-menu p-y-1" aria-labelledby="customDropdownMenu3" style="width: 300px;">
+                                <div class="form-group p-x-2">
+                                    <label for="date-from">Date Range</label>
+                                    <div class="flex align-center justify-between">
+                                        <input type="text" class="form-control" id="date-from" placeholder="From">
+                                        <label class="p-x-1" for="date-to">To</label>
+                                        <input type="text" class="form-control" id="date-to" placeholder="To">
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-group p-x-2">
+                                    <label for="custodian" class="block">Custodian Type</label>
+                                    <div class="c-select-wrap">
+                                        <select class="c-select" id="custodian">
+                                            <option value="1">First option</option>
+                                            <option value="2">Second option</option>
+                                            <option value="3">Third option</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-link btn-block" type="button">Add Custodian Type</button>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-group p-x-2">
+                                    <label for="date-from">Value Range</label>
+                                    <div class="flex align-center justify-between">
+                                        <input type="text" class="form-control" id="value-from" placeholder="From">
+                                        <label class="p-x-1" for="date-to">To</label>
+                                        <input type="text" class="form-control" id="value-to" placeholder="To">
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <button class="btn btn-link btn-block" type="button">Update</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-overflowed-wrap">
+                        <div class="table-overflowed">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="b-b-1" style="min-width: 300px;">
+                                            <span class="h5">Model</span>
+                                        </th>
+                                        <th class="active b-b-1"><span class="h5">MTD(%)</span></th>
+                                        <th class="b-b-1"><span class="h5">QTD(%)</span></th>
+                                        <th class="b-b-1"><span class="h5">YTD(%)</span></th>
+                                        <th class="b-b-1" style="min-width: 220px;">
+                                            <span class="h5">$ GAINS / LOSSES</span>
+                                        </th>
+                                        <th class="b-b-1"><span class="h5">REALIZED</span></th>
+                                        <th class="b-b-1"><span class="h5">UNREALIZED</span></th>
+                                        <th class="b-b-1" style="min-width: 210px;">
+                                            <span class="h5">NOTIONAL VALUE</span>
+                                        </th>
+                                        <th class="b-b-1" style="min-width: 140px;">
+                                            <span class="h5">Min Date</span>
+                                        </th>
+                                        <th class="b-b-1" style="min-width: 140px;">
+                                            <span class="h5">Max Date</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="text-bold">VIX Tail Strategy</span></td>
+                                        <td>-0.24%</td>
+                                        <td>-0.17%</td>
+                                        <td>-0.23%</td>
+                                        <td>-1.69%</td>
+                                        <td>-1.69%</td>
+                                        <td>-3.40%</td>
+                                        <td>-6.68%</td>
+                                        <td>2016-09-14</td>
+                                        <td>2017-03-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-bold">VIX Tail Strategy</span></td>
+                                        <td>-0.24%</td>
+                                        <td>-0.17%</td>
+                                        <td>-0.23%</td>
+                                        <td>-1.69%</td>
+                                        <td>-1.69%</td>
+                                        <td>-3.40%</td>
+                                        <td>-6.68%</td>
+                                        <td>2016-09-14</td>
+                                        <td>2017-03-15</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
 
                 <h3 class="m-t-1">Collapsible table</h3>
                 <!--TODO Add code examples-->

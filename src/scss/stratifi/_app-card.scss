@@ -6,6 +6,12 @@
     opacity: .3;
   }
 
+  .dropdown {
+    .btn-muted {
+      opacity: 1;
+    }
+  }
+
   &:hover {
     .btn-muted {
       opacity: 1;
@@ -14,14 +20,14 @@
 
   &-shadow {
     box-shadow: 0 2px 8px rgba(black, .1);
-    border-radius: 3px;
+    border-radius: $border-radius;
   }
 
   &-details {
     position: relative;
     display: block;
     letter-spacing: 1.4px;
-    color: #4a4a4a;
+    color: $gray-darkest;
     font-size: 14px;
     white-space: nowrap;
     margin-bottom: 30px;

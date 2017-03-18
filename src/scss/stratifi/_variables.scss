@@ -12,6 +12,8 @@
 
 $enable-transitions:          true;
 
+$body-background:             #f0f3f4;
+
 $brand-primary:               #09acf8; // design v2
 $brand-success:               #00cc0c; // ...
 $brand-info:                  #31e3ff; // design v2
@@ -43,10 +45,10 @@ $graphite-grayish-dark:       #45595f;
 $graphite:                    #505e62 !default; // hex(194, 10, 35) // 45595f
 $graphite-light:              #7c8c94 !default; // design v2
 $graphite-gray:               #8f9192;
+
 $graphite-grayish-blue:       #d3d6db;
 $graphite-lighter:            #ebeeef !default; // hex(194, 10, 93)
 $graphite-lightest:           #f6f8f9 !default; // rgb(246, 248, 249)
-
 $brand-primary-muted:         #c3e9fe; // rgb(195, 233, 254)
 $brand-success-muted:         #8fddc6; // rgb(143, 221, 198)
 $brand-info-muted:            #c3ebfd; // design v2
@@ -87,7 +89,7 @@ $table-brand-success:         #6fd760;
 
 $table-primary-cell-padding:  .8rem;
 $table-primary-border-color:  #e5e9ec;
-$table-primary-hover-color:   #f0f3f4;
+$table-primary-hover-color:   $body-background;
 $table-primary-box-shadow:    0 1px 2px 0 rgba(0, 0, 0, 0.1);
 $th-primary-box-shadow:       0 1px 2px 0 rgba(0, 0, 0, 0.25);
 

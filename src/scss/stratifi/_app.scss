@@ -9,7 +9,7 @@ td {
 }
 
 body {
-  background-color: #f0f3f4;
+  background-color: $body-background;
 }
 
 .b {
@@ -48,10 +48,10 @@ body {
   }
 
   &-b-1 {
-    border-width: 0;
+    border-width: 0 !important;
     border-bottom-width: 1px !important;
-    border-bottom-color: $card-border-color;
-    border-bottom-style: solid;
+    border-bottom-color: $card-border-color !important;
+    border-bottom-style: solid !important;
   }
 
   &-l-0 {
@@ -68,6 +68,23 @@ body {
 
   &-b-0 {
     border-bottom-width: 0 !important;
+  }
+}
+.p {
+  &-t-half {
+    padding-top: .5em !important;
+  }
+
+  &-b-half {
+    padding-bottom: .5em !important;
+  }
+
+  &-l-half {
+    padding-left: .5em !important;
+  }
+
+  &-r-half {
+    padding-right: .5em !important;
   }
 }
 
