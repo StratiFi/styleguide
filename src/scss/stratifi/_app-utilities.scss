@@ -323,19 +323,19 @@ h6 {
 }
 
 .text-size-xs {
-  font-size: $font-size-xs;
+  font-size: $font-size-xs !important;
 }
 
 .text-size-sm {
-  font-size: $font-size-sm;
+  font-size: $font-size-sm !important;
 }
 
 .text-size-lg {
-  font-size: $font-size-lg;
+  font-size: $font-size-lg !important;
 }
 
 .text-title-lg {
-  font-size: $text-title-lg;
+  font-size: $text-title-lg !important;
 }
 
 .block {
