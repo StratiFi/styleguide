@@ -12,6 +12,16 @@
       box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-primary;
     }
 
+    &.marker-primary-dark {
+      background: $primary-darker;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 3px $primary-darker;
+    }
+
+    &.marker-success {
+      background: $brand-success;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-success;
+    }
+
     &.marker-large {
       &:before,
       &:after {
