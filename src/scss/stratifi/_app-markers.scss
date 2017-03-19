@@ -11,6 +11,31 @@
       border-radius: 50%;
       box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-primary;
     }
+
+    &.marker-primary-dark {
+      &:before,
+      &:after {
+        background: $primary-darker;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 3px $primary-darker;
+      }
+    }
+
+    &.marker-success {
+      &:before,
+      &:after {
+        background: $brand-success;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-success;
+      }
+    }
+
+    &.marker-large {
+      &:before,
+      &:after {
+        width: 12px;
+        height: 12px;
+        box-shadow: none;
+      }
+    }
   }
 
   &-before {
