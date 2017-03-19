@@ -13,13 +13,19 @@
     }
 
     &.marker-primary-dark {
-      background: $primary-darker;
-      box-shadow: 0 0 0 2px #fff, 0 0 0 3px $primary-darker;
+      &:before,
+      &:after {
+        background: $primary-darker;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 3px $primary-darker;
+      }
     }
 
     &.marker-success {
-      background: $brand-success;
-      box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-success;
+      &:before,
+      &:after {
+        background: $brand-success;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-success;
+      }
     }
 
     &.marker-large {
