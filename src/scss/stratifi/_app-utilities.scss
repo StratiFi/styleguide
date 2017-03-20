@@ -155,6 +155,16 @@
         }
       }
     }
+
+    &-dark {
+      color: $primary-darker !important;
+
+      &-link {
+        &:hover {
+          color: inherit !important;
+        }
+      }
+    }
   }
 
   &-success {
