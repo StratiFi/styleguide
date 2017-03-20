@@ -264,12 +264,20 @@ span.dropdown-group-arrow,
 span.dropdown-group-calendar {
   margin-left: 10px;
   margin-right: 10px;
+  color: #777;
 }
 
 span.dropdown-group-arrow {
   font-size: 10px;
 }
 
-span.dropdown-group-calendar {
-  color: #777;
+.dropdown-toggle .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #aaa;
+  border-radius: 50%;
+  vertical-align: -2px;
+  margin-right: 0 !important;
+  margin-left: 10px !important;
 }
