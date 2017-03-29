@@ -26,6 +26,34 @@ body {
     border-left-color: $card-border-color;
   }
 
+  &-l-2 {
+    border-width: 0;
+    border-left-width: 2px !important;
+    border-left-color: $card-border-color;
+    border-left-style: solid;
+  }
+
+  &-r-2 {
+    border-width: 0;
+    border-right-width: 2px !important;
+    border-right-color: $card-border-color;
+    border-right-style: solid;
+  }
+
+  &-t-2 {
+    border-width: 0;
+    border-top-width: 2px !important;
+    border-top-color: $card-border-color;
+    border-top-style: solid;
+  }
+
+  &-b-2 {
+    border-width: 0 !important;
+    border-bottom-width: 2px !important;
+    border-bottom-color: $card-border-color !important;
+    border-bottom-style: solid !important;
+  }
+
   &-l-1 {
     border-width: 0;
     border-left-width: 1px !important;
