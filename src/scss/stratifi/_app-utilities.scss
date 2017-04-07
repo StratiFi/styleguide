@@ -27,6 +27,36 @@
     }
   }
 
+  &-primary-darker {
+    color: $primary-darker;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-graphite-trout {
+    color: $graphite-trout;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
+  &-graphite-gray {
+    color: $graphite-gray !important;
+
+    &-link {
+      &:hover {
+        color: inherit !important;
+      }
+    }
+  }
+
   &-gray-black {
     color: $gray-black !important;
 

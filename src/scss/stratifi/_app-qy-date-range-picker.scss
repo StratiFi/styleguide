@@ -3,6 +3,46 @@
   display: inline-block;
   vertical-align: top;
 
+  &.performance-theme {
+    display: inline-block;
+    margin-bottom: 0 !important;
+    vertical-align: baseline;
+
+    .client-perf-show-hide {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin: 0;
+        font-size: 13px;
+        color: #777;
+        margin-bottom: 5px;
+      }
+
+      button {
+        height: 30px;
+        min-width: 250px;
+        padding: 0;
+        padding-right: 5px;
+        border-color: #d3d6db;
+        height: 38px;
+
+        &:hover {
+          background: #fff !important;
+        }
+
+        &:focus {
+          background: #fff !important;
+        }
+
+        h6 {
+          font-size: 14px;
+          padding-right: 7px !important;
+        }
+      }
+    }
+  }
+
   &.full-size {
     width: 100%;
   }

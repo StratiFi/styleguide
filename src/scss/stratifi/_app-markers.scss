@@ -28,6 +28,27 @@
       }
     }
 
+    &.marker-primary-darker {
+      &:before,
+      &:after {
+        background: $primary-darker;
+      }
+    }
+
+    &.marker-graphite-trout {
+      &:before,
+      &:after {
+        background: $graphite-trout;
+      }
+    }
+
+    &.marker-graphite-gray {
+      &:before,
+      &:after {
+        background: $graphite-gray;
+      }
+    }
+
     &.marker-large {
       &:before,
       &:after {
