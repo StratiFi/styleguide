@@ -260,6 +260,38 @@
   }
 }
 
+.dropdown-group {
+  display: inline-block;
+
+  .dropdown-group--item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin: 0;
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+    .c-select-wrap {
+      background: #fff;
+      border-radius: 3px;
+
+      &:after {
+        top: 15px;
+        right: 11px;
+      }
+
+      select {
+        height: 38px;
+      }
+    }
+  }
+}
+
 span.dropdown-group-arrow,
 span.dropdown-group-calendar {
   margin-left: 10px;

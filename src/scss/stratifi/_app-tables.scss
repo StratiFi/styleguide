@@ -465,18 +465,6 @@
 
   &-overflowed-wrap {
     position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 10%;
-      height: 100%;
-      z-index: 10;
-      @include gradient-horizontal($start-color: rgba(white, .0001), $end-color: rgba(white, 1));
-    }
   }
 
   &-overflowed {
@@ -487,13 +475,17 @@
 
       td,
       th {
+        letter-spacing: 0;
         .card & {
           padding: 1rem .6rem;
-          font-size: $text-title-size-h5;
+          font-size: 14px;
         }
       }
 
       th {
+        font-weight: bold;
+        color: #555;
+
         &.active {
           color: $brand-primary;
 
@@ -517,6 +509,99 @@
     th {
       color: #fff;
       background-color: $graphite-light;
+    }
+  }
+}
+
+.configurable-table {
+
+  .table-scroll-left-dummy,
+  .table-scroll-right-dummy {
+    background: $graphite-dark;
+
+    &.disabled {
+      background: $graphite-gray;
+    }
+  }
+
+  .table-scroll-left,
+  .table-scroll-right {
+    background: $graphite-dark;
+    cursor: pointer;
+
+    &.disabled {
+      background: $graphite-gray;
+      cursor: auto;
+
+      &:hover {
+        background: $graphite-gray;
+      }
+    }
+
+    &:hover {
+      background: $brand-primary;
+    }
+
+    i {
+      display: block;
+    }
+
+    i:before {
+      color: #fff;
+      display: block;
+    }
+  }
+
+  .table-scroll-left {
+
+    i:before {
+      transform: rotate(90deg);
+    }
+  }
+
+  .table-scroll-right {
+
+    i:before {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .title {
+    color: #555;
+    font-weight: bold;
+  }
+
+  a.dropdown-item {
+    line-height: 2rem;
+    font-size: 14px;
+    padding: 3px 13px;
+
+    span {
+      vertical-align: 3px;
+    }
+
+    i {
+      border-radius: 3px;
+    }
+  }
+
+  .dropdown {
+
+    .btn {
+      font-size: 14px;
+      letter-spacing: 0;
+      border-color: #ccc !important;
+
+      &:focus,
+      &:hover {
+        background: #eee;
+        color: #333;
+      }
+
+      i {
+        font-size: 9px !important;
+        margin-left: 3px;
+      }
     }
   }
 }
