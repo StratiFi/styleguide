@@ -515,13 +515,17 @@
 
 .configurable-table {
 
+  th {
+    font-weight: normal;
+  }
+
+  td {
+    font-weight: bold;
+  }
+
   .table-scroll-left-dummy,
   .table-scroll-right-dummy {
-    background: $graphite-dark;
-
-    &.disabled {
-      background: $graphite-gray;
-    }
+    width: 25px;
   }
 
   .table-scroll-left,
