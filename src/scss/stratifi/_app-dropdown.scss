@@ -265,7 +265,7 @@
 
   .dropdown-group--item {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 15px;
 
     label {
@@ -283,6 +283,10 @@
       &:after {
         top: 15px;
         right: 11px;
+      }
+
+      .c-select {
+        min-width: 200px;
       }
 
       select {
