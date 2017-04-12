@@ -78,11 +78,6 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(config.sass.dest));
 });
 
-gulp.task('img', function () {
-    return gulp.src([config.img.src])
-      .pipe(gulp.dest(config.img.dest));
-});
-
 gulp.task('js', function () {
     return gulp.src(config.js.src)
         .pipe(concat('app.min.js'))
@@ -98,7 +93,7 @@ gulp.task('css', ['sass'], function () {
         .pipe(gulp.dest(config.dest + '/css'));
 });
 
-gulp.task('inject', ['css', 'js', 'img', 'copy:html', 'copy:fonts'], function () {
+gulp.task('inject', ['css', 'js', 'copy:html', 'copy:fonts'], function () {
     return gulp.src(config.html.src)
         .pipe(inject(
             gulp.src([
