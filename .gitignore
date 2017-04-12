@@ -27,4 +27,5 @@ webpack-stats.json
 webpack-assets.json
 
 # Generated distribution files
+dist
 /.idea
