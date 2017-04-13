@@ -1,7 +1,8 @@
 .spinner {
   position: absolute;
   left: 50%;
-  margin: 10% 0 0 -($spinner-width/2);
+  margin-top: 10%;
+  margin-left: -($spinner-width/2);
   z-index: 5;
 
   img {
