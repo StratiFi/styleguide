@@ -511,6 +511,14 @@
       background-color: $graphite-light;
     }
   }
+
+  &-graphite-dark {
+    th {
+      color: #fff;
+      background: $graphite-dark;
+      border-color: $graphite-gray;
+    }
+  }
 }
 
 .configurable-table {
