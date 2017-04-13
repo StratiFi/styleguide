@@ -41,6 +41,10 @@ var config = {
             './dist/css/docs.min.css'
         ]
     },
+    'img': {
+        'src': './src/assets/img/*',
+        'dest': './dist/img'
+    },
     'fonts': {
         'format': '{ttf,woff,woff2,eot,svg,otf}',
         'dest': './dist/',

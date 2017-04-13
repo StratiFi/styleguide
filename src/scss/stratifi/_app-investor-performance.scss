@@ -1,0 +1,65 @@
+.inv-perf-controls {
+  position:relative;
+  background: rgba(0, 0, 0, .075);
+  padding: 10px 0 0 0;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 3px;
+
+  .qy-date-range-picker.performance-theme .client-perf-show-hide button {
+    min-width: 200px;
+  }
+
+  .generate-perf-report-link {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+.performance-report {
+
+  .report-success-text {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .company-name {
+    text-transform: uppercase;
+  }
+
+  .step-progress {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  .preview-heading {
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .preview-table {
+
+    .h5 {
+      font-size: 1rem;
+    }
+
+    td, th {
+      padding: .75rem;
+    }
+
+    td {
+      font-size: 1rem;
+    }
+  }
+}
