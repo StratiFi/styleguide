@@ -1,11 +1,14 @@
 .spinner {
+  position: absolute;
   display: inline-block;
-  margin: 30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-size: cover;
-  animation: rotate 1s infinite linear
+  left: 50%;
+  margin: 10% 0 ($spinner-width/2);
+  z-index: 5;
+
+  img {
+    width: $spinner-width;
+    animation: rotate 1s infinite linear
+  }
 }
 
 @-webkit-keyframes rotate {
