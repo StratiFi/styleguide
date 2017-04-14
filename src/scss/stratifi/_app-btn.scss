@@ -102,8 +102,8 @@
 
     &-primary {
       @extend .btn-muted;
-      color: $primary-light;
-      border-color: $primary-light;
+      color: $brand-primary;
+      border-color: $brand-primary;
       background-color: transparent;
 
       &:active,
@@ -112,8 +112,8 @@
       &.focus,
       &:hover,
       &.hover {
-        border-color: $primary-dark;
-        background: $primary-dark;
+        border-color: $brand-primary;
+        background: $brand-primary;
         color: #fff;
       }
     }
