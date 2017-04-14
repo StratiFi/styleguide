@@ -79,7 +79,7 @@
     &.hover {
       border-color: $graphite-light;
       background: $graphite-light;
-      color: white;
+      color: #fff;
     }
 
     &.active {
@@ -88,7 +88,7 @@
       &:hover {
         border-color: $graphite-light;
         background: $graphite-light;
-        color: white;
+        color: #fff;
       }
     }
 
@@ -97,6 +97,24 @@
       &:hover,
       &.hover {
         color: $graphite-dark;
+      }
+    }
+
+    &-primary {
+      @extend .btn-muted;
+      color: $brand-primary;
+      border-color: $brand-primary;
+      background-color: transparent;
+
+      &:active,
+      &.active,
+      &:focus,
+      &.focus,
+      &:hover,
+      &.hover {
+        border-color: $brand-primary;
+        background: $brand-primary;
+        color: #fff;
       }
     }
   }
