@@ -102,8 +102,9 @@
 
     &-primary {
       @extend .btn-muted;
-      color: $primary-dark;
-      border-color: $primary-dark;
+      color: $primary-light;
+      border-color: $primary-light;
+      background: transparent;
 
       &:active,
       &.active,
