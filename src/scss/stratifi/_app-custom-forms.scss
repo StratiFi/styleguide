@@ -122,3 +122,66 @@
     }
   }
 }
+.customer-list {
+  margin-top: 40px;
+  width: 950px;
+  .docs-example{
+    background: none;
+  }
+}
+.customer-list .form-group {
+  float: left;
+}
+.customer-list .c-select {
+  display: inline-block;
+  max-width: 100%;
+  padding: .375rem 1.75rem .375rem .75rem;
+  padding-right: .75rem \9
+;
+  color: $input-color;
+  vertical-align: middle;
+  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center;
+  background-image: none \9
+;
+  background-size: 8px 10px;
+  border: $input-btn-border-width solid $input-border-color;
+  // Use vendor prefixes as `appearance` isn't part of the CSS spec.
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin-left: 10px;
+  min-width: 120px;
+  line-height: 1.15;
+}
+.customer-list .form-group.search {
+  float: left;
+  width: 392px;
+  .form-control {
+    box-shadow: none;
+  }
+}
+.icon-rotate-90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.icon-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.customer-list .investors-arrows .icon-rotate-90{
+  margin-right: 30px;
+  &.gray{
+    color: $graphite-grayish-blue
+  }
+}
+.customer-list .investors-arrows .icon-rotate-270{
+  margin-left: 30px;
+  &.gray{
+    color: $graphite-grayish-blue
+  }
+}

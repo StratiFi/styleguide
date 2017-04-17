@@ -382,16 +382,15 @@
         border-color: $table-primary-border-color;
         font-size: $font-size-base;
         color: #fff;
-        background: $brand-primary;
+        background: $graphite-light;
+        border: none;
 
         &:first-child {
           border-left: none;
-          border-radius: $border-radius-xs 0 0 $border-radius-xs;
         }
 
         &:last-child {
           border-right: none;
-          border-radius: 0 $border-radius-xs $border-radius-xs 0;
         }
 
         a {
@@ -608,4 +607,12 @@
       }
     }
   }
+}
+.create-client{
+  float: right;
+  bottom: 21px;
+  left: 0;
+  position: relative;
+  line-height:2;
+  height: 45px;
 }
