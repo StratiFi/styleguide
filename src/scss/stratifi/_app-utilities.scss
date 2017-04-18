@@ -392,6 +392,7 @@ h6 {
 .line-clamp {
   overflow: hidden;
   display: block;
+  display: -webkit-box;
   position: relative;
   -webkit-box-orient: vertical;
   line-height: $headings-line-height;
@@ -406,12 +407,12 @@ h6 {
     display: block;
     position: absolute;
     height: calc(1em * #{$headings-line-height});
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 75%);
+    background: linear-gradient(to right, #eee, #eee 75%);
   }
 
   &-2 {
-    -webkit-line-clamp : 2;
-    height             : calc(1em * 1.2 * 2);
+    -webkit-line-clamp: 2;
+    height: calc(1em * #{$headings-line-height} * 2);
   }
 }
 @supports (-webkit-line-clamp: 1) {
