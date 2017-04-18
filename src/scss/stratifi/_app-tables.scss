@@ -13,6 +13,17 @@
     border: none;
   }
 
+  &-scroll {
+    &-dummy {
+      background: #eee;
+    }
+
+    &-left,
+    &-right {
+      padding: 0;
+    }
+  }
+
   tr {
     position: relative;
   }
@@ -480,7 +491,7 @@
       td,
       th {
         letter-spacing: 0;
-        .card & {
+        .card &:not(.table-scroll-left, .table-scroll-right) {
           padding: 1rem .6rem;
           font-size: 14px;
         }
