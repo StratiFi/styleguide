@@ -413,11 +413,14 @@ h6 {
 
   &-2 {
     -webkit-line-clamp: 2;
-    height: calc(1em * #{$headings-line-height} * 2);
   }
 }
 @supports (-webkit-line-clamp: 1) {
-  .line-clamp:after {
-    display : none !important;
+  .line-clamp {
+    height: calc(1em * #{$headings-line-height} * 2);
+
+    &:after {
+      display: none !important;
+    }
   }
 }
