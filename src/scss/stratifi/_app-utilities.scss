@@ -397,6 +397,7 @@ h6 {
   -webkit-box-orient: vertical;
   line-height: $headings-line-height;
   text-overflow: ellipsis;
+  max-width: 120px;
 
   &:after {
     content: '...';
