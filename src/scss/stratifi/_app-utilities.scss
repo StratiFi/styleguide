@@ -398,6 +398,7 @@ h6 {
   line-height: $headings-line-height;
   text-overflow: ellipsis;
   max-width: 120px;
+  height: calc(1em * #{$headings-line-height} * 2);
 
   &:after {
     content: '...';
@@ -417,7 +418,7 @@ h6 {
 }
 @supports (-webkit-line-clamp: 1) {
   .line-clamp {
-    height: calc(1em * #{$headings-line-height} * 2);
+    height: auto;
 
     &:after {
       display: none !important;
