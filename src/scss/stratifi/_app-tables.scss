@@ -540,52 +540,58 @@
     width: 25px;
   }
 
-  .table-scroll-left,
-  .table-scroll-right {
-    position: relative;
-    padding: 0;
-    width: 25px;
-    background: $graphite-dark;
-    cursor: pointer;
+  .table-scroll {
+    &-dummy {
+      background: #eee;
+    }
 
-    &.disabled {
-      background: $graphite-gray;
-      cursor: auto;
+    &-left,
+    &-right {
+      position: relative;
+      padding: 0;
+      width: 25px;
+      background: $graphite-dark;
+      cursor: pointer;
+
+      &.disabled {
+        background: $graphite-gray;
+        cursor: auto;
+
+        &:hover {
+          background: $graphite-gray;
+        }
+      }
 
       &:hover {
-        background: $graphite-gray;
+        background: $brand-primary;
+      }
+
+      i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -9px;
+        margin-top: -6px;
+        font-size: 11px;
+      }
+
+      i:before {
+        color: #fff;
+        display: block;
       }
     }
 
-    &:hover {
-      background: $brand-primary;
+    &-left {
+      i:before {
+        transform: rotate(90deg);
+      }
     }
 
-    i {
-      display: block;
-      position: absolute;
-      top: 50%;
-      margin-top: -6px;
-      font-size: 11px;
-    }
-
-    i:before {
-      color: #fff;
-      display: block;
-    }
-  }
-
-  .table-scroll-left {
-
-    i:before {
-      transform: rotate(90deg);
-    }
-  }
-
-  .table-scroll-right {
-
-    i:before {
-      transform: rotate(-90deg);
+    &-right {
+      i:before {
+        transform: rotate(-90deg);
+      }
     }
   }
 
