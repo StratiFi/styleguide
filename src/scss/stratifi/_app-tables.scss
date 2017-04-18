@@ -13,17 +13,6 @@
     border: none;
   }
 
-  &-scroll {
-    &-dummy {
-      background: #eee;
-    }
-
-    &-left,
-    &-right {
-      padding: 0;
-    }
-  }
-
   tr {
     position: relative;
   }
@@ -553,6 +542,9 @@
 
   .table-scroll-left,
   .table-scroll-right {
+    position: relative;
+    padding: 0;
+    width: 25px;
     background: $graphite-dark;
     cursor: pointer;
 
@@ -571,6 +563,10 @@
 
     i {
       display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -6px;
+      font-size: 11px;
     }
 
     i:before {
