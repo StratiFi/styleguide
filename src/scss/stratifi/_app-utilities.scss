@@ -389,3 +389,33 @@ h6 {
 .quarter-opacity {
   opacity: .25;
 }
+.line-clamp {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  -webkit-box-orient: vertical;
+  line-height: $headings-line-height;
+  text-overflow: ellipsis;
+
+  &:after {
+    content: '...';
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    display: block;
+    position: absolute;
+    height: calc(1em * #{$headings-line-height});
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 75%);
+  }
+
+  &-2 {
+    -webkit-line-clamp : 2;
+    height             : calc(1em * 1.2 * 2);
+  }
+}
+@supports (-webkit-line-clamp: 1) {
+  .line-clamp:after {
+    display : none !important;
+  }
+}
