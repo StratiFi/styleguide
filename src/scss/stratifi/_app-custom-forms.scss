@@ -131,6 +131,7 @@
 }
 .customer-list .form-group {
   float: left;
+  margin-bottom: 0;
 }
 .customer-list .c-select {
   display: inline-block;
@@ -157,6 +158,14 @@
   width: 392px;
   .form-control {
     box-shadow: none;
+    color: black;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active{
+      box-shadow: none;
+      border: 1px solid #d3d6db;
+    }
   }
 }
 .icon-rotate-90 {

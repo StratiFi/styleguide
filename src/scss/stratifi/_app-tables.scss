@@ -371,6 +371,7 @@
   &-primary {
     box-shadow: $table-primary-box-shadow;
     border-radius: $border-radius-xs;
+    margin-top: 0;
 
     thead {
       box-shadow: $th-primary-box-shadow;
@@ -610,7 +611,7 @@
 }
 .create-client{
   float: right;
-  bottom: 21px;
+  bottom: 13px;
   left: 0;
   position: relative;
   line-height:2;
