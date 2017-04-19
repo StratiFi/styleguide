@@ -450,6 +450,12 @@
       }
     }
   }
+  &-white {
+    background-color: white;
+    .form-control {
+      color: black;
+    }
+  }
 
   .action.float {
     @media (min-width: 768px) {
