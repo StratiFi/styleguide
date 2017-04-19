@@ -127,19 +127,22 @@
   width: 950px;
   & .table-primary {
     margin-top: 0;
-    th {
-      background: $graphite-light;
-      border: none;
-    }
-    &:first-child {
-      border-radius: 0;
-      border-left: none;
+    thead{
+      th {
+        background: $graphite-light;
+        border: none;
+        &:first-child {
+          border-radius: 0;
+          border-left: none;
+        }
+
+        &:last-child {
+          border-radius: 0;
+          border-right: none;
+        }
+      }
     }
 
-    &:last-child {
-      border-radius: 0;
-      border-right: none;
-    }
   }
   .docs-example{
     background: none;
