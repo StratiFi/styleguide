@@ -424,12 +424,43 @@
                     </div>
                 </div>
 
+                <h3 class="m-t-1">Breadcrumbs</h3>
+                <div class="row">
+                    <div class="docs-example">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">Home</li>
+                        </ol>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Library</li>
+                        </ol>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+                </div>
+
 
                 <h1 class="m-t-3">Buttons</h1>
                 <div class="docs-example">
                     <p>
                         <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
                         <button type="button" class="btn btn-muted btn-lg">Muted</button>
+                        <button type="button" class="btn btn-muted-primary btn-lg">Muted</button>
                         <button type="button" class="btn btn-primary btn-lg">Primary</button>
                         <button type="button" class="btn btn-success btn-lg">Success</button>
                         <button type="button" class="btn btn-primary btn-lg btn-black">Black</button>

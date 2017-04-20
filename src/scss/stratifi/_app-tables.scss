@@ -5,6 +5,10 @@
     margin-top: 0;
   }
 
+  &-white {
+    background: #fff;
+  }
+
   &-bordered {
     border: none;
   }
@@ -476,7 +480,7 @@
       td,
       th {
         letter-spacing: 0;
-        .card & {
+        .card &:not(.table-scroll-left, .table-scroll-right) {
           padding: 1rem .6rem;
           font-size: 14px;
         }
@@ -511,6 +515,14 @@
       background-color: $graphite-light;
     }
   }
+
+  &-graphite-dark {
+    th {
+      color: #fff;
+      background: $graphite-dark;
+      border-color: $graphite-gray;
+    }
+  }
 }
 
 .configurable-table {
@@ -528,45 +540,58 @@
     width: 25px;
   }
 
-  .table-scroll-left,
-  .table-scroll-right {
-    background: $graphite-dark;
-    cursor: pointer;
+  .table-scroll {
+    &-dummy {
+      background: #eee;
+    }
 
-    &.disabled {
-      background: $graphite-gray;
-      cursor: auto;
+    &-left,
+    &-right {
+      position: relative;
+      padding: 0;
+      width: 25px;
+      background: $graphite-dark;
+      cursor: pointer;
+
+      &.disabled {
+        background: $graphite-gray;
+        cursor: auto;
+
+        &:hover {
+          background: $graphite-gray;
+        }
+      }
 
       &:hover {
-        background: $graphite-gray;
+        background: $brand-primary;
+      }
+
+      i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -9px;
+        margin-top: -6px;
+        font-size: 11px;
+      }
+
+      i:before {
+        color: #fff;
+        display: block;
       }
     }
 
-    &:hover {
-      background: $brand-primary;
+    &-left {
+      i:before {
+        transform: rotate(90deg);
+      }
     }
 
-    i {
-      display: block;
-    }
-
-    i:before {
-      color: #fff;
-      display: block;
-    }
-  }
-
-  .table-scroll-left {
-
-    i:before {
-      transform: rotate(90deg);
-    }
-  }
-
-  .table-scroll-right {
-
-    i:before {
-      transform: rotate(-90deg);
+    &-right {
+      i:before {
+        transform: rotate(-90deg);
+      }
     }
   }
 
