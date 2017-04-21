@@ -461,6 +461,29 @@
     }
   }
 
+  &-grey-heading {
+
+    thead {
+      border-radius: 2px;
+
+      tr {
+
+        th {
+          background-color: #7B8C94;
+          border: none;
+
+          &:first-child {
+            border-radius: 2px 0 0 2px;
+          }
+          
+          &:last-child {
+            border-radius: 0 2px 2px 0;
+          }
+        }
+      }
+    }
+  }
+
   &-split {
     border-radius: $border-radius-xs;
     margin-top: 0;
