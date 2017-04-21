@@ -125,6 +125,25 @@
 .customer-list {
   margin-top: 40px;
   width: 950px;
+  & .table-primary {
+    margin-top: 0;
+    thead{
+      th {
+        background: $graphite-light;
+        border: none;
+        &:first-child {
+          border-radius: 0;
+          border-left: none;
+        }
+
+        &:last-child {
+          border-radius: 0;
+          border-right: none;
+        }
+      }
+    }
+
+  }
   .docs-example{
     background: none;
   }
