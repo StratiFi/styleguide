@@ -1,0 +1,22 @@
+.breadcrumb {
+  background: transparent;
+
+  &-item {
+    a {
+      color: $graphite-gray;
+    }
+
+    & + & {
+      &:before {
+        content: '>';
+        font-weight: 300;
+        color: $graphite-gray;
+      }
+    }
+  }
+
+  > .active {
+    color: $gray-black;
+    font-weight: 600;
+  }
+}
