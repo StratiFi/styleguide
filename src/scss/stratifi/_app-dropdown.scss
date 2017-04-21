@@ -144,6 +144,20 @@
       text-decoration: none;
     }
   }
+  &-item-new {
+    width: 390px;
+    color: $graphite-grayish-dark;
+    font-weight: 300;
+    line-height: 2.8em;
+    padding-left: 35px;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: rgba(124, 140, 148, 0.1);
+      text-decoration: none;
+    }
+  }
 
   &-group {
 

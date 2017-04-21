@@ -263,3 +263,24 @@ ul,
 ol {
   padding-left: 1.2em; /* a-la zero left padding */
 }
+.breadcrumb {
+  > li {
+    font-weight: bold;
+    float: left;
+
+    + li::before {
+      padding-right: .5rem;
+      padding-left: .5rem;
+      color: $breadcrumb-divider-color;
+      content: ">";
+      font-weight: normal;
+    }
+  }
+  > .active {
+    font-weight: normal;
+    a {
+      color: $breadcrumb-active-color;
+    }
+  }
+}
+
