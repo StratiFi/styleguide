@@ -2,6 +2,12 @@
   &-autosuggest {
     &__container {
       position: relative;
+      &--open{
+        box-shadow: none;
+        border-bottom: 1px solid white;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
     }
 
     &__suggestions {

@@ -11,6 +11,20 @@
     font-weight: bold;
   }
 
+  &-round {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 0;
+    border-radius: 50%;
+    padding-left: 7px;
+    padding-top: 0;
+  }
+
+  &-grey {
+    background: #ccc;
+    color: #fff;
+  }
+
   &-success {
     @media (max-width: 768px) {
       width: 100%;
@@ -131,6 +145,12 @@
         background-color: $primary-dark;
       }
     }
+  }
+  &-muted-primary {
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+    background-color: #f7f7f9;
+    min-width: 130px;
   }
 
   &-success {
