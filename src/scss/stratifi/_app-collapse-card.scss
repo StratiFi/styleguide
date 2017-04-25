@@ -145,14 +145,11 @@
             color: $success-light;
           }
 
-          span {
-            margin: 0 5px;
-
-            &:not(.icon-edit) {
-              cursor: pointer;
-              color: $graphite-light;
-              text-decoration: underline;
-            }
+          span:not(.icon-edit) {
+            margin-left: 5px;
+            cursor: pointer;
+            color: $graphite-light;
+            text-decoration: underline;
           }
         }
       }
@@ -166,6 +163,10 @@
   .btn {
     margin-left: 5px;
     letter-spacing: 0;
+
+    span {
+      margin: 0 5px;
+    }
 
     &-link {
       color: $graphite-light;
