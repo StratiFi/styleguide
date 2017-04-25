@@ -1,0 +1,36 @@
+.accounts-search {
+  position: relative;
+
+  &:after {
+    content: '\e912';
+    display: block;
+    font-family: 'icomoon' !important;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 28.5px;
+    left: 25px;
+  }
+
+  .col-md-8 {
+    margin-top: 24px;
+  }
+
+  .col-md-8,
+  .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .accounts-search-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 35px;
+    padding-left: 40px;
+  }
+}
