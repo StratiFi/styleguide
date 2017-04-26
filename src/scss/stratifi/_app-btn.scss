@@ -127,7 +127,7 @@
       &:hover,
       &.hover {
         border-color: $brand-primary;
-        background: $brand-primary;
+        background-color: $brand-primary;
         color: #fff;
       }
     }
@@ -145,12 +145,6 @@
         background-color: $primary-dark;
       }
     }
-  }
-  &-muted-primary {
-    border: 1px solid $brand-primary;
-    color: $brand-primary;
-    background-color: #f7f7f9;
-    min-width: 130px;
   }
 
   &-success {

@@ -400,18 +400,6 @@ h6 {
   max-width: 120px;
   height: calc(1em * #{$headings-line-height} * 2);
 
-  &:after {
-    content: '...';
-    text-align: right;
-    bottom: 0;
-    right: 0;
-    width: 25%;
-    display: block;
-    position: absolute;
-    height: calc(1em * #{$headings-line-height});
-    background: linear-gradient(to right, #eee, #eee 75%);
-  }
-
   &-2 {
     -webkit-line-clamp: 2;
   }
@@ -419,9 +407,5 @@ h6 {
 @supports (-webkit-line-clamp: 1) {
   .line-clamp {
     height: auto;
-
-    &:after {
-      display: none !important;
-    }
   }
 }
