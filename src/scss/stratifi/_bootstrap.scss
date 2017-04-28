@@ -33,13 +33,13 @@
 // Inverse
 // TODO: remove later (BS comment: TODO: redo this as a proper class)
 .bg {
-  &-inverse,
   &-faded {
     color: $graphite-lighter;
-    background-color: $graphite-dark !important;
+    background-color: $graphite-dark;
   }
 
   &-inverse {
-    color: $graphite-lighter;
+    @extend .bg-faded;
+    background-color: $graphite-dark !important;
   }
 }
