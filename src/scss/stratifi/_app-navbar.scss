@@ -10,13 +10,15 @@
   top: 0;
   z-index: 10;
   border-radius: 0;
-  background: #fff !important;
+  background: #fff;
   box-shadow: 0 -1px 5px #777;
 
   &-toggler {
     font-size: 30px;
     padding-top: 5px;
   }
+
+
 
   &.loggedin {
     padding-left: 0;
