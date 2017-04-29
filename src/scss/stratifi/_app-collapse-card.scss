@@ -30,26 +30,13 @@
       transform: rotate(180deg);
     }
 
-    .svg {
+    .icon-hdd-down {
+      font-size: 1.75rem;
+      color: $graphite-light;
       cursor: pointer;
-      height: 30px;
-
-      &-blue {
-        display: none;
-      }
-
-      svg {
-        width: 25px;
-      }
 
       &:hover {
-        .svg-blue {
-          display: block;
-        }
-
-        .svg-gray {
-          display: none;
-        }
+        color: $primary-normal;
       }
     }
 
