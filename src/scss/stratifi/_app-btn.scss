@@ -23,6 +23,15 @@
   &-grey {
     background: #ccc;
     color: #fff;
+
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+      background: $graphite-dark;
+    }
   }
 
   &-success {
