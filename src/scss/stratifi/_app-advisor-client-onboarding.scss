@@ -1,8 +1,8 @@
 .email-preview {
-  padding: 15px;
-  border: 1px solid $brand-primary;
 
-  p {
+  textarea {
+    padding: 15px;
+    border: 1px solid $brand-primary;
     color: #777;
     font-style: italic;
   }
