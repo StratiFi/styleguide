@@ -30,6 +30,14 @@
       transform: rotate(180deg);
     }
 
+    .icon-pdf {
+      color: #7c8c94;
+      font-size: 17px;
+      padding-top: 5px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
     .icon-hdd-down {
       font-size: 1.75rem;
       color: $graphite-light;
@@ -61,6 +69,10 @@
 
       .icon-arrow {
         transform: rotate(0deg);
+        color: #fff;
+      }
+
+      .icon-pdf {
         color: #fff;
       }
     }
