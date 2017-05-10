@@ -9,8 +9,21 @@
     background: #fff;
   }
 
+  &-sm {
+    td {
+      padding: .3rem !important;
+      font-size: .875rem;
+    }
+  }
+
   &-bordered {
     border: none;
+  }
+
+  &-align-middle {
+    td {
+      vertical-align: middle;
+    }
   }
 
   &-blank-cell {
@@ -28,7 +41,16 @@
     }
 
     tbody {
-      overflow-y: auto;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: $royal-opacity;
+      }
     }
 
     tr {
