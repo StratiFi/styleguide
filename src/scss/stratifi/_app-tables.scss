@@ -9,9 +9,9 @@
     background: #fff;
   }
 
-  &-sm {
+  &-xs {
     td {
-      padding: .3rem !important;
+      padding: .25rem .3rem !important;
       font-size: .875rem;
     }
   }
@@ -20,9 +20,19 @@
     border: none;
   }
 
-  &-align-middle {
-    td {
-      vertical-align: middle;
+  &-opportunities {
+    tr {
+      td {
+        vertical-align: middle;
+
+        &:first-child {
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          max-width: 190px;
+        }
+      }
     }
   }
 

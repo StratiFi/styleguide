@@ -23,6 +23,42 @@
     border-radius: $border-radius;
   }
 
+  &-insight {
+    padding: .8rem 1rem;
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: .25rem;
+    }
+
+    p {
+      &:not(.card-title) {
+        margin-bottom: .4rem;
+        font-size: 0.875rem;
+        line-height: 1.25;
+        color: #6c7b7f;
+      }
+    }
+
+    .card {
+      &-title {
+        margin-bottom: .3rem;
+        font-weight: 700;
+      }
+
+      &-date {
+        display: block;
+        margin-bottom: .5rem;
+        color: #a2b1b9;
+        font-size: .8rem;
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
   &-details {
     position: relative;
     display: block;
