@@ -13,6 +13,13 @@
     border: none;
   }
 
+  &-blank-cell {
+    td,
+    tr {
+      border: none !important;
+    }
+  }
+
   &-overflow-y {
     thead,
     tbody {

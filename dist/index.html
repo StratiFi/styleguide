@@ -1990,6 +1990,76 @@
         </div>
       </div>
 
+      <h3 class="m-t-1">Client card</h3>
+
+      <div class="flex space-between">
+        <a href="" class="card card-client card-client-link flex align-center">
+          <h3>15</h3>
+          <p>Clients ready to invest</p>
+        </a>
+        <div class="card card-client flex align-center">
+          <h3>0</h3>
+          <p>Client’s Documents ready to submit</p>
+        </div>
+        <a href="" class="card card-client card-client-link flex align-center">
+          <h3>30</h3>
+          <p>Clients’ signature needed</p>
+        </a>
+        <div class="card card-client flex align-center">
+          <h3>0</h3>
+          <p>Clients’ accounts not linked</p>
+        </div>
+      </div>
+
+
+      <div class="flex">
+        <h3 class="m-t-1" style="width: 50%; margin-right: .25rem;">Prism Risk Card</h3>
+        <h3 class="m-t-1">Top Opportunities List</h3>
+      </div>
+
+      <div class="flex align-stretch">
+          <div class="card card-prism-risk" style="width: 50%; margin-right: .25rem;">
+            <div class="flex justify-between align-center m-b-2">
+              <p class="text-bold m-b-0">Clients' bucket against Prism Risk</p>
+              <div class="flex">
+                <span class="risk-label risk-label-low">Low Risk</span>
+                <span class="risk-label risk-label-neutral">Neutral</span>
+                <span class="risk-label risk-label-high">High Risk</span>
+              </div>
+            </div>
+            <div class="flex justify-between risk-card">
+              <span class="risk-card-title risk-card-title-overlay">With Overlay</span>
+              <a href="" class="risk-card-low">120</a>
+              <a href="" class="risk-card-neutral">20</a>
+              <a href="" class="risk-card-high">5</a>
+            </div>
+            <div class="flex justify-between risk-card">
+              <span class="risk-card-title risk-card-title-nooverlay">Without Overlay</span>
+              <a href="" class="risk-card-low">120</a>
+              <a href="" class="risk-card-neutral">20</a>
+              <a href="" class="risk-card-high">5</a>
+            </div>
+          </div>
+
+          <div class="card card-prism-risk" style="width: 50%;">
+            <p class="text-bold m-b-2">Top Opportunities - Clients need overlays</p>
+            <table class="table table-bordered table-blank-cell">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="risk-level-9"></span>
+                    James Bond
+                  </td>
+                  <td>Overal Risk: 9</td>
+                  <td>
+                    <button class="btn btn-black">Run Analysis</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
       <h1 class="m-t-3">Card with shadow</h1>
 
       <h3 class="m-t-1">Default</h3>
@@ -2413,6 +2483,38 @@
             </div>
           </div>
         </div>
+      </div>
+      <h3 class="m-t-1">Fade In Tabs</h3>
+
+      <div class="bd-example bd-example-tabs" role="tabpanel">
+        <div class="tab-content tab-content-dashboard text-white" id="myTabContent">
+          <div role="tabpanel" class="tab-pane in show active" id="enhancement" aria-labelledby="enhancement" aria-expanded="false">
+            <p>StratiFi Return Enhancement content</p>
+          </div>
+          <div class="tab-pane fade" id="risk" role="tabpanel" aria-labelledby="risk" aria-expanded="true">
+            <p>StratiFi  Risk Reduction content</p>
+          </div>
+          <div class="tab-pane fade" id="tail" role="tabpanel" aria-labelledby="tail" aria-expanded="true">
+            <p>StratiFi Tail Risk content</p>
+          </div>
+          <div class="tab-pane fade" id="stock" role="tabpanel" aria-labelledby="stock" aria-expanded="true">
+            <p>Single Stock</p>
+          </div>
+        </div>
+        <ul class="nav nav-tabs nav-tabs-dashboard" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#enhancement" role="tab" aria-controls="enhancement" aria-expanded="false">StratiFi Return Enhancement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#risk" role="tab" aria-controls="risk" aria-expanded="true">StratiFi Risk Reduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tail" role="tab" aria-controls="tail" aria-expanded="true">StratiFi Tail Risk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#stock" role="tab" aria-controls="stock" aria-expanded="true">Single Stock</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

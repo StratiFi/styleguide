@@ -87,8 +87,8 @@
     }
   }
 
-  &-gray-lighter {
-    color: $gray-lighter !important;
+  &-gray-opacity {
+    color: $royal-opacity !important;
 
     &-link {
       &:hover {
@@ -195,6 +195,14 @@
         }
       }
     }
+  }
+
+  &-light-green {
+    color: $light-green !important;
+  }
+
+  &-royal-light {
+    color: $royal-light !important;
   }
 
   &-success {
