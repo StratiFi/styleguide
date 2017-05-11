@@ -80,3 +80,24 @@
     }
   }
 }
+
+.insights-slider {
+  .slick-dots {
+    li {
+      button {
+        &:before {
+          font-size: 14px;
+          color: #09acf8;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
