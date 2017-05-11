@@ -86,15 +86,16 @@
     li {
       button {
         &:before {
+          opacity: 1 !important;
           font-size: 14px;
-          color: #09acf8 !important;
+          color: #dae3e6 !important;
         }
       }
 
       &.slick-active {
         button {
           &:before {
-            opacity: 1 !important;
+            color: #09acf8 !important;
           }
         }
       }
