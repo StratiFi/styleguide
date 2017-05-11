@@ -87,14 +87,14 @@
       button {
         &:before {
           font-size: 14px;
-          color: #09acf8;
+          color: #09acf8 !important;
         }
       }
 
       &.slick-active {
         button {
           &:before {
-            opacity: 1;
+            opacity: 1 !important;
           }
         }
       }
