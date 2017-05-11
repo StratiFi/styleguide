@@ -205,6 +205,12 @@
     color: $royal-light !important;
   }
 
+  @each $risk-level, $risk-color in $risk-badges {
+    &-risk-level-#{$risk-level} {
+      color: $risk-color !important;
+    }
+  }
+
   &-success {
     color: $brand-success !important;
 

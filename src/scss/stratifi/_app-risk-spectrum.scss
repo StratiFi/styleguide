@@ -1,0 +1,16 @@
+.risk-spectrum {
+  margin-top: .25rem;
+  height: 33px;
+  background: linear-gradient(90deg,#2cca53 16%,#fe9c18 36%,#fe9c18 0,#f4a244 63%,#de3246 80%,#de3246 0);
+
+  ul {
+    height: 100%;
+    list-style: none;
+
+    li {
+      font-size: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}

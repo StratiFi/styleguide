@@ -59,6 +59,22 @@
     }
   }
 
+  &-risk {
+    @extend .card-insight;
+
+    &-low {
+      border-top: 5px solid $risk-level-1;
+    }
+
+    &-medium {
+      border-top: 5px solid $risk-level-6;
+    }
+
+    &-high {
+      border-top: 5px solid $risk-level-9;
+    }
+  }
+
   &-details {
     position: relative;
     display: block;
