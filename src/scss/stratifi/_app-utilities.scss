@@ -87,8 +87,8 @@
     }
   }
 
-  &-gray-lighter {
-    color: $gray-lighter !important;
+  &-gray-opacity {
+    color: $royal-opacity !important;
 
     &-link {
       &:hover {
@@ -194,6 +194,20 @@
           color: inherit !important;
         }
       }
+    }
+  }
+
+  &-light-green {
+    color: $light-green !important;
+  }
+
+  &-royal-light {
+    color: $royal-light !important;
+  }
+
+  @each $risk-level, $risk-color in $risk-badges {
+    &-risk-level-#{$risk-level} {
+      color: $risk-color !important;
     }
   }
 

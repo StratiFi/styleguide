@@ -23,6 +23,58 @@
     border-radius: $border-radius;
   }
 
+  &-insight {
+    padding: .8rem 1rem;
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: .25rem;
+    }
+
+    p {
+      &:not(.card-title) {
+        margin-bottom: .4rem;
+        font-size: 0.875rem;
+        line-height: 1.25;
+        color: #6c7b7f;
+      }
+    }
+
+    .card {
+      &-title {
+        margin-bottom: .3rem;
+        font-weight: 700;
+      }
+
+      &-date {
+        display: block;
+        margin-bottom: .5rem;
+        color: #a2b1b9;
+        font-size: .8rem;
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &-risk {
+    @extend .card-insight;
+
+    &-low {
+      border-top: 5px solid $risk-level-1;
+    }
+
+    &-medium {
+      border-top: 5px solid $risk-level-6;
+    }
+
+    &-high {
+      border-top: 5px solid $risk-level-9;
+    }
+  }
+
   &-details {
     position: relative;
     display: block;
@@ -130,6 +182,170 @@
           &:last-child {
             text-align: right;
           }
+        }
+      }
+    }
+  }
+
+  &-client {
+    margin-bottom: .25rem;
+    padding: .45rem .75rem;
+    width: 100%;
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: .25rem;
+    }
+
+    h3 {
+      margin-right: .75rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: .875em;
+      line-height: 1;
+      color: $graphite-trout;
+    }
+
+    &-link {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 0;
+        height: 0;
+        border-top: 13px solid #dae8ec;
+        border-left: 13px solid transparent;
+      }
+
+      h3 {
+        color: $royal-light;
+      }
+
+      &:hover {
+        p {
+          color: $brand-primary;
+        }
+
+        &:after {
+          border-top-color: $brand-primary;
+        }
+      }
+    }
+  }
+
+  &-prism-risk {
+    padding: 1rem .8rem 2rem .8rem;
+    border: none;
+
+    &-title {
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      font-size: .9rem;
+    }
+
+    .risk-label {
+      font-size: .7rem;
+
+      &:not(:last-child) {
+        margin-right: .5rem;
+      }
+
+      &:before {
+        content: '';
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin: 3px 5px 3px 0;
+      }
+
+      &-low {
+        &:before {
+          background: $risk-level-1;
+        }
+      }
+
+      &-neutral {
+        &:before {
+          background: $risk-level-8;
+        }
+      }
+
+      &-high {
+        &:before {
+          background: $risk-level-10;
+        }
+      }
+    }
+
+    .risk-card {
+      margin-top: .5rem;
+
+      > *:not(.risk-card-title) {
+        position: relative;
+        width: 23%;
+        font-size: 1.4rem;
+        line-height: 2.75rem;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          width: 0;
+          height: 0;
+          border-top: 13px solid rgba(239, 239, 239, .35);
+          border-left: 13px solid transparent;
+        }
+      }
+
+      &-low {
+        background: $risk-level-1;
+
+        &:hover {
+          background: lighten( $risk-level-1, 8% );
+        }
+      }
+
+      &-neutral {
+        background: $risk-level-8;
+
+        &:hover {
+          background: lighten( $risk-level-8, 15% );
+        }
+      }
+
+      &-high {
+        background: $risk-level-10;
+
+        &:hover {
+          background: lighten( $risk-level-10, 15% );
+        }
+      }
+
+      &-title {
+        padding: 0 .75rem;
+        width: 31%;
+        font-size: .8rem;
+        line-height: 2.75rem;
+        text-align: right;
+
+        &-overlay {
+          background: #c9ebf8;
+        }
+
+        &-nooverlay {
+          background: #dae3e6;
         }
       }
     }

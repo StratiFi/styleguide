@@ -84,6 +84,11 @@
     min-width: 204px;
   }
 
+  &.btn-xs {
+    padding: .2rem 1rem;
+    font-size: .75rem;
+  }
+
   &.btn-lg {
     font-size: $font-size-h5;
     line-height: 1.7;

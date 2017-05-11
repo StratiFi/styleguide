@@ -80,3 +80,25 @@
     }
   }
 }
+
+.insights-slider {
+  .slick-dots {
+    li {
+      button {
+        &:before {
+          opacity: 1 !important;
+          font-size: 14px;
+          color: #dae3e6 !important;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            color: #09acf8 !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,6 +35,56 @@
         }
       }
     }
+
+    &-dashboard {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: none;
+
+      > .nav-item {
+        width: 25%;
+        text-align: left;
+      }
+
+      .nav-link {
+        padding: .5em .75em;
+        background: $royal-opacity;
+        color: #fff;
+        border: none;
+        border-radius: 0 0 4px 4px;
+
+        &:hover,
+        &:focus {
+          color: $light-green;
+        }
+
+        &.active {
+          background: $royal;
+          color: $light-green;
+
+          &:focus,
+          &:hover {
+            background: $royal;
+            color: $light-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab {
+  &-content {
+    &-dashboard {
+      padding: 1.7rem 0;
+      background: $royal;
+
+      .tab-pane {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
