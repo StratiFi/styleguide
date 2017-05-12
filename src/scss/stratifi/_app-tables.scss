@@ -52,8 +52,6 @@
 
     tbody {
       overflow-y: scroll;
-
-      @include custom-scrollbar(7px, 10px, $royal-opacity);
     }
 
     tr {
