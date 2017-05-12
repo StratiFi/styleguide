@@ -125,4 +125,67 @@
     width: 90%;
     max-width: 900px;
   }
+
+  &-commentary {
+    &.modal-dialog {
+      @media (min-width: 900px) {
+        width: 735px;
+      }
+    }
+
+    .modal {
+      &-content {
+        overflow: hidden;
+        padding: 2rem .5rem;
+        height: 80vh;
+      }
+
+      &-header {
+        margin: 0 1rem;
+        padding: 0 0 .25rem;
+
+        .close {
+          position: absolute;
+          right: .5rem;
+          top: .3rem;
+          opacity: 1;
+          outline: none;
+
+          .icon-exit {
+            padding: 5px;
+            padding-left: 6px;
+            font-size: .75rem;
+            border: 1px solid #000;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &-body {
+        padding: 1rem;
+        overflow-y: scroll;
+        max-height: calc(80vh - 90px);
+
+        .list {
+          padding: 0;
+          list-style: none;
+
+          li {
+            margin-bottom: 2.5rem;
+          }
+        }
+
+        .commentary-date {
+          color: #a2b1b9;
+        }
+
+        p {
+          margin-bottom: 0;
+          line-height: 1.38;
+        }
+
+        @include custom-scrollbar(7px, 10px, $royal-opacity);
+      }
+    }
+  }
 }
