@@ -127,13 +127,13 @@
   }
 
   &-commentary {
-    .modal {
-      &-dialog {
-        @media (min-width: 900px) {
-          width: 735px;
-        }
+    &.modal-dialog {
+      @media (min-width: 900px) {
+        width: 735px;
       }
+    }
 
+    .modal {
       &-content {
         overflow: hidden;
         padding: 2rem .5rem;
