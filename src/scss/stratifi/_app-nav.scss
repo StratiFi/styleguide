@@ -59,12 +59,12 @@
         }
 
         &.active {
-          background: $royal;
+          background: #0068b3;
           color: $light-green;
 
           &:focus,
           &:hover {
-            background: $royal;
+            background: #0068b3;
             color: $light-green;
           }
         }
