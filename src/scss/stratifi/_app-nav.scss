@@ -59,12 +59,12 @@
         }
 
         &.active {
-          background: $royal;
+          background: #0068b3;
           color: $light-green;
 
           &:focus,
           &:hover {
-            background: $royal;
+            background: #0068b3;
             color: $light-green;
           }
         }
@@ -76,8 +76,8 @@
 .tab {
   &-content {
     &-dashboard {
-      padding: 1.7rem 0;
-      background: $royal;
+      padding: 1rem 0;
+      background: linear-gradient(to bottom, #00B7EA 0%,#0086d3 36%,#0086d3 0%,#0068b3 92%);
 
       .tab-pane {
         p {
