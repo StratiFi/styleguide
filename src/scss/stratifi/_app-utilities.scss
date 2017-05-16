@@ -205,7 +205,7 @@
     color: $royal-light !important;
   }
 
-  @each $risk-level, $risk-color in $risk-badges {
+  @each $risk-level, $risk-color in $risk-dashboard-badges {
     &-risk-level-#{$risk-level} {
       color: $risk-color !important;
     }
