@@ -1,4 +1,4 @@
-@each $risk-level, $risk-color in $risk-badges {
+@each $risk-level, $risk-color in $risk-dashboard-badges {
   .risk-badge {
     &.risk-level-#{$risk-level} {
       position: relative;
