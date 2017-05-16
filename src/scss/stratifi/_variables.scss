@@ -116,23 +116,23 @@ $risk-level-1:                #09bb00 !default;
 
 $risk-levels:                 $risk-level-1 $risk-level-2 $risk-level-3 $risk-level-4 $risk-level-5 $risk-level-6 $risk-level-7 $risk-level-8 $risk-level-9 $risk-level-10;
 
-$risk-badges:
-                (1, #09bb00),
-                (2, #09bb00),
-                (3, #d5ff00),
-                (4, #ff0),
-                (5, #ffe400),
-                (6, #ffb733),
-                (7, #ffa500),
-                (8, #ff8c00),
-                (9, #f01600),
-                (10, #f01600);
+$risk-dashboard-badges:
+                (1, #4eb63d),
+                (2, #4eb63d),
+                (3, #4eb63d),
+                (4, #4eb63d),
+                (5, #f7941d),
+                (6, #f7941d),
+                (7, #f7941d),
+                (8, #c93539),
+                (9, #c93539),
+                (10, #c93539);
 
 $risk-badge-size:             30px;
 
 
 // Gold Dashboard
-$light-green: #59ff00;
+$light-green: #9afd1b;
 
 $royal: #0664af;
 $royal-light: #92dcf8;

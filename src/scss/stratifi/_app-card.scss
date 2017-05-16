@@ -200,6 +200,7 @@
     h3 {
       margin-right: .75rem;
       margin-bottom: 0;
+      color: #dae3e6;
     }
 
     p {
@@ -268,19 +269,19 @@
 
       &-low {
         &:before {
-          background: $risk-level-1;
+          background: #4eb63d;
         }
       }
 
       &-neutral {
         &:before {
-          background: $risk-level-8;
+          background: #f7941d;
         }
       }
 
       &-high {
         &:before {
-          background: $risk-level-10;
+          background: #c93539;
         }
       }
     }
@@ -310,26 +311,26 @@
       }
 
       &-low {
-        background: $risk-level-1;
+        background: #4eb63d;
 
         &:hover {
-          background: lighten( $risk-level-1, 8% );
+          background: lighten( #4eb63d, 8% );
         }
       }
 
       &-neutral {
-        background: $risk-level-8;
+        background: #f7941d;
 
         &:hover {
-          background: lighten( $risk-level-8, 15% );
+          background: lighten( #f7941d, 15% );
         }
       }
 
       &-high {
-        background: $risk-level-10;
+        background: #c93539;
 
         &:hover {
-          background: lighten( $risk-level-10, 15% );
+          background: lighten( #c93539, 15% );
         }
       }
 

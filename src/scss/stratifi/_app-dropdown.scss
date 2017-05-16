@@ -125,6 +125,178 @@
       @include border-top-radius(0);
       @include border-bottom-radius($border-radius);
     }
+
+    &-membership {
+      top: calc(100% + 1rem);
+      left: auto;
+      right: 0;
+      padding: 1rem;
+      width: 560px;
+      color: #fff;
+      background: rgba(#003855, .95);
+      border: none;
+      box-shadow: 0 0 6px 0 rgba(#003855,.95);
+
+      a {
+        font-size: .85rem;
+
+        &:hover {
+          color: rgba($brand-primary, .8);
+        }
+      }
+
+      .icon-arrow {
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        margin-left: 5px;
+        font-size: .35rem;
+        transform: rotate(-90deg);
+      }
+
+      .membership-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          width: 25%;
+          text-align: center;
+
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            top: 1.05rem;
+            width: 50%;
+            height: 1px;
+            background: #d9d8d8;
+          }
+
+          &:before {
+            left: 0;
+          }
+
+          &:after {
+            right: 0;
+          }
+
+          &:first-child {
+            &:before {
+              display: none;
+            }
+          }
+
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+
+          .icon-wrap {
+            display: flex;
+            align-items: center;
+            margin-bottom: .85rem;
+            height: 36px;
+          }
+
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 50%;
+            z-index: 2;
+
+            &.icon {
+              &-lock {
+                font-size: 1.25rem;
+              }
+            }
+          }
+
+          &.silver {
+            .icon {
+              width: .875rem;
+              height: .875rem;
+              background: #fff;
+              border-radius: 50%;
+            }
+          }
+
+          &.gold {
+            .icon {
+              width: 1.65rem;
+              height: 1.65rem;
+              background: #fff;
+              color: $brand-primary;
+            }
+          }
+
+          &.platinum {
+            p {
+              color: #89b0cd;
+            }
+
+            .icon {
+              width: 2.2rem;
+              height: 2.2rem;
+              background: $brand-primary;
+              color: #fff;
+            }
+          }
+
+          &.saphire {
+            p {
+              color: #89b0cd;
+            }
+
+            .icon {
+              width: 2.875rem;
+              height: 2.875rem;
+              background: $brand-primary;
+              color: #fff;
+            }
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+          font-size: .875rem;
+          font-weight: 300;
+          line-height: 1.3;
+          color: #fefefe;
+
+          &.title {
+            font-weight: 700;
+            color: #fff;
+          }
+        }
+      }
+
+      .top-arrow {
+        overflow: hidden;
+        position: absolute;
+        top: -80px;
+        right: 3.5rem;
+        width: 80px;
+        height: 80px;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: rgba(#003855, .95);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          top: 75px;
+          left: 13px;
+          box-shadow: 0 0 6px 0 rgba(#003855,.95);
+        }
+      }
+    }
   }
 
   &-item {
