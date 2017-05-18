@@ -75,6 +75,16 @@
     }
   }
 
+  &-strategy {
+    min-height: 190px;
+    cursor: pointer;
+    transition: .3s ease-in-out box-shadow;
+
+    &:hover {
+      box-shadow: 0 1px 4px #999;
+    }
+  }
+
   &-details {
     position: relative;
     display: block;
