@@ -85,6 +85,18 @@
     }
   }
 
+  &-btn-bottom {
+    position: relative;
+    padding-bottom: 60px;
+
+    .btn-bottom {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      width: calc(100% - 30px);
+    }
+  }
+
   &-details {
     position: relative;
     display: block;
