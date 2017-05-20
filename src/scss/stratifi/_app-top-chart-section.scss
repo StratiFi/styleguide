@@ -1,0 +1,34 @@
+.top-chart-section {
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+  margin-bottom: 1rem;
+
+  .metrics {
+    font-size: 14px;
+  }
+
+  .legend {
+    font-size: 14px;
+
+    .legend-item {
+      display: inline-block;
+      margin-left: 15px;
+
+      .square {
+        display: inline-block;
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: #fff;
+        margin-right: 5px;
+      }
+
+      &.green {
+        color: #9afd1b;
+
+        .square {
+          background: #9afd1b;
+        }
+      }
+    }
+  }
+}
