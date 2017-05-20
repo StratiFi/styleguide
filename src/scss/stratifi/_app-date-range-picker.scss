@@ -61,9 +61,11 @@
 }
 
 .dashboard-date-picker-section {
+  display: inline-block;
 
   .date-range-picker {
     width: 200px;
+    margin-bottom: 0 !important;
 
     .show-hide-btn {
       background: rgba(255, 255, 255, .18);
