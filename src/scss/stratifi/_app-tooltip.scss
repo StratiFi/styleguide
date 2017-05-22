@@ -40,3 +40,22 @@
 .tooltipR:hover .tooltiptext {
   visibility: visible;
 }
+
+.treemap-tooltip {
+  background: rgba(0, 0, 0, .55);
+  transform: translateY(calc(-50% - 15px));
+  padding: 10px;
+  color: #fff;
+  font-size: 13px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: calc(50% - 5px);
+    left: -5px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, .55) transparent transparent;
+  }
+}
