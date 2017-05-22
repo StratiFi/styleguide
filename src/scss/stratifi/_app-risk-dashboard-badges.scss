@@ -1,3 +1,15 @@
+.risk-badge-with-score {
+  display: inline-block;
+  padding: 7px;
+  padding-top: 6px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
 @each $risk-level, $risk-color in $risk-dashboard-badges {
   .risk-badge {
     &.risk-level-#{$risk-level} {
@@ -14,6 +26,13 @@
         height: .8em;
         background: $risk-color;
       }
+    }
+  }
+
+  .risk-badge-with-score {
+
+    &.risk-level-#{$risk-level} {
+      background: $risk-color;
     }
   }
 }
