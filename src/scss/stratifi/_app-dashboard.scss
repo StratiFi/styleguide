@@ -102,3 +102,38 @@
     color: #fff;
   }
 }
+
+.opportunity-item {
+
+  .score-cell {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-size: 14px;
+    width: 140px;
+  }
+
+  .run-analysis-cell {
+    padding-top: 0 !important;
+    padding-bottom: 5px !important;
+    font-size: 14px;
+    width: 140px;
+
+    .btn {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+  }
+
+  .remove-op-cell {
+    padding-top: 4px !important;
+    cursor: pointer;
+
+    i {
+      color: #ccc;
+
+      &:hover {
+        color: #555;
+      }
+    }
+  }
+}
