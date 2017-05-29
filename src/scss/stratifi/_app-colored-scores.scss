@@ -119,7 +119,11 @@
 
       &.score-card {
         &:after {
-          left: #{$i*10%};
+          @if $i == 10 {
+            left: 98%;
+          } @else {
+            left: #{$i*10%};
+          }
         }
       }
     }
