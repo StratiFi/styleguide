@@ -115,6 +115,10 @@
         &-card-text {
           color: #{$risk-level};
         }
+
+        h3 {
+          color: #{$risk-level};
+        }
       }
 
       &.score-card {
