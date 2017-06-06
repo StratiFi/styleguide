@@ -42,6 +42,13 @@
       }
     }
 
+    &.marker-graphite-dark-grey {
+      &:before,
+      &:after {
+        background: $gray-dark;
+      }
+    }
+
     &.marker-graphite-gray {
       &:before,
       &:after {
