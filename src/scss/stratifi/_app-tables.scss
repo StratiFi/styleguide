@@ -529,7 +529,7 @@
           &:first-child {
             border-radius: 2px 0 0 2px;
           }
-          
+
           &:last-child {
             border-radius: 0 2px 2px 0;
           }
@@ -803,6 +803,16 @@
   position: relative;
   line-height:2;
   height: 45px;
+}
+
+table.table-position-ops {
+  tr{
+    td {
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: center !important;
+    }
+  }
 }
 
 //.performance {
