@@ -1,6 +1,10 @@
 .risk-analysis {
   margin-left: 216px;
 
+  i {
+    font-style: normal;
+  }
+
   h1 {
     font-size: 36px;
     font-weight: bold;
@@ -197,7 +201,7 @@
           .caption {
             font-size: 17px;
             color: #fff;
-            font-style: italic;
+            font-style: normal;
             text-align: center;
             padding-bottom: 0;
           }
@@ -220,7 +224,7 @@
 
           .text-score {
             margin-bottom: 0;
-            font-style: italic;
+            font-style: normal;
             font-size: 22px;
           }
 
