@@ -806,11 +806,35 @@
 }
 
 table.table-position-ops {
+  tr:nth-child(even) {
+    td{
+      background: #9f9f9f !important;
+    }
+  }
+  tr:nth-child(odd) {background: #FFF}
+  margin-bottom: 15px;
+  margin-top: 15px;
+  overflow: scroll;
   tr{
+    th {
+      background: #FFFFFF;
+      border: 1px solid;
+      text-align: center;
+    }
     td {
+      border: 1px solid;
       padding: 0 !important;
       margin: 0 !important;
       text-align: center !important;
+    }
+    td.even {
+      background: #cfcfcf;
+    }
+    td.orange {
+      background: orange !important;
+    }
+    td.red {
+      background: red !important;
     }
   }
 }
