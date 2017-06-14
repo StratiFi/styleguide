@@ -38,3 +38,10 @@
 
   }
 }
+
+.small-modal{
+  .modal-content{
+    height: 45vh;
+    z-index: 1041;
+  }
+}
