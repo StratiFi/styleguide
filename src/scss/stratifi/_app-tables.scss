@@ -852,14 +852,30 @@ table.table-investment {
   tbody {
     background-color: white;
 
+    tr:hover {
+      background: #d3d6db;
+      td:first-child {
+        input {
+          background: #d3d6db;
+        }
+        background: #d3d6db;
+      }
+    }
+
     tr {
       border: 1px solid #d2d7d9;
 
       td:first-child {
+        input {
+          background: #E9F8FE;
+          border: 0 solid;
+          outline: none;
+        }
         background: #E9F8FE;
       }
 
       td {
+        vertical-align: middle;
         font-size: 16px;
         color: #505e62;
         line-height: 26px;
