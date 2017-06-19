@@ -806,9 +806,9 @@
 }
 
 table.table-position-ops {
+  border-collapse: separate;
   tr:nth-child(even) {
     td{
-      background: #9f9f9f !important;
     }
   }
   tr:nth-child(odd) {background: #FFF}
@@ -835,6 +835,12 @@ table.table-position-ops {
     }
     td.red {
       background: red !important;
+    }
+    td.blueColor {
+      background: #00bcd9;
+    }
+    td.bisqueColor {
+      background: bisque;
     }
   }
 }
