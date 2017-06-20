@@ -903,6 +903,20 @@ table.table-investment-linked {
         font-size: 14px;
         font-weight: bold;
         padding: 5px 10px;
+
+        &.overlay-heading-top-td {
+          background: #D3D6DB;
+          color: #777;
+          text-align: center;
+          width: 350px;
+        }
+
+        &.overlay-heading-bottom-td {
+          background: #E0F4FD;
+          color: #555;
+          text-align: center;
+          border-bottom: 2px solid #31E4FF;
+        }
       }
     }
   }
@@ -917,6 +931,43 @@ table.table-investment-linked {
         color: #505e62;
         line-height: 26px;
         padding: 15px 10px;
+
+        &.manage-overlay-td {
+
+          button {
+            line-height: 18px;
+            padding-left: 9px;
+            padding-right: 9px;
+
+            i {
+              color: #fff;
+              font-size: 18px;
+            }
+          }
+        }
+
+        &.overlay-body-td {
+          position: relative;
+
+          &:nth-child(odd) {
+            background: #E0F4FD;
+          }
+
+          &:nth-child(even) {
+            background: #F3FBFE;
+          }
+
+          &.present:after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border: 2px solid #0AABF3;
+            background: transparent;
+            border-radius: 50%;
+          }
+        }
       }
     }
   }
