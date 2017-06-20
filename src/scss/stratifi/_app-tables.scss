@@ -820,12 +820,14 @@ table.table-position-ops {
       background: #FFFFFF;
       border: 1px solid;
       text-align: center;
+      white-space: nowrap;
     }
     td {
       border: 1px solid;
       padding: 0 !important;
       margin: 0 !important;
-      text-align: center !important;
+      text-align: center;
+      white-space: nowrap;
     }
     td.even {
       background: #cfcfcf;
@@ -841,6 +843,9 @@ table.table-position-ops {
     }
     td.bisqueColor {
       background: bisque;
+    }
+    td.whiteColor {
+      background: white;
     }
   }
 }
