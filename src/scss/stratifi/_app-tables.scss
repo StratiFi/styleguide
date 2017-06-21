@@ -853,10 +853,13 @@ table.table-position-ops {
 table.table-investment {
   thead {
     tr {
+      border: 1px solid #d3d6db;
+      background: #e3e7ed;
+
       td {
         font-size: 14px;
         font-weight: bold;
-        padding: 5px 10px;
+        padding: 18px 10px;
       }
     }
   }
@@ -899,10 +902,17 @@ table.table-investment {
 table.table-investment-linked {
   thead {
     tr {
+      border: 1px solid #d3d6db;
+      background: #e3e7ed;
+
       td {
         font-size: 14px;
         font-weight: bold;
-        padding: 5px 10px;
+        padding: 4px 10px;
+
+        &.double-cell {
+          padding: 18px 10px;
+        }
 
         &.overlay-heading-top-td {
           background: #D3D6DB;
