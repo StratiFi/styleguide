@@ -65,3 +65,60 @@ MAIN PART
     }
   }
 }
+
+.react-tabs {
+  &__tab-list {
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  &__tab {
+    display: inline-block;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 40px 7px 0;
+    color: #7c8c94;
+
+    &--selected {
+      border-color: $tl-underline;
+      color: $tl-text-color-checked;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        margin-right: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $tl-underline;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $tl-text-color-hover;
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+    font-weight: $tl-font-weight;
+
+    &--selected {
+      display: block;
+
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+  }
+}
