@@ -11,6 +11,10 @@
   display: inline-block;
 }
 
+.tooltipR:hover {
+  cursor: pointer;
+}
+
 .tooltipR {
   .tooltiptext {
     visibility: hidden;

@@ -983,6 +983,58 @@ table.table-investment-linked {
   }
 }
 
+table.table-investment-strategy{
+  thead{
+    tr{
+      td{
+        text-align: right;
+        padding: 0;
+      }
+      td:first-child{
+        text-align: left;
+      }
+    }
+  }
+  tbody{
+    tr{
+      border-left: 4px solid #39E3FA;
+      td{
+        padding: 3px 3px 3px 8px;
+        text-align: right;
+      }
+      td:first-child{
+        text-align: left;
+      }
+    }
+    tr.header {
+      background: #E3E8EE;
+      td:first-child{
+        font-weight: 500;
+      }
+      td:last-child{
+        width: 30px;
+        text-align: center;
+        font-size: 10px;
+        padding: 0;
+        vertical-align: middle;
+        a.arrow-up{
+          position: absolute;
+          transform: rotate(180deg);
+          top: 7px;
+          left: 6px;
+        }
+      }
+    }
+    tr.additional {
+      background: #E9F8FD;
+      td input{
+        vertical-align: middle;
+        margin: 0 3px;
+      }
+    }
+  }
+}
+
 //.performance {
 //  tbody:first-child {
 //    td{
