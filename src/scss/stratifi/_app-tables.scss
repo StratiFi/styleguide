@@ -900,6 +900,7 @@ table.table-investment {
 }
 
 table.table-investment-linked {
+  margin-bottom: 10px;
   thead {
     tr {
       border: 1px solid #d3d6db;
@@ -983,6 +984,46 @@ table.table-investment-linked {
   }
 }
 
+table.table-investment-strategy-review{
+  thead{
+    tr{
+      td{
+        text-align: center;
+        padding: 0;
+      }
+      td:nth-child(odd){
+        color: #0EABF0;
+      }
+    }
+  }
+  tbody{
+    tr{
+      color: #ffffff;
+      td{
+        padding: 4px 12px;
+        td:first-child{
+          border-left: none;
+        }
+        td:last-child{
+          border-right: none;
+        }
+      }
+    }
+    tr.header{
+      td{
+        border: 1px solid #a9a9a9;
+      }
+    }
+    tr.changed{
+      background: #E9F8FD;
+      td.changed{
+        color: #0EABF0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 table.table-investment-strategy{
   thead{
     tr{
@@ -1031,6 +1072,10 @@ table.table-investment-strategy{
         vertical-align: middle;
         margin: 0 3px;
       }
+    }
+    tr.unassigned{
+      background: white;
+      border-left: 0;
     }
   }
 }
