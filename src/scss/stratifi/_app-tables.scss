@@ -1005,6 +1005,7 @@ table.table-investment-strategy-review{
       }
       td:first-child{
         border-left: 0 !important;
+        width: 340px;
       }
       td:last-child{
         border-right: 0 !important;
@@ -1025,6 +1026,18 @@ table.table-investment-strategy-review{
     }
     tr:last-child{
       border-bottom: 2px solid #0EABF0;
+    }
+    tr.additional{
+      td:first-child{
+        padding-left: 35px;
+      }
+      td{
+        color: #7b7b7b;
+        border-right: 1px solid #d1d1d1;
+        border-left: 1px solid #d1d1d1;
+        border-top: 0;
+        border-bottom: 0;
+      }
     }
   }
 }
