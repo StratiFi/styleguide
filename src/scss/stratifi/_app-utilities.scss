@@ -436,3 +436,9 @@ h6 {
     height: auto;
   }
 }
+.engine {
+  fill: #09acf8;
+  &:hover {
+    fill: #40c2fe;
+  }
+}
