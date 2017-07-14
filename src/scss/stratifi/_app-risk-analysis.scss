@@ -416,4 +416,45 @@
     }
   }
 
+  .overlay-switch {
+    display: inline-block;
+    padding: 10px;
+    background: #7c8c94;
+    border-radius: 5px;
+    height: 45px;
+    margin-right: 20px;
+
+    .overlay-name {
+      display: inline-block;
+      min-width: 170px;
+      color: #fff;
+      vertical-align: top;
+    }
+
+    .overlay-checkbox {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 3px;
+      background: #fff;
+      margin-left: 20px;
+      border-radius: 3px;
+      cursor: pointer;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    &.on {
+      background: #505e62;
+
+      .overlay-checkbox {
+        background: #09acf8;
+      }
+    }
+  }
+
 }
