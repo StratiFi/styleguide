@@ -907,9 +907,11 @@ table.table-investment-linked {
       background: #e3e7ed;
 
       td {
-        font-size: 14px;
+        font-size: .89rem;
         font-weight: bold;
         padding: 4px 10px;
+
+        vertical-align: middle !important;
 
         &.double-cell {
           padding: 18px 10px;
@@ -938,10 +940,12 @@ table.table-investment-linked {
       border: 1px solid #d2d7d9;
 
       td {
-        font-size: 16px;
+        font-size: .89rem;
         color: #505e62;
         line-height: 26px;
         padding: 15px 10px;
+
+        vertical-align: middle !important;
 
         &.manage-overlay-td {
 
