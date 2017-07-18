@@ -1,0 +1,13 @@
+.investment-input {
+  background: inherit;
+  border: 0;
+  box-shadow: none;
+  color: #09acf8;
+  border-radius: 0;
+  height: 30px;
+
+  &:focus {
+    background: white;
+    border: 1px solid #09acf8;
+  }
+}
