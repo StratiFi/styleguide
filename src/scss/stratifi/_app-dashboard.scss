@@ -148,3 +148,24 @@
 .amcharts-label-main{
   font-weight: 200;
 }
+
+.dashboard-select {
+
+  .c-select {
+    min-width: 310px;
+    background: rgba(255, 255, 255, 0.18);
+    border: none;
+    font-size: 14px;
+    color: #9AFD1B;
+    height: 31px;
+
+    option {
+      color: #333;
+    }
+  }
+
+  &:after {
+    color: #fff;
+  }
+
+}
