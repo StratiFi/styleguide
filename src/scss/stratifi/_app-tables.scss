@@ -890,7 +890,7 @@ table.table-investment {
 
       td {
         vertical-align: middle;
-        font-size: 16px;
+        font-size: .89rem;
         color: #505e62;
         line-height: 26px;
         padding: 15px 10px;
@@ -942,7 +942,7 @@ table.table-investment-linked {
       td {
         font-size: .89rem;
         color: #505e62;
-        line-height: 26px;
+        line-height: 25px;
         padding: 15px 10px;
 
         vertical-align: middle !important;
@@ -1009,9 +1009,10 @@ table.table-investment-strategy-review{
       }
       td:first-child{
         border-left: 0 !important;
-        width: 340px;
+        width: 220px;
       }
       td:last-child{
+        width: 65px;
         border-right: 0 !important;
         text-align: center;
       }
@@ -1064,6 +1065,7 @@ table.table-investment-strategy{
       td{
         padding: 3px 3px 3px 8px;
         text-align: right;
+        vertical-align: middle;
       }
       td:first-child{
         text-align: left;
