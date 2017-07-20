@@ -1105,6 +1105,46 @@ table.table-investment-strategy{
   }
 }
 
+table.table-client-section{
+  thead{
+    tr{
+      td{
+        text-align: center;
+        &:last-child{
+          text-align: left;
+        }
+        &:first-child{
+          text-align: left;
+        }
+      }
+    }
+  }
+  tbody{
+    tr{
+      td{
+        text-align: center;
+        padding: 10px 15px;
+        width: 130px;
+        span.risk-badge-with-score{
+          height: 27px;
+          padding-top: 0;
+        }
+        &:last-child{
+          width: auto;
+          text-align: left;
+        }
+        &:first-child{
+          width: 26vh;
+          text-align: left;
+        }
+        &:nth-child(even) {
+          background: #F2FBFE;
+        }
+      }
+    }
+  }
+}
+
 //.performance {
 //  tbody:first-child {
 //    td{
