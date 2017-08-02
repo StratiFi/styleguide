@@ -6,6 +6,7 @@
 @import "bootstrap"; // bootstrap "overriding" fix
 
 // load app styles
+@import "app-tabs";
 @import "app-icons";
 @import "app-flexbox";
 @import "app-grid";
@@ -68,4 +69,8 @@
 @import "app-advisor-client-onboarding";
 @import "app-risk-dashboard-badges";
 @import "app-risk-spectrum";
+@import "app-top-chart-section";
+@import "app-investment";
+@import "app-loading";
+@import "app-input";
 @import "app";

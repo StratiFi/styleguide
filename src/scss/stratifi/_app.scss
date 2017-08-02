@@ -264,3 +264,10 @@ ol {
   padding-left: 1.2em; /* a-la zero left padding */
 }
 
+@media(min-width: 1330px){
+  .full-width {
+    width: 1098px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

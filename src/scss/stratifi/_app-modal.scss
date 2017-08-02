@@ -165,6 +165,10 @@
       &-title {
         font-size: 1.5rem !important;
         font-weight: 400 !important;
+
+        &-investment {
+          font-size: 14px !important;
+        }
       }
 
       &-body {
@@ -193,5 +197,44 @@
         @include custom-scrollbar(7px, 10px, $royal-opacity);
       }
     }
+  }
+}
+
+.modal-investment{
+  width: 760px;
+  &-header{
+    height: 40px;
+    background-color: #92DCF7;
+
+    .close {
+      width: 40px;
+      height: 40px;
+      background-color: #043146;
+      top: 0;
+      right: 0;
+      opacity: 1;
+
+      span {
+        text-shadow: 0 0 0 black;
+        color: white;
+      }
+    }
+  }
+  &-body{
+    padding: 25px 25px 15px;
+  }
+  &-content{
+    padding: 0;
+  }
+  &-footer{
+    text-align: center;
+    padding: 16px 0;
+    background-color: #E9F8FD;
+  }
+  .modal-title-investment{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    padding-left: 25px;
   }
 }

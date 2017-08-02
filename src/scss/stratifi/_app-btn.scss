@@ -1,5 +1,4 @@
 .btn {
-  letter-spacing: .1rem;
   font-weight: $btn-font-weight;
   @include transition(all .3s);
 
@@ -194,4 +193,23 @@
       }
     }
   }
+}
+
+.arrowSquare{
+  width: 32px;
+  height: 32px;
+  background: #0AABF9;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.checkbox{
+  float: right;
+  height: 39px;
+  width: 39px;
+  background: #505e62;
+  margin: -5px -10px;
 }

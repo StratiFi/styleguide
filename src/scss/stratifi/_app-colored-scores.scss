@@ -115,11 +115,19 @@
         &-card-text {
           color: #{$risk-level};
         }
+
+        h3 {
+          color: #{$risk-level};
+        }
       }
 
       &.score-card {
         &:after {
-          left: #{$i*10%};
+          @if $i == 10 {
+            left: 98%;
+          } @else {
+            left: #{$i*10%};
+          }
         }
       }
     }

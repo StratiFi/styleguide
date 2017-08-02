@@ -205,7 +205,7 @@
     color: $royal-light !important;
   }
 
-  @each $risk-level, $risk-color in $risk-badges {
+  @each $risk-level, $risk-color in $risk-dashboard-badges {
     &-risk-level-#{$risk-level} {
       color: $risk-color !important;
     }
@@ -424,7 +424,7 @@ h6 {
   -webkit-box-orient: vertical;
   line-height: $headings-line-height;
   text-overflow: ellipsis;
-  max-width: 120px;
+  //max-width: 120px;
   height: calc(1em * #{$headings-line-height} * 2);
 
   &-2 {
@@ -435,4 +435,18 @@ h6 {
   .line-clamp {
     height: auto;
   }
+}
+.engine {
+  fill: #09acf8;
+  &:hover {
+    fill: #40c2fe;
+  }
+}
+.sort-icon{
+  user-select: none;
+  cursor: pointer;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
 }

@@ -59,3 +59,69 @@
     }
   }
 }
+
+.dashboard-date-picker-section {
+  display: inline-block;
+
+  .date-range-picker {
+    width: 200px;
+    margin-bottom: 0 !important;
+
+    .show-hide-btn {
+      background: rgba(255, 255, 255, .18);
+      color: #fff;
+      border: none;
+      font-size: 13px;
+      width: 200px;
+
+      i {
+        color: #fff;
+      }
+    }
+
+    .picker-content {
+      background: #2EBBEA;
+      box-shadow: none;
+
+      & > button {
+        box-shadow: none;
+        width: 120px;
+        margin-left: 40px;
+        font-size: 13px;
+        height: 30px;
+        padding-top: 4px;
+        margin-bottom: 10px;
+        background: #9afd1b;
+        color: #1c69ac;
+        border-radius: 2px !important;
+      }
+
+      p.caption {
+        color: #fff;
+        font-size: 13px;
+      }
+
+      .react-date-field {
+        width: 160px;
+        background: #1d66a9;
+        border: none !important;
+        height: 30px;
+
+        .react-date-picker__calendar {
+          color: #333;
+        }
+
+        input {
+          background: #1d66a9;
+          height: 30px;
+          font-size: 13px;
+          border: none !important;
+        }
+
+        .react-date-field__clear-icon {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
