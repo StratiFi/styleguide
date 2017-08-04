@@ -76,12 +76,19 @@
   }
 
   &-strategy {
-    min-height: 190px;
+    min-height: 200px;
     cursor: pointer;
     transition: .3s ease-in-out box-shadow;
+    position: relative;
 
     &:hover {
       box-shadow: 0 1px 4px #999;
+    }
+
+    a {
+      position: absolute;
+      left: 16px;
+      bottom: 11px;
     }
   }
 
