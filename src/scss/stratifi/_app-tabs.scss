@@ -25,6 +25,12 @@ MAIN PART
   width: $tl-tab-width;
   margin: $tl-tab-list-margin;
   border-bottom: solid 1px $tl-bottom-border;
+
+  .investments & {
+    width: 80%;
+    border-bottom: none;
+  }
+
   input[type="radio"] {
     position: absolute;
     opacity: 0;
