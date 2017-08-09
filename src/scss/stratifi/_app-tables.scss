@@ -901,6 +901,7 @@ table.table-investment {
 
 table.table-investment-linked {
   margin-bottom: 10px;
+
   thead {
     tr {
       border: 1px solid #d3d6db;
@@ -910,11 +911,10 @@ table.table-investment-linked {
         font-size: .89rem;
         font-weight: bold;
         padding: 4px 10px;
-
         vertical-align: middle !important;
 
         &.double-cell {
-          padding: 18px 10px;
+          padding: 10px;
         }
 
         &.overlay-heading-top-td {
@@ -943,16 +943,20 @@ table.table-investment-linked {
         font-size: .89rem;
         color: #505e62;
         line-height: 25px;
-        padding: 15px 10px;
-
+        padding: 10px;
         vertical-align: middle !important;
 
         &.manage-overlay-td {
+
+          padding-right: 14px;
+          padding-left: 14px;
 
           button {
             line-height: 18px;
             padding-left: 9px;
             padding-right: 9px;
+            width: 100px;
+            font-size: 0.89rem;
 
             i {
               color: #fff;
