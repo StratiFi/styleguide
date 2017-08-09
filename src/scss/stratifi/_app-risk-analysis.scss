@@ -1,3 +1,27 @@
+.client-prism .risk-analysis {
+  & {
+    margin-left: 0;
+  }
+
+  .risk-analysis-header-container {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .blue-top-bar {
+    display: none;
+  }
+
+  .risk-analysis-body .risk-analysis-body-container {
+    width: 100%;
+    min-width: 1060px;
+  }
+
+  .risk-analysis-scorecards {
+    margin: 0 auto;
+    width: 1064px;
+  }
+}
+
 .risk-analysis {
   margin-left: 216px;
 
