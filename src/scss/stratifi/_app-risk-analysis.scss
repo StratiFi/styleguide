@@ -4,11 +4,20 @@
   }
 
   .risk-analysis-header-container {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid $border-color;
+  }
+
+  .risk-analysis-header {
+    width: 100%;
+    padding: 2rem;
   }
 
   .blue-top-bar {
     display: none;
+  }
+
+  .risk-analysis-overview .row {
+    margin: 0;
   }
 
   .risk-analysis-body .risk-analysis-body-container {
