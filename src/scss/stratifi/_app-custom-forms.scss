@@ -172,7 +172,7 @@
     z-index: 1;
     border-radius: 0;
 
-    &:hover {
+    &:hover, &:focus {
       color: black;
     }
   }
