@@ -3,6 +3,22 @@
   right: 15px;
 }
 
+.select-xs {
+
+  .c-select-wrap {
+
+    &:after {
+      right: -22px !important;
+    }
+
+    .c-select {
+      width: 170px;
+      min-width: 170px;
+    }
+
+  }
+}
+
 .form {
   &-control {
     line-height: 1.15;

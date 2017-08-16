@@ -1,37 +1,39 @@
-.create-account-form {
+.inline-labeled-input {
+  padding: 15px 50px;
 
-  .inline-labeled-input {
-    padding: 15px 50px;
+  label {
+    color: #888;
+    padding-top: 5px;
 
-    label {
-      color: #888;
-      padding-top: 5px;
+    &.focused {
+      color: $brand-primary;
+    }
+  }
 
-      &.focused {
-        color: $brand-primary;
-      }
+  input {
+    height: 40px;
+    box-shadow: none;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .c-select-wrap {
+    width: 100%;
+
+    &:after {
+      top: 17px;
+      right: 12px;
     }
 
-    input {
+    .c-select {
       height: 40px;
-      box-shadow: none;
     }
+  }
 
-    .form-group {
-      margin-bottom: 0;
-    }
-
-    .c-select-wrap {
-      width: 100%;
-
-      &:after {
-        top: 17px;
-        right: 12px;
-      }
-
-      .c-select {
-        height: 40px;
-      }
-    }
+  .caption {
+    font-size: 14px;
+    color: #999;
   }
 }
