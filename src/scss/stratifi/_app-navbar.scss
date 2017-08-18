@@ -330,6 +330,7 @@
 
 .notifications {
   position: relative;
+  padding-right: 30px;
 
   .notifications-count {
     position: absolute;
@@ -338,7 +339,7 @@
     height: 25px;
     border-radius: 50%;
     background: #c93539;
-    right: -16px;
+    right: 16px;
     top: -9px;
     text-align: center;
     font-size: 15px;
