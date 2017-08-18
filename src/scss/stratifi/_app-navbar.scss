@@ -327,3 +327,22 @@
     line-height: 1;
   }
 }
+
+.notifications {
+  position: relative;
+
+  .notifications-count {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #c93539;
+    right: -16px;
+    top: -9px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 2px;
+    color: #fff;
+  }
+}

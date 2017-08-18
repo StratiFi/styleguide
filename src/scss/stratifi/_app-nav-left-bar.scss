@@ -100,14 +100,14 @@ $transition: .3s;
     position: fixed;
     left: 0;
     height: 101%;
-    background: #394346;
+    background: #22292B;
     overflow: hidden;
 
     a {
       display: block;
       text-align: left;
       padding: 10px 0;
-      padding-left: 10px;
+      padding-left: 25px;
       color: #fff;
       width: 216px;
 
@@ -120,9 +120,8 @@ $transition: .3s;
       }
 
       &.active {
-        i {
-          color: $brand-primary;
-        }
+        box-shadow: inset 4px 0 #2EE4FF;
+        background: #13181A;
 
         span {
           font-weight: bold;
