@@ -108,7 +108,8 @@ $transition: .3s;
       text-align: left;
       padding: 10px 0;
       padding-left: 25px;
-      color: #fff;
+      color: #7c8c94;
+      font-weight: 300;
       width: 216px;
 
       &:first-of-type {
@@ -116,12 +117,13 @@ $transition: .3s;
       }
 
       &:hover {
-        background: #7f898c;
+        color: #fff;
       }
 
       &.active {
         box-shadow: inset 4px 0 #2EE4FF;
         background: #13181A;
+        color: #fff;
 
         span {
           font-weight: bold;
