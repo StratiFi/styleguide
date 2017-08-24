@@ -26,8 +26,11 @@
     .drawer-switcher {
       width: 216px;
       padding: 0 10px;
-      background: $brand-primary;
       position: relative;
+
+      & > a {
+        padding-left: 4px;
+      }
 
       img {
         margin-right: 60px;
