@@ -1,0 +1,59 @@
+.collapsible-table {
+  font-size: 14px;
+
+  .row-helper {
+
+    & > div {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    & > div.name-col {
+      padding-left: 40px;
+    }
+
+    & > div.value-col {
+      padding-right: 8px;
+    }
+
+    & > div.percent-col {
+      padding-right: 12px;
+    }
+  }
+
+  .row-content-block {
+    border: 1px solid #dae3e6;
+    border-left: none;
+    margin-bottom: 5px;
+    background-color: #f6f8f9;
+
+    .row-content {
+      margin-left: 0;
+      margin-right: 0;
+      cursor: pointer;
+
+      .col-md-2,
+      .col-md-4 {
+        padding-right: 0;
+      }
+
+      &.non-first-level {
+        background: #d3d6db;
+      }
+
+      & > div {
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      i.icon-arrow {
+        display: inline-block;
+        font-size: 10px;
+
+        &.turned {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
