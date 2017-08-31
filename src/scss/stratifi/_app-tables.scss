@@ -1149,6 +1149,141 @@ table.table-client-section{
   }
 }
 
+.slider-table {
+  & {
+    display: flex;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  .slider-wrapper {
+    width: 70%;
+    position: relative;
+
+    &.-arrows-present {
+      padding: 0 33px;
+    }
+
+    &.js-table2nd-slider {
+      @media (max-width: 1366px) {
+        padding: 0 33px;
+
+        .slick-arrow {
+          display: block;
+        }
+      }
+    }
+    //
+    &.js-table1st-slider {
+      @media (max-width: 1500px) {
+        padding: 0 33px;
+
+        .slick-arrow {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .slick-slider {
+    width: 100%;
+    //padding: 0 25px;
+    //position: relative;
+  }
+
+  table tbody td {
+    height: 35px;
+  }
+
+  .slider-item {
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+
+  .slider-item .th {
+    max-height: 55px;
+    height: 55px;
+    background: rgb(217, 225, 228);
+    border: 1px solid #7c8c94;
+    border-bottom-color: #000;
+    border-left: none;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .slider-item .th > div {
+    text-overflow: ellipsis;
+    max-height: 38px;
+    min-width: 70px;
+    overflow: hidden;
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  //
+  .slider-item .td {
+    border-bottom: 1px solid #e0e6e8;
+    color: #4a4a4a;
+    min-height: 35px;
+    font-weight: 700;
+    padding: 6.5px 19.2px;
+
+    &:last-child {
+      border-bottom-color: #000;
+    }
+  }
+
+  .slick-track {
+    min-width: 100%;
+  }
+
+  .slider-item .th,
+  .slider-item .td {
+    font-size: 14px;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+  //
+  .slick-arrow {
+    min-width: 33px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+
+    &.table-scroll-right {
+      right: 0;
+    }
+
+    &.table-scroll-left {
+      left: 0;
+    }
+
+    &.slick-disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+
+      &:hover {
+        background: #394346;
+      }
+    }
+  }
+
+  .slick-arrow i {
+    color: red;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+}
+
+
 //.performance {
 //  tbody:first-child {
 //    td{
