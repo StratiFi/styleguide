@@ -1173,7 +1173,7 @@ table.table-client-section{
         }
       }
     }
-    //
+
     &.js-table1st-slider {
       @media (max-width: 1500px) {
         padding: 0 33px;
@@ -1187,8 +1187,6 @@ table.table-client-section{
 
   .slick-slider {
     width: 100%;
-    //padding: 0 25px;
-    //position: relative;
   }
 
   table tbody td {
@@ -1226,7 +1224,7 @@ table.table-client-section{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
-  //
+
   .slider-item .td {
     border-bottom: 1px solid #e0e6e8;
     color: #4a4a4a;
@@ -1249,7 +1247,7 @@ table.table-client-section{
     text-align: center;
     text-overflow: ellipsis;
   }
-  //
+
   .slick-arrow {
     min-width: 33px;
     position: absolute;
@@ -1272,14 +1270,6 @@ table.table-client-section{
         background: #394346;
       }
     }
-  }
-
-  .slick-arrow i {
-    color: red;
-  }
-
-  .slick-next {
-    right: 0;
   }
 }
 
