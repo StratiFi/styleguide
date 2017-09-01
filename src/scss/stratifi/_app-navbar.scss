@@ -1,5 +1,23 @@
 .advisor-container {
-  padding-top: 3.5rem;
+  & {
+    padding-top: 3.5rem;
+  }
+
+  .investors-wrapper,
+  .investments-wrapper {
+    width: 100%;
+    max-width: 1098px;
+    margin: auto;
+
+    @media screen and (max-width: 1366px) {
+      max-width: none;
+      padding: 0 24px;
+    }
+  }
+
+  .investors-wrapper .customer-list {
+    margin-top: 24px;
+  }
 }
 
 .navbar {
