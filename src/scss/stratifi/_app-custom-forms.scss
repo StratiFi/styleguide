@@ -244,17 +244,25 @@
   min-width: 120px;
   line-height: 1.15;
 }
-.customer-list .form-group.search {
+
+.form-group.search {
   float: left;
-  width: 392px;
+  width: 350px;
+
   .form-control {
-    box-shadow: none;
     color: black;
+    font-size: .89rem;
+    height: 35px;
+
+    &::placeholder {
+      color: $graphite-grayish-blue;
+      opacity: 1;
+    }
+
     &:hover,
     &:focus,
     &:active,
     &.active{
-      box-shadow: none;
       border: 1px solid #d3d6db;
     }
   }
