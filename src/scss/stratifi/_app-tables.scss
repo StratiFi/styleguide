@@ -619,7 +619,8 @@
 
     .table {
       margin: 0;
-
+      position: relative;
+      z-index: 1;
       td,
       th {
         letter-spacing: 0;
@@ -627,12 +628,27 @@
         .card &:not(.table-scroll-left, .table-scroll-right) {
           padding: 0.4rem 1.2rem;
           font-size: 14px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          @media screen and (max-width: 1366px) {
+            max-width: 200px;
+          }
+
+          &:hover {
+            overflow: visible;
+          }
         }
       }
 
       tr{
         td:first-child {
           border-right: 1px solid #D6D6D8;
+
+          @media screen and (max-width: 1365px) {
+            border-right: none;
+          }
         }
         td {
           p {
@@ -1165,7 +1181,7 @@ table.table-client-section{
     }
 
     &.js-table2nd-slider {
-      @media (max-width: 1366px) {
+      @media (max-width: 1365px) {
         padding: 0 33px;
 
         .slick-arrow {
