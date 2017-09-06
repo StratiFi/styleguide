@@ -1,0 +1,37 @@
+.disclaimers,
+.disclosure {
+  & {
+    margin-bottom: 16px;
+    color: $gray-darkest;
+    border: 1px solid $border-color;
+    padding: 16px;
+  }
+
+  &.-dark {
+    background: $graphite-grayish-blue;
+    border: none;
+  }
+
+  .title {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: inherit;
+  }
+
+  p {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: inherit;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-normal;
+  }
+}
