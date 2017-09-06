@@ -22,13 +22,11 @@
     background-color: black;
     color: #fff;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
     position: absolute;
     z-index: 1;
     left: 50%;
     margin-left: -60px;
-
+    padding: $tooltip-padding;
   }
 
   .tooltip-bottom {
