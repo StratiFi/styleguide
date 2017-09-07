@@ -1,15 +1,18 @@
+
 .disclosure {
   margin: 55px auto 32px;
   width: 1068px;
 }
-//
+
 .disclaimers,
 .disclosure {
   & {
     margin-bottom: 16px;
-    color: $gray-darkest;
-    border: 1px solid $border-color;
+    color: $graphite-light;
+    border: 1px solid $graphite-grayish-blue;
     padding: 16px;
+    font-size: 13px;
+    font-weight: 300;
   }
 
   &.-dark {
@@ -18,15 +21,15 @@
   }
 
   .title {
-    font-size: 11px;
-    font-weight: 300;
+    font-size: inherit;
+    font-weight: inherit;
     margin-bottom: 20px;
     color: inherit;
   }
 
   p {
-    font-size: 11px;
-    font-weight: 300;
+    font-size: inherit;
+    font-weight: inherit;
     margin-bottom: 16px;
     color: inherit;
 
