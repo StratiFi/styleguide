@@ -8,16 +8,21 @@
 .disclosure {
   & {
     margin-bottom: 16px;
-    color: $graphite-light;
+    overflow: hidden;
+  }
+
+  &.-dark .content {
+    background: $graphite-grayish-blue;
+    border: none;
+  }
+
+  .content {
     border: 1px solid $graphite-grayish-blue;
     padding: 16px;
     font-size: 13px;
     font-weight: 300;
-  }
-
-  &.-dark {
-    background: $graphite-grayish-blue;
-    border: none;
+    color: $graphite-light;
+    margin-bottom: 16px;
   }
 
   .title {

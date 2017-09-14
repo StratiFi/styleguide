@@ -1,0 +1,20 @@
+.powered-by-stratifi {
+  & {
+    color: $graphite-light;
+    font-size: 13px;
+  }
+
+  .disclosure & {
+    float: right;
+
+    img {
+      width: 93px;
+      height: 13px;
+      margin-left: 6px;
+    }
+  }
+
+  img {
+    margin-left: 1rem;
+  }
+}
