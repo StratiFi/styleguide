@@ -645,10 +645,6 @@
       tr{
         td:first-child {
           border-right: 1px solid #D6D6D8;
-
-          @media screen and (max-width: 1365px) {
-            border-right: none;
-          }
         }
         td {
           p {
@@ -1178,6 +1174,10 @@ table.table-client-section{
     width: 75%;
     position: relative;
 
+    &.-no-arrows .slick-arrow {
+      display: none;
+    }
+
     &.js-table2nd-slider {
       @media (max-width: 1365px) {
         .slick-arrow {
@@ -1190,6 +1190,10 @@ table.table-client-section{
       @media (max-width: 1500px) {
         .slick-arrow {
           display: block;
+        }
+
+        &.-no-arrows .slick-arrow {
+          display: none;
         }
       }
     }
