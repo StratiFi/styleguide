@@ -278,12 +278,6 @@
     }
   }
 
-  .navbar-brand {
-    @media (max-width: 420px) {
-      display: none !important;
-    }
-  }
-
   .notifications-btn {
     position: absolute;
     left: 235px;
