@@ -658,6 +658,7 @@ $td-background-returns-even: $body-background;
 
         &:nth-child(odd) .returns {
           background: $td-background-returns-odd;
+          border-top: none !important;
         }
 
         &:nth-child(even) .returns {
@@ -684,7 +685,7 @@ $td-background-returns-even: $body-background;
         color: #555;
         border-bottom: 1px solid black !important;
         background: $color-1-0;
-        //
+
         &.active {
           color: $brand-primary;
 
@@ -809,37 +810,80 @@ $td-background-returns-even: $body-background;
     font-weight: bold;
   }
 
-  a.dropdown-item {
-    line-height: 2rem;
-    font-size: 14px;
-    padding: 3px 13px;
+  .dropdown-menu {
+    width: 693px;
+    height: 337px;
+    box-sizing: content-box;
+    border-color: $brand-primary;
+  }
 
-    span {
-      vertical-align: 3px;
+  .dropdown-menu .items {
+    column-count: 3;
+    padding: 26px 25px 31px;
+  }
+
+  a.dropdown-item {
+    line-height: 19px;
+    font-size: 14px;
+    padding: 0;
+    border: none;
+    margin-bottom: 13px;
+
+    &:hover {
+      background: none;
+      cursor: pointer;
+
+      .c-input {
+        color: $brand-primary;
+      }
     }
 
     i {
       border-radius: 3px;
+      box-shadow: none;
     }
   }
 
   .dropdown {
+    & {
+      position: relative;
+      top: -3px;
+    }
 
     .btn {
-      font-size: 14px;
-      letter-spacing: 0;
-      border-color: #ccc !important;
+      border: none;
+      padding: 0;
 
       &:focus,
       &:hover {
         background: #eee;
         color: #333;
       }
+    }
+  }
 
-      i {
-        font-size: 9px !important;
-        margin-left: 3px;
-      }
+  .dropdown-footer {
+    $color: #bcbfc4;
+    $line-height: 14px;
+
+    & {
+      border-top: 1px solid $color;
+      line-height: $line-height;
+      font-size: 12px;
+      overflow: hidden;
+      padding: 12px 25px;
+    }
+
+    .note {
+      color: $color;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    .clear {
+      color: $brand-primary;
+      float: right;
+      cursor: pointer;
     }
   }
 }
@@ -1249,7 +1293,8 @@ table.table-client-section {
       outline: none;
     }
   }
-
+  //
+  .slick-active:last-child ,
   .slick-active.-last {
     .th, .td {
       position: relative;
@@ -1266,7 +1311,7 @@ table.table-client-section {
 
       &:after {
         content: '';
-        width: 100%;
+        width: 50%;
         height: 100%;
         position: absolute;
         top: 0;
