@@ -1363,6 +1363,10 @@ table.table-client-section {
     font-weight: 700;
     padding: 11px 14px;
 
+    &.returns {
+      min-height: 35px;
+    }
+
     &:last-child {
       border-bottom-color: #000;
       color: $graphite-light;
