@@ -1359,9 +1359,13 @@ table.table-client-section {
   .slider-item .td {
     border-bottom: 1px solid $graphite-light;
     color: $gray-dark;
-    min-height: 35px;
+    min-height: 44px;
     font-weight: 700;
     padding: 11px 14px;
+
+    &.returns {
+      min-height: 35px;
+    }
 
     &:last-child {
       border-bottom-color: #000;
