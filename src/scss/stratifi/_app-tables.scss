@@ -652,20 +652,6 @@ $td-background-returns-even: $body-background;
       }
 
       tr {
-        .returns {
-          font-weight: normal !important;
-        }
-
-        &:nth-child(odd) .returns {
-          background: $td-background-returns-odd;
-          border-top: none !important;
-        }
-
-        &:nth-child(even) .returns {
-          background: $td-background-returns-even;
-          border-bottom: none !important;
-        }
-
         td {
           p {
             margin-bottom: 0;
@@ -698,20 +684,6 @@ $td-background-returns-even: $body-background;
             height: 5px;
             background: $brand-primary;
           }
-        }
-      }
-
-      .returns {
-        padding: 6px 33px !important;
-
-        &:nth-child(odd) {
-          background: $td-background-returns-odd;
-          border-bottom: 1px solid $graphite-light;
-        }
-
-        &:nth-child(even) {
-          background: $td-background-returns-even;
-          border-bottom: none;
         }
       }
     }
@@ -1244,6 +1216,11 @@ table.table-client-section {
 }
 
 .slider-table {
+
+
+}
+
+.slider-table {
   $slick-arrow-width: 24px;
 
   & {
@@ -1284,28 +1261,24 @@ table.table-client-section {
     width: 100%;
   }
 
-  table tbody td {
-    height: 35px;
-  }
-
   .slider-item {
     &:active, &:focus {
       outline: none;
     }
   }
-  //
-  .slick-active:last-child ,
+
+  .slick-active:last-child,
   .slick-active.-last {
     .th, .td {
       position: relative;
 
       &.returns:after {
         &:nth-child(odd) {
-          background: -webkit-linear-gradient(left, rgba(255,0,0,0), $td-background-returns-odd);
+          background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), $td-background-returns-odd);
         }
 
         &:nth-child(even) {
-          background: -webkit-linear-gradient(left, rgba(255,0,0,0), $td-background-returns-even);
+          background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), $td-background-returns-even);
         }
       }
 
@@ -1321,71 +1294,16 @@ table.table-client-section {
     }
 
     .td:after {
-      background: -webkit-linear-gradient(left, rgba(255,0,0,0), $td-background);
+      background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), $td-background);
     }
 
     .th:after {
-      background: -webkit-linear-gradient(left, rgba(255,0,0,0), $th-background);
+      background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), $th-background);
     }
-  }
-
-  .slider-item .th {
-    max-height: 55px;
-    height: 55px;
-    background: $th-background;
-    border: 1px solid #7c8c94;
-    border-bottom-color: #000;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    display: flex;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .slider-item .th > div {
-    text-overflow: ellipsis;
-    max-height: 38px;
-    min-width: 70px;
-    overflow: hidden;
-    display: block; /* Fallback for non-webkit */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  .slider-item .td {
-    border-bottom: 1px solid $graphite-light;
-    color: $gray-dark;
-    min-height: 44px;
-    font-weight: 700;
-    padding: 11px 14px;
-
-    &.returns {
-      min-height: 35px;
-    }
-
-    &:last-child {
-      border-bottom-color: #000;
-      color: $graphite-light;
-    }
-  }
-
-  .slider-item .td.returns {
-    min-height: 35px;
   }
 
   .slick-track {
     min-width: 100%;
-  }
-
-  .slider-item .th,
-  .slider-item .td {
-    font-size: 14px;
-    text-align: center;
-    text-overflow: ellipsis;
   }
 
   .slick-arrow {
@@ -1412,8 +1330,129 @@ table.table-client-section {
       }
     }
   }
-}
 
+  .th {
+    max-height: 55px;
+    height: 55px;
+    background: $th-background;
+    border: 1px solid #7c8c94;
+    border-bottom-color: #000;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .th > div {
+    text-overflow: ellipsis;
+    max-height: 38px;
+    min-width: 70px;
+    overflow: hidden;
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .td {
+    border-bottom: 1px solid $graphite-light;
+    color: $gray-dark;
+    min-height: 44px;
+    font-weight: 700;
+    padding: 11px 14px;
+
+    &.returns {
+      min-height: 35px;
+    }
+
+    &:last-child {
+      border-bottom-color: #000;
+      color: $graphite-light;
+    }
+  }
+
+  .td.returns {
+    min-height: 35px;
+    height: 35px;
+  }
+
+  .th,
+  .td {
+    font-size: 14px;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  .returns {
+    &:nth-child(odd) {
+      background: $td-background-returns-odd;
+      border-bottom: 1px solid $graphite-light;
+    }
+
+    &:nth-child(even) {
+      background: $td-background-returns-even;
+      border-bottom: none;
+    }
+  }
+}
+//
+.slider-table .headings {
+  .th {
+    height: 44px;
+    border-bottom: 0;
+    justify-content: flex-start;
+    font-size: 0;
+    background: #fff;
+    padding: 0 14px;
+
+    &:nth-child(2) {
+      border-top-color: #000;
+    }
+
+    &.returns {
+      height: 35px;
+      background: #fff;
+      padding: 0;
+      border-top: 2px solid #7c8c94;
+
+      &:nth-child(odd) .returns {
+        background: $td-background-returns-odd;
+        border-top: none !important;
+      }
+
+      &:nth-child(even) .returns {
+        background: $td-background-returns-even;
+        border-bottom: none !important;
+      }
+    }
+
+    &:last-child td {
+      color: $graphite-light;
+    }
+  }
+
+  .td {
+    border-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    max-height: none;
+    width: 100%;
+    text-align: left;
+    color: $graphite-dark;
+
+    &.returns {
+      font-weight: normal !important;
+      padding-left: 33px;
+      line-height: 1;
+      border-bottom: 1px solid #7c8c94;
+    }
+  }
+}
+//
 //.performance {
 //  tbody:first-child {
 //    td{
