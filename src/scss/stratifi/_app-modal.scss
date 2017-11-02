@@ -238,3 +238,15 @@
     padding-left: 25px;
   }
 }
+
+.modal-header-v2 {
+
+  button.close {
+    right: 0;
+    top: 0;
+    padding: 12px;
+    background: #053046;
+    opacity: 1;
+    color: #fff;
+  }
+}
