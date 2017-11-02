@@ -784,7 +784,6 @@ $td-background-returns-even: $body-background;
 
   .dropdown-menu {
     width: 693px;
-    height: 337px;
     box-sizing: content-box;
     border-color: $brand-primary;
   }
@@ -792,6 +791,10 @@ $td-background-returns-even: $body-background;
   .dropdown-menu .items {
     column-count: 3;
     padding: 26px 25px 31px;
+
+    &:nth-child(2) {
+      border-top: 1px solid #bcbfc4;
+    }
   }
 
   a.dropdown-item {
