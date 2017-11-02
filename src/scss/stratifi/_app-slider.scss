@@ -1,0 +1,46 @@
+.slider-container {
+
+  .slick-arrow {
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    vertical-align: 160px;
+
+    i {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $brand-primary;
+      font-size: 25px;
+      margin-left: -20px;
+    }
+
+    &.slick-disabled,
+    &.slick-hidden {
+
+      i {
+        color: #d3d6db;
+      }
+    }
+
+    &.left {
+
+      i {
+        transform: rotate(90deg);
+      }
+    }
+
+    &.right {
+
+      i {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .slider-wrapper {
+    display: inline-block;
+    width: 80%;
+  }
+}
