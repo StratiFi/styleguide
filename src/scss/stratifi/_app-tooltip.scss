@@ -56,6 +56,10 @@
     top: 100%;
     border-color: black transparent transparent transparent;
   }
+
+  .tooltip-overlay-highlight-last::after {
+    left: 75%;
+  }
 }
 
 .tooltipR:hover .tooltiptext {
