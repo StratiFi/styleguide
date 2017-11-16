@@ -60,6 +60,10 @@
   .tooltip-overlay-highlight-last::after {
     left: 75%;
   }
+
+  .tooltip-overlay-highlight-no-accurate-last::after {
+    left: 90%;
+  }
 }
 
 .tooltipR:hover .tooltiptext {
