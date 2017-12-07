@@ -219,6 +219,10 @@
         color: white;
       }
     }
+
+    &.modal-header-plain {
+      background-color: transparent;
+    }
   }
   &-body{
     padding: 25px 25px 15px;
