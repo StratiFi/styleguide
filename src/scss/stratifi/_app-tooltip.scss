@@ -56,6 +56,14 @@
     top: 100%;
     border-color: black transparent transparent transparent;
   }
+
+  .tooltip-overlay-highlight-last::after {
+    left: 75%;
+  }
+
+  .tooltip-overlay-highlight-no-accurate-last::after {
+    left: 90%;
+  }
 }
 
 .tooltipR:hover .tooltiptext {
@@ -83,7 +91,8 @@
 .tooltip {
   .tooltip-inner {
     font-size: 13px;
-    font-weight: normal;
+    line-height: 16px;
+    font-weight: lighter;
     text-align: center;
     border-radius: 0;
   }
