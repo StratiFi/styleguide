@@ -56,6 +56,15 @@
       }
     }
 
+    &.marker-middle {
+      &:before,
+      &:after {
+        width: 10px;
+        height: 10px;
+        box-shadow: none;
+      }
+    }
+
     &.marker-large {
       &:before,
       &:after {

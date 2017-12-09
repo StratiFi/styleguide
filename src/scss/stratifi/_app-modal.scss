@@ -219,6 +219,10 @@
         color: white;
       }
     }
+
+    &.modal-header-plain {
+      background-color: transparent;
+    }
   }
   &-body{
     padding: 25px 25px 15px;
@@ -236,5 +240,17 @@
     line-height: 40px;
     font-weight: 600;
     padding-left: 25px;
+  }
+}
+
+.modal-header-v2 {
+
+  button.close {
+    right: 0;
+    top: 0;
+    padding: 12px;
+    background: #053046;
+    opacity: 1;
+    color: #fff;
   }
 }

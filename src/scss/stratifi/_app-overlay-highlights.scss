@@ -1,0 +1,61 @@
+.overlay-highlight {
+
+}
+
+.overlay-highlight-item-container {
+  padding: 15px;
+  font-size: 13px;
+
+  .overlay-highlight-item {
+    border: 1px solid #d3d6db;
+    margin-bottom: 15px;
+
+    .heading {
+      text-align: center;
+      padding: 14px 0;
+      background: #d3d6db;
+      font-weight: bold;
+    }
+
+    .summary {
+      text-align: center;
+      padding: 15px 0;
+
+      &.na {
+        padding: 40px 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      img {
+        display: inline-block;
+        width: 26px;
+        vertical-align: baseline;
+        margin-right: 19px;
+      }
+
+      span {
+        font-size: 50px;
+      }
+    }
+
+    .with-without-overlay {
+      border-top: 1px solid #d3d6db;
+
+      & > div {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        padding: 12px 0;
+      }
+
+      span {
+        font-size: 18px;
+      }
+
+      .without-overlay {
+        border-right: 1px solid #d3d6db;
+      }
+    }
+  }
+}

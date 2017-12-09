@@ -1,10 +1,28 @@
 .inv-perf-controls {
-  position:relative;
-  background: #D9E1E4;
-  padding: 10px 0 0 0;
-  margin-right: 0;
-  margin-left: 0;
-  border-radius: 3px;
+  $primary-color: #e1e4ea;
+  $border-color: #d3d6db;
+  $padding-right: 19px;
+
+  & {
+    position: relative;
+    padding-top: 40px;
+  }
+
+  > .btn-primary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 167px;
+    height: 33px;
+    font-size: 14px;
+  }
+
+  .simple-selects {
+    padding: 21px $padding-right 0;
+    position:relative;
+    background: $primary-color;
+    border: 1px solid $border-color;
+  }
 
   .qy-date-range-picker.performance-theme .client-perf-show-hide button {
     min-width: 200px;
@@ -14,6 +32,77 @@
     position: absolute;
     right: 16px;
     bottom: 16px;
+  }
+
+  .simple-selects label {
+    font-size: 11px;
+    line-height: 1;
+    margin: 4px 0 0 2px;
+    color: $graphite-light;
+  }
+
+  .dropdown-group--item {
+    margin-right: 18px;
+  }
+
+  .date-range-picker .show-hide-btn,
+  .dropdown-group--item .c-select {
+    text-align: left;
+    font-size: 14px;
+    padding: 4px 0 4px 14px;
+    height: 33px !important;
+  }
+
+  .dropdown-group--item .c-select {
+    padding-right: 30px;
+  }
+
+  .date-range-picker {
+    width: 220px;
+  }
+
+  .date-range-picker .show-hide-btn i {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 14px;
+  }
+
+  .custom-select-wrapper {
+    position: absolute;
+    bottom: 100%;
+    left: -1px;
+
+    .custom-select {
+      top: 0;
+      border: none;
+    }
+
+    .dropdown-toggle {
+      background: #e1e4ea !important;
+      font-size: 16px;
+      font-weight: 600;
+      padding-left: $padding-right;
+      box-shadow: none;
+      border: 1px solid #d3d6db;
+      height: 40px;
+      padding-right: 45px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:before {
+        display: none;
+      }
+
+      .icon-arrow {
+        color: #fff;
+        right: -4px;
+      }
+    }
+
+    .dropdown-item:after {
+      display: none;
+    }
   }
 }
 
