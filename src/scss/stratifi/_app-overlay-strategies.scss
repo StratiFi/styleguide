@@ -1,0 +1,210 @@
+.overlay-strategies {
+	position: absolute;
+	top: 80px;
+	right: 30px;
+	left: 250px;
+	font-family: Roboto, sans-serif;
+
+	.strategy-header {
+		background: #ffffff;
+		padding: 29px 32px;
+
+		.title {
+			margin-top: 56px;
+			font-size: 40px;
+			font-weight: 300;
+			color: #394346;
+		}
+
+		.description {
+			width: 50%;
+			margin-bottom: 55px;
+			font-size: 16px;
+			color: #7c8c94;
+		}
+	}
+
+	.risk-spectrum {
+		width: 100%;
+		margin-top: -5px;
+
+		li:last-of-type {
+			margin-right: 20px;
+		}
+	}
+
+	.strategy-button {
+		display: table-cell;
+		vertical-align: top;
+		text-align: center;
+		font-weight: 500;
+		color: #394346;
+		cursor: default;
+
+		.text {
+			display: table-cell;
+			height: 70px;
+			width: 1000px;
+			vertical-align: middle;
+			font-size: 18px;
+		}
+
+		.arrow {
+			border: solid 15px transparent;
+			border-top-color: #ffffff;
+			width: 10px;
+			margin: 0 auto;
+		}
+	}
+
+	.strategy-card {
+		background: #ffffff;
+		margin: 10px 0 30px 0;
+		padding: 10px 20px;
+
+		.btn {
+			display: block;
+			margin-left: auto;
+			margin-bottom: 22px;
+			height: 35px;
+			width: 178px;
+			background: #09ACF8;
+			border-radius: 3px;
+			border: 1px solid #09ACF8;
+			color: #ffffff;
+		}
+		.content {
+			display: block;
+
+			h5:first-of-type {
+				margin-top: 0px;
+			}
+
+			h5 {
+				font-size: 20px;
+			    font-weight: 500;
+			    text-align: left;
+			    color: #7c8c94;
+			    border-bottom: 1px solid #D4D7DC;
+			    margin-top: 3rem;
+			    margin-bottom: 1rem;
+			    padding-bottom: 4px;
+			}
+
+			h4 {
+				font-family: sans-serif;
+				font-size: 16px;
+			    color: #394346;
+			    font-weight: bold;
+			    margin-top: 2.4rem;
+			    margin-bottom: 1.1rem;
+			}
+
+			h2 {
+				font-size: 14px;
+			    color: #394346;
+			    font-weight: bold;
+			}
+
+			ul {
+				margin-top: 0;
+    			margin-bottom: 1rem;
+
+    			li {
+    				list-style: decimal;
+    				margin-bottom: 10px;
+    			}
+			}
+
+			p {
+				line-height: 22px;
+			    font-weight: 300;
+			    font-size: 16px;
+			}
+
+			.chart {
+				text-align: center;
+    			padding: 25px 0;
+
+    			.rr_chart_1 {
+    				width: 435px;
+    				height: auto;
+    			}
+
+    			.rr_chart_2 {
+    				width: 670px;
+    				height: auto;
+    			}
+
+    			.rr_chart_3 {
+    				width: 280px;
+    				height: auto;
+    			}
+    			.gray-table {
+    				display: table;
+    				margin: 0 auto;
+
+    				tbody {
+    					border: 1px solid #D4D7DC;
+    					th {
+    						background: #ebeeef;
+    						color: #394346;
+    						font-weight: bold;
+    						border: 1px solid #D4D7DC
+    					}
+    					th, td {
+    						padding: 15px;
+    						font-size: 13.8px;
+    						text-align: center;
+    					}
+    					td {
+    						border: 0 1px 1px 1px solid  #D4D7DC;
+    					}
+    				}
+    			}
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.note {
+				color: #7c8c94;
+			    font-size: 13px;
+			    line-height: 16px;
+			    font-weight: 300;
+			    text-align: center;
+			    padding: 16px;
+			}
+
+			.border {
+			    	border: 1px solid #D4D7DC;
+			}
+
+			.note700 {
+				max-width: 700px;
+    			margin: auto;
+			}
+			.legend {
+				margin: 0 auto;
+			}
+			.legend td {
+				padding-right: 20px;
+	    		font-size: 14px;
+	    		.legend-disc {
+	   				width: 12px;
+				    height: 12px;
+				    display: inline-block;
+					margin-right: 10px;
+				}
+	    	}
+	    	.disc li {
+	    		list-style: disc;
+	    	}
+	    	.risk-chart-inline {
+	    		display: flex;
+    			justify-content: center;
+	    	}
+		}
+	}
+}
