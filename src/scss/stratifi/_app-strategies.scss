@@ -1,11 +1,100 @@
-.strategies-header {
-  background: #fff;
-  margin: 24px;
-  box-shadow: $strategies-box-shadow;
+.arrow-tabs {
+  $shadow-color: rgba(0, 0, 0, 0.25);
+  $box-shadow: 0 0 10px 0 $shadow-color;
+  $arrow-shadow: -3px 3px 8px -1px $shadow-color;
+  $background-color-tab: #D4D7DC;
+  $background-color-tab-selected: #fff;
+  $text-color: $graphite-dark;
+  $arrow-width: .6rem;
+
+  .react-tabs {
+    &__tab-list {
+      margin-bottom: 40px;
+      border-bottom: none;
+      display: flex;
+    }
+
+    &__tab {
+      position: relative;
+      background: $background-color-tab;
+      border-right: 1px solid #A8B3B8;
+      flex: 1;
+      height: 70px;
+      vertical-align: middle;
+      text-align: center;
+      bottom: 0;
+      padding: 0;
+      color: $text-color;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:last-child{
+        border-right: none;
+      }
+
+      &--selected {
+        background: $background-color-tab-selected;
+        border-right-color: $background-color-tab-selected;
+        box-shadow: $box-shadow;
+        color: $text-color;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          margin-left: -$arrow-width;
+          top: 100%;
+          left: 50%;
+          box-sizing: border-box;
+          border: $arrow-width solid $background-color-tab-selected;
+          border-color: transparent transparent $background-color-tab-selected $background-color-tab-selected;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          box-shadow: $arrow-shadow;
+          background: transparent;
+        }
+      }
+    }
+
+    &__tab-panel {
+      background: #fff;
+      box-shadow: $box-shadow;
+    }
+  }
 }
 
-.strategies-content {
-  background: #fff;
-  margin: 24px;
-  box-shadow: $strategies-box-shadow;
+.advisor-strategies {
+  margin: 25px;
+
+  .strategies-header {
+    background: #fff;
+
+    .strategies-top {
+      padding: 32px;
+      display: flex;
+      align-items: center;
+    }
+
+    .strategies-title {
+      flex: 1;
+  
+      h2 {
+        font-weight: 300px;
+      }
+  
+      p {
+        color: $graphite-light;
+        font-size: 16px;
+        max-width: 550px;
+      }
+    }
+
+    .strategies-chart {
+      width: 400px;
+      height: 230px;
+    }
+  }
 }
