@@ -71,6 +71,7 @@
 
   .strategies-header {
     background: #fff;
+    overflow: hidden;
 
     .strategies-top {
       padding: 32px;
@@ -80,6 +81,7 @@
 
     .strategies-title {
       flex: 1;
+      max-width: 700px;
   
       h2 {
         font-weight: 300px;
@@ -92,9 +94,141 @@
       }
     }
 
-    .strategies-chart {
-      width: 400px;
-      height: 230px;
+    .strategies-chart-wrap {
+      position: relative;
+      width: 245px;
+
+      object {
+        width: 240px;
+        height: 240px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 60px;
+        left: -43px;
+      }
+
+      .svg-donut {
+        transform: scaleX(-1) rotate(-90deg);
+        display: block;
+        position: absolute;
+        width: 288px;
+        height: 256px;
+        z-index: 0;
+        top: 0;
+        right: -22px;
+
+        .donut {
+          fill: #fff;
+          stroke: #31e3ff;
+          stroke-dasharray: 490, 900;
+          stroke-width: 30px;
+        }
+      }
     }
+  }
+}
+
+.stratagy-content {
+  padding: 30px;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: $graphite-light;
+    border-bottom: 1px solid #D4D7DC;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 4px;
+  }
+
+  h5 {
+    font-size: 16px;
+    color: $graphite-dark;
+    font-weight: bold;
+    margin-top: 2.4rem;
+    margin-bottom: 1.1rem;
+  }
+
+  h6 {
+    font-size: 14px;
+    color: $graphite-dark;
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  ul li {
+    list-style: decimal;
+    margin-bottom: 10px;
+  }
+
+  .chart-wrap {
+    text-align: center;
+    padding: 0 25px;
+
+    height: 200px;
+    border: 1px solid $graphite-dark;
+
+    &::after {
+      content: 'Chart placeholder';
+    }
+  }
+
+  .note700 {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .note {
+    color: $graphite-light;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .border {
+    border: 1px solid #D4D7DC;
+  }
+
+  .legend {
+    margin: 0 auto;
+
+    td {
+      padding-right: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .legend-disc {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .gray-table {
+    margin: 0 auto;
+
+    th, td {
+      padding: 15px;
+      font-size: 13.8px;
+      min-width: 100px;
+      text-align: center;
+      border: 1px solid #D4D7DC;
+    }
+
+    th {
+      background-color: $graphite-lighter;
+      color: $graphite-dark;
+      font-weight: bold;
+    }
+
   }
 }
