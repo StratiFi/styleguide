@@ -169,9 +169,11 @@
 
   .chart-wrap {
     text-align: center;
-    padding: 0 25px;
+    padding: 25px 0;
+  }
 
-    height: 200px;
+  .chart-wrap:empty {
+    min-height: 200px;
     border: 1px solid $graphite-dark;
 
     &::after {
@@ -229,6 +231,25 @@
       color: $graphite-dark;
       font-weight: bold;
     }
+  }
 
+  .collar-chart-inline {
+    display: flex;
+    justify-content: center;
+
+    .chart-wrap {
+      border-width: 2px 2px 2px 0;
+      border-style: dashed;
+      border-color: #C5C7C8;
+
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+  }
+
+  .risk-chart-inline {
+    display: flex;
+    justify-content: center;
   }
 }
