@@ -1,0 +1,255 @@
+.arrow-tabs {
+  $shadow-color: rgba(0, 0, 0, 0.25);
+  $box-shadow: 0 0 10px 0 $shadow-color;
+  $arrow-shadow: -3px 3px 8px -1px $shadow-color;
+  $background-color-tab: #D4D7DC;
+  $background-color-tab-selected: #fff;
+  $text-color: $graphite-dark;
+  $arrow-width: .6rem;
+
+  .react-tabs {
+    &__tab-list {
+      margin-bottom: 40px;
+      border-bottom: none;
+      display: flex;
+    }
+
+    &__tab {
+      position: relative;
+      background: $background-color-tab;
+      border-right: 1px solid #A8B3B8;
+      flex: 1;
+      height: 70px;
+      vertical-align: middle;
+      text-align: center;
+      bottom: 0;
+      padding: 0;
+      color: $text-color;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:last-child{
+        border-right: none;
+      }
+
+      &--selected {
+        background: $background-color-tab-selected;
+        border-right-color: $background-color-tab-selected;
+        box-shadow: $box-shadow;
+        color: $text-color;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          margin-left: -$arrow-width;
+          top: 100%;
+          left: 50%;
+          box-sizing: border-box;
+          border: $arrow-width solid $background-color-tab-selected;
+          border-color: transparent transparent $background-color-tab-selected $background-color-tab-selected;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          box-shadow: $arrow-shadow;
+          background: transparent;
+        }
+      }
+    }
+
+    &__tab-panel {
+      background: #fff;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+.advisor-strategies {
+  margin: 25px;
+
+  .strategies-header {
+    background: #fff;
+    overflow: hidden;
+
+    .strategies-top {
+      padding: 32px;
+      display: flex;
+      align-items: center;
+    }
+
+    .strategies-title {
+      flex: 1;
+      max-width: 700px;
+  
+      h2 {
+        font-weight: 300px;
+      }
+  
+      p {
+        color: $graphite-light;
+        font-size: 16px;
+        max-width: 550px;
+      }
+    }
+
+    .strategies-chart-wrap {
+      position: relative;
+      width: 245px;
+
+      object {
+        width: 240px;
+        height: 240px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 60px;
+        left: -43px;
+      }
+
+      .svg-donut {
+        transform: scaleX(-1) rotate(-90deg);
+        display: block;
+        position: absolute;
+        width: 288px;
+        height: 256px;
+        z-index: 0;
+        top: 0;
+        right: -22px;
+
+        .donut {
+          fill: #fff;
+          stroke: #31e3ff;
+          stroke-dasharray: 490, 900;
+          stroke-width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.stratagy-content {
+  padding: 30px;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: $graphite-light;
+    border-bottom: 1px solid #D4D7DC;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 4px;
+  }
+
+  h5 {
+    font-size: 16px;
+    color: $graphite-dark;
+    font-weight: bold;
+    margin-top: 2.4rem;
+    margin-bottom: 1.1rem;
+  }
+
+  h6 {
+    font-size: 14px;
+    color: $graphite-dark;
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  ul li {
+    list-style: decimal;
+    margin-bottom: 10px;
+  }
+
+  .chart-wrap {
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  .chart-wrap:empty {
+    min-height: 200px;
+    border: 1px solid $graphite-dark;
+
+    &::after {
+      content: 'Chart placeholder';
+    }
+  }
+
+  .note700 {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .note {
+    color: $graphite-light;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .border {
+    border: 1px solid #D4D7DC;
+  }
+
+  .legend {
+    margin: 0 auto;
+
+    td {
+      padding-right: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .legend-disc {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .gray-table {
+    margin: 0 auto;
+
+    th, td {
+      padding: 15px;
+      font-size: 13.8px;
+      min-width: 100px;
+      text-align: center;
+      border: 1px solid #D4D7DC;
+    }
+
+    th {
+      background-color: $graphite-lighter;
+      color: $graphite-dark;
+      font-weight: bold;
+    }
+  }
+
+  .collar-chart-inline {
+    display: flex;
+    justify-content: center;
+
+    .chart-wrap {
+      border-width: 2px 2px 2px 0;
+      border-style: dashed;
+      border-color: #C5C7C8;
+
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+  }
+
+  .risk-chart-inline {
+    display: flex;
+    justify-content: center;
+  }
+}
