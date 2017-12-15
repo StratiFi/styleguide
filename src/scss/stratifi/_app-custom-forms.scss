@@ -119,6 +119,7 @@
 
     .c-indicator {
       @include border-radius(1px);
+      box-sizing: border-box;
     }
   }
 }
