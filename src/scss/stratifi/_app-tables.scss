@@ -1136,6 +1136,7 @@ table.table-investment-strategy {
   tbody {
     tr {
       border-left: 4px solid #39E3FA;
+      cursor: default;
       td {
         padding: 3px 3px 3px 8px;
         text-align: right;
@@ -1147,6 +1148,7 @@ table.table-investment-strategy {
     }
     tr.header {
       background: #E3E8EE;
+      cursor: pointer;
       td:first-child {
         font-weight: 500;
       }
