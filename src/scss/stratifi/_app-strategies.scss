@@ -74,7 +74,7 @@
     overflow: hidden;
 
     .strategies-top {
-      padding: 32px;
+      padding: 32px 32px 12px 32px;
       display: flex;
       align-items: center;
     }
@@ -94,17 +94,19 @@
       }
     }
 
+    .strategies-chart {
+      width: 35%;
+    }
+
     .strategies-chart-wrap {
       position: relative;
-      width: 245px;
+      text-align: center;
 
       object {
-        width: 240px;
         height: 240px;
+        width: 100%;
         position: relative;
         z-index: 1;
-        margin-bottom: 60px;
-        left: -43px;
       }
 
       .svg-donut {
