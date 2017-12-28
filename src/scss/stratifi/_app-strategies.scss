@@ -6,6 +6,9 @@
   $background-color-tab-selected: #fff;
   $text-color: $graphite-dark;
   $arrow-width: .6rem;
+  max-width: 1098px;
+  min-width: 724px;
+  margin: auto;
 
   .react-tabs {
     &__tab-list {
@@ -72,6 +75,10 @@
   .strategies-header {
     background: #fff;
     overflow: hidden;
+    max-width: 1098px;
+    min-width: 724px;
+    margin: auto;
+
 
     .strategies-top {
       padding: 32px 32px 12px 32px;
