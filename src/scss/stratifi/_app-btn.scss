@@ -60,6 +60,22 @@
     }
   }
 
+  &-container {
+      position: relative;
+  }
+
+  &-thin-title {
+    padding: 0.5em;
+    margin: 0.2em;
+    text-transform: uppercase;
+  }
+
+  &-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   &.disabled,
   &:disabled {
     opacity: .6;
