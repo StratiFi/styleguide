@@ -93,6 +93,10 @@
   &-risk {
     @extend .card-insight;
 
+    &-blue {
+      border-top: 5px solid $brand-primary;
+    }
+
     &-low {
       border-top: 5px solid $risk-level-1;
     }
