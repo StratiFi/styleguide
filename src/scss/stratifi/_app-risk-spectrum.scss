@@ -1,7 +1,8 @@
 .risk-spectrum {
   margin-top: .25rem;
   height: 33px;
-  background: linear-gradient(90deg, #de3246, #fe9c18 50%, #f4a244, #fe9c18 60%, #2cca53);
+  // background: linear-gradient(90deg, #de3246, #fe9c18 50%, #f4a244, #fe9c18 60%, #2cca53);
+  background: linear-gradient(90deg, #2cca53 20%, #fe9c18, #f4a244, #fe9c18, #de3246 77%);
 
   ul {
     height: 100%;
