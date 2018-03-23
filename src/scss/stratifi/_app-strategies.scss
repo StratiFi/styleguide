@@ -40,12 +40,24 @@
       &--selected {
         background: $background-color-tab-selected;
         border-right-color: $background-color-tab-selected;
-        box-shadow: inset 0 -5px 0 $brand-primary;
-        border-top: 1px solid #cfcfcf;
+        box-shadow: $box-shadow;
         color: $text-color;
 
         &::after {
-          display: none;
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          margin-left: -$arrow-width;
+          top: 100%;
+          left: 50%;
+          box-sizing: border-box;
+          border: $arrow-width solid $background-color-tab-selected;
+          border-color: transparent transparent $background-color-tab-selected $background-color-tab-selected;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          box-shadow: $arrow-shadow;
+          background: transparent;
         }
       }
     }
