@@ -116,6 +116,10 @@ $transition: .3s;
         color: #fff;
       }
 
+      &.child {
+        display: none;
+      }
+
       &.active {
         box-shadow: inset 4px 0 #2EE4FF;
         background: #13181A;
@@ -123,6 +127,24 @@ $transition: .3s;
 
         span {
           font-weight: bold;
+        }
+
+        &.child {
+          display: block;
+          padding-left: 40px;
+          padding-top: 0;
+        }
+
+        &.current-active {
+          color: #7c8c94;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        &.hide {
+          display: none;
         }
 
       }
