@@ -43,10 +43,21 @@
       .dropdown-menu {
         width: 100%;
         margin-top: 5px;
+        padding-top: 15px;
 
         .dropdown-item {
           border-top: none;
           cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .plus-icon {
+          margin-top: 7px;
+
+          img {
+            width: 25px;
+          }
         }
       }
     }
@@ -76,6 +87,35 @@
       background-color: white;
       margin-top: 8px;
       border: 1px solid #D3D6DB;
+
+      &.overall {
+        padding-top: 20px;
+
+        h5 {
+          display: inline-block;
+        }
+
+        .minus-icon {
+          margin-left: 15px;
+
+          img {
+            width: 25px;
+          }
+        }
+
+      }
+
+      .overlay {
+        display: inline-block;
+        padding: 8px 5px 8px 15px;
+        vertical-align: middle;
+        background-color: #31E3FF;
+        border-radius: 30px;
+        color: white;
+        font-size: 14px;
+        margin-left: 18px;
+        cursor: pointer;
+      }
     }
 
     .score-analysis {
