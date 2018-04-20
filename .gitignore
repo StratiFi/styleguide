@@ -26,6 +26,8 @@ bower_components
 webpack-stats.json
 webpack-assets.json
 
+package-lock.json
+
 # Generated distribution files
 dist
 /.idea

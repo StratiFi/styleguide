@@ -1,0 +1,168 @@
+.prism-overview-container {
+  padding-left: 216px;
+
+  .prism-overview{
+    padding: 32px;
+
+    .icon-arrow {
+      font-size: 10px;
+      margin-left: 19px;
+      display: inline-block;
+
+      &.shown {
+        transform: rotate(180deg);
+      }
+    }
+
+    .prism-dropdown {
+      float: right;
+
+      .btn-prism {
+        width: 250px;
+        height: 37px;
+        background-color: transparent;
+        border: 1px solid #7C8C94;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &:focus {
+          outline: none;
+        }
+
+        .icon-arrow {
+          margin-right: 10px;
+          line-height: 0;
+        }
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 0;
+      }
+
+      .dropdown-menu {
+        width: 100%;
+        margin-top: 5px;
+
+        .dropdown-item {
+          border-top: none;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .plus-icon {
+          margin-top: 7px;
+
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+
+    .header {
+      margin-bottom: 30px;
+
+      span {
+        color: #394346;
+        font-weight: 600;
+
+        &.title {
+          vertical-align: text-bottom;
+          font-size: 18px;
+          line-height: 0;
+        }
+      }
+
+    }
+
+    .score-line {
+      padding: 29px 60px;
+    }
+
+    .score-container {
+      padding: 29px 30px;
+      background-color: white;
+      margin-top: 8px;
+      border: 1px solid #D3D6DB;
+
+      &.overall {
+        padding-top: 20px;
+
+        h5 {
+          display: inline-block;
+        }
+
+        .minus-icon {
+          margin-left: 15px;
+
+          img {
+            width: 25px;
+          }
+        }
+
+      }
+
+      .overlay {
+        display: inline-block;
+        padding: 8px 5px 8px 15px;
+        vertical-align: middle;
+        background-color: #31E3FF;
+        border-radius: 30px;
+        color: white;
+        font-size: 14px;
+        margin-left: 18px;
+        cursor: pointer;
+      }
+    }
+
+    .score-analysis {
+      text-align: center;
+      background-color: #D3D6D8;
+      height: 43px;
+      padding-top: 10px;
+      cursor: pointer;
+      margin-bottom: 40px;
+
+      span {
+        vertical-align: middle;
+      }
+    }
+
+    .score-list {
+      margin-bottom: 9px;
+
+      .score-container {
+        width: 49.6%;
+        display: inline-block;
+      }
+
+      .score-container:nth-child(odd){
+        margin-right: 8px;
+      }
+    }
+
+    .distribution-container {
+      padding: 29px 30px;
+      background-color: #fff;
+      margin-top: 8px;
+      border: 1px solid #d3d6db;
+
+      h5 {
+        margin-bottom: 30px;
+      }
+
+      #score-distribution-compare,
+      #score-distribution-current {
+        width: 70%;
+        display: inline-block;
+
+        .amChartsLegend {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
