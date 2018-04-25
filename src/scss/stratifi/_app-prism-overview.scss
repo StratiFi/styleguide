@@ -166,6 +166,7 @@
     }
 
     .table-advisors-score {
+      margin-top: 41px;
 
       td {
         padding-top: 10px;
@@ -177,7 +178,7 @@
         background: #e3e7ed;
 
         td:first-child {
-          width: 30%;
+          width: 35%;
         }
 
         td > span,
@@ -201,8 +202,8 @@
           }
 
           .tooltip-top {
-            width: 360px;
-            margin-left: -177px;
+            width: 315px;
+            margin-left: -157px;
             opacity: 0.8;
             color: #dae3e6;
             font-size: 13px;
@@ -264,6 +265,10 @@
       .score-line,
       .chart-score-distribution{
         width: 47%;
+      }
+
+      .score-line {
+        padding-top: 60px;
       }
 
       .icon-arrow {
