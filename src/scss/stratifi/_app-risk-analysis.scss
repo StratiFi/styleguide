@@ -211,11 +211,10 @@
             padding-right: 0;
           }
 
-          @for $i from 1 through length($risk-levels) {
-            $risk-level: nth($risk-levels, $i);
+          @each $risk-level, $risk-color in $risk-dashboard-badges {
 
-            &.risk-level-#{$i} {
-              background: #{$risk-level};
+            &.risk-level-#{$risk-level} {
+              background: #{$risk-color};
             }
           }
 
@@ -321,11 +320,10 @@
                     font-size: 30px;
                     font-weight: bold;
 
-                    @for $i from 1 through length($risk-levels) {
-                      $risk-level: nth($risk-levels, $i);
+                    @each $risk-level, $risk-color in $risk-dashboard-badges {
 
-                      &-#{$i} {
-                        color: #{$risk-level}
+                      &-#{$risk-level} {
+                        color: #{$risk-color}
                       }
                     }
                   }
@@ -346,11 +344,10 @@
                       line-height: 30px;
                       font-weight: bold;
 
-                      @for $i from 1 through length($risk-levels) {
-                        $risk-level: nth($risk-levels, $i);
+                      @each $risk-level, $risk-color in $risk-dashboard-badges {
 
-                        &-#{$i} {
-                          color: #{$risk-level}
+                        &-#{$risk-level} {
+                          color: #{$risk-color}
                         }
                       }
                     }

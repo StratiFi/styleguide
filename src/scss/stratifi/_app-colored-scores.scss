@@ -101,32 +101,31 @@
     border-radius: $border-radius-xs;
   }
 
-  @for $i from 1 through length($risk-levels) {
-    $risk-level: nth($risk-levels, $i);
+  @each $risk-level, $risk-color in $risk-dashboard-badges {
 
-    &-#{$i} {
+    &-#{$risk-level} {
       &.score-badge,
       &:not(.score-card):before {
-        background: #{$risk-level};
+        background: #{$risk-color};
       }
 
       .score {
         &-text,
         &-card-text {
-          color: #{$risk-level};
+          color: #{$risk-color};
         }
 
         h3 {
-          color: #{$risk-level};
+          color: #{$risk-color};
         }
       }
 
       &.score-card {
         &:after {
-          @if $i == 10 {
+          @if $risk-level == 10 {
             left: 98%;
           } @else {
-            left: #{$i*10%};
+            left: #{$risk-level*10%};
           }
         }
       }

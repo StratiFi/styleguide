@@ -146,16 +146,15 @@
         color: #fff;
       }
 
-      @for $i from 1 through length($risk-levels) {
-        $risk-level: nth($risk-levels, $i);
+      @each $risk-level, $risk-color in $risk-dashboard-badges {
 
-        &-#{$i} {
-          border-color: #{$risk-level};
+        &-#{$risk-level} {
+          border-color: #{$risk-color};
 
           &.focus,
           &.active,
           &:hover {
-            background: #{$risk-level};
+            background: #{$risk-color};
           }
         }
       }
