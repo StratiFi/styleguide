@@ -135,6 +135,18 @@ $risk-dashboard-badges:
 
 $risk-badge-size:             30px;
 
+$risk-colors-by-level:
+                (0, #54B34A),
+                (1, #73B045),
+                (2, #92AD40),
+                (3, #B1A93A),
+                (4, #D2A636),
+                (5, #F1A330),
+                (6, #F19131),
+                (7, #E77B35),
+                (8, #DB6438),
+                (9, #D14E3B),
+                (10, #C7383E);
 
 // Gold Dashboard
 $light-green: #9afd1b;
