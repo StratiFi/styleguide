@@ -277,6 +277,10 @@
 
       .toggle-details {
         cursor: pointer;
+
+        &.shown {
+          transform: rotate(180deg);
+        }
       }
     }
   }
