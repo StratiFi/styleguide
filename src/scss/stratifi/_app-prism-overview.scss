@@ -164,5 +164,124 @@
         }
       }
     }
+
+    .table-advisors-score {
+      margin-top: 41px;
+
+      td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      thead tr {
+        border: 1px solid #d3d6db;
+        background: #e3e7ed;
+
+        td:first-child {
+          width: 35%;
+        }
+
+        td > span,
+        td .tooltipR {
+          margin-left: 10px;
+        }
+
+        td > span {
+          user-select: none;
+          cursor: pointer;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+        }
+
+        td .tooltipR {
+
+          object {
+            width: 15px;
+            height: 15px;
+          }
+
+          .tooltip-top {
+            width: 315px;
+            margin-left: -157px;
+            opacity: 0.8;
+            color: #dae3e6;
+            font-size: 13px;
+            font-weight: normal;
+            cursor: default;
+            text-align: left;
+          }
+        }
+      }
+
+      tbody {
+        background-color: #fff;
+
+        tr.active {
+          background-color: #F2FBFE !important;
+        }
+
+        tr.details {
+          display: none;
+
+          &.active {
+            display: table-row;
+          }
+        }
+
+        td {
+          &.name {
+            color: #09ACF8;
+          }
+
+          &.total-asset {
+            font-weight: 600;
+          }
+
+          &.text {
+            line-height: 2;
+          }
+        }
+      }
+
+      .risk-badge-with-score {
+        width: 43px;
+        height: 30px;
+        padding-top: 4px;
+        border-radius: 0;
+      }
+
+      .prism-dropdown {
+        float: none;
+        width: 250px;
+        margin-top: 10px;
+      }
+
+      .double-chart {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .score-line,
+      .chart-score-distribution{
+        width: 47%;
+      }
+
+      .score-line {
+        padding-top: 60px;
+      }
+
+      .icon-arrow {
+        margin-right: 20px;
+      }
+
+      .toggle-details {
+        cursor: pointer;
+
+        &.shown {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 }
