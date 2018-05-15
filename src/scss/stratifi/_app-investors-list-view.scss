@@ -1,6 +1,22 @@
 .investors-list-view {
   width: 100%;
 
+  .notification-toggle {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .notification {
+    background: #394346;
+    color: white;
+    margin-bottom: 4px;
+    padding: 14px 15px 15px 19px;
+    border: none;
+  }
+
   .search {
     float: unset !important;
     margin-left: auto;
@@ -23,15 +39,18 @@
 
   .icon-arrow {
     float: right;
-    margin-top: 2px;
+    margin-top: 6px;
     font-size: 10px;
   }
-  .dropdown-menu {
+  .table .dropdown-menu {
     width: 100%;
     margin-top: 35px;
     .dropdown-item {
       line-height: 1.8em;
     }
+  }
+  .header .dropdown-menu {
+    margin-top: -15px;
   }
   .dropdown-sort-icon {
     margin-top: 5px;
