@@ -72,4 +72,117 @@
   .table-collapse {
     background: #7C8C94;
   }
+  .additional-links {
+    text-align: right;
+    height: 15px;
+    .background {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: black;
+      opacity: 0.4;
+      z-index: 3;
+    }
+    .popup {
+      position: fixed;
+      width: 551px;
+      height: 568px;
+      top: 18%;
+      left: 14%;
+      right: 0;
+      margin: auto;
+      text-align: left;
+      background: white;
+      border: 1px solid #D3D6DB;
+      z-index: 4;
+
+      .header {
+        display: flex;
+        height: 46px;
+
+        .title {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          flex-direction: column;
+          padding-left: 20px;
+          background: #B1E4F7;
+          border-bottom: 1px solid #D3D6DB;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .img {
+          display: flex;
+          background: black;
+          width: 46px;
+
+          img {
+            display: flex;
+            margin: auto;
+          }
+        }
+      }
+
+      .body {
+        padding: 46px 40px 52px;
+
+        li {
+          margin-bottom: 35px;
+          &:nth-last-of-type(2) {
+            margin-bottom: 38px;
+          }
+          &:last-of-type {
+            list-style: none;
+            text-align: center;
+            width: 428px;
+            button {
+              margin-left: 0;
+            }
+          }
+        }
+
+        button {
+          margin-left: 24px;
+          height: 35px;
+          width: 145px;
+          border: 1px solid #D3D6DB;
+          background: #09ACF8;
+          color: white;
+        }
+
+        .dropzone {
+          margin-top: 26px;
+
+          div {
+            display: table-cell;
+            height: 158px !important;
+            width: 428px !important;
+            border: 1px dashed #D3D6DB !important;
+            text-align: center;
+            vertical-align: middle;
+            color: #BCBFC4;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+
+        .loading-tab {
+          text-align: center;
+
+          .progress-bar {
+            margin-top: 20px;
+            height: 20px;
+            background: lightgrey;
+            .progressbar-progress {
+              height: 20px !important;
+              background-color: #92DCF8 !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
