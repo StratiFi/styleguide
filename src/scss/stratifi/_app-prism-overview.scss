@@ -277,6 +277,12 @@
 
       .toggle-details {
         cursor: pointer;
+        padding-right: 0;
+        
+        img {
+          width: 19px;
+          height: 11px;
+        }
 
         &.shown {
           transform: rotate(180deg);
