@@ -94,6 +94,15 @@ $transition: .3s;
     left: 0;
     width: 216px;
   }
+  .notification-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: red;
+    margin-left: 4px;
+    margin-bottom: 5px;
+  }
 
   > div {
     width: inherit;
