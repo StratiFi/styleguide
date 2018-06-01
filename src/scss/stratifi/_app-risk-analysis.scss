@@ -369,15 +369,6 @@
           color: $brand-primary;
         }
 
-        .score-card {
-          max-width: 100% !important;
-          width: 240px;
-
-          @media (max-width: 1280px) {
-            width: 220px;
-          }
-        }
-
         .risk-score-card {
 
           .card-chart {
@@ -486,4 +477,28 @@
     }
   }
 
+}
+
+.score-card {
+  max-width: 100% !important;
+  width: 240px;
+
+  @media (max-width: 1280px) {
+    width: 220px;
+  }
+}
+
+.prism-questions-heading {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 36px;
+
+  img {
+    vertical-align: text-bottom;
+  }
+
+  h4 {
+    display: inline-block;
+    font-size: 22px;
+  }
 }

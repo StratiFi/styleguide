@@ -1,50 +1,3 @@
-.prism-questions-container {
-  .prism-questions {
-    width: 80%;
-    padding: 30px 0;
-    margin: 30px auto 0;
-    box-shadow: 0 1px 10px -1px #ccc;
-    border-radius: 7px;
-
-    .question-step-heading {
-      padding: 0 30px;
-    }
-
-    .select-concern-question {
-      position: relative;
-      margin-top: 80px;
-
-      &:before,
-      &:after {
-        position: absolute;
-        top: -70px;
-        right: -3rem;
-        font-size: 16px;
-        line-height: 40px;
-        text-transform: uppercase;
-        color: #fff;
-      }
-
-      &:before {
-        content: 'High Risk Aversion';
-        left: -3rem;
-        padding-left: 30px;
-        background-image: linear-gradient(to left, #09bb00, #ffe400 25%, #ec0000), linear-gradient(#ffffff, #ffffff);
-        text-align: left;
-      }
-
-      &:after {
-        content: 'Low Risk Aversion';
-        padding-right: 30px;
-      }
-    }
-
-    .question-text {
-      font-size: 26px;
-    }
-  }
-}
-
 .question-control {
   display: inline-block;
   margin-left: 5px;
@@ -162,72 +115,176 @@
   }
 }
 
-.prism-questions-begin-container {
+.prism-questions-container {
   padding-left: 216px;
 
-  .prism-questions-begin {
+  .prism-questions-card {
     min-width: 1000px;
     width: 90%;
     margin: 30px auto 0;
     background: #fff;
     box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    padding: 41px 40px 46px;
 
-    & > img {
-      width: 100%;
-      margin-top: 70px;
-      margin-bottom: 30px;
+    .question-heading {
+      font-size: 20px;
+
+      .answer {
+        color: #09acf8;
+        border-bottom: 1px dashed #09acf8;
+      }
+
+      span.question-number {
+        color: #7C8C94;
+      }
     }
 
-    .prism-text {
-      padding: 20px;
-      text-align: center;
+    .prism-questions-range-container {
+      margin: 80px 160px 180px;
 
-      h4 {
-        margin-bottom: 20px;
+      .risk-labels {
+        position: relative;
+        height: 0;
+
+        .red,
+        .green {
+          position: absolute;
+          top: -50px;
+        }
+
+        .red {
+          left: -40px;
+          color: #EA0303;
+        }
+
+        .green {
+          right: -45px;
+          color: #4EB63D;
+        }
       }
+    }
+
+    .prism-questions-action {
 
       .btn {
-        font-size: 17px;
-        margin-bottom: 60px;
-        font-weight: 500;
-        letter-spacing: 0;
-        width: 100%;
+        width: 207px;
+        line-height: 42px;
+        height: 60px;
+        font-size: 20px;
+      }
+    }
+
+    .asset-classes-container {
+      padding: 50px 0;
+      
+      .asset-classes-choice {
+        width: 600px;
+        margin: 0 auto;
+        padding-left: 230px;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .c-input.c-checkbox {
+          margin-right: 25px;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          margin-bottom: 0;
+
+          .c-indicator.icon-checkmark {
+            width: 30px;
+            height: 30px;
+            box-shadow: none;
+          }
+        }
+
+        .asset-classes-choice-title {
+          display: inline-block;
+          width: 200px;
+        }
+      }
+    }
+
+    .single-stock-limit-container {
+      width: 300px;
+      margin: 60px auto 30px;
+      position: relative;
+
+      .current-value {
+        position: absolute;
+        font-size: 60px;
+        color: #09acf8;
+        z-index: 100;
+        width: 150px;
+        text-align: center;
+        top: 100px;
+        left: 75px;
       }
 
-      .copyright {
-        font-size: 11px;
+      .single-stock-limit-chart {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 50px;
+      }
+
+      .tip {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 30px;
       }
     }
   }
 }
 
-.prism-question-last-step {
-  margin: 0 auto;
+.prism-questions-begin-container {
 
-  p {
-    line-height: 12px;
-  }
+  .prism-questions-begin {
 
-  .last-header {
-    margin-top: 80px;
-  }
+    .prism-questions-begin-scores {
 
-  .btn {
-    font-family: $font-family-sans-serif;
-    font-weight: 100;
-    font-size: 18px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-  }
+      & > div {
+        display: inline-block;
+        vertical-align: middle;
+      }
 
-  .prism-text {
-    text-align: center;
+      & > .prism-questions-begin-scores-dots {
+        margin-left: 16px;
+        margin-right: 16px;
 
-    .copyright {
-      font-size: 11px;
+        .prism-questions-begin-scores-dot {
+          display: inline-block;
+          background-color: #D3D6DB;
+          width: 13px;
+          height: 13px;
+          border-radius: 1px;
+          margin-right: 8px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .score-card {
+        padding-right: 0;
+      }
     }
+  }
+}
+
+.range-input.risk-range-input {
+  background: linear-gradient(270deg, #4EB63D 0%, #FAA502 52.56%, #EA0303 100%);
+
+  &:before {
+    background: #EA0303;
+  }
+
+  &:after {
+    background: #4EB63D;
   }
 }
