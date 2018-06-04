@@ -252,6 +252,27 @@
         vertical-align: middle;
       }
 
+      .gauge-container {
+        width: 300px;
+        height: 250px;
+
+        & > div {
+          height: 250px;
+        }
+
+        & > h4 {
+          font-weight: lighter;
+        }
+  
+        & > .low {
+          color: #66CB33;
+        }
+  
+        & > .high {
+          color: #C7393D;
+        }
+      }
+
       & > .prism-questions-begin-scores-dots {
         margin-left: 16px;
         margin-right: 16px;
@@ -273,6 +294,10 @@
       .score-card {
         padding-right: 0;
       }
+    }
+
+    .prism-questions-begin-get-started {
+      margin-top: 120px;
     }
   }
 }
