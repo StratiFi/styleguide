@@ -15,3 +15,122 @@
 .error {
   font-size: 14px;
 }
+
+.range-input {
+  position: relative;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #D3D6DB;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 45px;
+    background: #7C8C94;;
+    top: -17px;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  .rangeslider__fill {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .rangeslider__handle {
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-width: 0;
+    background-color: #3DC2FC;
+    margin-top: -7px;
+    height: 25px;
+    box-shadow: 0 1px 3px #aaa;
+    z-index: 100;
+
+    &-label {
+      position: relative;
+      display: block;
+      width: 2px;
+      height: 12px;
+      background: #fff;
+      margin: 0 auto;
+      margin-top: 8px;
+
+      &:before,
+      &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 12px;
+        background: #fff;
+        top: 0;
+      }
+
+      &:before {
+        left: -5px;
+      }
+
+      &:after {
+        right: -5px;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+    
+    &:after {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 15px 0 15px;
+      border-radius: 0;
+      border-color: #3DC2FC transparent transparent transparent;
+      background: transparent;
+      top: 25px;
+      left: 0;
+    }
+  }
+
+  .rangeslider__labels {
+    width: 120%;
+    margin-top: -25px;
+
+    .rangeslider__label-item {
+
+      &:before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 10px;
+        background: #ccc;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+
+    .rangeslider__label-item:first-of-type,
+    .rangeslider__label-item:last-of-type {
+      
+      &:before {
+        width: 0;
+      }
+    }
+  }
+}
