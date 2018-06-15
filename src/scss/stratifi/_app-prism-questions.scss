@@ -125,7 +125,24 @@
     background: #fff;
     box-shadow: 0 1.5px 3.5px 0 rgba(136, 136, 136, 0.1), 0 1.5px 3.5px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 41px 40px 46px;
+    padding: 0 0 46px;
+
+    .prism-questions-progress {
+      line-height: 1px;
+    
+      .progress-item {
+        height: 7px;
+        display: inline-block;
+
+        &.progress-item-active {
+          background: #39E4FD;
+        }
+      }
+    }
+
+    .multi-step-view {
+      padding: 41px 40px 0;
+    }
 
     .question-heading {
       font-size: 20px;
@@ -140,8 +157,124 @@
       }
     }
 
+    .question-description {
+      width: 770px;
+      margin: 0 auto;
+      margin-top: 30px;
+      color: #7C8C94;
+    }
+
+    .prism-questions-birthday-retirement-container {
+      width: 515px;
+      margin: 60px auto;
+
+      .birthday-container,
+      .retirement-container {
+        background-color: #EBEEEF;
+        padding: 30px 50px;
+
+        h4 {
+          font-size: 20px;
+        }
+
+        fieldset {
+          display: inline-block;
+          margin-right: 5px;
+          vertical-align: bottom;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          .form-group {
+            margin-bottom: 0;
+          }
+
+          select,
+          input {
+            border: 1px solid #CCCED3;
+            background: #fff;
+            height: 48px;
+          }
+
+          input {
+            line-height: 48px;
+            padding-left: 10px;
+            padding-right: 0;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        
+          .day {
+            width: 68px;
+          }
+
+          .year {
+            width: 80px;
+          }
+        }
+      }
+
+      .birthday-container {
+        margin-bottom: 5px;
+        
+        .c-select-wrap {
+          width: 244px;
+          position: relative;
+
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+          }
+
+          &:before {
+            border-bottom: 7px solid #000;
+            top: 15px;
+            right: 12px;
+          }
+
+          &:after {              
+            border-top: 7px solid #000;
+            top: 25px;
+            right: 12px;
+          }
+          
+          select.c-select.month {
+            min-width: 244px;
+            width: 244px;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .retirement-container {
+
+        h4 {
+          width: 248px;
+          display: inline-block;
+          line-height: 48px;
+          margin-bottom: 0;
+        }
+
+        input {
+          width: 158px;
+        }
+      }
+    }
+
     .prism-questions-range-container {
       margin: 80px 160px 180px;
+
+      &.prism-questions-range-container-with-caption {
+        margin: 80px 160px 40px;
+      }
 
       .risk-labels {
         position: relative;
@@ -163,6 +296,13 @@
           color: #4EB63D;
         }
       }
+
+      .caption {
+        text-align: center;
+        font-size: 30px;
+        color: #09acf8;
+        margin-top: 140px;
+      }
     }
 
     .prism-questions-action {
@@ -173,19 +313,39 @@
         height: 60px;
         font-size: 20px;
       }
+
+      .btn-link {
+        font-size: 16px;
+        color: #7C8C94;
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
 
     .asset-classes-container {
       padding: 50px 0;
+      max-width: 770px;
+      margin: 0 auto;
+      padding-left: 50px;
       
       .asset-classes-choice {
-        width: 600px;
         margin: 0 auto;
-        padding-left: 230px;
         margin-bottom: 30px;
 
         &:last-child {
           margin-bottom: 0;
+        }
+
+        input[type="text"] {
+          border: none;
+          border-bottom: 1px solid #777;
+          margin-left: 30px;
+
+          &:focus {
+            outline: none;
+          }
         }
 
         .c-input.c-checkbox {
@@ -205,7 +365,6 @@
 
         .asset-classes-choice-title {
           display: inline-block;
-          width: 200px;
         }
       }
     }
@@ -244,6 +403,7 @@
 .prism-questions-begin-container {
 
   .prism-questions-begin {
+    padding: 40px 40px 46px;
 
     .prism-questions-begin-scores {
 
