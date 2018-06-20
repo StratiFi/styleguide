@@ -126,4 +126,227 @@ $risk-colors-by-level:
 
 .target-score-result-container {
   margin-left: 217px;
+  padding: 50px 30px;
+
+  .heading {
+    margin-bottom: 25px;
+
+    .large {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .result-container {
+
+    .result-heading {
+      background: #505E62;
+      padding: 10px 12.5px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .result-scores {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px 20px;
+
+      & > div {
+        display: inline-block;
+      }
+
+      .speedometer {
+        width: 230px;
+        height: 200px;
+
+        #target-score-overall-gauge {
+          width: 230px;
+          height: 200px;
+        }
+      }
+
+      .score-representation {
+        line-height: 200px;
+        width: 350px;
+        height: 200px;
+        vertical-align: top;
+        padding: 0 25px;
+
+        @each $risk-level, $risk-color in $risk-colors-by-level {
+          &.score-representation-#{$risk-level} {
+            color: $risk-color;
+          }
+        }
+
+        .number {
+          font-size: 70px;
+          font-weight: bold;
+        }
+
+        .text {
+          font-size: 23px;
+          margin-left: 10px;
+          font-weight: 100;
+        }
+      }
+
+      .score-lines {
+        vertical-align: top;
+        width: calc(100% - 580px);
+        padding-top: 20px;
+
+        .target-score-line {
+          margin-bottom: 12px;
+
+          .line,
+          .score-name {
+            display: inline-block;
+          }
+
+          .line {
+            width: calc(100% - 235px);
+            height: 12px;
+            background: linear-gradient(90deg, #4eb63d, #faa502 52.56%, #c93539);
+            margin-right: 15px;
+            position: relative;
+
+            .gray-line {
+              position: absolute;
+              background: #d9e1e4;
+              height: 12px;
+              top: 0;
+              right: 0;
+            }
+          }
+
+          .score-name {
+            width: 220px;
+            font-weight: bold;
+
+            svg {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .use-portfolio-container {
+    background-color: #E1E9EE;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    border-top: none;
+
+    .tip {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .controls {
+      width: 786px;
+      margin: 0 auto;
+
+      & > div {
+        display: inline-block;
+      }
+
+      .or {
+        width: 72px;
+        text-align: center;
+      }
+
+      .upload-button {
+        height: 50px;
+        width: 202px;
+      }
+
+      .dropdown {
+        width: 512px;
+
+        .header-button,
+        .dropdown-menu {
+          width: 100%;
+        }
+
+        .header-button,
+        .dropdown-item {
+          height: 50px;
+        }
+
+        .header-button {
+          border: 1px solid #D3D6DB;
+          background: #fff;
+          padding-left: 15px;
+          text-align: left;
+
+          &:focus {
+            outline: none;
+          }
+
+          .icon-arrow {
+            position: absolute;
+            top: 18px;
+            right: 13px;
+            color: #09acf8;
+            font-size: 13px;
+          }
+        }
+
+        .dropdown-item {
+          line-height: 42px;
+          border: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.dropdown-item-disabled {
+            color: #BCBFC4;
+            
+            &:hover {
+              cursor: default;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .portfolio-breakdown {
+      max-width: 987px;
+      width: 100%;
+      margin: 0 auto;
+
+      .table-container {
+        width: calc(100% - 292px);
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 65px;
+
+        .row-content-block {
+          margin-bottom: 2px;
+
+          .row-content {
+            background: #d3d6db;
+          }
+        }
+      }
+
+      .pie-container {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+      }
+
+      .run-prism-container {
+
+        button {
+          width: 250px;
+          height: 50px;
+        }
+      }
+    }
+  }
 }
