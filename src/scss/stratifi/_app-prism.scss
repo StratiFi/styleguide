@@ -342,9 +342,14 @@ $risk-colors-by-level:
 
       .run-prism-container {
 
+        &.no-portfolio {
+          margin-top: 50px;
+        }
+
         button {
           width: 250px;
           height: 50px;
+          font-weight: bold;
         }
       }
     }
