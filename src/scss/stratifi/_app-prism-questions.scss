@@ -272,6 +272,10 @@
     .prism-questions-range-container {
       margin: 80px 160px 180px;
 
+      &.prism-questions-range-prism-color-slider {
+        margin-bottom: 50px;
+      }
+
       &.prism-questions-range-container-with-caption {
         margin: 80px 160px 40px;
       }
@@ -302,6 +306,39 @@
         font-size: 30px;
         color: #09acf8;
         margin-top: 140px;
+      }
+
+      .chart-container {
+        display: flex;
+        justify-content: space-between;
+
+        .investment-legend {
+          display: flex;
+          flex-direction: column;
+          width: 280px;
+          justify-content: flex-end;
+          padding-bottom: 20px;
+          text-align: center;
+
+          h2 {
+            border: 1px solid #DBE2E5;
+            border-bottom: none;
+            margin: 0;
+            padding: 10px;
+            font-size: 60px;
+          }
+
+          span {
+            border: 1px solid #DBE2E5;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .prism-questions-range-prism-color-slider {
+      .range-input {
+        background: linear-gradient(90deg, #C93539 0%, #FAA502 52.56%, #4EB63D 100%);
       }
     }
 
