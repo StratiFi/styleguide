@@ -510,3 +510,13 @@
     background: #4EB63D;
   }
 }
+
+.prism-questions-range-prism-color-slider {
+  .range-input {
+    background: #4eb73a; /* Old browsers */
+    background: -moz-linear-gradient(left, #4eb73a 0%, #faa500 51%, #eb0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eb73a', endColorstr='#eb0000',GradientType=1 ); /* IE6-9 */
+  }
+}
