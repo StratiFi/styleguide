@@ -502,3 +502,25 @@
     font-size: 22px;
   }
 }
+
+.choose-risk-result-container{
+  .row {
+    margin-top: 1240px;
+  }
+ }
+ 
+ .risk-analysis-scorecards {
+  margin-top: -1428px;
+ }
+ 
+ @media screen and (max-width: 1280px){
+  .choose-risk-result-container{
+    .row {
+      margin-top: 1240px !important;
+    }
+  }
+  
+  .risk-analysis-scorecards {
+    margin-top: -1428px !important;
+  } 
+ }
