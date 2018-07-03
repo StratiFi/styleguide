@@ -175,6 +175,11 @@ $risk-colors-by-level:
   }
 }
 
+.risk-analysis-body-container .target-score-result-container {
+  margin-left: 0;
+  padding: 0;
+}
+
 .target-score-result-container {
   margin-left: 217px;
   padding: 50px 30px;
@@ -189,6 +194,7 @@ $risk-colors-by-level:
 
     .user-name {
       color: #09ACF8;
+      cursor: pointer;
     }
   }
 
@@ -458,7 +464,8 @@ $risk-colors-by-level:
       margin-bottom: 17px;
 
       .heading {
-        padding: 15px 20px 0 20px;
+        padding: 15px 20px;
+        border-bottom: 1px solid #ccc;
 
         .title {
           font-size: 18px;
@@ -475,7 +482,8 @@ $risk-colors-by-level:
       }
 
       .score-chart {
-        padding-left: 45px;
+        display: flex;
+        justify-content: center;
         padding-bottom: 60px;
       }
 
@@ -511,15 +519,15 @@ $risk-colors-by-level:
     .scenarios-list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     .result-container {
-      margin-right: 10px;
-      margin-bottom: 15px;
-      width: 377px;
 
       .result-scores {
-        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 23px;
 
         .speedometer {
 
@@ -530,13 +538,29 @@ $risk-colors-by-level:
         }
 
         .score-representation {
-          width: 140px;
+          width: 100%;
           padding: 0;
+          text-align: center;
+          line-height: inherit;
+          height: 100%;
 
           .text {
             font-size: 20px;
           }
         }
+      }
+    }
+  }
+
+  .modal-prism-analysis {
+
+    .modal-content {
+      padding: 10px;
+
+      .use-portfolio-container {
+        background: none;
+        border: none;
+        padding-top: 0;
       }
     }
   }
