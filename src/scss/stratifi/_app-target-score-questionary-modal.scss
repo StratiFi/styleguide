@@ -1,0 +1,60 @@
+#target-score-questionary-modal {
+  h3 {
+    font-size: 22px;
+  }
+
+  .description {
+    margin: 40px 30px;
+    text-align: center;
+  }
+
+  .modal-md {
+    min-width: 800px;
+  }
+
+  .actions {
+    .btn {
+      margin: 0 5px;
+      min-width: 236px;
+    }
+
+    .copy-holder {
+      margin-top: 25px;
+
+      > span:first-child {
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .copy-link {
+        cursor: pointer;
+        color: #09acf8;
+
+        .copied-flag {
+          padding: 5px;
+          background: #394346;
+          color: white;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #target-score-questionary-modal {
+    .modal-md {
+      min-width: initial;
+    }
+
+    .actions {
+      .btn {
+        margin: 10px;
+      }
+
+      .copy-holder {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
