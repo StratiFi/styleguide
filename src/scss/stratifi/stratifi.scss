@@ -5,9 +5,6 @@
 @import "../../../bower_components/bootstrap/scss/bootstrap";
 @import "bootstrap"; // bootstrap "overriding" fix
 
-// Quill styles (WYSIWYG)
-@import "quill";
-
 // load app styles
 @import "app-investors-list-view";
 @import "app-tabs";
@@ -86,7 +83,4 @@
 @import "app-strategies";
 @import "app-prism";
 @import "app-prism-overview";
-@import "app-target-score-questionnaire-modal";
-@import "app-target-score-questionnaire-email";
-
 @import "app";

@@ -336,11 +336,11 @@
       }
     }
 
-    .prism-questions-range-prism-color-slider {
-      .range-input {
-        background: linear-gradient(90deg, #C93539 0%, #FAA502 52.56%, #4EB63D 100%);
-      }
-    }
+    // .prism-questions-range-prism-color-slider {
+    //   .range-input {
+    //     background: linear-gradient(90deg, #C93539 0%, #FAA502 52.56%, #4EB63D 100%);
+    //   }
+    // }
 
     .prism-questions-action {
 
@@ -499,14 +499,99 @@
   }
 }
 
-.range-input.risk-range-input {
-  background: linear-gradient(270deg, #4EB63D 0%, #FAA502 52.56%, #EA0303 100%);
+// .range-input.risk-range-input {
+//   background: linear-gradient(270deg, #4EB63D 0%, #FAA502 52.56%, #EA0303 100%);
 
-  &:before {
-    background: #EA0303;
+//   &:before {
+//     background: #EA0303;
+//   }
+
+//   &:after {
+//     background: #4EB63D;
+//   }
+// }
+
+.prism-questions-range-container {
+  .range-input {
+    background: #4eb73a; /* Old browsers */
+    background: -moz-linear-gradient(left, #eb0000 0%, #faa500 51%, #4eb73a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #eb0000 0%, #faa500 51%, #4eb73a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #eb0000 0%, #faa500 51%, #4eb73a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb0000', endColorstr='#4eb73a',GradientType=1 ); /* IE6-9 */
   }
+}
 
-  &:after {
-    background: #4EB63D;
+.prism-questions-range-prism-color-slider {
+  .range-input {
+    background: #4eb73a; /* Old browsers */
+    background: -moz-linear-gradient(left, #4eb73a 0%, #faa500 51%, #eb0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eb73a', endColorstr='#eb0000',GradientType=1 ); /* IE6-9 */
+    margin-bottom: 60px;
+  }
+}
+
+.prism-questions-range-container-with-caption {
+  .range-input {
+    background: #D4D7DC;
+  }
+}
+
+.risk-labels {
+  top: -40px;
+  width: 106%;
+  .left_green {
+    color: #4EB73A;
+    margin-left: -40px;
+  }
+  .right_red {
+    color: #EB0000;
+    margin-left: 86.5%;
+  }
+  .left_red {
+    color: #EB0000;
+    margin-left: -40px;
+  }
+  .right_green {
+    color: #4EB73A;
+    margin-left: 88.5%;
+  }
+}
+
+@media screen and (max-width: 1643px) {
+  .risk-labels {
+    .right_red {
+      margin-left: 78.5%;
+    }
+    .right_green {
+      margin-left: 85.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .risk-labels {
+    .right_green {
+      margin-left: 82.5%;
+    }
+  }
+}
+
+.show_selected_value {
+  position: relative;
+  width: 200px;
+  margin-top: 100px;
+  margin-left: 50%;
+  height: auto;
+  padding: 24px 36px;
+  border: 1px solid #dbe2e5;
+  left: -100px;
+  span {
+    font-size: 60px;
+    color: #282828;
+    font {
+      font-size: 24px;
+    }
   }
 }
