@@ -51,47 +51,6 @@ $risk-colors-by-level:
       }
     }
 
-    .target-score-badge {
-      position: absolute;
-      display: block;
-      color: #fff;
-      text-align: center;
-      font-weight: 500;
-      margin-bottom: 0;
-      top: 0;
-
-      .target-tooltip {
-        background: #B1E4F7;
-        font-size: 13px;
-        color: black;
-      }
-
-      &:after {
-        bottom: 100%;
-        left: 50%;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border: solid transparent;
-        border-color: rgba(194, 225, 245, 0);
-        border-width: 12px;
-        margin-left: -12px;
-        transform: rotate(180deg);
-      }
-
-      @each $risk-level, $risk-color in $risk-colors-by-level {
-        &.score-badge-risk-level-#{$risk-level} {
-          background-color: $risk-color;
-
-          &:after {
-            border-top-color: $risk-color;
-          }
-        }
-      }
-    }
-
     .score-badge-transparent {
       opacity: 0.1;
     }
@@ -116,16 +75,6 @@ $risk-colors-by-level:
       width: 97px;
       font-size: 40px;
       padding-top: 18px;
-    }
-  }
-
-  .target-score-badge-container-small {
-    padding-top: 0;
-
-    .target-score-badge {
-      height: 29px;
-      width: 56px;
-      font-size: 20px;
     }
   }
 
@@ -186,10 +135,6 @@ $risk-colors-by-level:
       font-size: 20px;
       font-weight: bold;
     }
-
-    .user-name {
-      color: #09ACF8;
-    }
   }
 
   .result-container {
@@ -243,42 +188,6 @@ $risk-colors-by-level:
           margin-left: 10px;
           font-weight: 100;
         }
-
-      }
-
-      .score-representation-full-prism {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        .overall-prism-full {
-          line-height: 1.8;
-        }
-
-        .overall-prism-target{
-          line-height: 0;
-
-          .rect-target-overall {
-            width: 10px;
-            height: 16px;
-            display: inline-block;
-            background: #B1E4F7;
-          }
-
-          .overall-target-text {
-            display: inline-block;
-            color: black;
-            margin-left: 5px;
-            font-size: 20px;
-
-            @each $risk-level, $risk-color in $risk-colors-by-level {
-              .score-target-#{$risk-level} {
-                color: $risk-color;
-              }
-            }
-          }
-        }
-
       }
 
       .score-lines {
@@ -445,106 +354,4 @@ $risk-colors-by-level:
       }
     }
   }
-
-  .scores-container {
-    display: flex;
-    margin-top: 30px;
-    flex-wrap: wrap;
-
-    .score-container {
-      width: 49%;
-      background: #fff;
-      border: 1px solid #ccc;
-      margin-bottom: 17px;
-
-      .heading {
-        padding: 15px 20px 0 20px;
-
-        .title {
-          font-size: 18px;
-          font-weight: 700;
-        }
-      }
-
-      &:nth-of-type(odd) {
-        margin-right: 17px;
-      }
-
-      .score-line {
-        padding: 20px 70px;
-      }
-
-      .score-chart {
-        padding-left: 45px;
-        padding-bottom: 60px;
-      }
-
-      .score-description {
-        font-size: 14px;
-        padding: 25px 15px 15px 15px;
-        background: #E3E7ED;
-        color: #394346;
-        height: 88px;
-        margin-top: 35px;
-      }
-
-      &:nth-of-type(4) {
-        .score-description {
-          padding-top: 15px;
-        }
-      }
-
-      .front-card,
-      .back-card {
-        display: none;
-
-        &.active {
-          display: block;
-        }
-      }
-    }
-  }
-
-  .score-market-container {
-    margin-top: 50px;
-
-    .scenarios-list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .result-container {
-      margin-right: 10px;
-      margin-bottom: 15px;
-      width: 377px;
-
-      .result-scores {
-        padding: 15px 0;
-
-        .speedometer {
-
-          .risk-gauge-chart {
-            width: 230px;
-            height: 200px;
-          }
-        }
-
-        .score-representation {
-          width: 140px;
-          padding: 0;
-
-          .text {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  }
-}
-
-.show_yes {
-  visibility: visible;
-}
-.show_no {
-  visibility: hidden;
 }
