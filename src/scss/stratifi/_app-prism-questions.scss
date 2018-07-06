@@ -274,6 +274,7 @@
 
       &.prism-questions-range-prism-color-slider {
         margin-bottom: 50px;
+        user-select: none;
       }
 
       &.prism-questions-range-container-with-caption {
@@ -523,11 +524,7 @@
 
 .prism-questions-range-prism-color-slider {
   .range-input {
-    background: #4eb73a; /* Old browsers */
-    background: -moz-linear-gradient(left, #4eb73a 0%, #faa500 51%, #eb0000 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eb73a', endColorstr='#eb0000',GradientType=1 ); /* IE6-9 */
+    background: #d3d6d9; /* Old browsers */
     margin-bottom: 60px;
   }
 }
@@ -541,21 +538,14 @@
 .risk-labels {
   top: -40px;
   width: 106%;
-  .left_green {
-    color: #4EB73A;
+  .left, .right {
+    color: #394346;
+  }
+  .left {
     margin-left: -40px;
   }
-  .right_red {
-    color: #EB0000;
+  .right {
     margin-left: 86.5%;
-  }
-  .left_red {
-    color: #EB0000;
-    margin-left: -40px;
-  }
-  .right_green {
-    color: #4EB73A;
-    margin-left: 88.5%;
   }
 }
 
