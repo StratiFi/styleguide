@@ -1,0 +1,81 @@
+#delete-client-modal {
+    h3 {
+      font-size: 22px;
+      color: #394346;
+      font-weight: 300;
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .description {
+      margin: 30px auto;
+      font-size: 20px;
+      font-weight: bold;
+      color: #C93539;
+      text-align: center;
+      b {
+        font-size: 22px;
+        padding: 2px 12px;
+        border-radius: 18px;
+        background: #C93539;
+        color: #ffffff;
+      }
+    }
+
+    .bottom {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 16px;
+      color: #596366;
+    }
+
+    .modal-md {
+      min-width: 800px;
+    }
+  
+    .actions {
+      .btn {
+        margin: 0 5px;
+        min-width: 236px;
+      }
+  
+      .copy-holder {
+        margin-top: 25px;
+  
+        > span:first-child {
+          margin-bottom: 5px;
+          display: block;
+        }
+  
+        .copy-link {
+          cursor: pointer;
+          color: #09acf8;
+  
+          .copied-flag {
+            padding: 5px;
+            background: #394346;
+            color: white;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    #target-score-questionary-modal {
+      .modal-md {
+        min-width: initial;
+      }
+  
+      .actions {
+        .btn {
+          margin: 10px;
+        }
+  
+        .copy-holder {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
