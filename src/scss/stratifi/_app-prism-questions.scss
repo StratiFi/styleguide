@@ -311,15 +311,32 @@
 
       .chart-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+
+        #investment-horzion {
+          margin-right: 50px;
+          position: relative;
+          overflow: visible !important;
+
+          &::after {
+            content: "Return";
+            font-size: 13px;
+            position: absolute;
+            bottom: 23px;
+            left: -32px;
+            background: #d0eefa;
+            padding: 2px 4px;
+          }
+        }
 
         .investment-legend {
           display: flex;
           flex-direction: column;
           width: 280px;
           justify-content: flex-end;
-          padding-bottom: 20px;
+          padding-bottom: 32px;
           text-align: center;
+          margin-left: 50px;
 
           h2 {
             border: 1px solid #DBE2E5;
