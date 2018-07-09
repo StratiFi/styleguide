@@ -48,11 +48,8 @@
   }
 }
 
-
-.password-tooltip.place-bottom::after,
-.password-tooltip.place-top::after
- {
-  border-color: #BCBFC4 transparent !important;
+.__react_component_tooltip.place-top::before {
+    border-top: 8px solid #BCBFC4 !important;
 }
 
 .checkmark-test{
@@ -60,7 +57,7 @@
   height:16px;
   position:relative;
   right:3px;
-  top:3px;
+  top:6px;
   fill:#394346;
 }
 
@@ -69,7 +66,7 @@
   height:16px;
   position:relative;
   right:3px;
-  top:3px;
+  top:6px;
   fill:#54CE1E;
 }
 
