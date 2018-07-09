@@ -555,14 +555,33 @@
 .risk-labels {
   top: -40px;
   width: 106%;
+
   .left, .right {
     color: #394346;
   }
-  .left {
+
+  .left, .left_green, .left_red {
     margin-left: -40px;
   }
   .right {
     margin-left: 86.5%;
+  }
+
+  .right_red, .left_red {
+    color: #EB0000;
+  }
+
+  .right_green {
+    color: #4EB73A;
+    margin-left: 88.5%;
+  }
+
+  .right_red {
+    margin-left: 86.5%;
+  }
+
+  .left_green {
+    color: #4EB73A;
   }
 }
 
