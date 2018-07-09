@@ -1,4 +1,4 @@
-#target-score-questionary-modal {
+#target-score-questionnaire-modal {
   .close{
     z-index: 16;
   }
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 991.98px) {
-  #target-score-questionary-modal {
+  #target-score-questionnaire-modal {
     .modal-md {
       min-width: initial;
     }
@@ -63,10 +63,6 @@
     .actions {
       .btn {
         margin: 10px;
-      }
-
-      .copy-holder {
-        margin-bottom: 20px;
       }
     }
   }
