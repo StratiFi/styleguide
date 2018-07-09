@@ -20,6 +20,115 @@
   }
 }
 
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+  }
+}
+
+.test{
+  width:500px;
+  height:500px;
+  background-color:red;
+}
+
+.signup-navbar {
+  padding: 0 6%;
+  background-color: #053046;
+  height:67px !important;
+  opacity: 1;
+  -webkit-transition: background 0.3s ease-out;
+  -moz-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+  min-width: 320px;
+}
+
+.signup-logo{
+  width:105px;
+  height:15px;
+  padding:33px 0 10px 0;
+  display:flex;
+  align-items:center;
+}
+
+.signup-tag{
+  position:relative;
+  width:50px;
+  top:2px;
+  left:10px;
+  color:#fff;
+  white-space:nowrap;
+  font-family:Roboto;
+  font-size:14px;
+
+}
+
+.img-logo{
+  height:16px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .signup-navbar {
+    display: block !important;
+    opacity: 1; } }
+.signup-navbar .logo {
+  padding: 11px 0 10px;
+  width: 10%;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 1024px) {
+    .signup-navbar .logo {
+      width: 170px;
+      justify-content: center;
+      padding: 0;
+      margin-left: 34%; } }
+  @media screen and (max-width: 1024px) {
+    .signup-navbar .logo {
+      display: block;
+      margin: 0 auto; } }
+.signup-navbar .logo .svg-logo {
+  width: 116px;
+  height: 17px;
+  fill: #fff; }
+  @media (max-width: 1024px) {
+    .signup-navbar .logo .svg-logo {
+      width: 159px;
+      height: 23px; } }
+.signup-navbar .menu-wrapper {
+  align-items: center;
+  justify-content: center; }
+
+
 .navbar {
   padding: 0 $navbar-padding-horizontal;
   min-height: $navbar-max-height;
