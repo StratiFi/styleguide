@@ -274,6 +274,7 @@
 
       &.prism-questions-range-prism-color-slider {
         margin-bottom: 50px;
+        user-select: none;
       }
 
       &.prism-questions-range-container-with-caption {
@@ -310,15 +311,32 @@
 
       .chart-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+
+        #investment-horzion {
+          margin-right: 50px;
+          position: relative;
+          overflow: visible !important;
+
+          &::after {
+            content: "Return";
+            font-size: 13px;
+            position: absolute;
+            bottom: 23px;
+            left: -32px;
+            background: #d0eefa;
+            padding: 2px 4px;
+          }
+        }
 
         .investment-legend {
           display: flex;
           flex-direction: column;
           width: 280px;
           justify-content: flex-end;
-          padding-bottom: 20px;
+          padding-bottom: 32px;
           text-align: center;
+          margin-left: 50px;
 
           h2 {
             border: 1px solid #DBE2E5;
@@ -523,11 +541,7 @@
 
 .prism-questions-range-prism-color-slider {
   .range-input {
-    background: #4eb73a; /* Old browsers */
-    background: -moz-linear-gradient(left, #4eb73a 0%, #faa500 51%, #eb0000 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #4eb73a 0%,#faa500 51%,#eb0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eb73a', endColorstr='#eb0000',GradientType=1 ); /* IE6-9 */
+    background: #d3d6d9; /* Old browsers */
     margin-bottom: 60px;
   }
 }
@@ -541,21 +555,33 @@
 .risk-labels {
   top: -40px;
   width: 106%;
-  .left_green {
-    color: #4EB73A;
+
+  .left, .right {
+    color: #394346;
+  }
+
+  .left, .left_green, .left_red {
     margin-left: -40px;
   }
-  .right_red {
-    color: #EB0000;
+  .right {
     margin-left: 86.5%;
   }
-  .left_red {
+
+  .right_red, .left_red {
     color: #EB0000;
-    margin-left: -40px;
   }
+
   .right_green {
     color: #4EB73A;
     margin-left: 88.5%;
+  }
+
+  .right_red {
+    margin-left: 86.5%;
+  }
+
+  .left_green {
+    color: #4EB73A;
   }
 }
 

@@ -1,0 +1,69 @@
+#target-score-questionnaire-modal {
+  .close{
+    z-index: 16;
+  }
+  h3 {
+    font-size: 22px;
+    padding: 2rem 5.625rem 0 5.625rem;
+  }
+
+  .description {
+    margin: 40px 30px;
+    text-align: center;
+    padding: 1rem 5.625rem 0 5.625rem;
+  }
+
+  .modal-md {
+    min-width: 800px;
+  }
+
+  .actions {
+    .btn {
+      margin: 0 5px;
+      min-width: 236px;
+    }
+
+    .copy-holder {
+      margin-top: 30px;
+      background-color: #F5F5F5;
+      padding: 10px 0px;
+
+      > span:first-child {
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .copy-link {
+        cursor: pointer;
+        color: #09acf8;
+
+        .copied-flag {
+          padding: 5px;
+          background: #394346;
+          color: white;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .modal-body {
+    padding: 15px 0 0 0;
+}
+  .modal-content {
+    padding: 0;
+ }
+}
+
+@media (max-width: 991.98px) {
+  #target-score-questionnaire-modal {
+    .modal-md {
+      min-width: initial;
+    }
+
+    .actions {
+      .btn {
+        margin: 10px;
+      }
+    }
+  }
+}
