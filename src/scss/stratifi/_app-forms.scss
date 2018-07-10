@@ -231,10 +231,10 @@
   width:100%;
   padding-bottom:100px;
   max-height:150px;
-
 }
 
 .feature-footer{
+  width:100%;
   @media screen and (max-width: 906px) {
     display:block;
     position:absolute;
@@ -244,19 +244,43 @@
 }
 
 .logo-row {
-  width: 80%;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  height:120px;
+  min-width:900px;
 }
 
+.logo-row:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+
 .logo {
+  width:230px;
+  height:100px;
+  vertical-align:top;
   display:inline-block;
-  margin: auto;
-  padding:20px;
+  *display: inline;
+  zoom:1;
+}
+
+.logo-image{
+  width:100%;
+}
+
+#wallstreet{
+  padding-right:50px;
 }
 
 
 .stretch-box {
   width: 100%;
-  // display: inline-block;
+  display: inline-block;
   font-size: 0;
   line-height: 0
 }
