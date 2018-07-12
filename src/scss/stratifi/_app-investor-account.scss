@@ -1,0 +1,162 @@
+.investor-accounts {
+  padding: 0 20px 0 236px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 20px 0;
+    border-bottom: 1px solid black;
+
+    .account-title {
+      display: flex;
+
+      .investor-name {
+        font-size: 28px;
+        margin-right: 15px;
+      }
+
+      img {
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+
+    .price-family-btn {
+      justify-content: center;
+      width: 177px;
+      background: #09acf8;
+      color: #fff;
+      display: flex;
+      padding-top: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .account-tables-container {
+    padding: 0 40px;
+  }
+
+  .table-investor-accounts {
+    thead {
+      tr {
+        padding: 10px;
+
+        td {
+          font-weight: bold;
+          text-align: center;
+          width: 300px;
+          padding-left: 0;
+          padding-right: 0;
+
+          &:first-child {
+            width: 800px;
+          }
+
+          &.toggle-col {
+            width: 160px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      border: 1px solid #D3D6D8;
+      background: #E3E7ED;
+
+      tr {
+        td {
+          padding: 15px;
+          vertical-align: middle;
+
+          .account-profile {
+            width: 131px;
+            background: #7C8C94;
+            color: #fff;
+            padding: 5px 0px;
+            font-size: 14px;
+            border-radius: 3px;
+            font-weight: 500;
+          }
+
+          .add-target {
+            display: inline-block;
+            padding: 7px;
+            padding-top: 6px;
+            color: #09ACF8;
+            border-radius: 3px;
+            font-weight: 700;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px dashed #09ACF8;
+          }
+        }
+
+        &.positions-chart {
+          display: none;
+          background-color: #fff;
+
+          &.showDetails {
+            display: table-row;
+          }
+
+          .portfolio-breakdown {
+            max-width: 987px;
+            width: 100%;
+            margin: 0 auto;
+
+            .table-container {
+              width: calc(100% - 292px);
+              display: inline-block;
+              vertical-align: top;
+              margin-top: 65px;
+
+              .row-content-block {
+                margin-bottom: 2px;
+
+                .row-content {
+                  background: #d3d6db;
+                }
+              }
+            }
+
+            .pie-container {
+              width: 250px;
+              height: 250px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    &.total-account-row {
+      thead {
+        td:first-child {
+          width: 700px;
+          padding-right: 0;
+          padding-left: 30px;
+        }
+      }
+      tbody {
+        background: #D9F3FD;
+
+        td:first-child {
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+
+  & > a {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
