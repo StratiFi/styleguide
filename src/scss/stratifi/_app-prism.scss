@@ -175,22 +175,21 @@ $risk-colors-by-level:
   }
 }
 
-.risk-analysis-body-container .target-score-result-container {
-  margin-left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .target-score-result-container {
-  margin-left: 217px;
-  padding: 50px 30px;
+  padding: 40px 0px 50px 0px;
+  width: 1080px;
+  margin: auto;
 
   .heading {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     .large {
       font-size: 20px;
       font-weight: bold;
+      .tmSuper {
+        font-size: 10px;
+        top: -8px;
+      }
     }
 
     .user-name {
@@ -202,10 +201,27 @@ $risk-colors-by-level:
   .result-container {
 
     .result-heading {
-      background: #505E62;
+      background: #42494b;
       padding: 10px 12.5px;
       color: #fff;
       font-weight: bold;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      &:before, &:after {
+        content:"";
+        position:absolute;
+        z-index:-1;
+        -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:0;
+        bottom:0;
+        left:10px;
+        right:10px;
+        -moz-border-radius:100px / 10px;
+        border-radius:100px / 10px;
+      }
     }
 
     .result-scores {
@@ -504,6 +520,8 @@ $risk-colors-by-level:
       &:nth-of-type(4) {
         .score-description {
           padding-top: 15px;
+          text-align: justify;
+          line-height: 20px;
         }
       }
 
@@ -567,6 +585,18 @@ $risk-colors-by-level:
         padding-top: 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .target-score-result-container {
+    width: 1048px;
+  }
+}
+
+@media screen and (max-width: 1316px) {
+  .target-score-result-container {
+    width: 1024px;
   }
 }
 

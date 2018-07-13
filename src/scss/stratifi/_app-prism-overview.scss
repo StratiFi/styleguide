@@ -291,3 +291,16 @@
     }
   }
 }
+
+#selectAdvisorTooltip {
+  opacity: 1;
+  -moz-animation: 1s ease-out 5s cssAnimation forwards;
+  -webkit-animation: 1s ease-out 5s cssAnimation forwards;
+  -o-animation: 1s ease-out 5s cssAnimation forwards;
+  animation: 1s ease-out 5s cssAnimation forwards;
+}
+@keyframes cssAnimation {
+  to {
+      opacity: 0;
+  }
+}
