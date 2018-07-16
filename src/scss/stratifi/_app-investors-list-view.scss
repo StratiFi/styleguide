@@ -1,6 +1,12 @@
 .investors-list-view {
   width: 100%;
 
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    float: left
+  }
+
   .notification-toggle {
     background: red;
     color: white;
@@ -17,10 +23,17 @@
     border: none;
   }
 
+  .header {
+    padding-top: 10px;
+  }
+
+  .table {
+    margin-top: 0;
+  }
+
   .search {
     float: unset !important;
     margin-left: auto;
-    padding: 20px 0;
   }
 
   .new-client {
@@ -35,6 +48,9 @@
     height: 31px;
     float: left;
     width: 100%;
+    background: #e3e7ed;
+    border: 1px solid #7B8C94;
+    border-radius: 3px;
   }
 
   .icon-arrow {
