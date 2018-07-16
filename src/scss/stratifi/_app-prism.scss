@@ -495,6 +495,10 @@ $risk-colors-by-level:
         color: #394346;
         height: 88px;
         margin-top: 35px;
+
+        @media (max-width: 1440px) {
+          height: 105px;
+        }
       }
 
       &:nth-of-type(4) {
@@ -519,7 +523,6 @@ $risk-colors-by-level:
 
     .scenarios-list {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
     }
 
@@ -528,7 +531,7 @@ $risk-colors-by-level:
       .result-scores {
         display: flex;
         flex-direction: column;
-        padding: 15px 23px;
+        padding: 15px 5px;
 
         .speedometer {
 
