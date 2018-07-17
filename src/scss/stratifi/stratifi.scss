@@ -5,8 +5,8 @@
 @import "../../../bower_components/bootstrap/scss/bootstrap";
 @import "bootstrap"; // bootstrap "overriding" fix
 
-// Quill styles (WYSIWYG)
-@import "quill";
+// Summernote styles (WYSIWYG)
+@import "summernote";
 
 // load app styles
 @import "app-investors-list-view";
