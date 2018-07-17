@@ -262,7 +262,7 @@ $risk-colors-by-level:
           line-height: 1.8;
         }
 
-        .overall-prism-target{
+        .overall-prism-target {
           line-height: 0;
 
           .rect-target-overall {
@@ -402,7 +402,7 @@ $risk-colors-by-level:
 
           &.dropdown-item-disabled {
             color: #BCBFC4;
-            
+
             &:hover {
               cursor: default;
               background-color: #fff;
@@ -460,9 +460,21 @@ $risk-colors-by-level:
 
     .score-container {
       width: 49%;
-      background: #fff;
-      border: 1px solid #ccc;
       margin-bottom: 17px;
+
+      .front-card-content {
+        width: 580px;
+        height: 373px;
+        background: #fff;
+        border: 1px solid #ccc;
+      }
+
+      .back-card-content {
+        width: 580px;
+        height: 373px;
+        background: #fff;
+        border: 1px solid #ccc;
+      }
 
       .heading {
         padding: 15px 20px;
@@ -507,13 +519,13 @@ $risk-colors-by-level:
         }
       }
 
-      .front-card,
-      .back-card {
-        display: none;
+      .ReactFlipCard__Front,
+      .ReactFlipCard__Back {
+        position: relative !important;
+      }
 
-        &.active {
-          display: block;
-        }
+      .ReactFlipCard__Back {
+        position: absolute !important;
       }
     }
   }
@@ -567,6 +579,30 @@ $risk-colors-by-level:
         padding-top: 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .front-card-content, .back-card-content {
+    width: 550px !important;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .front-card-content, .back-card-content {
+    width: 530px !important;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .front-card-content, .back-card-content {
+    width: 510px !important;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .front-card-content, .back-card-content {
+    width: 490px !important;
   }
 }
 
