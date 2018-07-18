@@ -1218,6 +1218,18 @@ table.table-client-section {
       }
     }
   }
+
+  &.odd {
+    background: blue;
+    tbody tr {
+      td:nth-child(even) {
+        background: transparent;
+      }
+      td:nth-child(odd) {
+        background: #F2FBFE;
+      }
+    }
+  }
 }
 
 .slider-table {
