@@ -1,12 +1,20 @@
 .investors-list-view {
   width: 100%;
 
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    float: left
+  }
+
   .notification-toggle {
     background: red;
     color: white;
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    float: left;
+    margin-left: 10px;
   }
 
   .notification {
@@ -17,10 +25,37 @@
     border: none;
   }
 
+  .header {
+    padding-top: 10px;
+  }
+
+  .table {
+    margin-top: 0;
+
+    .sort-icon {
+      margin-left: 6px;
+    }
+
+    td {
+      .household-icon {
+        height: 16px;
+        margin-right: 5px,
+      }
+    }
+
+    .new {
+      background: #fb6464;
+      border-radius: 4px;
+      padding: 5px;
+      margin-left: 5px;
+      font-size: 13px;
+      color: white
+    }
+  }
+
   .search {
     float: unset !important;
     margin-left: auto;
-    padding: 20px 0;
   }
 
   .new-client {
@@ -35,6 +70,9 @@
     height: 31px;
     float: left;
     width: 100%;
+    background: #e3e7ed;
+    border: 1px solid #7B8C94;
+    border-radius: 3px;
   }
 
   .icon-arrow {
@@ -65,7 +103,7 @@
     outline: None;
     border: 1px solid #394346;
   }
-  .table-expand {    
+  .table-expand {
     background: #09ACF8;
   }
 
