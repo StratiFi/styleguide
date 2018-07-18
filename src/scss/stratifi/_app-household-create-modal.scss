@@ -1,0 +1,107 @@
+#create-household-modal {
+
+  h3 {
+    margin-bottom: 60px;
+  }
+
+  .input-section {
+    margin-bottom: 30px;
+
+    & > label {
+      display: inline-block;
+      width: 40%;
+      text-align: right;
+      padding-right: 15px;
+      vertical-align: top;
+    }
+
+    & > div {
+      display: inline-block;
+      width: 40%;
+    }
+
+    .multiple-input {
+      position: relative;
+
+      .btn-add-to-selected {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        color: #09acf8;
+      }
+
+      div.react-autosuggest__container {
+        width: 100%;
+      }
+
+      .selected-items-container {
+
+        .selected-item {
+          background: #ebeeef;
+          padding: 10px 15px;
+
+          span {
+            margin-right: 15px;
+          }
+
+          button.remove-selected-item-btn {
+            background: none;
+            border: 1px solid #999;
+            color: #999;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            line-height: 19px;
+            padding: 0;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #999;
+      padding-left: 5px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .dropdown {
+
+      button {
+        width: 100%;
+        position: relative;
+        background: #fff;
+        border: 1px solid #ccc;
+        height: 40px;
+
+        i.icon-arrow {
+          font-size: 12px;
+          position: absolute;
+          top: 14px;
+          right: 12px;
+        }
+      }
+
+      .dropdown-menu {
+        width: 100%;
+      }
+    }
+  }
+
+  .input-section.input-section-head {
+    
+    label {
+      vertical-align: middle;
+    }
+  }
+}
