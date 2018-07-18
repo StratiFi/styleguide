@@ -182,15 +182,18 @@ $risk-colors-by-level:
 }
 
 .target-score-result-container {
-  margin-left: 217px;
-  padding: 50px 30px;
+  padding: 40px 0px 50px 0px;
 
   .heading {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     .large {
       font-size: 20px;
       font-weight: bold;
+      .tmSuper {
+        font-size: 10px;
+        top: -8px;
+      }
     }
 
     .user-name {
@@ -202,7 +205,7 @@ $risk-colors-by-level:
   .result-container {
 
     .result-heading {
-      background: #505E62;
+      background: #42494b;
       padding: 10px 12.5px;
       color: #fff;
       font-weight: bold;
@@ -459,19 +462,19 @@ $risk-colors-by-level:
     flex-wrap: wrap;
 
     .score-container {
-      width: 49%;
+      width: 529.594px;
       margin-bottom: 17px;
 
       .front-card-content {
-        width: 580px;
-        height: 373px;
+        width: 100%;
+        height: 100%;
         background: #fff;
         border: 1px solid #ccc;
       }
 
       .back-card-content {
-        width: 580px;
-        height: 373px;
+        width: 100%;
+        height: 100%;
         background: #fff;
         border: 1px solid #ccc;
       }
@@ -487,7 +490,7 @@ $risk-colors-by-level:
       }
 
       &:nth-of-type(odd) {
-        margin-right: 17px;
+        margin-right: 20.812px;
       }
 
       .score-line {
@@ -502,16 +505,17 @@ $risk-colors-by-level:
 
       .score-description {
         font-size: 14px;
-        padding: 25px 15px 15px 15px;
+        padding: 30px 15px 15px 15px;
         background: #E3E7ED;
         color: #394346;
-        height: 88px;
-        margin-top: 35px;
+        height: 110px;
+        margin-top: 13px;
+        text-align: justify;
       }
 
       &:nth-of-type(4) {
         .score-description {
-          padding-top: 7px;
+          padding-top: 15px;
         }
       }
 
@@ -578,28 +582,9 @@ $risk-colors-by-level:
   }
 }
 
-@media screen and (max-width: 1410px) {
-  .front-card-content, .back-card-content {
-    width: 550px !important;
-  }
-}
-
-@media screen and (max-width: 1360px) {
-  .front-card-content, .back-card-content {
-    width: 530px !important;
-  }
-}
-
-@media screen and (max-width: 1310px) {
-  .front-card-content, .back-card-content {
-    width: 510px !important;
-  }
-}
-
-@media screen and (max-width: 1270px) {
-  .front-card-content, .back-card-content {
-    width: 490px !important;
-  }
+.ReactFlipCard__Front, .ReactFlipCard__Back {
+  width: 529.594px;
+  height: 378px;
 }
 
 .show_yes {
@@ -607,4 +592,46 @@ $risk-colors-by-level:
 }
 .show_no {
   visibility: hidden;
+}
+
+.prism-rating-page-container {
+  margin-left: auto !important;
+  margin-right: auto;
+  width: 1120px;
+}
+
+@media screen and (max-width: 1350px) {
+  .prism-rating-page-container {
+    width: 1080px;
+    .scores-container {
+      .score-container {
+        width: 509.594px;
+        .ReactFlipCard__Front, .ReactFlipCard__Back {
+          width: 509.594px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1316px) {
+  .prism-rating-page-container {
+    width: 1046px;
+    .scores-container {
+      .score-container {
+        width: 492.594px;
+        .ReactFlipCard__Front, .ReactFlipCard__Back {
+          width: 492.594px;
+        }
+      }
+    }
+  }
+}
+
+.scenario-container {
+  .result-container {
+    .result-heading {
+      text-align: center;
+    }
+  }
 }
