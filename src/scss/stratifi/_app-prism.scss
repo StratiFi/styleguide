@@ -590,13 +590,14 @@ $risk-colors-by-level:
         margin-top: 30px;
         margin-left: -16px;
       }
-      
-      .prism-with-target {
+
+      .prism-with-target,
+      .overall-prism-full.prism-with-target {
         margin-left: -16px;
         margin-top: 30px;
-        line-height: 1.4 !important;
+        line-height: 1.4;
       }
-      
+
       .overall-prism-target {
         margin-left: -12px;
       }
