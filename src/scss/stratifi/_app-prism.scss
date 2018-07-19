@@ -182,7 +182,8 @@ $risk-colors-by-level:
 }
 
 .target-score-result-container {
-  padding: 40px 0px 50px 0px;
+  padding: 50px 30px;
+  margin-left: 217px;
 
   .heading {
     margin-bottom: 30px;
@@ -598,6 +599,7 @@ $risk-colors-by-level:
   margin-left: auto !important;
   margin-right: auto;
   width: 1120px;
+  padding: 40px 0px 50px 0px;
 }
 
 @media screen and (max-width: 1350px) {
