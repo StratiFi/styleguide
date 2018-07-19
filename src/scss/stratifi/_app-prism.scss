@@ -605,6 +605,16 @@ $risk-colors-by-level:
   }
 }
 
+sup.prism-rating-tm {
+  top: -.6em;
+  font-size: 9px;
+  font-weight: lighter;
+  &-smaller {
+    font-size: 7px;
+    top: -1em;
+  }
+}
+
 @media screen and (max-width: 1410px) {
   .front-card-content, .back-card-content {
     width: 550px !important;
