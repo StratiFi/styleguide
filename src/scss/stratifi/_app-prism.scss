@@ -260,6 +260,7 @@ $risk-colors-by-level:
 
         .overall-prism-full {
           line-height: 1.8;
+          padding-top: 10px;
         }
 
         .overall-prism-target {
@@ -291,7 +292,7 @@ $risk-colors-by-level:
       .score-lines {
         vertical-align: top;
         width: calc(100% - 580px);
-        padding-top: 20px;
+        padding-top: 40px;
 
         .target-score-line {
           margin-bottom: 12px;
@@ -578,6 +579,31 @@ $risk-colors-by-level:
   }
 }
 
+.target-score-result-container {
+  .result-container {
+    .result-scores {
+      .speedometer {
+        height: 180px;
+        margin-top: 10px;
+      }
+      .prism-without-target {
+        margin-top: 30px;
+        margin-left: -16px;
+      }
+      
+      .prism-with-target {
+        margin-left: -16px;
+        margin-top: 30px;
+        line-height: 1.4 !important;
+      }
+      
+      .overall-prism-target {
+        margin-left: -12px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1410px) {
   .front-card-content, .back-card-content {
     width: 550px !important;
@@ -600,11 +626,4 @@ $risk-colors-by-level:
   .front-card-content, .back-card-content {
     width: 490px !important;
   }
-}
-
-.show_yes {
-  visibility: visible;
-}
-.show_no {
-  visibility: hidden;
 }
