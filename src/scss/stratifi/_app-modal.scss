@@ -200,11 +200,16 @@
   }
 }
 
-.modal-investment{
+.modal-investment,
+.modal-create-account{
   width: 760px;
+  text-align: initial;
+
+  .modal-header,
   &-header{
     height: 40px;
     background-color: #92DCF7;
+    padding: 0;
 
     .close {
       width: 40px;
@@ -213,6 +218,7 @@
       top: 0;
       right: 0;
       opacity: 1;
+      margin-top: 0;
 
       span {
         text-shadow: 0 0 0 black;
@@ -235,11 +241,13 @@
     padding: 16px 0;
     background-color: #E9F8FD;
   }
-  .modal-title-investment{
+  .modal-title-investment,
+  .modal-title {
     font-size: 16px;
     line-height: 40px;
     font-weight: 600;
     padding-left: 25px;
+    text-align: left;
   }
 }
 
