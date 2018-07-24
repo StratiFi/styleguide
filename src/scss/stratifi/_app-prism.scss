@@ -177,12 +177,10 @@ $risk-colors-by-level:
 
 .risk-analysis-body-container .target-score-result-container {
   margin-left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .target-score-result-container {
-  padding: 50px 30px;
+  padding: 50px 0px;
   margin-left: 217px;
 
   .heading {
@@ -466,15 +464,8 @@ $risk-colors-by-level:
       width: 529.594px;
       margin-bottom: 17px;
 
-      .front-card-content {
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        border: 1px solid #ccc;
-      }
-
-      .back-card-content {
-        width: 100%;
+      .front-card-content, .back-card-content {
+        width: 529px;
         height: 100%;
         background: #fff;
         border: 1px solid #ccc;
@@ -596,10 +587,10 @@ $risk-colors-by-level:
 }
 
 .prism-rating-page-container {
-  margin-left: auto !important;
+  margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding: 40px 0px 50px 0px;
+  padding: 0px 20px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -610,6 +601,9 @@ $risk-colors-by-level:
         width: 509.594px;
         .ReactFlipCard__Front, .ReactFlipCard__Back {
           width: 509.594px;
+        }
+        .front-card-content, .back-card-content {
+          width: 509px;
         }
       }
     }
@@ -624,6 +618,9 @@ $risk-colors-by-level:
         width: 492.594px;
         .ReactFlipCard__Front, .ReactFlipCard__Back {
           width: 492.594px;
+        }
+        .front-card-content, .back-card-content {
+          width: 492px;
         }
       }
     }
