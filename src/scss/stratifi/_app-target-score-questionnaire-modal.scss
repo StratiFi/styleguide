@@ -28,6 +28,10 @@
       background-color: #F5F5F5;
       padding: 10px 0px;
 
+      // Temporary disabled until we have the final URLs
+      visibility: hidden;
+      height: 0;
+
       > span:first-child {
         margin-bottom: 5px;
         display: block;
