@@ -1200,9 +1200,10 @@ table.table-client-section {
         text-align: center;
         padding: 10px 15px;
         width: 130px;
-        span.risk-badge-with-score {
+        .risk-badge-with-score {
           height: 27px;
-          padding-top: 0;
+          line-height: 27px;
+          padding: 0;
         }
         &:last-child {
           width: auto;
