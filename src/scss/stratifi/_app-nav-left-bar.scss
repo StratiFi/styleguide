@@ -132,6 +132,7 @@ $transition: .3s;
       &.indent {
         display: block;
         padding-left: 40px;
+        padding-right: 0px;
       }
 
       &.active {
