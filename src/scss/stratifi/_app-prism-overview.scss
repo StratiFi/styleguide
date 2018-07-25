@@ -291,3 +291,17 @@
     }
   }
 }
+/* Animation to hide tooltip with transition */
+#selectAdvisorTooltip {
+  opacity: 1;
+  -moz-animation: 1s ease-out 5s tooltipAnimation forwards;
+  -webkit-animation: 1s ease-out 5s tooltipAnimation forwards;
+  -o-animation: 1s ease-out 5s tooltipAnimation forwards;
+  animation: 1s ease-out 5s tooltipAnimation forwards;
+}
+
+@keyframes tooltipAnimation {  
+  to {
+    opacity: 0;
+  }
+}
