@@ -129,6 +129,11 @@ $transition: .3s;
         display: none;
       }
 
+      &.indent {
+        display: block;
+        padding-left: 40px;
+      }
+
       &.active {
         box-shadow: inset 4px 0 #2EE4FF;
         background: #13181A;
