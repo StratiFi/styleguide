@@ -262,6 +262,7 @@ $risk-colors-by-level:
 
         .overall-prism-full {
           line-height: 1.8;
+          padding-top: 10px;
         }
 
         .overall-prism-target {
@@ -293,7 +294,7 @@ $risk-colors-by-level:
       .score-lines {
         vertical-align: top;
         width: calc(100% - 580px);
-        padding-top: 20px;
+        padding-top: 40px;
 
         .target-score-line {
           margin-bottom: 12px;
@@ -332,7 +333,8 @@ $risk-colors-by-level:
     }
   }
 
-  .use-portfolio-container {
+  .use-portfolio-container,
+  .prism-actions {
     background-color: #E1E9EE;
     padding-top: 45px;
     padding-bottom: 50px;
@@ -577,6 +579,48 @@ $risk-colors-by-level:
 .ReactFlipCard__Front, .ReactFlipCard__Back {
   width: 529.594px;
   height: 378px;
+}
+
+.target-score-result-container {
+  .result-container {
+    .result-scores {
+      .speedometer {
+        height: 180px;
+        margin-top: 10px;
+      }
+      .prism-without-target {
+        margin-top: 30px;
+        margin-left: -16px;
+      }
+
+      .prism-with-target,
+      .overall-prism-full.prism-with-target {
+        margin-left: -16px;
+        margin-top: 30px;
+        line-height: 1.4;
+      }
+
+      .overall-prism-target {
+        margin-left: -12px;
+      }
+    }
+  }
+}
+
+sup.prism-rating-tm {
+  top: -.6em;
+  font-size: 9px;
+  font-weight: lighter;
+  &-smaller {
+    font-size: 7px;
+    top: -1em;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .front-card-content, .back-card-content {
+    width: 550px !important;
+  }
 }
 
 .show_yes {
