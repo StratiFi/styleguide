@@ -1200,9 +1200,10 @@ table.table-client-section {
         text-align: center;
         padding: 10px 15px;
         width: 130px;
-        span.risk-badge-with-score {
+        .risk-badge-with-score {
           height: 27px;
-          padding-top: 0;
+          line-height: 27px;
+          padding: 0;
         }
         &:last-child {
           width: auto;
@@ -1215,6 +1216,18 @@ table.table-client-section {
         &:nth-child(even) {
           background: #F2FBFE;
         }
+      }
+    }
+  }
+
+  &.odd {
+    background: blue;
+    tbody tr {
+      td:nth-child(even) {
+        background: transparent;
+      }
+      td:nth-child(odd) {
+        background: #F2FBFE;
       }
     }
   }
