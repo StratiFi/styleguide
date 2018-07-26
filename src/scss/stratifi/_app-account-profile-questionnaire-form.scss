@@ -1,0 +1,160 @@
+.account-profile-questionnaire-form {
+  font-size: 14px;
+
+  h4 {
+    margin-bottom: 26px;
+  }
+
+  .checkbox {
+    float: none;
+    background: none;
+  }
+
+  input, select {
+    font-weight: bold;
+    padding: 8px 5px;
+    text-align: center;
+  }
+
+  .question {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      margin: 10px 0 0;
+    }
+
+    > input {
+      margin: 0 8px 0 16px;
+      width: 48px;
+    }
+
+    > fieldset input {
+      margin-left: 5px;
+      width: 55px;
+    }
+
+    > fieldset {
+      margin: 0 16px;
+    }
+
+    fieldset {
+      .form-group {
+        margin-bottom: 0;
+      }
+
+      .text-danger {
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .question-1-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .birthday-container, .retirement-container {
+      display: flex;
+
+      label {
+        margin-bottom: 0;
+      }
+
+      .react-date-field {
+        margin-left: 8px;
+      }
+
+      > fieldset input {
+        margin-left: 5px;
+        width: 40px;
+      }
+    }
+
+    .birthday-container {
+      margin-right: 20px;
+      .react-date-field {
+        border: 1px solid #ececec !important;
+        max-width: 120px;
+      }
+    }
+
+    .age {
+      flex-shrink: 0;
+      margin: 10px 23px 0 0;
+      display: flex;
+      align-items: center
+    }
+  }
+
+  .question-3-wrapper,
+  .question-5-wrapper,
+  .question-6-wrapper,
+   {
+    > span {
+      margin-top: 10px;
+    }
+  }
+
+  .question-4-wrapper {
+    fieldset, .c-select {
+      min-width: initial;
+      max-width: 100px;
+    }
+  }
+
+  .question-10-wrapper {
+    display: block;
+
+    .checkbox {
+      float: left;
+      min-width: 200px;
+    }
+
+    .form-group {
+      > div{
+        padding: 30px 0 0 30px;
+
+        &.text-danger {
+          padding: 0
+        }
+
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+    }
+  }
+
+  .question-11-wrapper {
+    > div {
+      display: flex;
+      align-items: center;
+
+      fieldset, .c-select {
+        min-width: initial;
+        width: 64px;
+
+        .form-group {
+          margin-bottom: 0;
+        }
+      }
+
+      fieldset {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .question-7-wrapper,
+  .question-8-wrapper,
+  .question-9-wrapper {
+    fieldset {
+      margin: 18px 0 10px;
+    }
+  }
+}
