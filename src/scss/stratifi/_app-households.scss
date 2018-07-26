@@ -1,0 +1,107 @@
+.households-container {
+	margin-left: 217px;
+	padding: 45px 30px;
+
+	.households-header {
+
+		button {
+			vertical-align: top;
+		}
+
+		.form-group.search {
+			float: none;
+			display: inline-block;
+			margin-left: 12px;
+
+			input {
+				height: 38px;
+			}
+		}
+	}
+
+	.households-table-container {
+		margin-right: 25px;
+	}
+
+	.households-table {
+
+		margin-bottom: 10px;
+
+		thead {
+
+			tr {
+				border: 1px solid #d3d6db;
+				background: #e3e7ed;
+
+				td {
+					font-size: .89rem;
+					font-weight: bold;
+					padding: 12px 10px;
+					vertical-align: middle !important;
+
+					&.double-cell {
+						padding: 10px;
+					}
+
+					&:last-child {
+						border-right: 1px solid #d3d6db !important;
+					}
+				}
+			}
+		}
+
+		tbody {
+			background-color: white;
+
+			tr {
+				border: 1px solid #d2d7d9;
+
+				td {
+					font-size: .89rem;
+					color: #505e62;
+					line-height: 25px;
+					vertical-align: middle !important;
+					padding: 10px 15px;
+
+					span.risk-badge-with-score {
+						height: 27px;
+						padding-top: 0;
+					}
+
+					.get-target-score-btn {
+						width: 33px;
+					}
+				}
+
+				&.household-row {
+
+					td {
+						background-color: #f2fbfe;
+
+						.household-accounts-shown-btn {
+							width: 20px;
+							height: 20px;
+							padding: 0;
+							line-height: 17px;
+							font-size: 17px;
+							background: #f2fbfe;
+							border: 1px solid #999;
+							color: #999;
+
+							&:focus {
+								outline: none;
+							}
+						}
+					}
+				}
+
+				&.account-row {
+
+					td {
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

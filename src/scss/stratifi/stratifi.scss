@@ -5,8 +5,8 @@
 @import "../../../bower_components/bootstrap/scss/bootstrap";
 @import "bootstrap"; // bootstrap "overriding" fix
 
-// Quill styles (WYSIWYG)
-@import "quill";
+// Summernote styles (WYSIWYG)
+@import "summernote";
 
 // load app styles
 @import "app-investors-list-view";
@@ -89,8 +89,10 @@
 @import "app-target-score-questionnaire-modal";
 @import "app-target-score-questionnaire-email";
 @import "app-delete-client-modal";
+@import "app-households";
 @import "app-investor-account";
 @import "app-client-profile-questions-modal";
 @import "app-client-profile-questions-form";
-@import "app";
+@import "app-household-create-modal";
 
+@import "app";

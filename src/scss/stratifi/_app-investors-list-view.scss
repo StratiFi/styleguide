@@ -13,6 +13,8 @@
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    float: left;
+    margin-left: 10px;
   }
 
   .notification {
@@ -29,6 +31,26 @@
 
   .table {
     margin-top: 0;
+
+    .sort-icon {
+      margin-left: 6px;
+    }
+
+    td {
+      .household-icon {
+        height: 16px;
+        margin-right: 5px,
+      }
+    }
+
+    .new {
+      background: #fb6464;
+      border-radius: 4px;
+      padding: 5px;
+      margin-left: 5px;
+      font-size: 13px;
+      color: white
+    }
   }
 
   .search {
@@ -81,13 +103,14 @@
     outline: None;
     border: 1px solid #394346;
   }
-  .table-expand {    
+  .table-expand {
     background: #09ACF8;
   }
 
   .table-collapse {
     background: #7C8C94;
   }
+
   .additional-links {
     text-align: right;
     height: 15px;

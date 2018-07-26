@@ -177,20 +177,22 @@ $risk-colors-by-level:
 
 .risk-analysis-body-container .target-score-result-container {
   margin-left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .target-score-result-container {
+  padding: 50px 0px;
   margin-left: 217px;
-  padding: 50px 30px;
 
   .heading {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     .large {
       font-size: 20px;
       font-weight: bold;
+      .tmSuper {
+        font-size: 10px;
+        top: -8px;
+      }
     }
 
     .user-name {
@@ -202,7 +204,7 @@ $risk-colors-by-level:
   .result-container {
 
     .result-heading {
-      background: #505E62;
+      background: #42494b;
       padding: 10px 12.5px;
       color: #fff;
       font-weight: bold;
@@ -260,9 +262,10 @@ $risk-colors-by-level:
 
         .overall-prism-full {
           line-height: 1.8;
+          padding-top: 10px;
         }
 
-        .overall-prism-target{
+        .overall-prism-target {
           line-height: 0;
 
           .rect-target-overall {
@@ -291,7 +294,7 @@ $risk-colors-by-level:
       .score-lines {
         vertical-align: top;
         width: calc(100% - 580px);
-        padding-top: 20px;
+        padding-top: 40px;
 
         .target-score-line {
           margin-bottom: 12px;
@@ -330,7 +333,8 @@ $risk-colors-by-level:
     }
   }
 
-  .use-portfolio-container {
+  .use-portfolio-container,
+  .prism-actions {
     background-color: #E1E9EE;
     padding-top: 45px;
     padding-bottom: 50px;
@@ -402,7 +406,7 @@ $risk-colors-by-level:
 
           &.dropdown-item-disabled {
             color: #BCBFC4;
-            
+
             &:hover {
               cursor: default;
               background-color: #fff;
@@ -459,10 +463,15 @@ $risk-colors-by-level:
     flex-wrap: wrap;
 
     .score-container {
-      width: 49%;
-      background: #fff;
-      border: 1px solid #ccc;
+      width: 529.594px;
       margin-bottom: 17px;
+
+      .front-card-content, .back-card-content {
+        width: 529px;
+        height: 100%;
+        background: #fff;
+        border: 1px solid #ccc;
+      }
 
       .heading {
         padding: 15px 20px;
@@ -475,7 +484,7 @@ $risk-colors-by-level:
       }
 
       &:nth-of-type(odd) {
-        margin-right: 17px;
+        margin-right: 20.812px;
       }
 
       .score-line {
@@ -490,15 +499,12 @@ $risk-colors-by-level:
 
       .score-description {
         font-size: 14px;
-        padding: 25px 15px 15px 15px;
+        padding: 30px 15px 15px 15px;
         background: #E3E7ED;
         color: #394346;
-        height: 88px;
-        margin-top: 35px;
-
-        @media (max-width: 1440px) {
-          height: 105px;
-        }
+        height: 110px;
+        margin-top: 13px;
+        text-align: justify;
       }
 
       &:nth-of-type(4) {
@@ -507,13 +513,13 @@ $risk-colors-by-level:
         }
       }
 
-      .front-card,
-      .back-card {
-        display: none;
+      .ReactFlipCard__Front,
+      .ReactFlipCard__Back {
+        position: relative !important;
+      }
 
-        &.active {
-          display: block;
-        }
+      .ReactFlipCard__Back {
+        position: absolute !important;
       }
     }
   }
@@ -570,9 +576,105 @@ $risk-colors-by-level:
   }
 }
 
+.ReactFlipCard__Front, .ReactFlipCard__Back {
+  width: 529.594px;
+  height: 378px;
+}
+
+.target-score-result-container {
+  .result-container {
+    .result-scores {
+      .speedometer {
+        height: 180px;
+        margin-top: 10px;
+      }
+      .prism-without-target {
+        margin-top: 30px;
+        margin-left: -16px;
+      }
+
+      .prism-with-target,
+      .overall-prism-full.prism-with-target {
+        margin-left: -16px;
+        margin-top: 30px;
+        line-height: 1.4;
+      }
+
+      .overall-prism-target {
+        margin-left: -12px;
+      }
+    }
+  }
+}
+
+sup.prism-rating-tm {
+  top: -.6em;
+  font-size: 9px;
+  font-weight: lighter;
+  &-smaller {
+    font-size: 7px;
+    top: -1em;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .front-card-content, .back-card-content {
+    width: 550px !important;
+  }
+}
+
 .show_yes {
   visibility: visible;
 }
 .show_no {
   visibility: hidden;
+}
+
+.prism-rating-page-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding: 0px 20px;
+}
+
+@media screen and (max-width: 1350px) {
+  .prism-rating-page-container {
+    width: 1080px;
+    .scores-container {
+      .score-container {
+        width: 509.594px;
+        .ReactFlipCard__Front, .ReactFlipCard__Back {
+          width: 509.594px;
+        }
+        .front-card-content, .back-card-content {
+          width: 509px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1316px) {
+  .prism-rating-page-container {
+    width: 1046px;
+    .scores-container {
+      .score-container {
+        width: 492.594px;
+        .ReactFlipCard__Front, .ReactFlipCard__Back {
+          width: 492.594px;
+        }
+        .front-card-content, .back-card-content {
+          width: 492px;
+        }
+      }
+    }
+  }
+}
+
+.scenario-container {
+  .result-container {
+    .result-heading {
+      text-align: center;
+    }
+  }
 }
