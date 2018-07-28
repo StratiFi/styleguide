@@ -302,6 +302,20 @@
   line-height: 1.15;
 }
 
+.form-control.household-member-search {
+  color: black;
+  font-size: .89rem;
+  height: 35px;
+
+  &::placeholder {
+    color: #C0C3C8;
+    opacity: 1;
+  }
+  background-color:#ECEEEF;
+
+  border: 0px;
+}
+
 .form-group.search {
   float: left;
   width: 350px;
