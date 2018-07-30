@@ -1,3 +1,13 @@
+#account-profile-questionnaire-form-modal {
+  .modal-content {
+    padding: 35px;
+
+    .modal-body {
+      padding: 0;
+    }
+  }
+}
+
 .account-profile-questionnaire-form {
   font-size: 14px;
 
@@ -26,7 +36,7 @@
     }
 
     > input {
-      margin: 0 8px 0 16px;
+      margin: 0 8px;
       width: 48px;
     }
 
@@ -36,7 +46,7 @@
     }
 
     > fieldset {
-      margin: 0 16px;
+      margin: 0 8px;
     }
 
     fieldset {
@@ -48,6 +58,9 @@
         display: block;
         margin-top: 5px;
       }
+    }
+    .text-danger.error {
+      width: 100%;
     }
   }
 
@@ -110,7 +123,7 @@
 
     .checkbox {
       float: left;
-      min-width: 200px;
+      min-width: 150px;
     }
 
     .form-group {
@@ -155,6 +168,12 @@
   .question-9-wrapper {
     fieldset {
       margin: 18px 0 10px;
+    }
+  }
+
+  .actions {
+    button {
+      margin: 0 10px;
     }
   }
 }
