@@ -217,6 +217,22 @@
                 color: rgb(57, 67, 70);
               }
             }
+
+            &.email-field {
+              width: 65%;
+
+              & > label {
+                width: 19%;
+              }
+
+              & > div {
+                width: 81%;
+              }
+            }
+
+            &.phone-field {
+              width: 35%;
+            }
           }
         }
       }
