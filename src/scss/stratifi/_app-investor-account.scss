@@ -178,6 +178,65 @@
   }
 
   .modal-basic-profile {
+    margin-top: 147px;
+    max-width: 768px;
+
+    .modal-content {
+      padding: 0 35px 50px;
+
+      .modal-header {
+        
+        h3 {
+          font-size: 22px;
+          margin-top: 15px;
+        }
+      }
+
+      .modal-body {
+
+        .basic-profile-body {
+
+          .inline-labeled-input {
+            vertical-align: top;
+
+            &:nth-of-type(2n) {
+              margin-left: 40px;
+            }
+
+            & > label {
+              width: 25%;
+              padding: 5px 0 0;
+            }
+
+            & > div {
+              width: 75%;
+
+              input {
+                border-radius: 3px;
+                font-weight: bold;
+                color: rgb(57, 67, 70);
+              }
+            }
+
+            &.email-field {
+              width: 65%;
+
+              & > label {
+                width: 19%;
+              }
+
+              & > div {
+                width: 81%;
+              }
+            }
+
+            &.phone-field {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
 
     .basic-profile-body {
       width: 100%;
