@@ -44,15 +44,128 @@
     margin-bottom: 0;
   }
 
-  .risk-analysis-header-container {
-    background: #fff;
-  }
-
   .risk-analysis-header {
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 1000px;
     margin: 0 auto;
+    text-align: center;
+
+    .risk-analysis-select-portfolio {
+
+      .portfolio-breakdown {
+        max-width: 987px;
+        width: 100%;
+        margin: 0 auto;
+  
+        .table-container {
+          width: calc(100% - 292px);
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 65px;
+  
+          .row-content-block {
+            margin-bottom: 2px;
+  
+            .row-content {
+              background: #d3d6db;
+            }
+          }
+        }
+  
+        .pie-container {
+          width: 250px;
+          height: 250px;
+          display: inline-block;
+        }
+  
+        .run-prism-container {
+  
+          &.no-portfolio {
+            margin-top: 50px;
+          }
+  
+          button {
+            width: 250px;
+            height: 50px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      h4 {
+        margin-bottom: 60px;
+      }
+
+      .upload-button {
+        height: 50px;
+        padding: 0 30px;
+      }
+
+      & > div {
+        margin-bottom: 60px;
+
+        & > div {
+          display: inline-block;
+        }
+
+        .or {
+          width: 72px;
+          text-align: center;
+        }
+  
+        .dropdown {
+          width: 512px;
+  
+          .header-button,
+          .dropdown-menu {
+            width: 100%;
+          }
+  
+          .header-button,
+          .dropdown-item {
+            height: 50px;
+          }
+  
+          .header-button {
+            border: 1px solid #D3D6DB;
+            background: #fff;
+            padding-left: 15px;
+            text-align: left;
+  
+            &:focus {
+              outline: none;
+            }
+  
+            .icon-arrow {
+              position: absolute;
+              top: 18px;
+              right: 13px;
+              color: #09acf8;
+              font-size: 13px;
+            }
+          }
+  
+          .dropdown-item {
+            line-height: 42px;
+            border: none;
+  
+            &:hover {
+              cursor: pointer;
+            }
+  
+            &.dropdown-item-disabled {
+              color: #BCBFC4;
+  
+              &:hover {
+                cursor: default;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
 
     @media (max-width: 1440px) {
       width: auto;
@@ -60,22 +173,8 @@
       padding-right: 20px;
     }
 
-    h5 {
-      margin-bottom: -0.5rem;
-    }
-
     .step-message {
       font-size: 14px;
-    }
-
-    .btn {
-      font-size: 11px;
-      padding: .75rem 1.25rem;
-
-      &.passed {
-        background: #00c538;
-        border-color: #00c538;
-      }
     }
 
     .step {
