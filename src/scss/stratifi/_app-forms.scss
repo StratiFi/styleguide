@@ -37,7 +37,26 @@
   border: 1px solid #E7E9EA;
   background-color: #F6F8F9;
   border-radius: 3px;
+  font-size:15px;
 }
+
+.sign-up-field::-webkit-input-placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+.sign-up-field::-moz-placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+.sign-up-field::-ms-placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+.sign-up-field::placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+
 
 .password-tooltip{
   border-radius:1px;
@@ -383,6 +402,12 @@
   &-group {
     label {
       letter-spacing: 1.4px;
+      font-size: $font-size-sm;
+      color: $gray-darkest;
+    }
+
+    label.sign-up-label{
+      letter-spacing: 0.5px;
       font-size: $font-size-sm;
       color: $gray-darkest;
     }
