@@ -140,7 +140,6 @@
   color: #394346;
   font-family: Roboto;
   font-size: 12px;
-  // letter-spacing:1.4px;
 }
 
 .prism-img{
@@ -402,6 +401,12 @@
   &-group {
     label {
       letter-spacing: 1.4px;
+      font-size: $font-size-sm;
+      color: $gray-darkest;
+    }
+
+    label.sign-up-label{
+      letter-spacing: 0.5px;
       font-size: $font-size-sm;
       color: $gray-darkest;
     }
