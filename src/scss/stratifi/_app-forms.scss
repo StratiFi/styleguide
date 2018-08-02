@@ -39,6 +39,24 @@
   border-radius: 3px;
 }
 
+.sign-up-field::-webkit-input-placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+.sign-up-field::-moz-placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+.sign-up-field::-ms-placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+.sign-up-field::placeholder {
+  color:#BCBFC4 !important;
+  font-size:15px;
+}
+
+
 .password-tooltip{
   border-radius:1px;
   border: 1px solid #BCBFC4 !important;
@@ -122,6 +140,7 @@
   color: #394346;
   font-family: Roboto;
   font-size: 12px;
+  // letter-spacing:1.4px;
 }
 
 .prism-img{
