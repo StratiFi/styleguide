@@ -1,6 +1,4 @@
 .households-container {
-	margin-left: 217px;
-	padding: 45px 30px;
 
 	.households-header {
 
@@ -22,13 +20,15 @@
 	.households-table-container {
 		margin-right: 25px;
 	}
+	
 
 	.households-table {
 
-		margin-bottom: 10px;
-
 		thead {
-
+			tr.total{
+				background:transparent;
+				border: none;
+			}
 			tr {
 				border: 1px solid #d3d6db;
 				background: #e3e7ed;
@@ -104,4 +104,70 @@
 			}
 		}
 	}
+}
+
+.households-list-container{
+	margin-left: 217px;
+	padding: 45px 30px;
+}
+
+
+.react-household-autosuggest__suggestions-container{
+	position: absolute;
+	border-radius: 0;
+	max-height: 256px;
+	overflow: auto;
+}
+
+.table-household-accounts {
+	thead {
+		tr {
+
+			td {
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+
+	tbody {
+		border: 1px solid #D3D6D8;
+		background: #E3E7ED;
+
+		tr {
+			td {
+				vertical-align: middle;
+			}
+		}
+	}
+
+	&.households-total-table {
+		tbody {
+			background: #D9F3FD;
+		}
+	}
+	& > a {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+}
+
+.price-family-title{
+	margin-left:10px;
+}
+
+.cancel-icon-span{
+  position: absolute;
+  right: 0px;
+	bottom: 0px;
+  cursor:pointer;
+}
+
+.add-household-table{
+	margin:0 px;
+}
+
+td.client-search{
+	background-color:#EBEEEF;
 }
