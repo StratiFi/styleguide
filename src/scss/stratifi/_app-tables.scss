@@ -1464,19 +1464,106 @@ table.table-client-section {
     }
   }
 }
-//
-//.performance {
-//  tbody:first-child {
-//    td{
-//      border-bottom: 1px solid black;
-//    }
-//  }
-//  tbody:last-child {
-//    td{
-//      border-top: 1px solid black;
-//    }
-//  }
-//}
+
+.expandable-table {
+
+    margin-bottom: 10px;
+
+    thead {
+
+      tr {
+        border: 1px solid #d3d6db;
+        background: #e3e7ed;
+
+        td {
+          font-size: .89rem;
+          font-weight: bold;
+          padding: 12px 10px;
+          vertical-align: middle !important;
+
+          &.double-cell {
+            padding: 10px;
+          }
+
+          &:last-child {
+            border-right: 1px solid #d3d6db !important;
+          }
+        }
+      }
+    }
+
+    tbody {
+      background-color: white;
+
+      tr {
+        border: 1px solid #d2d7d9;
+
+        td {
+          font-size: .89rem;
+          color: #505e62;
+          line-height: 25px;
+          vertical-align: middle !important;
+          padding: 10px 15px;
+
+          span.risk-badge-with-score {
+            height: 27px;
+            padding-top: 0;
+          }
+
+          .get-target-score-btn {
+            width: 33px;
+          }
+        }
+
+        &.parent-row {
+
+          td {
+            background-color: #f2fbfe;
+
+            .children-shown-btn {
+              width: 20px;
+              height: 20px;
+              padding: 0;
+              line-height: 17px;
+              font-size: 17px;
+              background: #f2fbfe;
+              border: 1px solid #999;
+              color: #999;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .children-shown-btn {
+              margin: 0 10px 0 0;
+            }
+
+            &.no-children {
+              a {
+                margin-left: 30px;
+              }
+            }
+          }
+        }
+
+        &.children-row {
+
+          td {
+            background-color: #fff;
+          }
+        }
+
+        &,
+        &.parent-row,
+        &.children-row {
+          td.hidden-bg {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
 
 .get-target-score-btn {
   padding: 0;
