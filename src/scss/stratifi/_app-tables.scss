@@ -1565,6 +1565,7 @@ table.table-client-section {
     }
   }
 
+
 .get-target-score-btn {
   padding: 0;
   border: 1px dashed #09acf8;
@@ -1580,4 +1581,32 @@ table.table-client-section {
 
 .create-client {
   cursor: pointer;
+}
+
+tr.household-client-row {
+  td {
+    .household-accounts-shown-btn {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      line-height: 17px;
+      font-size: 17px;
+      border: 1px solid #999;
+      color: #999;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .household-accounts-shown-btn {
+      margin: 0 10px 0 0;
+    }
+
+    &.no-children {
+      a {
+        margin-left: 30px;
+      }
+    }
+  }
 }
