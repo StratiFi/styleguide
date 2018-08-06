@@ -78,7 +78,7 @@
 					td {
 						background-color: #f2fbfe;
 
-						.household-name-label{ 
+						.household-name-label{
 								margin-left:10px;
 						}
 
@@ -157,10 +157,6 @@
 	}
 }
 
-.price-family-title{
-	margin-left:10px;
-}
-
 .cancel-icon-span{
   position: absolute;
   right: 0px;
@@ -174,4 +170,41 @@
 
 td.client-search{
 	background-color:#EBEEEF;
+}
+
+.household-investors {
+  padding: 0 20px 0 236px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 5px 0;
+    border-bottom: 1px solid black;
+
+    .account-title {
+      display: flex;
+
+      .price-family-title{
+        font-size: 28px;
+        margin-left: 15px;
+      }
+
+      img {
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+
+    .trash-can-icon {
+      justify-content: center;
+      width: auto;
+      padding: 0 18px;
+      height:30px;
+      color: #fff;
+      display: flex;
+      padding-top: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
 }
