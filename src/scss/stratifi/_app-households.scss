@@ -198,13 +198,17 @@ td.client-search{
     .trash-can-icon {
       justify-content: center;
       width: auto;
-      padding: 0 18px;
       height:30px;
       color: #fff;
       display: flex;
       padding-top: 10px;
       border-radius: 3px;
       cursor: pointer;
+
+			a {
+				width: 34px;
+				height: 29px;
+			}
     }
   }
 }
