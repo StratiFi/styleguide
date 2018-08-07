@@ -42,6 +42,30 @@
       color: #09acf8;
     }
 
+    .search-icon-span{
+      position: absolute;
+      width:20px;
+      height:20px;
+      top:0;
+      right:0;
+    }
+
+    .create-modal-icon{
+      width: 21px;
+      height: 21px;
+    }
+
+    .fill-grey{
+      fill:#959C9E;
+    }
+
+    .cancel-icon-span{
+      position: absolute;
+      right: 0px;
+    	bottom: 0px;
+      cursor:pointer;
+    }
+
     div.react-autosuggest__container {
       width: 100%;
     }
