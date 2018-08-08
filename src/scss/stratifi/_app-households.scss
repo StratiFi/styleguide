@@ -78,7 +78,7 @@
 					td {
 						background-color: #f2fbfe;
 
-						.household-name-label{ 
+						.household-name-label{
 								margin-left:10px;
 						}
 
@@ -157,21 +157,78 @@
 	}
 }
 
-.price-family-title{
-	margin-left:10px;
-}
-
-.cancel-icon-span{
-  position: absolute;
-  right: 0px;
-	bottom: 0px;
-  cursor:pointer;
-}
-
 .add-household-table{
 	margin:0 px;
 }
 
 td.client-search{
 	background-color:#EBEEEF;
+}
+
+.household-investors {
+  padding: 0 20px 0 236px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 5px 0;
+    border-bottom: 1px solid black;
+
+    .account-title {
+      display: flex;
+
+      .price-family-title{
+        font-size: 28px;
+        margin-left: 15px;
+      }
+
+			input{
+				font-size:28px;
+				margin-left: 15px;
+				height:42px;
+				padding:none;
+			}
+
+			input[type="text"]{
+		    background: transparent;
+		    border: none;
+			}
+			input:focus{
+    		outline: none;
+			}
+
+			.edit-icon-grey{
+				width:30px;
+				height:30px;
+				margin-left:15px;
+				margin-top:5px;
+				fill:#bcbfc4;
+			}
+
+			.edit-icon-grey:hover{
+				fill:#7c8b92;
+			}
+
+      img {
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+
+    .trash-can-icon {
+      justify-content: center;
+      width: auto;
+      height:30px;
+      color: #fff;
+      display: flex;
+      padding-top: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+
+			a {
+				width: 34px;
+				height: 29px;
+			}
+    }
+  }
 }
