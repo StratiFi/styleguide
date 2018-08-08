@@ -1,4 +1,8 @@
 #account-profile-questionnaire-form-modal {
+  .modal-dialog {
+    width: 768px;
+  }
+
   .modal-content {
     padding: 35px;
 
@@ -26,10 +30,18 @@
     background: none;
   }
 
+  label {
+    color: #7C8C94;
+  }
+
   input, select {
     font-weight: bold;
     padding: 8px 5px;
     text-align: center;
+  }
+
+  select {
+    padding-left: 15px;
   }
 
   .question {
@@ -42,17 +54,17 @@
     }
 
     > input {
-      margin: 0 8px;
+      margin: 0 15px;
       width: 48px;
     }
 
     > fieldset input {
-      margin-left: 5px;
+      margin-left: 15px;
       width: 55px;
     }
 
     > fieldset {
-      margin: 0 8px;
+      margin: 0 15px;
     }
 
     fieldset {
@@ -83,11 +95,11 @@
       }
 
       .react-date-field {
-        margin-left: 8px;
+        margin-left: 16px;
       }
 
       > fieldset input {
-        margin-left: 5px;
+        margin-left: 15px;
         width: 40px;
       }
     }
@@ -127,11 +139,6 @@
   .question-10-wrapper {
     display: block;
 
-    .checkbox {
-      float: left;
-      min-width: 150px;
-    }
-
     .form-group {
       > div{
         padding: 30px 0 0 30px;
@@ -147,8 +154,19 @@
         }
       }
     }
-  }
 
+    .checkbox {
+      float: left;
+      min-width: 150px;
+      height: 20px;
+      margin: 10px;
+    }
+  }
+  .question-9-wrapper, .question-11-wrapper {
+    select {
+      padding-right: 30px;
+    }
+  }
   .question-11-wrapper {
     > div {
       display: flex;
@@ -156,7 +174,7 @@
 
       fieldset, .c-select {
         min-width: initial;
-        width: 64px;
+        width: 80px;
 
         .form-group {
           margin-bottom: 0;
@@ -178,7 +196,10 @@
   }
 
   .actions {
+    margin-top: 46px;
+
     button {
+      min-width: 150px;
       margin: 0 10px;
     }
   }
