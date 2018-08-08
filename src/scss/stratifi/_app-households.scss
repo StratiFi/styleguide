@@ -19,6 +19,18 @@
 
 	.households-table-container {
 		margin-right: 25px;
+
+		.popup-household-csv {
+			.caution {
+				font-size: 14px;
+    		display: block;
+    		color: red
+			}
+
+			.actions {
+				margin-top: 20px;
+			}
+		}
 	}
 
 
