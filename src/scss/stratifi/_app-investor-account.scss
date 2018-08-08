@@ -98,6 +98,10 @@
             font-size: 14px;
             border-radius: 3px;
             font-weight: 500;
+
+            &:hover {
+              background: darken( #7C8C94, 10% )
+            }
           }
 
           .add-target {
