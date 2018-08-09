@@ -278,15 +278,17 @@
       .toggle-details {
         cursor: pointer;
         padding-right: 0;
-        
+
         img {
           width: 19px;
           height: 11px;
         }
-
         &.shown {
-          transform: rotate(180deg);
+          img{
+            transform: rotate(180deg);
+          }
         }
+
       }
     }
   }
@@ -300,7 +302,7 @@
   animation: 1s ease-out 5s tooltipAnimation forwards;
 }
 
-@keyframes tooltipAnimation {  
+@keyframes tooltipAnimation {
   to {
     opacity: 0;
   }
