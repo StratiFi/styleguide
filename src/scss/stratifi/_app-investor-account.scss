@@ -31,9 +31,25 @@
         margin-right: 15px;
       }
 
-      img {
+      .user-profile-button {
         align-self: center;
         cursor: pointer;
+        background-color: #808D94;
+        border-radius: 3px;
+        padding: 5px 15px 5px 15px;
+        font-size: 15px;
+        color: #fff;
+
+        .user-icon {
+          position: relative;
+          top:2px;
+          height: 17px;
+          fill: transparent;
+          margin-right: 5px;
+          stroke-width: 1;
+          stroke: white;
+          padding: 1px;
+        }
       }
     }
 
