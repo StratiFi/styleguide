@@ -11,6 +11,10 @@
 
 .input-section {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   & > label {
     display: inline-block;
@@ -18,11 +22,21 @@
     text-align: right;
     padding-right: 15px;
     vertical-align: top;
+    color:#000 !important;
   }
 
   & > div {
     display: inline-block;
-    width: 40%;
+    width: 60%;
+  }
+
+  .household-name-form{
+    .inline-labeled-input{
+      padding:5px 18px;
+      label{
+        color:#000;
+      }
+    }
   }
 
   .member-add{
@@ -31,7 +45,6 @@
 
   .multiple-input {
     position: relative;
-    width:350px;
 
     .btn-add-to-selected {
       position: absolute;
