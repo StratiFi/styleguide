@@ -1485,6 +1485,12 @@ table.table-client-section {
             padding: 10px;
           }
 
+          &:first-child{
+            .client-header {
+              margin-left: 35px;
+            }
+          }
+
           &:last-child {
             border-right: 1px solid #d3d6db !important;
           }
