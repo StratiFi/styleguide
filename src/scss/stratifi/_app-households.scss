@@ -55,6 +55,13 @@
 						padding: 10px;
 					}
 
+					&:first-child{
+						a {
+							color:#09acf8;
+							text-decoration:none;
+						}
+					}
+
 					&:last-child {
 						border-right: 1px solid #d3d6db !important;
 					}
