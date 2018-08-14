@@ -1,21 +1,134 @@
-.model-list {
+.models-container {
+  padding-left:216px;
 
-  .model-item {
-    @include transition(all .3s ease-in-out);
-    box-shadow: 0;
-    opacity: 1;
-  }
+  .models-wrapper {
+    width: 100%;
+    max-width: 1098px;
+    margin: auto;
 
-  &:hover {
-    .model-item {
-      &:hover {
-        background-color: #ffffff;
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
-        border: solid 1px #b0bcc0;
+    .header {
+      padding-top:10px;
+      display: inline-flex;
+      flex-direction: row;
+      width:100%;
+
+      .title-container {
+        align-self:flex-start;
+
+        h2 {
+          font-size: 2rem;
+          line-height: 2rem;
+          float: left;
+        }
       }
 
-      &:not(:hover) {
-        opacity: .3;
+      .left-container {
+        margin-left: auto;
+        min-width:300px;
+        align-self:flex-end;
+
+        .button-container {
+          margin-left:auto;
+          margin-right: 15px;
+          margin-bottom:10px;
+          float:left;
+
+          .create-button {
+            position:relative;
+            bottom:6px;
+          }
+        }
+
+        .form-group {
+          margin-bottom:0px;
+          width:250px;
+        }
+
+        .search {
+          margin-right: 0px;
+          float:right;
+        }
+      }
+    }
+
+    .models-table {
+  		thead {
+  			tr {
+  				border: 1px solid #d3d6db;
+  				background: #e3e7ed;
+
+  				td {
+  					font-size: .89rem;
+  					font-weight: bold;
+  					padding: 12px 10px;
+  					vertical-align: middle !important;
+
+  					&.double-cell {
+  						padding: 10px;
+  					}
+
+  					&:last-child {
+  						border-right: 1px solid #d3d6db !important;
+  					}
+  				}
+  			}
+  		}
+
+  		tbody {
+  			background-color: white;
+
+  			tr {
+  				border: 1px solid #d2d7d9;
+
+  				td {
+  					font-size: .89rem;
+  					color: #505e62;
+  					line-height: 25px;
+  					vertical-align: middle !important;
+            padding:15px 20px;
+
+  					span.risk-badge-with-score {
+  						height: 27px;
+  						padding-top: 0;
+  					}
+
+  					.get-target-score-btn {
+  						width: 33px;
+  					}
+
+            .trashcan-icon {
+              width: 18px;
+              cursor: pointer;
+              fill: #bbb;
+            }
+
+            .trashcan-icon:hover {
+              fill: #333;
+            }
+  				}
+  			}
+  		}
+  	}
+
+    .model-list {
+      .model-item {
+        @include transition(all .3s ease-in-out);
+        box-shadow: 0;
+        opacity: 1;
+      }
+
+      &:hover {
+        .model-item {
+          &:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+            border: solid 1px #b0bcc0;
+          }
+
+          &:not(:hover) {
+            opacity: .3;
+          }
+        }
       }
     }
   }
