@@ -115,9 +115,16 @@
   }
 }
 
-.prism-questions-container {
+.advisor-container .prism-questions-container {
   padding-left: 216px;
+}
 
+.investor-container .prism-questions-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.prism-questions-container {
   .prism-questions-card {
     min-width: 1000px;
     width: 90%;
@@ -129,7 +136,7 @@
 
     .prism-questions-progress {
       line-height: 1px;
-    
+
       .progress-item {
         height: 7px;
         display: inline-block;
@@ -206,7 +213,7 @@
               outline: none;
             }
           }
-        
+
           .day {
             width: 68px;
           }
@@ -219,7 +226,7 @@
 
       .birthday-container {
         margin-bottom: 5px;
-        
+
         .c-select-wrap {
           width: 244px;
           position: relative;
@@ -228,8 +235,8 @@
           &:after {
             content: '';
             position: absolute;
-            width: 0; 
-            height: 0; 
+            width: 0;
+            height: 0;
             border-left: 7px solid transparent;
             border-right: 7px solid transparent;
           }
@@ -240,12 +247,12 @@
             right: 12px;
           }
 
-          &:after {              
+          &:after {
             border-top: 7px solid #000;
             top: 25px;
             right: 12px;
           }
-          
+
           select.c-select.month {
             min-width: 244px;
             width: 244px;
@@ -384,7 +391,7 @@
       max-width: 770px;
       margin: 0 auto;
       padding-left: 50px;
-      
+
       .asset-classes-choice {
         margin: 0 auto;
         margin-bottom: 30px;
@@ -478,11 +485,11 @@
         & > h4 {
           font-weight: lighter;
         }
-  
+
         & > .low {
           color: #66CB33;
         }
-  
+
         & > .high {
           color: #C7393D;
         }

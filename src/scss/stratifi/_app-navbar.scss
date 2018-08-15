@@ -20,6 +20,12 @@
   }
 }
 
+.investor-container {
+  & {
+    padding-top: 3.5rem;
+  }
+}
+
 .navbar-dark {
   .navbar-brand {
     color: $navbar-dark-active-color;
@@ -427,6 +433,20 @@
       border-radius: 50%;
       border: 2px solid #fff;
     }
+  }
+}
+
+.investor-container .navbar .account-info {
+  display: flex;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-left: 2px solid #f0f3f4;
+
+    label { margin: 0 5px 0 0; }
+    span { font-weight: bold; margin: 0; }
   }
 }
 
