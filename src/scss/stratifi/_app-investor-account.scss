@@ -147,7 +147,7 @@
             border: 1px dashed #09ACF8;
           }
         }
-
+        &.closest-modal-row,
         &.positions-chart {
           display: none;
           background-color: #fff;
@@ -181,6 +181,12 @@
               height: 250px;
               display: inline-block;
             }
+          }
+        }
+
+        &.closest-modal-row {
+          td {
+            padding: 0;
           }
         }
       }
