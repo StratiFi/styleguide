@@ -133,3 +133,125 @@
     }
   }
 }
+
+.model-portfolio-container{
+  padding: 0 20px 0 236px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px 20px 10px;
+
+    .model-title {
+      width:100%;
+      display: flex;
+      display: inline-flex;
+      flex-direction: row;
+
+      .model-name {
+        font-size: 28px;
+        margin-right: 15px;
+      }
+
+      .model-profile {
+        align-self: center;
+        background-color: #D5D7DC;
+        padding: 5px 15px 5px 15px;
+        font-size: 15px;
+        color: #000;
+      }
+
+      .button-bar{
+        align-self:flex-end;
+        margin-left: auto;
+        height:36px;
+
+        .edit-button {
+          width:30px;
+          height:30px;
+          margin-right:10px;
+          cursor:pointer;
+          background-color: #4BACF2;
+          float:left;
+          border-radius:3px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: auto;
+
+          .edit-icon{
+            width:20px;
+            height:20px;
+            fill:#fff;
+            overflow:auto;
+          }
+        }
+
+        .trash-button{
+          width:30px;
+          height:30px;
+          margin-right:0px;
+          cursor:pointer;
+          background-color:#808D94;
+          float:right;
+          border-radius:3px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: auto;
+
+          .trashcan-icon{
+            width:20px;
+            height:20px;
+            fill:#ccc;
+            overflow: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .positions-chart {
+    background-color: #fff;
+    border: 1px solid #ccc;
+
+    .showDetails {
+      display: table-row;
+    }
+
+    .portfolio-breakdown {
+      max-width: 987px;
+      width: 100%;
+      margin: 0 auto;
+
+      .table-container {
+        width: calc(100% - 292px);
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 65px;
+
+        .row-content-block {
+          margin-bottom: 2px;
+
+          .row-content {
+            background: #F6F8F9;
+          }
+        }
+      }
+
+      .pie-container {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .last-updated{
+    float:right;
+    color:$gray-light;
+    font-size:14px;
+  }
+}
