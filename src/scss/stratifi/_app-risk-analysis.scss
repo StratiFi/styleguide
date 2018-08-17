@@ -26,9 +26,16 @@
   }
 }
 
-.risk-analysis {
+.advisor-container .risk-analysis {
   margin-left: 216px;
+}
 
+.investor-container .risk-analysis {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.risk-analysis {
   i {
     font-style: normal;
   }
@@ -57,34 +64,34 @@
         max-width: 987px;
         width: 100%;
         margin: 0 auto;
-  
+
         .table-container {
           width: calc(100% - 292px);
           display: inline-block;
           vertical-align: top;
           margin-top: 65px;
-  
+
           .row-content-block {
             margin-bottom: 2px;
-  
+
             .row-content {
               background: #d3d6db;
             }
           }
         }
-  
+
         .pie-container {
           width: 250px;
           height: 250px;
           display: inline-block;
         }
-  
+
         .run-prism-container {
-  
+
           &.no-portfolio {
             margin-top: 50px;
           }
-  
+
           button {
             width: 250px;
             height: 50px;
@@ -113,30 +120,30 @@
           width: 72px;
           text-align: center;
         }
-  
+
         .dropdown {
           width: 512px;
-  
+
           .header-button,
           .dropdown-menu {
             width: 100%;
           }
-  
+
           .header-button,
           .dropdown-item {
             height: 50px;
           }
-  
+
           .header-button {
             border: 1px solid #D3D6DB;
             background: #fff;
             padding-left: 15px;
             text-align: left;
-  
+
             &:focus {
               outline: none;
             }
-  
+
             .icon-arrow {
               position: absolute;
               top: 18px;
@@ -145,18 +152,18 @@
               font-size: 13px;
             }
           }
-  
+
           .dropdown-item {
             line-height: 42px;
             border: none;
-  
+
             &:hover {
               cursor: pointer;
             }
-  
+
             &.dropdown-item-disabled {
               color: #BCBFC4;
-  
+
               &:hover {
                 cursor: default;
                 background-color: #fff;
@@ -602,19 +609,19 @@
     margin-top: 1240px;
   }
  }
- 
+
  .risk-analysis-scorecards {
   margin-top: -1428px;
  }
- 
+
  @media screen and (max-width: 1280px){
   .choose-risk-result-container{
     .row {
       margin-top: 1240px !important;
     }
   }
-  
+
   .risk-analysis-scorecards {
     margin-top: -1428px !important;
-  } 
+  }
  }
