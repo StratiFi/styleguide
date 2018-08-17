@@ -196,6 +196,13 @@ td.client-search{
     .account-title {
       display: flex;
 
+			.household-icon{
+				width:30px;
+				height:30px;
+				margin-top:2px;
+				fill:#394346;
+			}
+
       .price-family-title{
         font-size: 28px;
         margin-left: 15px;
