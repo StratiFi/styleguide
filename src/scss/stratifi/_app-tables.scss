@@ -6,6 +6,11 @@ $td-background-returns-even: $body-background;
 .table {
   margin: 30px 0;
 
+  .collapse-action,
+  .expand-action {
+    cursor: pointer;
+  }
+
   .modal-body & {
     margin-top: 0;
   }
