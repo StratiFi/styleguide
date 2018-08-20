@@ -24,6 +24,27 @@
   & {
     padding-top: 3.5rem;
   }
+
+  .investor-container-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .brand {
+    color: #999;
+    font-size: 0.9em;
+    min-width: 1000px;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      height: 12px;
+      margin-left: 5px;
+    }
+  }
 }
 
 .navbar-dark {
@@ -183,8 +204,9 @@
         content: '';
         top: 0;
         right: 0;
+        bottom: 0;
         width: $navbar-max-height;
-        height: $navbar-max-height;
+        min-height: $navbar-max-height;
         background: #ddd;
       }
 
@@ -196,6 +218,7 @@
         width: $navbar-max-height;
         line-height: $navbar-max-height;
         text-align: center;
+        align-self: center;
 
         font-family: 'icomoon' !important;
         speak: none;
