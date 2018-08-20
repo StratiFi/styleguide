@@ -24,6 +24,27 @@
   & {
     padding-top: 3.5rem;
   }
+
+  .investor-container-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .brand {
+    color: #999;
+    font-size: 0.9em;
+    min-width: 1000px;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      height: 12px;
+      margin-left: 5px;
+    }
+  }
 }
 
 .navbar-dark {
