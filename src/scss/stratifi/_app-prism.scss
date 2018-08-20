@@ -334,6 +334,20 @@ $risk-colors-by-level:
     }
   }
 
+  .prism-actions {
+    span {
+      display: block;
+    }
+    .btn-primary {
+      padding: 0.75rem 2.3rem;
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 23px;
+      height: 55px;
+      width: 337px;
+    }
+  }
+
   .use-portfolio-container,
   .prism-actions {
     background-color: #E1E9EE;
