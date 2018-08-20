@@ -223,6 +223,31 @@ td.client-search{
     		outline: none;
 			}
 
+			.button-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.save-button {
+					color:#fff;
+					padding:6px 18px;
+					margin-top:5px;
+					margin-left:10px;
+					border-radius:2px;
+					background-color:#4BACF2;
+				}
+
+				.save-button-disabled {
+					color:#fff;
+					padding:6px 18px;
+					margin-top:5px;
+					margin-left:10px;
+					border-radius:2px;
+					background-color:#BEC0C5;
+					cursor: not-allowed;
+				}
+			}
+
 			.edit-icon-grey{
 				width:30px;
 				height:30px;
