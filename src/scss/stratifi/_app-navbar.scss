@@ -204,8 +204,9 @@
         content: '';
         top: 0;
         right: 0;
+        bottom: 0;
         width: $navbar-max-height;
-        height: $navbar-max-height;
+        min-height: $navbar-max-height;
         background: #ddd;
       }
 
@@ -217,6 +218,7 @@
         width: $navbar-max-height;
         line-height: $navbar-max-height;
         text-align: center;
+        align-self: center;
 
         font-family: 'icomoon' !important;
         speak: none;
