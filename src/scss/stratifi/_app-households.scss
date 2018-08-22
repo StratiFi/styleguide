@@ -98,17 +98,18 @@
 						background-color: #f2fbfe;
 
 						.household-name-label{
-								margin-left:10px;
+							margin-left:10px;
 						}
 
 						.household-accounts-shown-btn {
+							vertical-align: baseline;
+							display: inline-block;
 							width: 20px;
 							height: 20px;
 							padding: 0;
 							line-height: 17px;
 							font-size: 17px;
 							background: #f2fbfe;
-							border: 1px solid #999;
 							color: #999;
 
 							&:focus {

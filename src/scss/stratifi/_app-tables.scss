@@ -1532,13 +1532,15 @@ table.table-client-section {
             background-color: #f2fbfe;
 
             .children-shown-btn {
+              cursor: pointer;
+              vertical-align: baseline;
+              display: inline-block;
               width: 20px;
               height: 20px;
               padding: 0;
               line-height: 17px;
               font-size: 17px;
               background: #f2fbfe;
-              border: 1px solid #999;
               color: #999;
 
               &:focus {
